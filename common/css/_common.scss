@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+ 要素
+---------------------------------------*/
+img{max-width: 100%;}
+
+
+/*--------------------------------------
+ パーツ
+---------------------------------------*/
+/* インナー */
+.inner{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+/* タイトル */
+.ttl1{
+	margin-bottom: 45px;
+	text-align: center;
+	> div{
+		display: inline-block;
+		font-size: 3.5rem;
+		line-height: 1;
+		> .lines{
+			width: 93px;
+			margin:0 auto 15px;
+		} 
+		> em{
+			display: block;
+			margin-bottom: 15px;
+			color: #3bab3e;
+			font-size: 1.7rem;
+		}
+	}
+}
+
+
+/* ボタン */
+.btn{
+	display: inline-block;
+	background-color: #ff3649;
+	padding: 10px 17px;
+	color: #fff;
+	box-shadow: 0 3px 0 #c31a2a;
+	border-radius: 4px;
+	&.withIcn{//アイコン付き
+		display: flex;
+		align-items: center;
+	}
+	&.clr2{//色2
+	}
+}
+
+
+/* アイコン */
+.icnMail{@include icn("\f0e0");}
+
+
+/* ライン */
+.lines{//5色の戦
+	display: flex;
+	font-size: 0;
+	hr{
+		display: block;
+		width: 20%;
+		height: 5px;
+		&:nth-child(1){background-color: #358f31;}
+		&:nth-child(2){background-color: #65bf2e;}
+		&:nth-child(3){background-color: #3bab3e;}
+		&:nth-child(4){background-color: #bfb62e;}
+		&:nth-child(5){background-color: #17ba6f;}
+	}
+	@include mq{
+	}
+}
+
+
+/* 状態 */
+.dis_flex_block{//pcではflex、spではblock
+	display: flex;
+	@include mq{
+		display: block;
+	}
+}
+

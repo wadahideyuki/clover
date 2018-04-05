@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "reset";//リセット
+
+//プラグイン
+@import "colorbox";
+@import "slick";
+@import "slick-theme";
+@import "animate";
+
+//共通
+@import "layout";//全体的なレイアウト(ヘッダーとか)
+@import "common";//パーツ(ボタンなど)
+
+//ページ毎
+@import "top";
+
+
+
