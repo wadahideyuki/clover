@@ -53,7 +53,40 @@
 				dl{
 					dt{
 						margin-bottom: 20px;
-						img{
+						span{
+							display: inline-block;
+							position: relative;
+							&:before{
+								z-index: 1;
+								content: "";
+								width: 100%;
+								height: 100%;
+								display: block;
+								background: #e3e3e3;
+								opacity: 0.5;
+								border-radius: 50%;
+								animation: rotation2 5s both infinite linear;
+								position: absolute;
+								left: 0;
+								top: 0;
+							}
+							&:after{
+								z-index: 1;
+								content: "";
+								width: 98%;
+								height: 98%;
+								display: block;
+								background: #e3e3e3;
+								border-radius: 50%;
+								opacity: 0.5;
+								animation: rotation1 4s both infinite linear;
+								position: absolute;
+								left: 2%;
+								top: 0;
+							}
+							img{
+								position: relative;
+								z-index: 3;							}
 						}
 					}
 					dd{
