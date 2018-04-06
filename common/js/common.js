@@ -23,9 +23,19 @@ clkScrl($("a.teiki2"), 20);
 clkScrl($("a.teiki3"), -1);
 
 
-//spのメニューボタン
-$(".spNav1Btn").click(function(){
-	$(".header .nav1").slideToggle();
+//spヘッダーのメニューボタン
+$(".spBtnMenu").click(function(){
+	$(".header .nav ul").slideToggle();
+	return false;
+});
+
+//spフッターのアコーディオン
+$(".footer .part2 .layer1 > li h3").click(function(){
+	winW = $(window).width();
+	if(winW <= 767){
+		$(this).toggleClass("show");
+		$(this).next().slideToggle();
+	}
 	return false;
 });
 

@@ -25,6 +25,13 @@ $color1:#fff;
 	transition: 0.3s;
 	&:hover{
 		opacity: $op;
+		text-decoration: none;
+	}
+}
+@mixin scale11($op:0.7){//ホバーで拡大
+	transition: 0.3s;
+	&:hover{
+		transform: scale(1.1)
 	}
 }
 
