@@ -37,15 +37,9 @@ $(".slkBox1 ul").slick({
 	slidesToShow:4,
 	responsive:[
 		{
-			breakpoint:2000,
-			settings:{
-				unslick:true
-			}
-		},
-		{
 			breakpoint:768,
 			settings:{
-				slideToShow:2
+				slidesToShow:2
 			}
 		}
 	]
