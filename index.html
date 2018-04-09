@@ -2,14 +2,14 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>タイトル</title>
+<title>CLOVER</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
-<meta property="og:title" content="タイトル" />
+<meta property="og:title" content="CLOVER" />
 <meta property="og:site_name" content="CLOVER" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website">
@@ -27,33 +27,10 @@
 
 <body class="">
 <div class="wrapper pageSitetop">
-<header class="header">
-	<div class="lines"><hr><hr><hr><hr><hr></div>
 
-	<div class="hdIn">
-		<div class="colL">
-			<h1 class="logo"><a href="#"><img src="common/img/logo.png" alt=""></a></h1>
-		</div>
-		<div class="colR">
-			<nav class="nav">
-				<ul>
-					<li><a href="#">経営<br>理念</a></li>
-					<li><a href="#">私たちに<br>ついて</a></li>
-					<li><a href="#">デイ<br>サービス</a></li>
-					<li><a href="#">放課後等<br>デイサービス</a></li>
-					<li><a href="#">採用<br>情報</a></li>
-				</ul>
-			</nav>
-			<div class="tel"><img src="common/img/hd_tel.png" alt=""></div>
-			<div class="btnWrap">
-				<a class="btn withIcn icnMail" href="#">
-					<span>メールでの<br>お問い合わせ</span>
-				</a>
-			</div>
-		</div>
-		<a class="spBtnMenu" href="#"></a>
-	</div>
-</header>
+<!--ヘッダー-->
+<!--#include virtual="/common/inc/header.inc" -->
+<!--/ヘッダー-->
 
 
 <section class="main">
@@ -72,9 +49,9 @@
 				サービス
 			</div>
 		</h2>
-		<div class="spOfScrlX">
+		<div class="topServiceSlk">
 			<ul>
-				<li>
+				<li class="liItem">
 					<dl>
 						<dt><span><img src="common/img/top/service_img01.png" alt=""></span></dt>
 						<dd>
@@ -83,7 +60,7 @@
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="liItem">
 					<dl>
 						<dt><span><img src="common/img/top/service_img02.png" alt=""></span></dt>
 						<dd>
@@ -92,7 +69,7 @@
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="liItem">
 					<dl>
 						<dt><span><img src="common/img/top/service_img03.png" alt=""></span></dt>
 						<dd>
@@ -116,7 +93,7 @@
 				ニュースリリース
 			</div>
 		</h2>
-		<div class="slkBox1">
+		<div class="topNewsSlk">
 			<ul>
 				<li class="liItem">
 					<a href="#">
@@ -178,14 +155,70 @@
 			</div>
 		</h2>
 		<ul>
-			<li class="itemSendagaya"><a href="#"><img src="common/img/top/office_img_sendagaya.png" alt=""></a></li>
-			<li class="itemYoyogiuehara"><a href="#"><img src="common/img/top/office_img_yoyogiuehara.png" alt=""></a></li>
-			<li class="itemHiroo"><a href="#"><img src="common/img/top/office_img_hiroo.png" alt=""></a></li>
-			<li class="itemAzabujuban"><a href="#"><img src="common/img/top/office_img_azabujuban.png" alt=""></a></li>
-			<li class="itemSangubasi"><a href="#"><img src="common/img/top/office_img_sangubasi.png" alt=""></a></li>
-			<li class="itemKagurazaka"><a href="#"><img src="common/img/top/office_img_kagurazaka.png" alt=""></a></li>
-			<li class="itemYotuya"><a href="#"><img src="common/img/top/office_img_yotuya.png" alt=""></a></li>
-			<li class="itemMotoyawata"><a href="#"><img src="common/img/top/office_img_motoyawata.png" alt=""></a></li>
+			<li class="itemSendagaya">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_sendagaya.png">
+						<img src="common/img/top/office_img_sendagaya.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemYoyogiuehara">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_yoyogiuehara.png">
+						<img src="common/img/top/office_img_yoyogiuehara.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemHiroo">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_hiroo.png">
+						<img src="common/img/top/office_img_hiroo.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemAzabujuban">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_azabujuban.png">
+						<img src="common/img/top/office_img_azabujuban.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemSangubasi">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_sangubasi.png">
+						<img src="common/img/top/office_img_sangubasi.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemKagurazaka">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_kagurazaka.png">
+						<img src="common/img/top/office_img_kagurazaka.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemYotuya">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_yotuya.png">
+						<img src="common/img/top/office_img_yotuya.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemMotoyawata">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_motoyawata.png">
+						<img src="common/img/top/office_img_motoyawata.png" alt="">
+					</picture>
+				</a>
+			</li>
 		</ul>
 	</div>
 </section>
@@ -209,94 +242,9 @@
 </section>
 
 
-<footer class="footer">
-	<div class="part1">
-		<div class="inner">
-			<div class="tel"><img src="common/img/ft_tel.png" alt=""></div>
-			<ul class="ftSns">
-				<li class="ftSnsXXX">
-					<a href="#">
-						<dl>
-							<dt><img src="common/img/ft_sns_yt.png" alt=""></dt>
-							<dd>YouTube</dd>
-						</dl>
-					</a>
-				</li>
-				<li class="ftSnsXXX">
-					<a href="#">
-						<dl>
-							<dt><img src="common/img/ft_sns_fb.png" alt=""></dt>
-							<dd>Facebook</dd>
-						</dl>
-					</a>
-				</li>
-				<li class="ftSnsXXX">
-					<a href="#">
-						<dl>
-							<dt><img src="common/img/ft_sns_tw.png" alt=""></dt>
-							<dd>Twitter</dd>
-						</dl>
-					</a>
-				</li>
-				<li class="ftSnsXXX">
-					<a href="#">
-						<dl>
-							<dt><img src="common/img/ft_sns_ig.png" alt=""></dt>
-							<dd>Instagram</dd>
-						</dl>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="part2">
-		<div class="inner">
-			<div class="in">
-				<h2 class="logo"><a href="#"><img src="common/img/logo.png" alt=""></a></h2>
-				<ul class="layer1">
-					<li>
-						<h3>経営理念</h3>
-						<ul class="layer2">
-							<li><a href="#">採用情報</a></li>
-							<li><a href="#">ブログ（利用者の様子）</a></li>
-						</ul>
-					</li>
-					<li>
-						<h3>私たちについて</h3>
-						<ul class="layer2">
-							<li><a href="#">CLOVERとは（会社概要）</a></li>
-							<li><a href="#">トップメッセージ</a></li>
-							<li><a href="#">VALUE・VISION</a></li>
-						</ul>
-					</li>
-					<li>
-						<h3>デイサービス</h3>
-						<ul class="layer2">
-							<li><a href="#">クローバーの介護観</a></li>
-							<li><a href="#">クローバーの１日・利用料金</a></li>
-							<li><a href="#">事業所の紹介</a></li>
-						</ul>
-					</li>
-					<li>
-						<h3>放課後等デイサービス</h3>
-						<ul class="layer2">
-							<li><a href="#">放課後等デイサービス</a></li>
-						</ul>
-					</li>
-					<li>
-						<h3>採用情報</h3>
-						<ul class="layer2">
-							<li><a href="#">人材育成への想い</a></li>
-							<li><a href="#">社員エピソード集</a></li>
-							<li><a href="#">募集要項</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<p id="copyRight">Copyright © 2018 株式会社CLOVER All Rights Reserved.</p>
-		</div>
-	</div>
-</footer>
+<!--フッター-->
+<!--#include virtual="/common/inc/footer.inc" -->
+<!--/フッター-->
 
 </div><!--/.wrapper-->
 </body>
