@@ -11,7 +11,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 25px 15px;
+		height: 90px;
+		padding: 0px 15px;
+		box-sizing: border-box;
 		> .colL{
 			max-width: (170/1400) * $per;
 			.logo{
@@ -30,12 +32,12 @@
 		}
 		.spBtnMenu{display: none;}
 		.nav{
-			ul{
+			.layer1{
 				display: flex;
 				align-items: center;
 				font-size: 1.6rem;
 				border-right: 1px dotted #929292;
-				li{
+				> li{
 					padding: 5px 15px;
 					border-left: 1px dotted #929292;
 					a{
@@ -43,6 +45,27 @@
 						text-align: center;
 						br{
 							display: none;
+						}
+					}
+					.layer2{
+						display: none;
+						width: 100%;
+						padding-top: 30px;
+						color: #fff;
+						position: absolute;
+						top: 65px;
+						left: 0;
+						text-align: center;
+						.in{
+							background-color: rgba(53,143,49,0.8);
+							padding: 20px 10px;
+							a{
+								font-family: "Noto Sans Japanese";
+								font-size: 1.6rem;
+								& + a{
+									margin-left: 25px;
+								}
+							}
 						}
 					}
 				}
@@ -128,7 +151,7 @@
 		}
 	}
 	@include mq($breakpoint:pc){
-		.hdIn .nav ul{
+		.hdIn .nav .layer1{
 			display: flex !important;
 		}
 	}
@@ -199,6 +222,14 @@
 			}
 		}
 	}
+}
+
+
+#pankz{
+	padding: 10px 20px;
+	color: #fff;
+	font-family: "Noto Sans Japanese";
+	font-size: 14px;
 }
 
 

@@ -72,6 +72,17 @@ $(".slkBox1 ul").slick({
 /*--------------------
     レイアウト別
 --------------------*/
+//PCのヘッダーのnav
+$(".header .hdIn .nav .layer1 > li").hover(
+	function () {
+		$(this).children(".layer2").slideDown("fast");
+	},
+	function () {
+		$(this).children(".layer2").slideUp("fast");
+	}
+);
+
+
 //spヘッダーのメニューボタン
 $(".spBtnMenu").click(function(){
 	$(".header .nav ul").slideToggle();
