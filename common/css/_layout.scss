@@ -31,8 +31,8 @@
 			padding-left: 15px;
 		}
 		.spBtnMenu{display: none;}
-		.nav{
-			.layer1{
+		.nav.layer1{
+			ul{
 				display: flex;
 				align-items: center;
 				font-size: 1.6rem;
@@ -43,29 +43,11 @@
 					a{
 						display: inline-block;
 						text-align: center;
+						&.show{
+							color: $mainColor;
+						}
 						br{
 							display: none;
-						}
-					}
-					.layer2{
-						display: none;
-						width: 100%;
-						padding-top: 30px;
-						color: #fff;
-						position: absolute;
-						top: 65px;
-						left: 0;
-						text-align: center;
-						.in{
-							background-color: rgba(53,143,49,0.8);
-							padding: 20px 10px;
-							a{
-								font-family: "Noto Sans Japanese";
-								font-size: 1.6rem;
-								& + a{
-									margin-left: 25px;
-								}
-							}
 						}
 					}
 				}
@@ -97,9 +79,33 @@
 			}
 		}
 	}
+	nav.layer2{
+		width: 100%;
+		color: #fff;
+		text-align: center;
+		position: relative;
+		ul{
+			li{
+				display: none;
+				background-color: rgba(53,143,49,0.8);
+				width: 100%;
+				padding: 20px 10px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			a{
+				font-family: "Noto Sans Japanese";
+				font-size: 1.6rem;
+				& + a{
+					margin-left: 25px;
+				}
+			}
+		}
+	}
 	@include mq($breakpoint:etc1){
 		.hdIn{
-			.nav{
+			.nav.layer1{
 				ul{
 					font-size: 1.4rem;
 					li{
@@ -124,16 +130,18 @@
 			}
 		}
 	}
-	@include mq($breakpoint:l){
+	@include mq($breakpoint:etc2){
 		.hdIn{
 			padding: 15px 10px;
-			.nav{
+			.nav.layer1{
 				ul{
 					font-size: 1.2rem;
+					border-right: none;
 					li{
+						padding: 5px;
+						border-left: none;
 						a{
 							br{
-								display: inline;
 							}
 						}
 					}
@@ -151,7 +159,7 @@
 		}
 	}
 	@include mq($breakpoint:pc){
-		.hdIn .nav .layer1{
+		.hdIn .nav.layer1 ul{
 			display: flex !important;
 		}
 	}
