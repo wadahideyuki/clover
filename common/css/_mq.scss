@@ -27,6 +27,13 @@
     }
   } @else if $breakpoint == etc1 {
     @media screen and (max-width: 1360px) {
+<<<<<<< HEAD
+=======
+        @content;
+    }
+  } @else if $breakpoint == etc2 {
+    @media screen and (max-width: 1200px) {
+>>>>>>> b0d8131de9d74e7bc413c730cf783d828e673710
         @content;
     }
   }

@@ -73,6 +73,7 @@ $(".slkBox1 ul").slick({
     レイアウト別
 --------------------*/
 //PCのヘッダーのnav
+<<<<<<< HEAD
 $(".header .hdIn .nav .layer1 > li").hover(
 	function () {
 		$(this).children(".layer2").slideDown("fast");
@@ -81,6 +82,22 @@ $(".header .hdIn .nav .layer1 > li").hover(
 		$(this).children(".layer2").slideUp("fast");
 	}
 );
+=======
+$(".header .nav.layer1 a").click(function(){
+	if($(this).hasClass("show")){
+		$(".header .nav.layer1 a").removeClass("show");
+		$(".header .nav.layer2 li").slideUp("fast");
+	}else{
+		$(".header .nav.layer1 a").removeClass("show");
+		$(this).addClass("show");
+		var hdNavNo = $(this).parent("li").attr("class").replace("hdNav", "");
+		console.log(hdNavNo);
+		$(".header .nav.layer2 li").slideUp("fast");
+		$(".header .nav.layer2 li.hdNavLower" + hdNavNo).slideDown("fast");
+	}
+	return false;
+});
+>>>>>>> b0d8131de9d74e7bc413c730cf783d828e673710
 
 
 //spヘッダーのメニューボタン
