@@ -7,219 +7,141 @@
  レイアウト
 ---------------------------------------*/
 .header{
-	.hdIn{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 90px;
-		padding: 0px 15px;
-		box-sizing: border-box;
-		> .colL{
-			max-width: (170/1400) * $per;
-			.logo{
-				max-width: 170px;
-				a{
-					display: block;
-					@include hvr;
+	.pcHd{
+		.hdIn{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 90px;
+			padding: 0px 15px;
+			box-sizing: border-box;
+			> .colL{
+				max-width: (170/1400) * $per;
+				.logo{
+					max-width: 170px;
+					a{
+						display: block;
+						@include hvr;
+					}
 				}
 			}
-		}
-		> .colR{
-			display: flex;
-			justify-content: right;
-			align-items: center;
-			padding-left: 15px;
-		}
-		.spBtnMenu{display: none;}
-		.nav.layer1{
-			ul{
+			> .colR{
 				display: flex;
+				justify-content: right;
 				align-items: center;
-				font-size: 1.6rem;
-				border-right: 1px dotted #929292;
-				> li{
-					padding: 5px 15px;
-					border-left: 1px dotted #929292;
-					a{
-						display: inline-block;
-						text-align: center;
-						br{
-							display: none;
+				padding-left: 15px;
+			}
+			.spBtnMenu{display: none;}
+			.nav.layer1{
+				ul{
+					display: flex;
+					align-items: center;
+					font-size: 1.6rem;
+					border-right: 1px dotted #929292;
+					> li{
+						padding: 5px 15px;
+						border-left: 1px dotted #929292;
+						a{
+							display: inline-block;
+							text-align: center;
+							&.show{
+								color: $mainColor;
+							}
 						}
-					}
-					.layer2{
-						display: none;
-						width: 100%;
-						padding-top: 30px;
-						color: #fff;
-						position: absolute;
-						top: 65px;
-						left: 0;
-						text-align: center;
-						.in{
-							background-color: rgba(53,143,49,0.8);
-							padding: 20px 10px;
-							a{
-								font-family: "Noto Sans Japanese";
-								font-size: 1.6rem;
-								& + a{
-									margin-left: 25px;
+						.layer2{
+							display: none;
+							width: 100%;
+							padding-top: 30px;
+							color: #fff;
+							position: absolute;
+							top: 65px;
+							left: 0;
+							text-align: center;
+							.in{
+								background-color: rgba(53,143,49,0.8);
+								padding: 20px 10px;
+								a{
+									font-family: "Noto Sans Japanese";
+									font-size: 1.6rem;
+									& + a{
+										margin-left: 25px;
+									}
 								}
 							}
 						}
-						&.show{
-							color: $mainColor;
-						}
-						br{
-							display: none;
-						}
-					}
-				}
-			}
-		}
-		.tel{
-			width: (185/1140) * $per;
-			margin-left: 35px;
-		}
-		.btnWrap{
-			margin-left: 20px;
-			a{
-				display: flex;
-				align-items: center;
-				font-size: 1.6rem;
-				@include hvr;
-				svg{
-					width: (22/16) * $em1;
-					height: (18/16) * $em1;
-				}
-				span{
-					display: inline-block;
-					font-family: "Noto Sans Japanese";
-					letter-spacing: -0.05em;
-					br{
-						display: none;
-					}
-				}
-			}
-		}
-	}
-	nav.layer2{
-		width: 100%;
-		color: #fff;
-		text-align: center;
-		position: relative;
-		ul{
-			li{
-				display: none;
-				background-color: rgba(53,143,49,0.8);
-				width: 100%;
-				padding: 20px 10px;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-			a{
-				font-family: "Noto Sans Japanese";
-				font-size: 1.6rem;
-				& + a{
-					margin-left: 25px;
-				}
-			}
-		}
-	}
-	@include mq($breakpoint:etc1){
-		.hdIn{
-			.nav.layer1{
-				ul{
-					font-size: 1.4rem;
-					li{
-						padding: 5px 10px;
 					}
 				}
 			}
 			.tel{
-				margin-left: 20px;
+				width: (185/1140) * $per;
+				margin-left: 35px;
 			}
 			.btnWrap{
-				margin-left: 10px;
+				margin-left: 20px;
 				a{
-					padding: 5px 10px;
-					font-size: 1.3rem;
+					display: flex;
+					align-items: center;
+					font-size: 1.6rem;
+					@include hvr;
+					svg{
+						width: (22/16) * $em1;
+						height: (18/16) * $em1;
+					}
 					span{
+						display: inline-block;
+						font-family: "Noto Sans Japanese";
+						letter-spacing: -0.05em;
 						br{
-							display: inline;
+							display: none;
 						}
 					}
 				}
 			}
 		}
 		nav.layer2{
+			width: 100%;
+			color: #fff;
+			text-align: center;
+			position: relative;
 			ul{
-				a{
-					font-size: 1.4rem;
+				li{
+					display: none;
+					background-color: rgba(53,143,49,0.8);
+					width: 100%;
+					padding: 20px 10px;
+					box-sizing: border-box;
+					position: absolute;
+					top: 0;
+					left: 0;
 				}
-			}
-		}
-	}
-	@include mq($breakpoint:etc2){
-		.hdIn{
-			.nav.layer1{
-				ul{
-					border-right: none;
-					li{
-						padding: 5px 7px;
-						border-left: none;
-						a{
-						}
+				a{
+					font-family: "Noto Sans Japanese";
+					font-size: 1.6rem;
+					& + a{
+						margin-left: 25px;
 					}
 				}
 			}
-			.tel{
-				width: 18%;
-				margin-left: 15px;
-			}
-			.btnWrap{
-				a{
-					font-size: 1.2rem;
-				}
-			}
 		}
-	}
-	@include mq($breakpoint:etc1){
-		.hdIn{
-			.nav{
-				ul{
-					font-size: 1.4rem;
-					li{
+		@include mq($breakpoint:etc1){
+			.hdIn{
+				.nav.layer1{
+					ul{
+						font-size: 1.4rem;
+						li{
+							padding: 5px 10px;
+						}
+					}
+				}
+				.tel{
+					margin-left: 20px;
+				}
+				.btnWrap{
+					margin-left: 10px;
+					a{
 						padding: 5px 10px;
-					}
-				}
-			}
-			.tel{
-				margin-left: 20px;
-			}
-			.btnWrap{
-				margin-left: 10px;
-				a{
-					padding: 5px 10px;
-					font-size: 1.3rem;
-					span{
-						br{
-							display: inline;
-						}
-					}
-				}
-			}
-		}
-	}
-	@include mq($breakpoint:l){
-		.hdIn{
-			padding: 15px 10px;
-			.nav{
-				ul{
-					font-size: 1.2rem;
-					li{
-						a{
+						font-size: 1.3rem;
+						span{
 							br{
 								display: inline;
 							}
@@ -227,38 +149,79 @@
 					}
 				}
 			}
-			.tel{
-				width: 24%;
-				margin-left: 15px;
-			}
-			.btnWrap{
-				a{
-					font-size: 1.2rem;
+			nav.layer2{
+				ul{
+					a{
+						font-size: 1.4rem;
+					}
 				}
 			}
 		}
-	}
-	@include mq($breakpoint:overEtc3){
-		.hdIn .nav.layer1 ul{
-			display: flex !important;
+		@include mq($breakpoint:etc2){
+			.hdIn{
+				.nav.layer1{
+					ul{
+						border-right: none;
+						li{
+							padding: 5px 7px;
+							border-left: none;
+							a{
+							}
+						}
+					}
+				}
+				.tel{
+					width: 18%;
+					margin-left: 15px;
+				}
+				.btnWrap{
+					a{
+						font-size: 1.2rem;
+					}
+				}
+			}
 		}
+		@include mq($breakpoint:l){
+			.hdIn{
+				padding: 15px 10px;
+				.nav{
+					ul{
+						font-size: 1.2rem;
+						li{
+							a{
+							}
+						}
+					}
+				}
+				.tel{
+					width: 18%;
+					margin-left: 15px;
+				}
+				.btnWrap{
+					a{
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}//pcHd
+	.spHd{
+		display: none;
 	}
 	@include mq($breakpoint:etc3){
-		.hdIn{
+		.pcHd{
+			display: none;
+		}
+		.spHd{
 			display: block;
-			height: auto;
-			padding: 0;
-			position: relative;
-			> .colL{
-				max-width: none;
+			.hdIn{
+				position: relative;
 				.logo{
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					max-width: none;
+					background-color: #fff;
 					height: (100/640) * 100vw;
-					text-align: center;
-					box-sizing: border-box;
 					a{
 						display: inline-block;
 						width: (213/640) * $per;
@@ -267,59 +230,90 @@
 						}
 					}
 				}
-			}
-			> .colR{
-				display: block;
-				padding-left: 0;
-			}
-			.spBtnMenu{
-				display: block;
-				background:url(../img/sp_btn_menu.png) 0 0 no-repeat;
-				background-size: 100% 100%;
-				width: (88/640) * $per;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				right: 0;
-			}
-			.nav.layer1{
-				position: relative;
-				ul{
-					display: none;
-					background-color: rgba(255,255,255,0.9);
-					width: 100%;
-					font-size: 14px;
-					border-bottom: 1px dotted #929292;
-					border-right: none;
+				.spBtnMenu{
+					background:url(../img/sp_btn_menu.png) 0 0 no-repeat;
+					background-size: 100% 100%;
+					width: (88/640) * $per;
+					height: 100%;
 					position: absolute;
 					top: 0;
-					left: 0;
-					li{
-						padding: 0;
-						border-top: 1px dotted #929292;
-						border-left: none;
-						a{
-							display: block;
-							padding: 12px;
-							position: relative;
-							@include arrow($bdc:$mainColor, $bdw:0.3em);
-							&:before{
-								margin: auto;
-								transform: rotate(135deg);
-								position: absolute;
-								top: 0;
-								bottom: 0;
-								right: 5px;
+					right: 0;
+				}
+				.nav.layer1{
+					position: relative;
+					> ul{
+						width: 100%;
+						font-size: 14px;
+						border-bottom: 1px dotted #333;
+						position: absolute;
+						top: 0;
+						left: 0;
+						> li{
+							> a{
+								display: block;
+								background-color: rgba(255,255,255,0.9);
+								padding: 0.8em 2.4em 0.8em 1em;
+								border-top: 1px dotted #333;
+								position: relative;
+								&.hasLower{
+									&:after{
+										content: "";
+										display: inline-block;
+										width: 0.9em;
+										height: 0.9em;
+										margin: auto;
+										border-style: solid;
+										border-width: 0.3em 0.3em 0 0;
+										border-color: $mainColor $mainColor transparent transparent;
+										box-sizing: border-box;
+										transform: rotate(135deg);
+										position: absolute;
+										top: -0.5em;
+										bottom: 0;
+										right: 1em;
+									}
+									&.show{
+										&:after{
+											transform: rotate(-45deg);
+											top: 0;
+											bottom: -0.5em;
+										}
+									}
+								}
+								&.noLower{
+									&:after{
+										content: "";
+										display: inline-block;
+										width: 0.9em;
+										height: 0.9em;
+										margin: auto;
+										border-style: solid;
+										border-width: 0.3em 0.3em 0 0;
+										border-color: $mainColor $mainColor transparent transparent;
+										box-sizing: border-box;
+										transform: rotate(45deg);
+										position: absolute;
+										top: 0;
+										bottom: 0;
+										right: 1.25em;
+									}
+								}
+							}
+							.nav.layer2{
+								display: none;
+								> a{
+									display: block;
+									background-color: rgba(53,143,49,0.8);
+									padding: 0.8em 2.4em 0.8em 2em;
+									color: #fff;
+									& + a{
+										border-top: 1px dotted  #fff;
+									}
+								}
 							}
 						}
 					}
 				}
-			}
-			.tel{
-				display: none;
-			}
-			.btnWrap{
-				display: none;
 			}
 		}
 	}
