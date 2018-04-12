@@ -1,2 +1,10 @@
+AuthType Basic 
+AuthName Login 
+AuthUserFile /home/sites/heteml/users26/b/u/s/buskers/web/wadakoubou.com/fani/.htpasswd 
+AuthGroupFile /dev/null 
+<LIMIT GET POST> 
+require valid-user 
+</LIMIT> 
+
 Options +Includes
 AddHandler server-parsed html
