@@ -11,17 +11,17 @@
 		margin-bottom: 8px;
 		@keyframes mainSld1{//1400pxは背景画像の横幅
 			0%{background-position: 0 top;}
-			100%{background-position: 1400px top;}
+			100%{background-position: 1860px top;}
 		}
 		@keyframes mainSld2{
 			0%{background-position: 0 top;}
-			100%{background-position: -1400px top;}
+			100%{background-position: -1860px top;}
 		}
 		.bg1{
 			background:url(../img/top/main_bg1.png) center top repeat-x;
 			height: 280px;
 			animation-name:mainSld1;
-			animation-duration: 20s;
+			animation-duration: 30s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			animation-fill-mode: forwards;
@@ -30,7 +30,7 @@
 			background:url(../img/top/main_bg2.png) center top repeat-x;
 			height: 280px;
 			animation-name:mainSld2;
-			animation-duration: 20s;
+			animation-duration: 30s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			animation-fill-mode: forwards;

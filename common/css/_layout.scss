@@ -43,8 +43,35 @@
 					a{
 						display: inline-block;
 						text-align: center;
+						br{
+							display: none;
+						}
+					}
+					.layer2{
+						display: none;
+						width: 100%;
+						padding-top: 30px;
+						color: #fff;
+						position: absolute;
+						top: 65px;
+						left: 0;
+						text-align: center;
+						.in{
+							background-color: rgba(53,143,49,0.8);
+							padding: 20px 10px;
+							a{
+								font-family: "Noto Sans Japanese";
+								font-size: 1.6rem;
+								& + a{
+									margin-left: 25px;
+								}
+							}
+						}
 						&.show{
 							color: $mainColor;
+						}
+						br{
+							display: none;
 						}
 					}
 				}
@@ -149,6 +176,59 @@
 			}
 			.tel{
 				width: 18%;
+				margin-left: 15px;
+			}
+			.btnWrap{
+				a{
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	@include mq($breakpoint:etc1){
+		.hdIn{
+			.nav{
+				ul{
+					font-size: 1.4rem;
+					li{
+						padding: 5px 10px;
+					}
+				}
+			}
+			.tel{
+				margin-left: 20px;
+			}
+			.btnWrap{
+				margin-left: 10px;
+				a{
+					padding: 5px 10px;
+					font-size: 1.3rem;
+					span{
+						br{
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include mq($breakpoint:l){
+		.hdIn{
+			padding: 15px 10px;
+			.nav{
+				ul{
+					font-size: 1.2rem;
+					li{
+						a{
+							br{
+								display: inline;
+							}
+						}
+					}
+				}
+			}
+			.tel{
+				width: 24%;
 				margin-left: 15px;
 			}
 			.btnWrap{
