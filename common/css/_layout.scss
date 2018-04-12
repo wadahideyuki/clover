@@ -242,6 +242,7 @@
 				.nav.layer1{
 					position: relative;
 					> ul{
+						display: none;
 						width: 100%;
 						font-size: 14px;
 						border-bottom: 1px dotted #333;
@@ -253,17 +254,23 @@
 								display: block;
 								background-color: rgba(255,255,255,0.9);
 								padding: 0.8em 2.4em 0.8em 1em;
+								text-shadow:
+									0 0 3px #fff,
+									0 0 3px #fff,
+									0 0 3px #fff,
+									0 0 5px #fff,
+									0 0 5px #fff;
 								border-top: 1px dotted #333;
 								position: relative;
 								&.hasLower{
 									&:after{
 										content: "";
 										display: inline-block;
-										width: 0.9em;
-										height: 0.9em;
+										width: 0.8em;
+										height: 0.8em;
 										margin: auto;
 										border-style: solid;
-										border-width: 0.3em 0.3em 0 0;
+										border-width: 0.2em 0.2em 0 0;
 										border-color: $mainColor $mainColor transparent transparent;
 										box-sizing: border-box;
 										transform: rotate(135deg);
@@ -306,6 +313,12 @@
 									background-color: rgba(53,143,49,0.8);
 									padding: 0.8em 2.4em 0.8em 2em;
 									color: #fff;
+									text-shadow:
+										0 0 3px $mainColor,
+										0 0 3px $mainColor,
+										0 0 3px $mainColor,
+										0 0 5px $mainColor,
+										0 0 5px $mainColor;
 									& + a{
 										border-top: 1px dotted  #fff;
 									}

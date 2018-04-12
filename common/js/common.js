@@ -90,7 +90,7 @@ $(".header .pcHd .nav.layer1 a").click(function(){
 
 //spヘッダーのメニューボタン
 $(".spBtnMenu").click(function(){
-	$(".header .nav.layer1 ul").slideToggle();
+	$(".header .spHd .nav.layer1 ul").slideToggle();
 	return false;
 });
 
