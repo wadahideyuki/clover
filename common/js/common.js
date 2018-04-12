@@ -91,7 +91,7 @@ $(".header .nav.layer1 a").click(function(){
 
 //spヘッダーのメニューボタン
 $(".spBtnMenu").click(function(){
-	$(".header .nav ul").slideToggle();
+	$(".header .nav.layer1 ul").slideToggle();
 	return false;
 });
 
