@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+  経営理念
+---------------------------------------*/
+.catManagement{
+}
+/* トップ */
+.catManagement.pageTop{
+	.content{
+		background-color: #f0f0f0;
+		padding: 90px 0 70px;
+		.block1{
+			margin-bottom: 60px;
+			text-align: center;
+			h3{
+				margin-bottom: 50px;
+				font-size: 3.5rem;
+			}
+			p{
+				font-size: 1.8rem;
+				& + p{
+					margin-top: 1em;
+					line-height: 2;
+				}
+			}
+		}
+		.menus{
+			> a{
+				display: flex;
+				color: #f8f8f8;
+				@include hvr;
+				& + a{
+					margin-top: 25px;
+				}
+				&:nth-child(even){
+					flex-direction: row-reverse;
+				}
+				&:before{
+					content: "";
+					display: block;
+					flex-shrink: 0;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					width: (811/1205) * $per;
+				}
+				&:nth-child(1):before{background-image: url(../img/management/menu01.png);}
+				&:nth-child(2):before{background-image: url(../img/management/menu02.png);}
+				&:nth-child(3):before{background-image: url(../img/management/menu03.png);}
+				> div{
+					background-color: $mainColor;
+					width: 100%;
+					padding: 70px 15px 80px;
+					text-align: center;
+					h4{
+						font-size: 3.5rem;
+						em{
+							display: block;
+							font-size: (50/35) * 1em;
+							opacity: 0.2;
+							&.szS{
+								font-size: (42/35) * 1em;
+							}
+						}
+						span{
+							display: block;
+							margin-top: 0.4em;
+						}
+					}
+					.btnWrap{
+						margin-top: 30px;
+						font-family: "Noto Sans Japanese";
+						span{
+							display: inline-flex;
+							align-items: center;
+							padding: 0.7em 1.5em;
+							font-size: 1.8rem;
+							border: 1px solid #f8f8f8;
+							@include arrow($bdc:#f8f8f8, $bdw:0.2em);
+							&:before{
+								width: 0.6em;
+								height: 0.6em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

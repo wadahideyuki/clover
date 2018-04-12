@@ -61,6 +61,25 @@ img{max-width: 100%;}
 		}
 	}
 }
+.ttl2{
+	margin-bottom: 30px;
+	text-align: center;
+	> div{
+		display: inline-block;
+		font-size: 5.0rem;
+		span{
+			display: block;
+			margin-bottom: (10/50) * 1em;
+			padding-bottom: (6/50) * 1em;
+			border-bottom: 1px solid #bdbdbd;
+		}
+		small{
+			display: block;
+			color: #bdbdbd;
+			font-size: (28/50) * 1em;
+		}
+	}
+}
 
 
 /* ボタン */

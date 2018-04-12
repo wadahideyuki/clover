@@ -7,6 +7,7 @@
  レイアウト
 ---------------------------------------*/
 .header{
+	border-bottom: 1px solid #ebe9e6;
 	.pcHd{
 		.hdIn{
 			display: flex;
@@ -335,7 +336,7 @@
 
 #pankz{
 	padding: 10px 20px;
-	color: #fff;
+	color: #202020;
 	font-family: "Noto Sans Japanese";
 	font-size: 14px;
 }

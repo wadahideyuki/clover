@@ -19,6 +19,11 @@ $iWP : 1;
 	.W#{$iWP}P{width: $iWP * 1% !important;}
 	$iWP: $iWP+1;
 }
+$iWV : 1;
+@while $iWV <= 100{
+	.W#{$iWV}P{width: $iWV * 1% !important;}
+	$iWV: $iWV+1;
+}
 
 /*-- Margin --*/
 @for $iMT from 0 through 100{
