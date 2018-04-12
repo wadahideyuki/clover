@@ -19,6 +19,10 @@ img{max-width: 100%;}
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	@include mq{
+		padding-left: (15/320) * $per;
+		padding-right: (15/320) * $per;
+	}
 }
 
 
@@ -38,7 +42,22 @@ img{max-width: 100%;}
 			display: block;
 			margin-bottom: 15px;
 			color: #3bab3e;
+			font-family: "Noto Sans Japanese";
 			font-size: 1.7rem;
+		}
+	}
+	@include mq{
+		margin-bottom: (40/640) * 100vw;
+		> div{
+			font-size: (3.5/2) * 1rem;
+			> .lines{
+				width: (93/640) * 100vw;
+				margin-bottom: (15/640) * 100vw;
+			} 
+			> em{
+				margin-bottom: (15/640) * 100vw;
+				font-size: (1.7/2) * 1rem;;
+			}
 		}
 	}
 }
@@ -68,11 +87,12 @@ img{max-width: 100%;}
 /* ライン */
 .lines{//5色の戦
 	display: flex;
+	height: 5px;
 	font-size: 0;
 	hr{
 		display: block;
 		width: 20%;
-		height: 5px;
+		height: 100%;
 		&:nth-child(1){background-color: #358f31;}
 		&:nth-child(2){background-color: #65bf2e;}
 		&:nth-child(3){background-color: #3bab3e;}
@@ -80,6 +100,7 @@ img{max-width: 100%;}
 		&:nth-child(5){background-color: #17ba6f;}
 	}
 	@include mq{
+		height: (5/640) * 100vw;
 	}
 }
 
@@ -89,6 +110,28 @@ img{max-width: 100%;}
 	display: flex;
 	@include mq{
 		display: block;
+	}
+}
+
+
+/*--------------------------------------
+ プラグイン
+---------------------------------------*/
+/* Slick */
+.slick-slider{margin-bottom: 0;}
+.slick-dots li{
+	background-color: #8c8c8c;
+	width: 15px;
+	height: 15px;
+	margin: 0 7.5px;
+	border-radius: 50%;
+	&.slick-active{
+		background-color: #4b972b;
+	}
+	@include mq{
+		width: (15/640) * 100vw;
+		height: (15/640) * 100vw;
+		margin: 0 (7.5/640) * 100vw;
 	}
 }
 

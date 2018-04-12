@@ -118,29 +118,23 @@
 
 .slick-dots
 {
+    display: block;
     position: absolute;
     bottom: -45px;
-
-    display: block;
-
     width: 100%;
     padding: 0;
-
     list-style: none;
-
+		font-size: 0;
     text-align: center;
 }
 .slick-dots li
 {
-    position: relative;
-
     display: inline-block;
-
+    position: relative;
     width: 20px;
     height: 20px;
     margin: 0 5px;
     padding: 0;
-
     cursor: pointer;
 }
 .slick-dots li button
@@ -148,7 +142,7 @@
     font-size: 0;
     line-height: 0;
 
-    display: block;
+    display: none;
 
     width: 20px;
     height: 20px;

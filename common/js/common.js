@@ -7,6 +7,9 @@ $(window).bind("load resize", function(){
 });//------------------winBndFncEnd
 
 
+/*--------------------
+      機能別
+--------------------*/
 //クリックスクロール
 function clkScrl(btn, pos){
 	btn.click(function(){
@@ -23,13 +26,6 @@ clkScrl($("a.teiki2"), 20);
 clkScrl($("a.teiki3"), -1);
 
 
-//spのメニューボタン
-$(".spNav1Btn").click(function(){
-	$(".header .nav1").slideToggle();
-	return false;
-});
-
-
 //スライド
 $(".slkBox1 ul").slick({
 	arrows:false,
@@ -37,20 +33,14 @@ $(".slkBox1 ul").slick({
 	slidesToShow:4,
 	responsive:[
 		{
-			breakpoint:2000,
-			settings:{
-				unslick:true
-			}
-		},
-		{
 			breakpoint:768,
 			settings:{
-				slideToShow:2
+				dots:true,
+				slidesToShow:2
 			}
 		}
 	]
 });
-
 
 
 //アコーディオン
@@ -59,6 +49,7 @@ $(".slkBox1 ul").slick({
 		$(this).next(".accCont").slideToggle();
 		return false;
 	});
+
 
 //タブの切替
 	$(".tabBox .tabs a").click(function(){
@@ -78,7 +69,75 @@ $(".slkBox1 ul").slick({
 	});
 
 
-	
+/*--------------------
+    レイアウト別
+--------------------*/
+//PCのヘッダーのnav
+$(".header .hdIn .nav .layer1 > li").hover(
+	function () {
+		$(this).children(".layer2").slideDown("fast");
+	},
+	function () {
+		$(this).children(".layer2").slideUp("fast");
+	}
+);
+
+
+//spヘッダーのメニューボタン
+$(".spBtnMenu").click(function(){
+	$(".header .nav ul").slideToggle();
+	return false;
+});
+
+//spフッターのアコーディオン
+$(".footer .part2 .layer1 > li h3").click(function(){
+	winW = $(window).width();
+	if(winW <= 767){
+		$(this).toggleClass("show");
+		$(this).next().slideToggle();
+	}
+	return false;
+});
+
+
+/*--------------------
+      ページ別
+--------------------*/
+/*----- トップ -----*/
+//サービスのスライド
+$(".topServiceSlk ul").slick({
+	arrows:false,
+	dots:false,
+	slidesToShow:3,
+	responsive:[
+		{
+			breakpoint:768,
+			settings:{
+				slidesToShow:1,
+				centerMode:true,
+				centerPadding:"20%"
+			}
+		}
+	]
+});
+
+//ニュースのスライド
+$(".topNewsSlk ul").slick({
+	arrows:false,
+	dots:false,
+	slidesToShow:4,
+	responsive:[
+		{
+			breakpoint:768,
+			settings:{
+				dots:true,
+				slidesToShow:2,
+				slidesToScroll:2
+			}
+		}
+	]
+});
+
 
 });//fncEnd
 

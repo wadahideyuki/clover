@@ -8,28 +8,29 @@
 ---------------------------------------*/
 .pageSitetop{
 	.main{
+		margin-bottom: 8px;
 		@keyframes mainSld1{//1400pxは背景画像の横幅
 			0%{background-position: 0 top;}
-			100%{background-position: 1400px top;}
+			100%{background-position: 1860px top;}
 		}
 		@keyframes mainSld2{
 			0%{background-position: 0 top;}
-			100%{background-position: -1400px top;}
+			100%{background-position: -1860px top;}
 		}
 		.bg1{
 			background:url(../img/top/main_bg1.png) center top repeat-x;
-			height: 279px;
+			height: 280px;
 			animation-name:mainSld1;
-			animation-duration: 20s;
+			animation-duration: 30s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			animation-fill-mode: forwards;
 		}
 		.bg2{
 			background:url(../img/top/main_bg2.png) center top repeat-x;
-			height: 275px;
+			height: 280px;
 			animation-name:mainSld2;
-			animation-duration: 20s;
+			animation-duration: 30s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			animation-fill-mode: forwards;
@@ -40,20 +41,72 @@
 			font-size: 4.5rem;
 			text-align: center;
 		}
+		@include mq{
+			margin-bottom: (8/640) * $per;
+			.bg1{
+				background-size: auto 100%;
+				height: 140px;
+			}
+			.bg2{
+				background-size: auto 100%;
+				height: 140px;
+			}
+			h2{
+				padding: (30/640) * $per (20/640) * $per;
+				font-size: 1.5rem;
+			}
+			@include mq{
+
+			}
+		}
 	}
 	.serviceZone{
 		background-color: #f2f2f2;
 		padding: 70px 0 60px;
 		text-align: center;
-		ul{
-			display: flex;
-			justify-content: space-between;
-			li{
-				width: 31%;
+		overflow: hidden;
+		.topServiceSlk{
+			margin: 0 -10px;
+			.liItem{
 				dl{
+					margin: 0 10px;
 					dt{
 						margin-bottom: 20px;
-						img{
+						span{
+							display: inline-block;
+							position: relative;
+							&:before{
+								z-index: 1;
+								content: "";
+								width: 100%;
+								height: 100%;
+								display: block;
+								background: #e3e3e3;
+								opacity: 0.5;
+								border-radius: 50%;
+								animation: rotation2 5s both infinite linear;
+								position: absolute;
+								left: 0;
+								top: 0;
+							}
+							&:after{
+								z-index: 1;
+								content: "";
+								width: 98%;
+								height: 98%;
+								display: block;
+								background: #e3e3e3;
+								border-radius: 50%;
+								opacity: 0.5;
+								animation: rotation1 4s both infinite linear;
+								position: absolute;
+								left: 2%;
+								top: 0;
+							}
+							img{
+								position: relative;
+								z-index: 3;
+							}
 						}
 					}
 					dd{
@@ -72,13 +125,50 @@
 				}
 			}
 		}
+		@include mq{
+			padding: (40/640) * $per 0 (65/640) * $per;
+			.inner{
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.topServiceSlk{
+				margin: 0;
+				.liItem{
+					dl{
+						margin: 0 5%;
+						dt{
+							margin-bottom: (20/640) * 100vw;
+							span{
+								&:before{
+								}
+								&:after{
+								}
+								img{
+								}
+							}
+						}
+						dd{
+							strong{
+								margin-bottom: (15/640) * 100vw;
+								font-size: 1.2rem;
+							}
+							p{
+								font-size: 0.7rem;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	.newsZone{
 		padding: 80px 0 70px;
-		.slkBox1{
+		.topNewsSlk{
+			margin: 0 -12px;
 			.liItem{
 				> a{
 					display: block;
+					margin: 0 12px;
 					@include hvr;
 				}
 				dl{
@@ -94,6 +184,211 @@
 							color: #666;
 						}
 						p{
+						}
+					}
+				}
+			}
+		}
+		@include mq{
+			padding: (124/640) * $per 0 (24/640) * $per;
+			.topNewsSlk{
+				.slick-slider{
+					padding-bottom: (40/640) * 100vw;
+				}
+				.slick-dots{
+					bottom: 0;
+				}
+				margin: 0 (-(12/640) * 100vw);
+				.liItem{
+					> a{
+						margin: 0 (12/640) * 100vw;
+					}
+					dl{
+						dt{
+							margin-bottom: (10/640) * 100vw;
+						}
+						dd{
+							font-size: 0.7rem;
+							small{
+							}
+							p{
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.officeZone{
+		background:linear-gradient(90deg, #89972c, #30972b);
+		padding: 50px 0 70px;
+		.inner{
+			max-width: 1400px;
+		}
+		.ttl1{
+			color: #fff;
+			> div{
+				> em{
+					color: inherit;
+				}
+			}
+		}
+		ul{
+			$officeZoneW: 1400;
+			$officeZoneH: 584;
+			padding-top: ($officeZoneH/$officeZoneW) * $per;
+			position: relative;
+			li{
+				position: absolute;
+				overflow: hidden;
+				&.item{
+					//幅
+					&Sendagaya{width:(273/$officeZoneW) * $per}
+					&Yoyogiuehara{width:(555/$officeZoneW) * $per}
+					&Hiroo{width:(272/$officeZoneW) * $per}
+					&Azabujuban{width:(272/$officeZoneW) * $per}
+					&Sangubasi{width:(272/$officeZoneW) * $per}
+					&Kagurazaka{width:(555/$officeZoneW) * $per}
+					&Yotuya{width:(272/$officeZoneW) * $per}
+					&Motoyawata{width:(272/$officeZoneW) * $per}
+					//位置 上下
+					&Sendagaya,
+					&Yoyogiuehara,
+					&Sangubasi,
+					&Motoyawata{top:0;}
+					&Hiroo,
+					&Azabujuban,
+					&Kagurazaka,
+					&Yotuya{bottom:0;}
+					//位置 左右
+					@mixin officeItemPos($officeItemPos){
+						left:($officeItemPos/$officeZoneW) * $per;
+					}
+					&Sendagaya{left:0;}
+					&Yoyogiuehara{@include officeItemPos(565);}
+					&Hiroo{@include officeItemPos(565);}
+					&Azabujuban{right: 0;}
+					&Sangubasi{@include officeItemPos(283);}
+					&Kagurazaka{left:0;}
+					&Yotuya{@include officeItemPos(847);}
+					&Motoyawata{right:0;}
+				}
+				a{
+					display: block;
+					@include scale11;
+					img{
+					}
+				}
+			}
+		}
+		@include mq{
+			padding: (54/640) * $per 0 (12/640) * $per;;
+			.inner{
+				max-width: none;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.ttl1{
+				> div{
+					> em{
+					}
+				}
+			}
+			ul{
+				$officeZoneW: 640;
+				$officeZoneH: 1291;
+				padding-top: ($officeZoneH/$officeZoneW) * $per;
+				li{
+					&.item{
+						//幅
+						&Sendagaya{width:(304/$officeZoneW) * $per}
+						&Yoyogiuehara{width:(303/$officeZoneW) * $per}
+						&Hiroo{width:(305/$officeZoneW) * $per}
+						&Azabujuban{width:(305/$officeZoneW) * $per}
+						&Sangubasi{width:(302/$officeZoneW) * $per}
+						&Kagurazaka{width:(301/$officeZoneW) * $per}
+						&Yotuya{width:(301/$officeZoneW) * $per}
+						&Motoyawata{width:(302/$officeZoneW) * $per}
+						//位置 上下
+						&Sendagaya{top: 0;bottom: auto;}
+						&Yoyogiuehara{top: (372/$officeZoneH) * $per;bottom: auto;}
+						&Sangubasi{top: 0;bottom: auto;}
+						&Motoyawata{top: auto;bottom: 0;}
+						&Hiroo{top: (674/$officeZoneH) * $per;bottom: auto;}
+						&Azabujuban{top: auto;bottom: 0;}
+						&Kagurazaka{top: (308/$officeZoneH) * $per;bottom: auto;}
+						&Yotuya{top: (707/$officeZoneH) * $per;bottom: auto;}
+						//位置 左右
+						&Sendagaya,
+						&Yoyogiuehara,
+						&Hiroo,
+						&Azabujuban{left:(12/$officeZoneW) * $per;right: auto;}
+						&Sangubasi,
+						&Kagurazaka,
+						&Yotuya,
+						&Motoyawata{left: auto;right:(12/$officeZoneW) * $per;}
+					}
+					a{
+						img{
+						}
+					}
+				}
+			}
+		}
+	}
+	.btmLinkZone{
+		.in{
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 0;
+			a{
+				display: block;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: (695/1400) * $per;
+				font-family: "Noto Sans Japanese";
+				@include hvr;
+				&.btnNo1{background-image: url(../img/top/btm_link_img01.png);}
+				&.btnNo2{background-image: url(../img/top/btm_link_img02.png);}
+				&:hover{text-decoration: none;}
+				dl{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					padding: 165px 10px 140px;
+					color: #fff;
+					font-weight: bold;
+					dt{
+						margin-bottom: 34px;
+						font-size: 3.6rem;
+					}
+					dd{
+						display: inline-block;
+						padding: 11px 48px;
+						font-size: 2.2rem;
+						border: 1px solid #fff;
+					}
+				}
+			}
+		}
+		@include mq{
+			.in{
+				display: block;
+				padding: (12/640) * $per;
+				a{
+					width: auto;
+					&.btnNo1{}
+					&.btnNo2{margin-top: (12/640) * 100vw;}
+					dl{
+						padding: (73/640) * 100vw (15/640) * 100vw (66/640) * 100vw;
+						dt{
+							margin-bottom: 0;
+							font-size: 1.8rem;
+						}
+						dd{
+							display: none;
 						}
 					}
 				}

@@ -2,14 +2,14 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>タイトル</title>
+<title>CLOVER</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
-<meta property="og:title" content="タイトル" />
+<meta property="og:title" content="CLOVER" />
 <meta property="og:site_name" content="CLOVER" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website">
@@ -27,28 +27,10 @@
 
 <body class="">
 <div class="wrapper pageSitetop">
-<header class="header">
-	<div class="lines"><hr><hr><hr><hr><hr></div>
 
-	<div class="hdIn">
-		<div class="colL">
-			<h1 class="logo"><a href="#"><img src="common/img/logo.png" alt=""></a></h1>
-		</div>
-		<div class="colR">
-			<nav class="nav">
-				<ul>
-					<li><a href="#">経営理念</a></li>
-					<li><a href="#">私たちについて</a></li>
-					<li><a href="#">デイサービス</a></li>
-					<li><a href="#">放課後等デイサービス</a></li>
-					<li><a href="#">採用情報</a></li>
-				</ul>
-			</nav>
-			<div class="tel"><img src="common/img/hd_tel.png" alt=""></div>
-			<div class="btnWrap"><a class="btn withIcn icnMail" href="#"><img src="common/img/hd_btn_txt.png" alt=""></a></div>
-		</div>
-	</div>
-</header>
+<!--ヘッダー-->
+<!--#include virtual="/common/inc/header.inc" -->
+<!--/ヘッダー-->
 
 
 <section class="main">
@@ -67,29 +49,29 @@
 				サービス
 			</div>
 		</h2>
-		<div class="spOfScrlX">
+		<div class="topServiceSlk">
 			<ul>
-				<li>
+				<li class="liItem">
 					<dl>
-						<dt><img src="common/img/top/service_img01.png" alt=""></dt>
+						<dt><span><img src="common/img/top/service_img01.png" alt=""></span></dt>
 						<dd>
 							<strong>デイサービス</strong>
 							<p>「休日に自宅やカフェでくつろいでいる」ような<br>新しいケア・サービスを目指しています。</p>
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="liItem">
 					<dl>
-						<dt><img src="common/img/top/service_img02.png" alt=""></dt>
+						<dt><span><img src="common/img/top/service_img02.png" alt=""></span></dt>
 						<dd>
 							<strong>放課後等デイサービス</strong>
 							<p>「居心地の良さ」と「２４時間３６５日介護」を<br>実現する宿泊サービス付きデイサービス</p>
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="liItem">
 					<dl>
-						<dt><img src="common/img/top/service_img03.png" alt=""></dt>
+						<dt><span><img src="common/img/top/service_img03.png" alt=""></span></dt>
 						<dd>
 							<strong>コンサルティング</strong>
 							<p>「居心地の良さ」と「２４時間３６５日介護」を<br>実現する宿泊サービス付きデイサービス</p>
@@ -111,7 +93,7 @@
 				ニュースリリース
 			</div>
 		</h2>
-		<div class="spSlkBox1">
+		<div class="topNewsSlk">
 			<ul>
 				<li class="liItem">
 					<a href="#">
@@ -163,15 +145,106 @@
 </section>
 
 
+<section class="officeZone">
+	<div class="inner">
+		<h2 class="ttl1">
+			<div>
+				<div class="lines"><hr><hr><hr><hr><hr></div>
+				<em>OFFICE</em>
+				事業所一覧
+			</div>
+		</h2>
+		<ul>
+			<li class="itemSendagaya">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_sendagaya.png">
+						<img src="common/img/top/office_img_sendagaya.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemYoyogiuehara">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_yoyogiuehara.png">
+						<img src="common/img/top/office_img_yoyogiuehara.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemHiroo">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_hiroo.png">
+						<img src="common/img/top/office_img_hiroo.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemAzabujuban">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_azabujuban.png">
+						<img src="common/img/top/office_img_azabujuban.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemSangubasi">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_sangubasi.png">
+						<img src="common/img/top/office_img_sangubasi.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemKagurazaka">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_kagurazaka.png">
+						<img src="common/img/top/office_img_kagurazaka.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemYotuya">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_yotuya.png">
+						<img src="common/img/top/office_img_yotuya.png" alt="">
+					</picture>
+				</a>
+			</li>
+			<li class="itemMotoyawata">
+				<a href="#">
+					<picture>
+						<source media="(max-width:767px)" srcset="common/img/top/sp_office_img_motoyawata.png">
+						<img src="common/img/top/office_img_motoyawata.png" alt="">
+					</picture>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
 
-<footer class="footer">
-	<div class="part1">
-		<img src="common/img/ft_tel.png" alt="">
+
+<section class="btmLinkZone">
+	<div class="in">
+		<a class="btnNo1" href="#">
+			<dl>
+				<dt>採用情報</dt>
+				<dd><span>詳細はこちら</span></dd>
+			</dl>
+		</a>
+		<a class="btnNo2" href="#">
+			<dl>
+				<dt>ブログ</dt>
+				<dd><span>詳細はこちら</span></dd>
+			</dl>
+		</a>
 	</div>
-	<div class="part2">
-		<img src="common/img/logo.png" alt="">
-	</div>
-</footer>
+</section>
+
+
+<!--フッター-->
+<!--#include virtual="/common/inc/footer.inc" -->
+<!--/フッター-->
 
 </div><!--/.wrapper-->
 </body>
