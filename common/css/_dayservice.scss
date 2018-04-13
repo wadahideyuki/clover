@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+  デイサービス
+---------------------------------------*/
+.catDayservice{
+}
+/* 事業所 */
+.catDayservice.pageOffice{
+	.acrdList{
+		> ul{
+			> li{
+				position: relative;
+				&:before{
+					content: "";
+					display: block;
+					background-color: $mainColor;
+					padding-top: (393/1400) * $per;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+				}
+			}
+		}
+		.accBox{
+			max-width: 1013px;
+			text-align: center;
+			position: relative;
+		}
+		.accBtn{
+			padding: 30px 0;
+			color: #fff;
+			font-size: 3.0rem;
+		}
+		.accCont{
+			.mainImg{
+				margin-bottom: 30px;
+			}
+			.thisLead{
+				margin-bottom: 30px;
+				font-size: 1.6rem;
+				line-height: (26/16);
+				@include noto;
+			}
+		}
+	}
+}
+

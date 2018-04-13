@@ -44,7 +44,7 @@ img{max-width: 100%;}
 		display: block;
 		margin-bottom: 15px;
 		color: #3bab3e;
-		font-family: "Noto Sans Japanese";
+		@include noto;
 		font-size: 1.7rem;
 	}
 	@include mq{
@@ -86,7 +86,7 @@ img{max-width: 100%;}
 /* テキスト */
 .lead1{
 	margin-bottom: 50px;
-	font-family: "Noto Sans Japanese";
+	@include noto;
 	font-size: 1.6rem;
 }
 

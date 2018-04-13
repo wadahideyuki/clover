@@ -62,7 +62,7 @@
 								background-color: rgba(53,143,49,0.8);
 								padding: 20px 10px;
 								a{
-									font-family: "Noto Sans Japanese";
+									@include noto;
 									font-size: 1.6rem;
 									& + a{
 										margin-left: 25px;
@@ -90,7 +90,7 @@
 					}
 					span{
 						display: inline-block;
-						font-family: "Noto Sans Japanese";
+						@include noto;
 						letter-spacing: -0.05em;
 						br{
 							display: none;
@@ -116,7 +116,7 @@
 					left: 0;
 				}
 				a{
-					font-family: "Noto Sans Japanese";
+					@include noto;
 					font-size: 1.6rem;
 					& + a{
 						margin-left: 25px;
@@ -337,14 +337,14 @@
 #pankz{
 	padding: 10px 20px;
 	color: #202020;
-	font-family: "Noto Sans Japanese";
+	@include noto;
 	font-size: 14px;
 }
 
 
 footer{
 	padding-bottom: 40px;
-	font-family: "Noto Sans Japanese";
+	@include noto;
 	text-align: center;
 	.part1{
 		background-color: #333;

@@ -75,7 +75,7 @@
 					}
 					.btnWrap{
 						margin-top: 30px;
-						font-family: "Noto Sans Japanese";
+						@include noto;
 						span{
 							display: inline-flex;
 							align-items: center;
@@ -103,7 +103,7 @@
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			font-family: "Noto Sans Japanese";
+			@include noto;
 			> li{
 				width: (238/1094) * $per;
 				margin-bottom: 50px;

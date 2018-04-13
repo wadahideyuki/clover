@@ -44,29 +44,29 @@ $(".slkBox1 ul").slick({
 
 
 //アコーディオン
-	$(".accBox .accBtn").click(function(){
-		$(this).toggleClass("show");
-		$(this).next(".accCont").slideToggle();
-		return false;
-	});
+$(".accBox .accBtn").click(function(){
+	$(this).toggleClass("show");
+	$(this).next(".accCont").slideToggle();
+	return false;
+});
 
 
 //タブの切替
-	$(".tabBox .tabs a").click(function(){
-		if($(this).hasClass("show")){
-			return false;
-		}else{
-			var thisTabBox = $(this).parents(".tabBox");
-			var tabNo = $(this).attr("class").replace("tab", "");
+$(".tabBox .tabs a").click(function(){
+	if($(this).hasClass("show")){
+		return false;
+	}else{
+		var thisTabBox = $(this).parents(".tabBox");
+		var tabNo = $(this).attr("class").replace("tab", "");
 
-			thisTabBox.find(".tabs a").removeClass("show");
-			$(this).addClass("show");
+		thisTabBox.find(".tabs a").removeClass("show");
+		$(this).addClass("show");
 
-			thisTabBox.find(".tabCont").removeClass("show");
-			thisTabBox.find(".tabCont.no" + tabNo).addClass("show");
-			return false;
-		}
-	});
+		thisTabBox.find(".tabCont").removeClass("show");
+		thisTabBox.find(".tabCont.no" + tabNo).addClass("show");
+		return false;
+	}
+});
 
 
 /*--------------------

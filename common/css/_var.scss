@@ -21,6 +21,9 @@ $color1:#fff;
 
 
 //mixin
+@mixin noto{//フォント Noto
+	font-family: "Noto Sans Japanese";
+}
 @mixin hvr($op:0.7){//ホバー
 	transition: 0.3s;
 	&:hover{
