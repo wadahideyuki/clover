@@ -45,7 +45,7 @@
 					flex-shrink: 0;
 					background-position: center center;
 					background-repeat: no-repeat;
-					background-size: 100%;
+					background-size: cover;
 					width: (811/1205) * $per;
 				}
 				&:nth-child(1):before{background-image: url(../img/management/menu01.png);}
