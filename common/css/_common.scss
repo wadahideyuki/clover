@@ -120,6 +120,37 @@ img{max-width: 100%;}
 }
 
 
+/* ボタン */
+.pageScrl{
+	display: flex;
+	justify-content: center;
+	.clkScrl{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		color: $mainColor;
+		@include noto;
+		border: 1px solid $mainColor;
+		border-radius: 50px;
+		&:before{
+			content: "";
+			display: inline-block;
+			content: "";
+			display: inline-block;
+			width: 0.6em;
+			height: 0.6em;
+			margin:-0.2em 0.5em 0 0;
+			border-style: solid;
+			border-width: 0.2em 0.2em 0 0;
+			border-color: $mainColor $mainColor transparent transparent;
+			box-sizing: border-box;
+			transform: rotate(135deg);
+		}
+	}
+}
+
+
 /* アイコン */
 .icnMail{@include icn("\f0e0");}
 

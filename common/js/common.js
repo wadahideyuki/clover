@@ -21,9 +21,9 @@ function clkScrl(btn, pos){
 		return false;
 	});
 }
-clkScrl($("a.teiki"), 0);
-clkScrl($("a.teiki2"), 20);
-clkScrl($("a.teiki3"), -1);
+clkScrl($("a.clkScrl"), 0);
+clkScrl($("a.clkScrl2"), 20);
+clkScrl($("a.clkScrl3"), -1);
 
 
 //スライド
