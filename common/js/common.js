@@ -151,6 +151,37 @@ $(".topNewsSlk ul").slick({
 });
 
 
+/*----- デイサービス -----*/
+//事業所のスライド
+var officeSlk = $(".officeSlk ul").slick({
+	arrows:true,
+	dots:false,
+	slidesToShow:4,
+	responsive:[
+		{
+			breakpoint:768,
+			settings:{
+				dots:true,
+				slidesToShow:2,
+				slidesToScroll:2
+			}
+		}
+	]
+});
+//アコーディオン内でのslick
+$(".catDayservice.pageOffice .accSlkBox .accBtn").click(function(){
+	if($(this).hasClass("show")){
+		$(this).removeClass("show");
+		$(this).next(".accCont").slideUp();
+	}else{
+		$(this).addClass("show");
+		$(this).next(".accCont").slideDown();
+		officeSlk.slick("setPosition");
+	}
+	return false;
+});
+
+
 });//fncEnd
 
 
