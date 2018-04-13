@@ -22,6 +22,9 @@ img{max-width: 100%;}
 	&.sz2{
 		max-width: 1000px;
 	}
+	&.sz3{
+		max-width: 800px;
+	}
 	@include mq{
 		padding-left: (15/320) * $per;
 		padding-right: (15/320) * $per;
@@ -91,6 +94,12 @@ img{max-width: 100%;}
 	margin-bottom: 50px;
 	@include noto;
 	font-size: 1.6rem;
+}
+
+
+/* 背景色 */
+.bgGrey1{
+	background-color: #f0f0f0;
 }
 
 
