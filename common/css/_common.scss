@@ -29,22 +29,23 @@ img{max-width: 100%;}
 /* タイトル */
 .ttl1{
 	margin-bottom: 45px;
+	font-size: 3.5rem;
+	line-height: 1;
 	text-align: center;
-	> div{
-		display: inline-block;
-		font-size: 3.5rem;
-		line-height: 1;
-		> .lines{
-			width: 93px;
-			margin:0 auto 15px;
-		} 
-		> em{
-			display: block;
-			margin-bottom: 15px;
-			color: #3bab3e;
-			font-family: "Noto Sans Japanese";
-			font-size: 1.7rem;
-		}
+	&:before{
+		content: "";
+		display: block;
+		background-color: $mainColor;
+		width: 93px;
+		height: 5px;
+		margin:0 auto (20/35) * 1em;
+	} 
+	em{
+		display: block;
+		margin-bottom: 15px;
+		color: #3bab3e;
+		font-family: "Noto Sans Japanese";
+		font-size: 1.7rem;
 	}
 	@include mq{
 		margin-bottom: (40/640) * 100vw;
@@ -79,6 +80,14 @@ img{max-width: 100%;}
 			font-size: (28/50) * 1em;
 		}
 	}
+}
+
+
+/* テキスト */
+.lead1{
+	margin-bottom: 50px;
+	font-family: "Noto Sans Japanese";
+	font-size: 1.6rem;
 }
 
 

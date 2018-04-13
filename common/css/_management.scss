@@ -7,11 +7,13 @@
   経営理念
 ---------------------------------------*/
 .catManagement{
+	.content{
+		background-color: #f0f0f0;
+	}
 }
 /* トップ */
 .catManagement.pageTop{
 	.content{
-		background-color: #f0f0f0;
 		padding: 90px 0 70px;
 		.block1{
 			margin-bottom: 60px;
@@ -92,5 +94,65 @@
 		}
 	}
 }
-
+/* ブログ一覧 */
+.catManagement.pageBlog{
+	.content{
+		padding: 50px 0;
+		text-align: center;
+		.blogList{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			font-family: "Noto Sans Japanese";
+			> li{
+				width: (238/1094) * $per;
+				margin-bottom: 50px;
+				a{
+					display: block;
+					dl{
+						dt{
+							padding-top: 100%;
+							font-size: 0;
+							border-radius: 50%;
+							overflow: hidden;
+							position: relative;
+							span{
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								img{
+									max-width: none;
+									height: 100%;
+									transition: 0.3s;
+								}
+							}
+						}
+						dd{
+							margin-top: 1em;
+							font-size: 1.6rem;
+							line-height: (24/16);
+						}
+					}
+					&:hover{
+						text-decoration: none;
+						dl{
+							dt{
+								span{
+									img{
+										transform: scale(1.1);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 

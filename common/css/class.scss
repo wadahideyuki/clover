@@ -21,7 +21,7 @@ $iWP : 1;
 }
 $iWV : 1;
 @while $iWV <= 100{
-	.W#{$iWV}P{width: $iWV * 1% !important;}
+	.W#{$iWV}V{width: $iWV * 1vw !important;}
 	$iWV: $iWV+1;
 }
 
@@ -62,7 +62,7 @@ $iWV : 1;
 }
 
 /*-- font-size --*/
-@for $iFz from 6 through 30{
+@for $iFz from 6 through 50{
 	.fz#{$iFz}{font-size: $iFz * 0.1rem;}
 }
 
@@ -119,7 +119,6 @@ $iWV : 1;
 
 
 
-
 @include mq{
 .pc{display: none !important;}
 
@@ -134,6 +133,11 @@ $spiWP : 1;
 @while $spiWP <= 100{
 	.spW#{$spiWP}P{width: $spiWP * 1% !important;}
 	$spiWP: $spiWP+1;
+}
+$spiWV : 1;
+@while $spiWV <= 100{
+	.spW#{$spiWV}V{width: $spiWV * 1vw !important;}
+	$spiWV: $spiWV+1;
 }
 
 /*-- Margin --*/
@@ -171,6 +175,23 @@ $spiWP : 1;
 	$iMLP: $iMLP+1;
 }
 
+@for $iMTV from 0 through 100{
+	.spMT#{$iMTV}V{margin-top: $iMTV * 1vw !important;}
+	$iMTV: $iMTV+1;
+}
+@for $iMRV from 0 through 100{
+	.spMR#{$iMRV}V{margin-right: $iMRV * 1vw !important;}
+	$iMRV: $iMRV+1;
+}
+@for $iMBV from 0 through 100{
+	.spMB#{$iMBV}V{margin-bottom: $iMBV * 1vw !important;}
+	$iMBV: $iMBV+1;
+}
+@for $iMLV from 0 through 100{
+	.spML#{$iMLV}V{margin-left: $iMLV * 1vw !important;}
+	$iMLV: $iMLV+1;
+}
+
 /*-- Padding --*/
 @for $iPT from 0 through 100{
 	.spPT#{$iPT}{padding-top: $iPT * 1px !important;}
@@ -206,8 +227,25 @@ $spiWP : 1;
 	$iPLP: $iPLP+1;
 }
 
+@for $iPTV from 0 through 100{
+	.spPT#{$iPTV}V{padding-top: $iPTV * 1vw !important;}
+	$iPTV: $iPTV+1;
+}
+@for $iPRV from 0 through 100{
+	.spPR#{$iPRV}V{padding-right: $iPRV * 1vw !important;}
+	$iPRV: $iPRV+1;
+}
+@for $iPBV from 0 through 100{
+	.spPB#{$iPBV}V{padding-bottom: $iPBV * 1vw !important;}
+	$iPBV: $iPBV+1;
+}
+@for $iPLV from 0 through 100{
+	.spPL#{$iPLV}V{padding-left: $iPLV * 1vw !important;}
+	$iPLV: $iPLV+1;
+}
+
 /*-- font-size --*/
-@for $iFz from 6 through 30{
+@for $iFz from 6 through 50{
 	.spFz#{$iFz}{font-size: $iFz * 0.1rem;}
 }
 
