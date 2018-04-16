@@ -271,7 +271,7 @@
 }
 /* デイサービスクローバーの一日 */
 .catDayservice.pageDay{
-	.dayZone{
+	.dayZone{//クローバーの１日
 		padding-top: 75px;
 		text-align: center;
 		.inner{
@@ -352,6 +352,10 @@
 							font-size: 2.2rem;
 							line-height: (30/22);
 							border-bottom: 1px solid $mainColor;
+							small{
+								display: inline-block;
+								font-size: (15/22) * 1em;
+							}
 						}
 						dd{
 							padding: 0 10px 10px 0;
@@ -386,10 +390,10 @@
 							dl{
 							}
 							dt{
-								padding: 0.5em 0 0.5em 10px;
+								padding: 0.5em 0 0.5em 20px;
 							}
 							dd{
-								padding: 0 0 10px 10px;
+								padding: 0 0 10px 20px;
 							}
 						}
 					}
@@ -411,8 +415,90 @@
 			}
 		}
 	}
-	.payZone{
+	.payZone{//利用料金
 		padding: 70px 0 120px;
+		.thisLead{
+			background-color: #fff;
+			padding: 30px 20px;
+			border-radius: 5px;
+			dt{
+				margin-bottom: 0.5em;
+				color: $mainColor;
+				font-size: 2.0rem;
+				font-weight: bold;
+			}
+			dd{
+				@include noto;
+				font-size: 1.6rem;
+				line-height: (26/16);
+			}
+		}
+		h4{
+			margin: (77/(23 * 1.4)) * 1em 0 (20/23) * 1em;
+			padding-bottom: (15/(23 * 1.4)) * 1em;
+			color: #000;
+			font-size: 2.3rem;
+			border-bottom: 2px solid #499745;
+		}
+		h5{
+			margin:2em 0 1em;
+			padding-left: 15px;
+			font-size: 1.6rem;
+			font-weight: bold;
+			position: relative;
+			&:before{
+				content: "";
+				display: inline-block;
+				background-color: #499745;
+				width: 4px;
+				position: absolute;
+				top: 5px;
+				bottom: 5px;
+				left: 0;
+			}
+		}
+		table{
+			width: 100%;
+			@include noto;
+			font-size: 1.6rem;
+			border: 1px solid #ccc;
+		}
+		th,
+		td{
+			padding: 8px 10px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		th{
+			background-color: #499745;
+			width: 200px;
+			color: #fff;
+		}
+		td{
+			background-color: #fff;
+		}
+		thead{
+			td{
+				background-color: #e5e5e7;
+			}
+		}
+		tbody{
+		}
+		small{
+			margin-top: 10px;
+			@include noto;
+			font-size: 1.2rem;
+		}
+		ul{
+			display: flex;
+			justify-content: space-between;
+			> li{
+				width: (380/800) * $per;
+				th{
+					width: 150px;
+				}
+			}
+		}
 	}
 }
 

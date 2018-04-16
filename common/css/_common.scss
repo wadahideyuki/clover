@@ -133,6 +133,7 @@ img{max-width: 100%;}
 		@include noto;
 		border: 1px solid $mainColor;
 		border-radius: 50px;
+		transition: 0.3s;
 		&:before{
 			content: "";
 			display: inline-block;
@@ -146,6 +147,15 @@ img{max-width: 100%;}
 			border-color: $mainColor $mainColor transparent transparent;
 			box-sizing: border-box;
 			transform: rotate(135deg);
+			transition: inherit;
+		}
+		&:hover{
+			background-color: $mainColor;
+			color: #fff;
+			text-decoration: none;
+			&:before{
+				border-color: #fff #fff transparent transparent;
+			}
 		}
 	}
 }
@@ -153,6 +163,24 @@ img{max-width: 100%;}
 
 /* アイコン */
 .icnMail{@include icn("\f0e0");}
+
+
+/* 注釈 */
+.note1{
+	display: block;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+
+
+/* リスト */
+.noteList1{
+	> li{
+		text-indent: -1em;
+		padding-left: 1em;
+	}
+}
 
 
 /* ライン */
@@ -197,6 +225,16 @@ img{max-width: 100%;}
 			height: 100%;
 		}
 	}
+}
+
+
+/* 箱 */
+.accBox{//アコーディオン
+}
+.accBtn{
+	cursor: pointer;
+}
+.accCont{
 }
 
 
