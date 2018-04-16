@@ -19,6 +19,12 @@ img{max-width: 100%;}
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	&.sz2{
+		max-width: 1000px;
+	}
+	&.sz3{
+		max-width: 800px;
+	}
 	@include mq{
 		padding-left: (15/320) * $per;
 		padding-right: (15/320) * $per;
@@ -29,22 +35,23 @@ img{max-width: 100%;}
 /* タイトル */
 .ttl1{
 	margin-bottom: 45px;
+	font-size: 3.5rem;
+	line-height: 1;
 	text-align: center;
-	> div{
-		display: inline-block;
-		font-size: 3.5rem;
-		line-height: 1;
-		> .lines{
-			width: 93px;
-			margin:0 auto 15px;
-		} 
-		> em{
-			display: block;
-			margin-bottom: 15px;
-			color: #3bab3e;
-			font-family: "Noto Sans Japanese";
-			font-size: 1.7rem;
-		}
+	&:before{
+		content: "";
+		display: block;
+		background-color: $mainColor;
+		width: 93px;
+		height: 5px;
+		margin:0 auto (20/35) * 1em;
+	} 
+	em{
+		display: block;
+		margin-bottom: 15px;
+		color: #3bab3e;
+		@include noto;
+		font-size: 1.7rem;
 	}
 	@include mq{
 		margin-bottom: (40/640) * 100vw;
@@ -60,6 +67,39 @@ img{max-width: 100%;}
 			}
 		}
 	}
+}
+.ttl2{
+	margin-bottom: 30px;
+	text-align: center;
+	> div{
+		display: inline-block;
+		font-size: 5.0rem;
+		span{
+			display: block;
+			margin-bottom: (10/50) * 1em;
+			padding-bottom: (6/50) * 1em;
+			border-bottom: 1px solid #bdbdbd;
+		}
+		small{
+			display: block;
+			color: #bdbdbd;
+			font-size: (28/50) * 1em;
+		}
+	}
+}
+
+
+/* テキスト */
+.lead1{
+	margin-bottom: 50px;
+	@include noto;
+	font-size: 1.6rem;
+}
+
+
+/* 背景色 */
+.bgGrey1{
+	background-color: #f0f0f0;
 }
 
 
@@ -80,8 +120,67 @@ img{max-width: 100%;}
 }
 
 
+/* ボタン */
+.pageScrl{
+	display: flex;
+	justify-content: center;
+	.clkScrl{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		color: $mainColor;
+		@include noto;
+		border: 1px solid $mainColor;
+		border-radius: 50px;
+		transition: 0.3s;
+		&:before{
+			content: "";
+			display: inline-block;
+			content: "";
+			display: inline-block;
+			width: 0.6em;
+			height: 0.6em;
+			margin:-0.2em 0.5em 0 0;
+			border-style: solid;
+			border-width: 0.2em 0.2em 0 0;
+			border-color: $mainColor $mainColor transparent transparent;
+			box-sizing: border-box;
+			transform: rotate(135deg);
+			transition: inherit;
+		}
+		&:hover{
+			background-color: $mainColor;
+			color: #fff;
+			text-decoration: none;
+			&:before{
+				border-color: #fff #fff transparent transparent;
+			}
+		}
+	}
+}
+
+
 /* アイコン */
 .icnMail{@include icn("\f0e0");}
+
+
+/* 注釈 */
+.note1{
+	display: block;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+
+
+/* リスト */
+.noteList1{
+	> li{
+		text-indent: -1em;
+		padding-left: 1em;
+	}
+}
 
 
 /* ライン */
@@ -102,6 +201,40 @@ img{max-width: 100%;}
 	@include mq{
 		height: (5/640) * 100vw;
 	}
+}
+
+
+/* 画像 */
+.circleImg{//画像を丸にする(画像は正方形～横長にする)
+	padding-top: 100%;
+	font-size: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	.imgWrap{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		img{
+			max-width: none;
+			height: 100%;
+		}
+	}
+}
+
+
+/* 箱 */
+.accBox{//アコーディオン
+}
+.accBtn{
+	cursor: pointer;
+}
+.accCont{
 }
 
 

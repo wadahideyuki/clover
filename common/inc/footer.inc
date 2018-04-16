@@ -46,38 +46,40 @@
 					<li>
 						<h3>経営理念</h3>
 						<ul class="layer2">
-							<li><a href="#">採用情報</a></li>
-							<li><a href="#">ブログ（利用者の様子）</a></li>
+							<li><a href="/management/">経営理念TOP</a></li>
+							<li><a href="/management/blog/">ブログ一覧</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>私たちについて</h3>
 						<ul class="layer2">
-							<li><a href="#">CLOVERとは（会社概要）</a></li>
-							<li><a href="#">トップメッセージ</a></li>
-							<li><a href="#">VALUE・VISION</a></li>
+							<li><a href="/about/">CLOVERとは</a></li>
+							<li><a href="/about/message/">トップメッセージ</a></li>
+							<li><a href="/about/value/">VALUE・VISION</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>デイサービス</h3>
 						<ul class="layer2">
-							<li><a href="#">クローバーの介護観</a></li>
-							<li><a href="#">クローバーの１日・利用料金</a></li>
-							<li><a href="#">事業所の紹介</a></li>
+							<li><a href="/dayservice/qa/">よくある質問</a></li>
+							<li><a href="/dayservice/office/">事業所</a></li>
+							<li><a href="/dayservice/care/">クローバーの介護観</a></li>
+							<li><a href="/dayservice/day/">クローバーの１日・利用料金</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>放課後等デイサービス</h3>
 						<ul class="layer2">
-							<li><a href="#">放課後等デイサービス</a></li>
+							<li><a href="/after/">放課後等デイサービスTOP</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>採用情報</h3>
 						<ul class="layer2">
-							<li><a href="#">人材育成への想い</a></li>
-							<li><a href="#">社員エピソード集</a></li>
-							<li><a href="#">募集要項</a></li>
+							<li><a href="/career/">採用情報TOP</a></li>
+							<li><a href="/career/train/">人材育成への想い</a></li>
+							<li><a href="/career/recruit/">募集要項</a></li>
+							<li><a href="/career/episode/">社員エピソード集</a></li>
 						</ul>
 					</li>
 				</ul>

@@ -117,7 +117,7 @@
 							font-weight: bold;
 						}
 						p{
-							font-family: "Noto Sans Japanese";
+							@include noto;
 							font-size: 1.6rem;
 							line-height: 1.5;
 						}
@@ -176,7 +176,7 @@
 						margin-bottom: 10px;
 					}
 					dd{
-						font-family: "Noto Sans Japanese";
+						@include noto;
 						font-size: 1.4rem;
 						line-height: (22/14);
 						small{
@@ -347,7 +347,7 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				width: (695/1400) * $per;
-				font-family: "Noto Sans Japanese";
+				@include noto;
 				@include hvr;
 				&.btnNo1{background-image: url(../img/top/btm_link_img01.png);}
 				&.btnNo2{background-image: url(../img/top/btm_link_img02.png);}

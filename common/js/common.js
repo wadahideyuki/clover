@@ -21,9 +21,9 @@ function clkScrl(btn, pos){
 		return false;
 	});
 }
-clkScrl($("a.teiki"), 0);
-clkScrl($("a.teiki2"), 20);
-clkScrl($("a.teiki3"), -1);
+clkScrl($("a.clkScrl"), 0);
+clkScrl($("a.clkScrl2"), 20);
+clkScrl($("a.clkScrl3"), -1);
 
 
 //スライド
@@ -44,65 +44,60 @@ $(".slkBox1 ul").slick({
 
 
 //アコーディオン
-	$(".accBox .accBtn").click(function(){
-		$(this).toggleClass("show");
-		$(this).next(".accCont").slideToggle();
-		return false;
-	});
+$(".accBox .accBtn").click(function(){
+	$(this).toggleClass("show");
+	$(this).next(".accCont").slideToggle();
+	return false;
+});
 
 
 //タブの切替
-	$(".tabBox .tabs a").click(function(){
-		if($(this).hasClass("show")){
-			return false;
-		}else{
-			var thisTabBox = $(this).parents(".tabBox");
-			var tabNo = $(this).attr("class").replace("tab", "");
+$(".tabBox .tabs a").click(function(){
+	if($(this).hasClass("show")){
+		return false;
+	}else{
+		var thisTabBox = $(this).parents(".tabBox");
+		var tabNo = $(this).attr("class").replace("tab", "");
 
-			thisTabBox.find(".tabs a").removeClass("show");
-			$(this).addClass("show");
+		thisTabBox.find(".tabs a").removeClass("show");
+		$(this).addClass("show");
 
-			thisTabBox.find(".tabCont").removeClass("show");
-			thisTabBox.find(".tabCont.no" + tabNo).addClass("show");
-			return false;
-		}
-	});
+		thisTabBox.find(".tabCont").removeClass("show");
+		thisTabBox.find(".tabCont.no" + tabNo).addClass("show");
+		return false;
+	}
+});
 
 
 /*--------------------
     レイアウト別
 --------------------*/
 //PCのヘッダーのnav
-<<<<<<< HEAD
-$(".header .hdIn .nav .layer1 > li").hover(
-	function () {
-		$(this).children(".layer2").slideDown("fast");
-	},
-	function () {
-		$(this).children(".layer2").slideUp("fast");
-	}
-);
-=======
-$(".header .nav.layer1 a").click(function(){
+$(".header .pcHd .nav.layer1 a").click(function(){
 	if($(this).hasClass("show")){
-		$(".header .nav.layer1 a").removeClass("show");
-		$(".header .nav.layer2 li").slideUp("fast");
+		$(".header .pcHd .nav.layer1 a").removeClass("show");
+		$(".header .pcHd .nav.layer2 li").slideUp("fast");
 	}else{
-		$(".header .nav.layer1 a").removeClass("show");
+		$(".header .pcHd .nav.layer1 a").removeClass("show");
 		$(this).addClass("show");
 		var hdNavNo = $(this).parent("li").attr("class").replace("hdNav", "");
 		console.log(hdNavNo);
-		$(".header .nav.layer2 li").slideUp("fast");
-		$(".header .nav.layer2 li.hdNavLower" + hdNavNo).slideDown("fast");
+		$(".header .pcHd .nav.layer2 li").slideUp("fast");
+		$(".header .pcHd .nav.layer2 li.hdNavLower" + hdNavNo).slideDown("fast");
 	}
 	return false;
 });
->>>>>>> b0d8131de9d74e7bc413c730cf783d828e673710
-
 
 //spヘッダーのメニューボタン
 $(".spBtnMenu").click(function(){
-	$(".header .nav ul").slideToggle();
+	$(".header .spHd .nav.layer1 ul").slideToggle();
+	return false;
+});
+
+//spヘッダーのNav
+$(".header .spHd .hasLower").click(function(){
+	$(this).toggleClass("show");
+	$(this).next().slideToggle();
 	return false;
 });
 
@@ -153,6 +148,37 @@ $(".topNewsSlk ul").slick({
 			}
 		}
 	]
+});
+
+
+/*----- デイサービス -----*/
+//事業所のスライド
+var officeSlk = $(".officeSlk ul").slick({
+	arrows:true,
+	dots:false,
+	slidesToShow:4,
+	responsive:[
+		{
+			breakpoint:768,
+			settings:{
+				dots:true,
+				slidesToShow:2,
+				slidesToScroll:2
+			}
+		}
+	]
+});
+//アコーディオン内でのslick
+$(".catDayservice.pageOffice .accSlkBox .accBtn").click(function(){
+	if($(this).hasClass("show")){
+		$(this).removeClass("show");
+		$(this).next(".accCont").slideUp();
+	}else{
+		$(this).addClass("show");
+		$(this).next(".accCont").slideDown();
+		officeSlk.slick("setPosition");
+	}
+	return false;
 });
 
 

@@ -7,228 +7,142 @@
  レイアウト
 ---------------------------------------*/
 .header{
-	.hdIn{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 90px;
-		padding: 0px 15px;
-		box-sizing: border-box;
-		> .colL{
-			max-width: (170/1400) * $per;
-			.logo{
-				max-width: 170px;
-				a{
-					display: block;
-					@include hvr;
+	border-bottom: 1px solid #ebe9e6;
+	.pcHd{
+		.hdIn{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 90px;
+			padding: 0px 15px;
+			box-sizing: border-box;
+			> .colL{
+				max-width: (170/1400) * $per;
+				.logo{
+					max-width: 170px;
+					a{
+						display: block;
+						@include hvr;
+					}
 				}
 			}
-		}
-		> .colR{
-			display: flex;
-			justify-content: right;
-			align-items: center;
-			padding-left: 15px;
-		}
-		.spBtnMenu{display: none;}
-<<<<<<< HEAD
-		.nav{
-			.layer1{
-=======
-		.nav.layer1{
-			ul{
->>>>>>> b0d8131de9d74e7bc413c730cf783d828e673710
+			> .colR{
 				display: flex;
+				justify-content: right;
 				align-items: center;
-				font-size: 1.6rem;
-				border-right: 1px dotted #929292;
-				> li{
-					padding: 5px 15px;
-					border-left: 1px dotted #929292;
-					a{
-						display: inline-block;
-						text-align: center;
-<<<<<<< HEAD
-						br{
-							display: none;
+				padding-left: 15px;
+			}
+			.spBtnMenu{display: none;}
+			.nav.layer1{
+				ul{
+					display: flex;
+					align-items: center;
+					font-size: 1.6rem;
+					border-right: 1px dotted #929292;
+					> li{
+						padding: 5px 15px;
+						border-left: 1px dotted #929292;
+						a{
+							display: inline-block;
+							text-align: center;
+							&.show{
+								color: $mainColor;
+							}
 						}
-					}
-					.layer2{
-						display: none;
-						width: 100%;
-						padding-top: 30px;
-						color: #fff;
-						position: absolute;
-						top: 65px;
-						left: 0;
-						text-align: center;
-						.in{
-							background-color: rgba(53,143,49,0.8);
-							padding: 20px 10px;
-							a{
-								font-family: "Noto Sans Japanese";
-								font-size: 1.6rem;
-								& + a{
-									margin-left: 25px;
+						.layer2{
+							display: none;
+							width: 100%;
+							padding-top: 30px;
+							color: #fff;
+							position: absolute;
+							top: 65px;
+							left: 0;
+							text-align: center;
+							.in{
+								background-color: rgba(53,143,49,0.8);
+								padding: 20px 10px;
+								a{
+									@include noto;
+									font-size: 1.6rem;
+									& + a{
+										margin-left: 25px;
+									}
 								}
 							}
 						}
-=======
-						&.show{
-							color: $mainColor;
-						}
+					}
+				}
+			}
+			.tel{
+				width: (185/1140) * $per;
+				margin-left: 35px;
+			}
+			.btnWrap{
+				margin-left: 20px;
+				a{
+					display: flex;
+					align-items: center;
+					font-size: 1.6rem;
+					@include hvr;
+					svg{
+						width: (22/16) * $em1;
+						height: (18/16) * $em1;
+					}
+					span{
+						display: inline-block;
+						@include noto;
+						letter-spacing: -0.05em;
 						br{
 							display: none;
 						}
->>>>>>> b0d8131de9d74e7bc413c730cf783d828e673710
 					}
 				}
 			}
 		}
-		.tel{
-			width: (185/1140) * $per;
-			margin-left: 35px;
-		}
-		.btnWrap{
-			margin-left: 20px;
-			a{
-				display: flex;
-				align-items: center;
-				font-size: 1.6rem;
-				@include hvr;
-				svg{
-					width: (22/16) * $em1;
-					height: (18/16) * $em1;
+		nav.layer2{
+			width: 100%;
+			color: #fff;
+			text-align: center;
+			position: relative;
+			ul{
+				li{
+					display: none;
+					background-color: rgba(53,143,49,0.8);
+					width: 100%;
+					padding: 20px 10px;
+					box-sizing: border-box;
+					position: absolute;
+					top: 0;
+					left: 0;
 				}
-				span{
-					display: inline-block;
-					font-family: "Noto Sans Japanese";
-					letter-spacing: -0.05em;
-					br{
-						display: none;
+				a{
+					@include noto;
+					font-size: 1.6rem;
+					& + a{
+						margin-left: 25px;
 					}
-<<<<<<< HEAD
-=======
 				}
 			}
 		}
-	}
-	nav.layer2{
-		width: 100%;
-		color: #fff;
-		text-align: center;
-		position: relative;
-		ul{
-			li{
-				display: none;
-				background-color: rgba(53,143,49,0.8);
-				width: 100%;
-				padding: 20px 10px;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-			a{
-				font-family: "Noto Sans Japanese";
-				font-size: 1.6rem;
-				& + a{
-					margin-left: 25px;
+		@include mq($breakpoint:etc1){
+			.hdIn{
+				.nav.layer1{
+					ul{
+						font-size: 1.4rem;
+						li{
+							padding: 5px 10px;
+						}
+					}
 				}
-			}
-		}
-	}
-	@include mq($breakpoint:etc1){
-		.hdIn{
-			.nav.layer1{
-				ul{
-					font-size: 1.4rem;
-					li{
+				.tel{
+					margin-left: 20px;
+				}
+				.btnWrap{
+					margin-left: 10px;
+					a{
 						padding: 5px 10px;
-					}
-				}
-			}
-			.tel{
-				margin-left: 20px;
-			}
-			.btnWrap{
-				margin-left: 10px;
-				a{
-					padding: 5px 10px;
-					font-size: 1.3rem;
-					span{
-						br{
-							display: inline;
-						}
-					}
-				}
-			}
-		}
-	}
-	@include mq($breakpoint:etc2){
-		.hdIn{
-			padding: 15px 10px;
-			.nav.layer1{
-				ul{
-					font-size: 1.2rem;
-					border-right: none;
-					li{
-						padding: 5px;
-						border-left: none;
-						a{
-							br{
-							}
-						}
-					}
-				}
-			}
-			.tel{
-				width: 24%;
-				margin-left: 15px;
-			}
-			.btnWrap{
-				a{
-					font-size: 1.2rem;
->>>>>>> b0d8131de9d74e7bc413c730cf783d828e673710
-				}
-			}
-		}
-	}
-<<<<<<< HEAD
-	@include mq($breakpoint:etc1){
-		.hdIn{
-			.nav{
-				ul{
-					font-size: 1.4rem;
-					li{
-						padding: 5px 10px;
-					}
-				}
-			}
-			.tel{
-				margin-left: 20px;
-			}
-			.btnWrap{
-				margin-left: 10px;
-				a{
-					padding: 5px 10px;
-					font-size: 1.3rem;
-					span{
-						br{
-							display: inline;
-						}
-					}
-				}
-			}
-		}
-	}
-	@include mq($breakpoint:l){
-		.hdIn{
-			padding: 15px 10px;
-			.nav{
-				ul{
-					font-size: 1.2rem;
-					li{
-						a{
+						font-size: 1.3rem;
+						span{
 							br{
 								display: inline;
 							}
@@ -236,90 +150,184 @@
 					}
 				}
 			}
-			.tel{
-				width: 24%;
-				margin-left: 15px;
-			}
-			.btnWrap{
-				a{
-					font-size: 1.2rem;
-				}
-			}
-		}
-	}
-	@include mq($breakpoint:pc){
-		.hdIn .nav .layer1{
-=======
-	@include mq($breakpoint:pc){
-		.hdIn .nav.layer1 ul{
->>>>>>> b0d8131de9d74e7bc413c730cf783d828e673710
-			display: flex !important;
-		}
-	}
-	@include mq{
-		.hdIn{
-			display: block;
-			padding: 0;
-			position: relative;
-			> .colL{
-				max-width: none;
-				.logo{
-					max-width: none;
-					height: (100/640) * 100vw;
-					padding-top: (25/640) * $per;
-					text-align: center;
-					box-sizing: border-box;
+			nav.layer2{
+				ul{
 					a{
-						display: inline-block;
-						max-width: (213/640) * $per;
+						font-size: 1.4rem;
 					}
 				}
 			}
-			> .colR{
-				display: block;
-				padding-left: 0;
-			}
-			.spBtnMenu{
-				display: block;
-				background:url(../img/sp_btn_menu.png) 0 0 no-repeat;
-				background-size: 100% 100%;
-				width: (88/640) * $per;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				right: 0;
-			}
-			.nav{
-				position: relative;
-				ul{
-					display: none;
-					background-color: rgba(255,255,255,0.9);
-					width: 100%;
-					font-size: 16px;
-					border-bottom: 1px dotted #929292;
-					border-right: none;
-					position: absolute;
-					top: 0;
-					left: 0;
-					li{
-						padding: 0;
-						border-top: 1px dotted #929292;
-						border-left: none;
-						a{
-							display: block;
-							padding: 3%;
-							br{
-								display: none;
+		}
+		@include mq($breakpoint:etc2){
+			.hdIn{
+				.nav.layer1{
+					ul{
+						border-right: none;
+						li{
+							padding: 5px 7px;
+							border-left: none;
+							a{
 							}
 						}
 					}
 				}
+				.tel{
+					width: 18%;
+					margin-left: 15px;
+				}
+				.btnWrap{
+					a{
+						font-size: 1.2rem;
+					}
+				}
 			}
-			.tel{
-				display: none;
+		}
+		@include mq($breakpoint:l){
+			.hdIn{
+				padding: 15px 10px;
+				.nav{
+					ul{
+						font-size: 1.2rem;
+						li{
+							a{
+							}
+						}
+					}
+				}
+				.tel{
+					width: 18%;
+					margin-left: 15px;
+				}
+				.btnWrap{
+					a{
+						font-size: 1.2rem;
+					}
+				}
 			}
-			.btnWrap{
-				display: none;
+		}
+	}//pcHd
+	.spHd{
+		display: none;
+	}
+	@include mq($breakpoint:etc3){
+		.pcHd{
+			display: none;
+		}
+		.spHd{
+			display: block;
+			.hdIn{
+				position: relative;
+				.logo{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #fff;
+					height: (100/640) * 100vw;
+					a{
+						display: inline-block;
+						width: (213/640) * $per;
+						img{
+							width: 100%;
+						}
+					}
+				}
+				.spBtnMenu{
+					background:url(../img/sp_btn_menu.png) 0 0 no-repeat;
+					background-size: 100% 100%;
+					width: (88/640) * $per;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+				.nav.layer1{
+					position: relative;
+					> ul{
+						display: none;
+						width: 100%;
+						font-size: 14px;
+						border-bottom: 1px dotted #333;
+						position: absolute;
+						top: 0;
+						left: 0;
+						> li{
+							> a{
+								display: block;
+								background-color: rgba(255,255,255,0.9);
+								padding: 0.8em 2.4em 0.8em 1em;
+								text-shadow:
+									0 0 3px #fff,
+									0 0 3px #fff,
+									0 0 3px #fff,
+									0 0 5px #fff,
+									0 0 5px #fff;
+								border-top: 1px dotted #333;
+								position: relative;
+								&.hasLower{
+									&:after{
+										content: "";
+										display: inline-block;
+										width: 0.8em;
+										height: 0.8em;
+										margin: auto;
+										border-style: solid;
+										border-width: 0.2em 0.2em 0 0;
+										border-color: $mainColor $mainColor transparent transparent;
+										box-sizing: border-box;
+										transform: rotate(135deg);
+										position: absolute;
+										top: -0.5em;
+										bottom: 0;
+										right: 1em;
+									}
+									&.show{
+										&:after{
+											transform: rotate(-45deg);
+											top: 0;
+											bottom: -0.5em;
+										}
+									}
+								}
+								&.noLower{
+									&:after{
+										content: "";
+										display: inline-block;
+										width: 0.9em;
+										height: 0.9em;
+										margin: auto;
+										border-style: solid;
+										border-width: 0.3em 0.3em 0 0;
+										border-color: $mainColor $mainColor transparent transparent;
+										box-sizing: border-box;
+										transform: rotate(45deg);
+										position: absolute;
+										top: 0;
+										bottom: 0;
+										right: 1.25em;
+									}
+								}
+							}
+							.nav.layer2{
+								display: none;
+								> a{
+									display: block;
+									background-color: rgba(53,143,49,0.8);
+									padding: 0.8em 2.4em 0.8em 2em;
+									color: #fff;
+									text-shadow:
+										0 0 3px $mainColor,
+										0 0 3px $mainColor,
+										0 0 3px $mainColor,
+										0 0 5px $mainColor,
+										0 0 5px $mainColor;
+									& + a{
+										border-top: 1px dotted  #fff;
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -328,15 +336,15 @@
 
 #pankz{
 	padding: 10px 20px;
-	color: #fff;
-	font-family: "Noto Sans Japanese";
+	color: #202020;
+	@include noto;
 	font-size: 14px;
 }
 
 
 footer{
 	padding-bottom: 40px;
-	font-family: "Noto Sans Japanese";
+	@include noto;
 	text-align: center;
 	.part1{
 		background-color: #333;
