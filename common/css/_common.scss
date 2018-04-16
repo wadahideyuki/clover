@@ -55,16 +55,10 @@ img{max-width: 100%;}
 	}
 	@include mq{
 		margin-bottom: (40/640) * 100vw;
-		> div{
-			font-size: (3.5/2) * 1rem;
-			> .lines{
-				width: (93/640) * 100vw;
-				margin-bottom: (15/640) * 100vw;
-			} 
-			> em{
-				margin-bottom: (15/640) * 100vw;
-				font-size: (1.7/2) * 1rem;;
-			}
+		font-size: (3.5/2) * 1rem;
+		> em{
+			margin-bottom: (15/640) * 100vw;
+			font-size: (1.7/2) * 1rem;;
 		}
 	}
 }
@@ -84,6 +78,17 @@ img{max-width: 100%;}
 			display: block;
 			color: #bdbdbd;
 			font-size: (28/50) * 1em;
+		}
+	}
+	@include mq{
+		margin-bottom: (28/640) * 100vw;
+		> div{
+			font-size: 2.6rem;
+			span{
+			}
+			small{
+				font-size: (18/26) * 1em;
+			}
 		}
 	}
 }

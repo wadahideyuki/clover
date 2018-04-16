@@ -220,18 +220,40 @@
 				margin-top: 1em;
 			}
 			em{
+				background:linear-gradient(transparent 40%, #fc0 40%, #fc0 90%, transparent 90%);
 				position: relative;
-				&:before{
-					content: "";
-					background-color: #ffcc00;
-					width: 100%;
-					height: (11/16) * 1em;
-					position: absolute;
-					bottom: 0.1em;
-					left: 0;
+			}
+		}
+	}
+	@include mq{
+		.content{
+			padding: (25/320) * $per 0 (30/320) * $per;
+		}
+		.accBox{
+			> li{
+			}
+		}
+		.accBtn{
+			padding: (15/320) * 100vw 3em (15/320) * 100vw 0;
+			font-size: 1.6rem;
+			&:after{
+				width: (20/30) * 1em;
+				height: (20/30) * 1em;
+				right: 1%;
+			}
+			&.show{
+				&:after{
 				}
-				span{
-					position: relative;
+			}
+		}
+		.accCont{
+			padding-bottom: (15/320) * 100vw;
+			font-size: 1.4rem;
+			line-height: 1.5;
+			p{
+				& + p{
+				}
+				em{
 				}
 			}
 		}
