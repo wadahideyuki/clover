@@ -144,20 +144,25 @@
 		dl{
 			dt{
 				position: relative;
+				overflow: hidden;
 				h3{
-					color: #fff;
+					color: #f0f0f0;
 					font-size: 14.0rem;
 					text-align: left;
 					line-height: 1;
 					position: absolute;
-					bottom: 0;
+					bottom: -0.2em;
 					left: 40px;
+					@media all and (-ms-high-contrast:none) {
+						bottom: -0.35em;
+					}
 					small{
 						display: block;
 						font-size: (33/140) * 1em;
 					}
 					span{
 						display: block;
+						margin-top: 0.1em;
 						vertical-align: bottom;
 					}
 				}
@@ -165,7 +170,7 @@
 			dd{
 				padding: 60px 15px 90px;
 				h4{
-					margin-bottom: 40px;
+					margin-bottom: 30px;
 					font-size: 3.5rem;
 				}
 				p{
@@ -178,6 +183,16 @@
 					h3{
 						left: auto;
 						right: 40px;
+					}
+				}
+			}
+			&:nth-child(3){
+				dd{
+					h4{
+						margin-bottom: 10px;
+					}
+					p + h4{
+						margin-top: 50px;
 					}
 				}
 			}

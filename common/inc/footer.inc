@@ -53,7 +53,8 @@
 					<li>
 						<h3>私たちについて</h3>
 						<ul class="layer2">
-							<li><a href="/about/">CLOVERとは</a></li>
+							<li><a href="/about/">私たちについてTOP</a></li>
+							<li><a href="/about/clover/">CLOVERとは</a></li>
 							<li><a href="/about/message/">トップメッセージ</a></li>
 							<li><a href="/about/value/">VALUE・VISION</a></li>
 						</ul>

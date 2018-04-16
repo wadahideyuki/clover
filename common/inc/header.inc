@@ -32,7 +32,8 @@
 					<a href="/management/blog/">ブログ一覧</a>
 				</li>
 				<li class="hdNavLower2">
-					<a href="/about/">CLOVERとは</a>
+					<a href="/about/">私たちについてTOP</a>
+					<a href="/about/clover/">CLOVERとは</a>
 					<a href="/about/message/">トップメッセージ</a>
 					<a href="/about/value/">VALUE・VISION</a>
 				</li>
@@ -71,7 +72,8 @@
 					<li>
 						<a class="hasLower" href="#">私たちについて</a>
 						<nav class="nav layer2">
-							<a href="/about/">CLOVERとは</a>
+							<a href="/about/">私たちについてTOP</a>
+							<a href="/about/clover/">CLOVERとは</a>
 							<a href="/about/message/">トップメッセージ</a>
 							<a href="/about/value/">VALUE・VISION</a>
 						</nav>
