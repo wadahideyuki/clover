@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+  私たちについて
+---------------------------------------*/
+.catAbout{
+}
+/* トップ */
+.catAbout.pageTop{
+	.links{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 45px 0 35px;
+		li{
+			background-color: #fff;
+			margin-bottom: 30px;
+			width: (479/1000) * $per;
+			border-radius: 5px;
+			overflow: hidden;
+			> *{
+				display: block;
+				dl{
+				}
+				dt{
+					overflow: hidden;
+				}
+				dd{
+					padding: 20px 30px;
+					strong{
+						display: block;
+						color: $mainColor;
+						font-size: 2.0rem;
+						line-height: (36/20);
+					}
+					p{
+						@include noto;
+						font-size: 1.6rem;
+					}
+				}
+			}
+			> a{
+				img{
+					transition: 0.3s;
+				}
+				&:hover{
+					text-decoration: none;
+					img{
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}
+/* CLOVERとは */
+.catAbout.pageClover{
+	background: #f0f0f0;
+	padding-bottom: 50px;
+	h3{
+			font-size: 2.3rem;
+			border-bottom: 2px solid #499745;
+			padding: 0 0 10px 0;
+			font-weight: 600;
+			margin: 0 0 10px 0;
+		}
+		table{
+			width: 100%;
+			font-size: 1.6rem;
+			line-height: 1.8;
+			font-family: "Noto Sans Japanese";
+		}
+		tr:last-child{
+			td,th{
+				border: none;
+			}
+		}
+		th,td{
+			padding: 8px 0;
+			border-bottom: 1px dotted #CCC;
+		}
+		th{
+			width: 20%;
+		}
+	.table-wrap{
+		background: #FFF;
+		max-width: 800px;
+		margin: 0 auto 50px auto;
+		padding: 30px 50px 30px 50px;
+		box-sizing: border-box;
+		
+	}
+	.histry-table{
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		th{
+			font-weight: bold;
+			vertical-align: top;
+		}
+		td{
+			p{
+				padding: 10px 0;
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+/* トップメッセージ */
+.catAbout.pageMessage{
+}
+/* VALUE・VISION */
+.catAbout.pageValue{
+}
