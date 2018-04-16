@@ -340,7 +340,7 @@
 	@include noto;
 	font-size: 14px;
 	@include mq{
-		padding: (5/320) * $per (10/320) * $per (10/320) * $per;
+		padding: (5/320) * $per (10/320) * $per (15/320) * $per;
 		font-size: 1.0rem;
 	}
 }

@@ -161,6 +161,7 @@ var officeSlk = $(".officeSlk ul").slick({
 		{
 			breakpoint:768,
 			settings:{
+				arrows:false,
 				dots:true,
 				slidesToShow:2,
 				slidesToScroll:2

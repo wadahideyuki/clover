@@ -167,6 +167,98 @@
 			}
 		}
 	}
+	@include mq{
+		.acrdList{
+		> ul{
+			> li{
+				&:before{
+					padding-top: 40%;
+				}
+			}
+		}
+		.accSlkBox{
+			text-align: left;
+		}
+		.accBtn{
+			padding: (15/320) * $per (40/320) * $per (15/320) * $per (15/320) * $per;
+			font-size: 1.6rem;
+			&:after{
+				right: 6%;
+			}
+			&.show{
+				&:after{
+				}
+			}
+		}
+		.accCont{
+			padding-bottom: (10/320) * $per;
+			.mainImg{
+				margin-bottom: (20/320) * $per;
+			}
+			.thisLead{
+				margin-bottom: (20/320) * $per;
+				font-size: 1.4rem;
+				line-height: 1.4;
+			}
+			.officeSlk{
+				margin-bottom: 10%;
+				padding: 0;
+				.slick-slider{
+					padding-bottom: 10%;
+				}
+				.slick-dots{
+					bottom: 0;
+				}
+				.slick-list{
+					margin: 0 -5px;
+				}
+				.liItem{
+					padding: 0 5px;
+				}
+			}
+			.infoBox{
+				> ul{
+					display: block;
+					> li{
+						width: auto;
+						& + li{
+							margin-top: 10%;
+						}
+						dt{
+							margin-bottom: 1em;
+							font-size: 2.0rem;
+							text-align: center;
+							span{
+								padding-bottom: 1%;
+							}
+						}
+						&.access{
+							dd{
+								iframe{
+								}
+							}
+						}
+						&.gaiyo{
+							dd{
+								table{
+									$padTB: 2%;
+									tr{
+									}
+									th{
+										padding: $padTB 5% $padTB 0;
+									}
+									td{
+										padding: $padTB 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	}
 }
 /* よくある質問 */
 .catDayservice.pageQa{
