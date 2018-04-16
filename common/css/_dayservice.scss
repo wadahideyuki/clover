@@ -371,7 +371,7 @@
 		background:url(../img/dayservice/care/care_bg_fix.png) center center no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
-		padding: (80/1400) * $per;
+		padding: (80/1400) * $per 0;
 		.box{
 			background:url(../img/dayservice/care/quote.png) left 47px no-repeat rgba(255,255,255,0.5);
 			padding: 80px 40px 40px;
@@ -379,6 +379,43 @@
 				@include noto;
 				font-size: 1.6rem;
 				line-height: (26/16);
+				&.name{
+					margin-top: 5px;
+					text-align: right;
+				}
+			}
+		}
+	}
+	@include mq{
+		.content{
+			padding: (25/320) * $per 0 (30/320) * $per;
+			.thisLead{
+				font-size: 1.4rem;
+				text-align: left;
+				line-height: 1.4;
+				p{
+					& + p{
+						margin-top: 0.7em;
+					}
+				}
+			}
+		}
+		.careBox{
+			padding: (15/320) * $per 0;
+			position: relative;
+			.box{
+				background-position: left 1em;
+				background-size: 4em auto;
+				padding: (30/320) * 100vw (15/320) * 100vw (15/320) * 100vw;
+				font-size: 1.4rem;
+				position: relative;
+				p{
+					font-size: inherit;
+					line-height: 1.4;
+					&.name{
+						margin-top: 0.5em;
+					}
+				}
 			}
 		}
 	}

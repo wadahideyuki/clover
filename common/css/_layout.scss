@@ -242,6 +242,7 @@
 				}
 				.nav.layer1{
 					position: relative;
+					z-index: 1;
 					> ul{
 						display: none;
 						width: 100%;
