@@ -1,0 +1,39 @@
+/* CSS Document */
+.catAbout {
+  background: #f0f0f0;
+  padding-bottom: 50px; }
+  .catAbout h3 {
+    font-size: 2.3rem;
+    border-bottom: 2px solid #499745;
+    padding: 0 0 10px 0;
+    font-weight: 600;
+    margin: 0 0 10px 0; }
+  .catAbout table {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: "Noto Sans Japanese"; }
+  .catAbout tr:last-child td, .catAbout tr:last-child th {
+    border: none; }
+  .catAbout th, .catAbout td {
+    padding: 8px 0;
+    border-bottom: 1px dotted #CCC; }
+  .catAbout th {
+    width: 20%; }
+  .catAbout .table-wrap {
+    background: #FFF;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    padding: 30px 50px 30px 50px;
+    box-sizing: border-box; }
+  .catAbout .histry-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; }
+    .catAbout .histry-table th {
+      font-weight: bold;
+      vertical-align: top; }
+    .catAbout .histry-table td p {
+      padding: 10px 0; }
+      .catAbout .histry-table td p img {
+        max-width: 100%; }
