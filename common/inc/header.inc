@@ -1,5 +1,5 @@
 <header class="header">
-	<div class="lines"><hr><hr><hr><hr><hr></div>
+	<!--<div class="lines"><hr><hr><hr><hr><hr></div>-->
 
 	<div class="pcHd">
 		<div class="hdIn">

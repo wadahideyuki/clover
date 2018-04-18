@@ -111,10 +111,11 @@ img{max-width: 100%;}
 /* ボタン */
 .btn{
 	display: inline-block;
-	background-color: #ff3649;
+	background-color: #FFF;
 	padding: 10px 17px;
-	color: #fff;
-	box-shadow: 0 3px 0 #c31a2a;
+	border: 1px solid #CCC;
+	color: #333;
+	box-shadow: 0 3px 0 #CCC;
 	border-radius: 4px;
 	&.withIcn{//アイコン付き
 		display: flex;
@@ -167,7 +168,7 @@ img{max-width: 100%;}
 
 
 /* アイコン */
-.icnMail{@include icn("\f0e0");}
+.icnMail{@include icn("\f0e0"); color: $mainColor}
 
 
 /* 注釈 */
