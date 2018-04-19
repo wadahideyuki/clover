@@ -10,51 +10,7 @@
 }
 /* トップ */
 .catAbout.pageTop{
-	.links{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 45px 0 35px;
-		li{
-			background-color: #fff;
-			margin-bottom: 30px;
-			width: (479/1000) * $per;
-			border-radius: 5px;
-			overflow: hidden;
-			> *{
-				display: block;
-				dl{
-				}
-				dt{
-					overflow: hidden;
-				}
-				dd{
-					padding: 20px 30px;
-					strong{
-						display: block;
-						color: $mainColor;
-						font-size: 2.0rem;
-						line-height: (36/20);
-					}
-					p{
-						@include noto;
-						font-size: 1.6rem;
-					}
-				}
-			}
-			> a{
-				img{
-					transition: 0.3s;
-				}
-				&:hover{
-					text-decoration: none;
-					img{
-						transform: scale(1.1);
-					}
-				}
-			}
-		}
-	}
+	
 }
 /* CLOVERとは */
 .catAbout.pageClover{

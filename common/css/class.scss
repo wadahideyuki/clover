@@ -26,6 +26,7 @@ $iWV : 1;
 }
 
 /*-- Margin --*/
+.M0{margin: 0 !important;}
 @for $iMT from 0 through 100{
 	.MT#{$iMT}{margin-top: $iMT * 1px !important;}
 	$iMT: $iMT+5;
@@ -44,6 +45,7 @@ $iWV : 1;
 }
 
 /*-- Padding --*/
+.P0{padding: 0 !important;}
 @for $iPT from 0 through 100{
 	.PT#{$iPT}{padding-top: $iPT * 1px !important;}
 	$iPT: $iPT+5;
@@ -141,6 +143,7 @@ $spiWV : 1;
 }
 
 /*-- Margin --*/
+.spM0{margin: 0 !important;}
 @for $iMT from 0 through 100{
 	.spMT#{$iMT}{margin-top: $iMT * 1px !important;}
 	$iMT: $iMT+1;
@@ -193,6 +196,7 @@ $spiWV : 1;
 }
 
 /*-- Padding --*/
+.spP0{padding: 0 !important;}
 @for $iPT from 0 through 100{
 	.spPT#{$iPT}{padding-top: $iPT * 1px !important;}
 	$iPT: $iPT+1;

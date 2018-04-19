@@ -124,35 +124,54 @@ img{max-width: 100%;}
 		display: flex;
 		align-items: center;
 	}
-	&.clr2{//色2
-		background-color: #499745;
-		color: #fff;
-		border: none;
-		box-shadow: none;
+	&.clr{//色
+		&2{
+			background-color: #499745;
+			color: #fff;
+			border: none;
+			box-shadow: none;
+		}
 	}
-	&.sz2{//サイズ2
-		padding: 1em;
-		font-size: 2.1rem;
+	&.sz{//サイズ
+		&2{
+			padding: 1em;
+			font-size: 2.1rem;
+		}
+		@include mq{
+			&2{
+				font-size: 1.6rem;
+			}
+		}
 	}
-	&.withArwR{//右矢印付き
-		padding-right: 1.4em;
-		padding-left: 1.4em;
-		position: relative;
-		&:after{
-			content: "";
-			display: inline-block;
-			width: 0.6em;
-			height: 0.6em;
-			margin: auto;
-			border-style: solid;
-			border-width: 1px 1px 0 0;
-			border-color: #fff inherit transparent transparent;
-			box-sizing: border-box;
-			transform: rotate(45deg);
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 1em;
+	&.withArw{//矢印付き
+		&R{//右
+			padding-right: 2em;
+			padding-left: 2em;
+			position: relative;
+			&:after{
+				content: "";
+				display: inline-block;
+				width: 0.6em;
+				height: 0.6em;
+				margin: auto;
+				border-style: solid;
+				border-width: 1px 1px 0 0;
+				border-color: #fff inherit transparent transparent;
+				box-sizing: border-box;
+				transform: rotate(45deg);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 1em;
+			}
+		}
+		@include mq{
+			&R{//右
+				display: block;
+				&:after{
+					right: 1em;
+				}
+			}
 		}
 	}
 }
@@ -197,6 +216,7 @@ img{max-width: 100%;}
 		}
 	}
 	&.type2{
+		text-align: center;
 		.clkScrl{
 			background-color: transparent;
 			margin: 0 0.7em;
@@ -245,15 +265,15 @@ img{max-width: 100%;}
 /* テーブル */
 .tblBox1{
 	background: #FFF;
-	margin: 0 auto 50px auto;
-	padding: 30px 50px 30px 50px;
+	margin: 0 auto 50px;
+	padding: 30px 50px;
 	box-sizing: border-box;
 	.tblCap{
 		font-size: 2.3rem;
 		border-bottom: 2px solid #499745;
-		padding: 0 0 10px 0;
+		margin: 0 0 10px;
+		padding: 0 0 10px;
 		font-weight: 600;
-		margin: 0 0 10px 0;
 	}
 	table{
 		width: 100%;
@@ -277,6 +297,44 @@ img{max-width: 100%;}
 		padding: 20px 0;
 		text-align: center;
 		border-top: 1px dotted #CCC;
+	}
+	@include mq{
+		margin-bottom: 5%;
+		padding: 5% 5%;
+		.tblCap{
+			font-size: 1.8rem;
+			margin-bottom: 0;
+			padding-bottom: 0.5em;
+		}
+		table{
+			display: block;
+			width: auto;
+			font-size: 1.4rem;
+			line-height: 1.8;
+			@include noto;
+		}
+		tbody, tr, th, td{
+			display: block;
+		}
+		tr:last-child{
+			td,th{
+			}
+		}
+		th,td{
+		}
+		th{
+			width: auto;
+			padding: (8/320) * 100vw 0 (3/320) * 100vw;
+			font-weight: bold;
+			border-bottom: none;
+		}
+		td{
+			padding: 0 0 (8/320) * 100vw;
+			font-size: 1.2rem;
+		}
+		.btnWrap{
+			padding: (15/320) * 100vw 0 0;
+		}
 	}
 }
 
@@ -321,6 +379,91 @@ img{max-width: 100%;}
 		img{
 			max-width: none;
 			height: 100%;
+		}
+	}
+}
+
+/* リンク集 */
+.links1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 45px 0 35px;
+	li{
+		background-color: #fff;
+		margin-bottom: 30px;
+		width: (479/1000) * $per;
+		border-radius: 5px;
+		overflow: hidden;
+		> *{
+			display: block;
+			dl{
+			}
+			dt{
+				overflow: hidden;
+			}
+			dd{
+				padding: 20px 30px;
+				strong{
+					display: block;
+					color: $mainColor;
+					font-size: 2.0rem;
+					line-height: (36/20);
+				}
+				p{
+					@include noto;
+					font-size: 1.6rem;
+				}
+			}
+		}
+		> a{
+			img{
+				transition: 0.3s;
+			}
+			&:hover{
+				text-decoration: none;
+				img{
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	@include mq{
+		display: block;
+		padding: 10% 0 4%;
+		li{
+			margin-bottom: 5%;
+			width: auto;
+			> *{
+				dl{
+				}
+				dt{
+					img{
+						width: 100%;
+					}
+				}
+				dd{
+					padding: 4% 5% 6%;
+					strong{
+						font-size: 1.6rem;
+						line-height: (36/20);
+					}
+					p{
+						font-size: 1.2rem;
+					}
+				}
+			}
+			> a{
+				img{
+					transition: 0.3s;
+				}
+				&:hover{
+					text-decoration: none;
+					img{
+						transform: scale(1.1);
+					}
+				}
+			}
 		}
 	}
 }
