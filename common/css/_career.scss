@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+  採用情報
+---------------------------------------*/
+.catCareer{
+}
+/* トップ */
+.catCareer.pageTop{
+	.main{
+		margin-bottom: -30vw;
+		position: relative;
+		overflow: hidden;
+		.in{
+			background-color: $mainColor;
+			padding-top: 65px;
+		}
+		&:after{
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			margin: auto;
+			font-size: 0;
+			border-style: solid;
+			border-width: 0 0 30vw 100vw;
+			border-color: transparent transparent transparent $mainColor;
+		}
+		.inner{
+			max-width: 1252px;
+			position: relative;
+			.bg{
+				background:url(../img/career/main_bg.png) center top no-repeat;
+				background-size: 100% auto;
+				padding-top: (683/1252) * $per;
+				position: relative;
+			}
+			h2{
+				display: table;
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				font-size: 7.2rem;
+				line-height: (95/72);
+				writing-mode:tb-rl;
+				position: absolute;
+				top: 0;
+				left: 0;
+				> div{
+					display: table-cell;
+					text-align: center;
+					vertical-align: middle;
+					> span{
+						display: inline-block;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+	.content{
+		padding-top: 50px;
+		position: relative;
+		.tags{
+			background-color: #fff;
+			padding: 20px 30px 30px;
+			text-align: center;
+			box-shadow: 0 7px 7px rgba(0,0,0,0.11);
+			dt{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 10px;
+				color: $mainColor;
+				span{
+					display: inline-block;
+					margin-right: 15px;
+					font-size: 17.0rem;
+					line-height: 1;
+					opacity: 0.6;
+				}
+				h3{
+					font-size: 4.0rem;
+					line-height: (47/40);
+					border-bottom: 1px solid #bfd7bf;
+				}
+			}
+			dd{
+				padding: 0 50px;
+				a{
+					display: inline-block;
+					margin: 0 0.5em 1em;
+					color: $mainColor;
+					font-size: 2.0rem;
+					text-decoration: underline;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.links{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 65px 0 35px;
+			li{
+				background-color: #fff;
+				margin-bottom: 30px;
+				width: (479/1000) * $per;
+				border-radius: 5px;
+				overflow: hidden;
+				> *{
+					display: block;
+					dl{
+					}
+					dt{
+						overflow: hidden;
+					}
+					dd{
+						padding: 20px 30px;
+						strong{
+							display: block;
+							color: $mainColor;
+							font-size: 2.0rem;
+							line-height: (36/20);
+						}
+						p{
+							@include noto;
+							font-size: 1.6rem;
+						}
+					}
+				}
+				> a{
+					img{
+						transition: 0.3s;
+					}
+					&:hover{
+						text-decoration: none;
+						img{
+							transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* 人材育成への想い */
+.catCareer.pageTrain{
+}
+/* 募集要項 */
+.catCareer.pageRecruit{
+}
+/* 社員エピソード集 */
+.catCareer.pageEpisode{
+}
+
