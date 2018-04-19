@@ -45,7 +45,6 @@
 				color: #fff;
 				font-size: 7.2rem;
 				line-height: (95/72);
-				writing-mode:tb-rl;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -55,7 +54,13 @@
 					vertical-align: middle;
 					> span{
 						display: inline-block;
-						padding-top: 7%;
+						height: 8.5em;
+						padding-top: 1em;
+						-webkit-writing-mode: vertical-rl;
+						-moz-writing-mode: vertical-rl;
+						-ms-writing-mode: tb-rl;
+						-ms-writing-mode: vertical-rl;
+						writing-mode: vertical-rl;
 						text-align: left;
 					}
 				}
