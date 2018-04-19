@@ -55,6 +55,7 @@
 					vertical-align: middle;
 					> span{
 						display: inline-block;
+						padding-top: 7%;
 						text-align: left;
 					}
 				}
@@ -146,6 +147,25 @@
 					}
 				}
 			}
+		}
+	}
+	@include mqMaxW(1282px){
+		.main{
+			.inner{
+				h2{
+					font-size: (72/1282) * 100vw;
+				}
+			}
+		}
+	}
+	@include mq{
+		.main{
+			.inner{
+				h2{
+				}
+			}
+		}
+		.content{
 		}
 	}
 }

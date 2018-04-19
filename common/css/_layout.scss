@@ -125,7 +125,7 @@
 				}
 			}
 		}
-		@include mq($breakpoint:etc1){
+		@include mqMaxW(1360px){
 			.hdIn{
 				.nav.layer1{
 					ul{
@@ -159,7 +159,7 @@
 				}
 			}
 		}
-		@include mq($breakpoint:etc2){
+		@include mqMaxW(1200px){
 			.hdIn{
 				.nav.layer1{
 					ul{
@@ -210,7 +210,7 @@
 	.spHd{
 		display: none;
 	}
-	@include mq($breakpoint:etc3){
+	@include mqMaxW(999px){
 		.pcHd{
 			display: none;
 		}

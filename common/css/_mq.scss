@@ -25,21 +25,15 @@
     @media screen and (min-width: 768px) {
         @content;
     }
-  } @else if $breakpoint == etc1 {
-    @media screen and (max-width: 1360px) {
-        @content;
-    }
-  } @else if $breakpoint == etc2 {
-    @media screen and (max-width: 1200px) {
-        @content;
-    }
-  }@else if $breakpoint == etc3 {
-    @media screen and (max-width: 999px) {
-        @content;
-    }
-  }@else if $breakpoint == overEtc3 {
-    @media screen and (min-width: 1000px) {
-        @content;
-    }
   }
+}
+@mixin mqMaxW($bp: 1000px) {
+	@media screen and (max-width: $bp) {
+		@content;
+	}
+}
+@mixin mqMinW($bp: 1000px) {
+	@media screen and (min-width: $bp) {
+		@content;
+	}
 }
