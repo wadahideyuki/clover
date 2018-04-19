@@ -115,18 +115,50 @@ img{max-width: 100%;}
 	padding: 10px 17px;
 	border: 1px solid #CCC;
 	color: #333;
+	@include noto;
 	box-shadow: 0 3px 0 #CCC;
 	border-radius: 4px;
+	box-sizing: border-box;
+	@include hvr;
 	&.withIcn{//アイコン付き
 		display: flex;
 		align-items: center;
 	}
 	&.clr2{//色2
+		background-color: #499745;
+		color: #fff;
+		border: none;
+		box-shadow: none;
+	}
+	&.sz2{//サイズ2
+		padding: 1em;
+		font-size: 2.1rem;
+	}
+	&.withArwR{//右矢印付き
+		padding-right: 1.4em;
+		padding-left: 1.4em;
+		position: relative;
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 0.6em;
+			height: 0.6em;
+			margin: auto;
+			border-style: solid;
+			border-width: 1px 1px 0 0;
+			border-color: #fff inherit transparent transparent;
+			box-sizing: border-box;
+			transform: rotate(45deg);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 1em;
+		}
 	}
 }
 
 
-/* ボタン */
+/* スクロールボタン */
 .pageScrl{
 	display: flex;
 	justify-content: center;
@@ -164,6 +196,22 @@ img{max-width: 100%;}
 			}
 		}
 	}
+	&.type2{
+		.clkScrl{
+			background-color: transparent;
+			margin: 0 0.7em;
+			text-decoration: underline;
+			border: none;
+			border-radius: 0;
+			&:before{
+				content: normal;
+			}
+			&:hover{
+				color: $mainColor;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 
@@ -179,12 +227,56 @@ img{max-width: 100%;}
 }
 
 
-
 /* リスト */
-.noteList1{
+.noteList1{//一文字分
 	> li{
 		text-indent: -1em;
 		padding-left: 1em;
+	}
+}
+.numList1{//【1】【2】【3】……
+	> li{
+		text-indent: -2.65em;
+		padding-left: 2.65em;
+	}
+}
+
+
+/* テーブル */
+.tblBox1{
+	background: #FFF;
+	margin: 0 auto 50px auto;
+	padding: 30px 50px 30px 50px;
+	box-sizing: border-box;
+	.tblCap{
+		font-size: 2.3rem;
+		border-bottom: 2px solid #499745;
+		padding: 0 0 10px 0;
+		font-weight: 600;
+		margin: 0 0 10px 0;
+	}
+	table{
+		width: 100%;
+		font-size: 1.6rem;
+		line-height: 1.8;
+		@include noto;
+	}
+	tr:last-child{
+		td,th{
+			border: none;
+		}
+	}
+	th,td{
+		padding: 8px 0;
+		border-bottom: 1px dotted #CCC;
+	}
+	th{
+		width: 20%;
+	}
+	.btnWrap{
+		padding: 20px 0;
+		text-align: center;
+		border-top: 1px dotted #CCC;
 	}
 }
 

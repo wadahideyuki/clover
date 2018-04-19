@@ -86,19 +86,12 @@
 	.historyZone{
 		padding: 90px 0 110px;
 	}
-	h4{
-			font-size: 2.3rem;
-			border-bottom: 2px solid #499745;
-			padding: 0 0 10px 0;
-			font-weight: 600;
-			margin: 0 0 10px 0;
-		}
-		table{
-			width: 100%;
-			font-size: 1.6rem;
-			line-height: 1.8;
-			@include noto;
-		}
+	.histry-table{
+		margin: 0 auto;
+		width: 100%;
+		font-size: 1.6rem;
+		line-height: 1.8;
+		@include noto;
 		tr:last-child{
 			td,th{
 				border: none;
@@ -110,17 +103,6 @@
 		}
 		th{
 			width: 20%;
-		}
-	.table-wrap{
-		background: #FFF;
-		margin: 0 auto 50px auto;
-		padding: 30px 50px 30px 50px;
-		box-sizing: border-box;
-		
-	}
-	.histry-table{
-		margin: 0 auto;
-		th{
 			font-weight: bold;
 			vertical-align: top;
 		}

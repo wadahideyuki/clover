@@ -27,11 +27,13 @@
     }
   }
 }
+
 @mixin mqMaxW($bp: 1000px) {
 	@media screen and (max-width: $bp) {
 		@content;
 	}
 }
+
 @mixin mqMinW($bp: 1000px) {
 	@media screen and (min-width: $bp) {
 		@content;
