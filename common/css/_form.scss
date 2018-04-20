@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+  経営理念
+---------------------------------------*/
+.catForm{
+	.content{
+		padding: 50px 0 20px;
+	}
+	table{
+		color: #333;
+	}
+	.btn{
+		margin: 0 0.5em;
+	}
+	@include mq{
+		.btn{
+			margin: 0;
+			width: 100%;
+			& + .btn{
+				margin-top: 3%;
+			}
+		}
+	}
+}
+/* トップ */
+.catForm.pageTop{
+}
+/* 確認 */
+.catForm.pageMailConf{
+	padding: 50px 0;
+	.formConfBox{
+		max-width: 800px;
+		margin: auto;
+		padding: 0 15px;
+		font-size: 1.6em;
+	}
+}
+/* 完了 */
+.catForm.pageMailComp{
+	padding: 50px 0;
+	.formCompBox{
+		max-width: 800px;
+		margin: auto;
+		padding: 0 15px;
+		font-size: 1.6em;
+		strong{
+			display: block;
+			margin-bottom: 0.3em;
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+		p{
+			margin-bottom: 1.5em;
+		}
+	}
+}
+

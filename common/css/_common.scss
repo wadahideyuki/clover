@@ -7,6 +7,32 @@
  要素
 ---------------------------------------*/
 img{max-width: 100%;}
+input[type="text"],
+select,
+textarea{
+	color: #333;
+	box-sizing: border-box;
+}
+input[type="text"],
+textarea{
+	width: 100%;
+	padding: 0.5em 0.7em;
+	border: 1px solid #ccc;
+}
+select{
+	padding: 0.5em 0.7em;
+}
+@include mq{
+	input[type="text"],
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	textarea{
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		appearance:none;
+	}
+}
 
 
 /*--------------------------------------
@@ -102,6 +128,12 @@ img{max-width: 100%;}
 }
 
 
+/* テキスト色 */
+.txRed{
+	color: red;
+}
+
+
 /* 背景色 */
 .bgGrey1{
 	background-color: #f0f0f0;
@@ -131,14 +163,27 @@ img{max-width: 100%;}
 			border: none;
 			box-shadow: none;
 		}
+		&3{
+			background-color: #aaa;
+			color: #fff;
+			border: none;
+			box-shadow: none;
+		}
 	}
 	&.sz{//サイズ
 		&2{
 			padding: 1em;
 			font-size: 2.1rem;
 		}
+		&3{
+			padding: 1em 3em;
+			font-size: 1.8rem;
+		}
 		@include mq{
 			&2{
+				font-size: 1.6rem;
+			}
+			&3{
 				font-size: 1.6rem;
 			}
 		}
@@ -290,13 +335,23 @@ img{max-width: 100%;}
 		padding: 8px 0;
 		border-bottom: 1px dotted #CCC;
 	}
+	&.noBd th,
+	&.noBd td{
+		border-bottom: none;
+	}
 	th{
 		width: 20%;
+	}
+	td{
+		padding-left: 10px;
 	}
 	.btnWrap{
 		padding: 20px 0;
 		text-align: center;
 		border-top: 1px dotted #CCC;
+	}
+	&.noBd .btnWrap{
+		border-top: none;
 	}
 	@include mq{
 		margin-bottom: 5%;
@@ -476,6 +531,43 @@ img{max-width: 100%;}
 	cursor: pointer;
 }
 .accCont{
+}
+
+
+/* フォーム */
+.error_messe{
+	margin:5px 0;
+	color: red;
+}
+.selectWrap{
+	@include mq{
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		position: relative;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin: auto;
+			border-style: solid;
+			border-width: 0.5em 0.25em 0 0.25em;
+			border-color: #666 transparent transparent;
+			box-sizing: border-box;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 5%;
+		}
+		select{
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
+			margin: 0;
+			border: none;
+		}
+	}
 }
 
 
