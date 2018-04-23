@@ -19,21 +19,23 @@
 		}
 		.bg1{
 			background:url(../img/top/main_bg1.png) center top repeat-x;
-			height: 280px;
-			animation-name:mainSld1;
-			animation-duration: 30s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-			animation-fill-mode: forwards;
+			background-size: 100% auto;
+			padding-top: (280/1800) * $per;
+//			animation-name:mainSld1;
+//			animation-duration: 30s;
+//			animation-timing-function: linear;
+//			animation-iteration-count: infinite;
+//			animation-fill-mode: forwards;
 		}
 		.bg2{
 			background:url(../img/top/main_bg2.png) center top repeat-x;
-			height: 280px;
-			animation-name:mainSld2;
-			animation-duration: 30s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-			animation-fill-mode: forwards;
+			background-size: 100% auto;
+			padding-top: (280/1800) * $per;
+//			animation-name:mainSld2;
+//			animation-duration: 30s;
+//			animation-timing-function: linear;
+//			animation-iteration-count: infinite;
+//			animation-fill-mode: forwards;
 		}
 		h2{
 			background-color: #fff;

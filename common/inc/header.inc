@@ -35,7 +35,7 @@
 					<a href="/about/">私たちについてTOP</a>
 					<a href="/about/clover/">CLOVERとは</a>
 					<a href="/about/message/">トップメッセージ</a>
-					<a href="/about/value/">VALUE・VISION</a>
+					<a href="/about/value/">VALUE・VISION・PRINCIPLE</a>
 				</li>
 				<li class="hdNavLower3">
 					<a href="/dayservice/qa/">よくある質問</a>
@@ -75,7 +75,7 @@
 							<a href="/about/">私たちについてTOP</a>
 							<a href="/about/clover/">CLOVERとは</a>
 							<a href="/about/message/">トップメッセージ</a>
-							<a href="/about/value/">VALUE・VISION</a>
+							<a href="/about/value/">VALUE・VISION・PRINCIPLE</a>
 						</nav>
 					</li>
 					<li>

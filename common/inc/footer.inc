@@ -56,7 +56,7 @@
 							<li><a href="/about/">私たちについてTOP</a></li>
 							<li><a href="/about/clover/">CLOVERとは</a></li>
 							<li><a href="/about/message/">トップメッセージ</a></li>
-							<li><a href="/about/value/">VALUE・VISION</a></li>
+							<li><a href="/about/value/">VALUE・VISION・PRINCIPLE</a></li>
 						</ul>
 					</li>
 					<li>
