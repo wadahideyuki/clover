@@ -9,7 +9,7 @@
 			<div class="colR">
 				<nav class="nav layer1">
 					<ul>
-						<li class="hdNav1"><a href="#">経営理念</a></li>
+						<li class="hdNav1"><a href="#">プロミス</a></li>
 						<li class="hdNav2"><a href="#">私たちについて</a></li>
 						<li class="hdNav3"><a href="#">デイサービス</a></li>
 						<li class="hdNav4"><a href="#">放課後等デイサービス</a></li>
@@ -18,7 +18,7 @@
 				</nav>
 				<div class="tel"><img src="/common/img/hd_tel.png" alt=""></div>
 				<div class="btnWrap">
-					<a class="btn withIcn icnMail" href="#">
+					<a class="btn withIcn icnMail" href="/form/">
 						<span>メールでの<br>お問い合わせ</span>
 					</a>
 				</div>
@@ -28,7 +28,7 @@
 		<nav class="nav layer2">
 			<ul>
 				<li class="hdNavLower1">
-					<a href="/management/">経営理念TOP</a>
+					<a href="/management/">プロミス</a>
 					<a href="/management/blog/">ブログ一覧</a>
 				</li>
 				<li class="hdNavLower2">
@@ -38,6 +38,7 @@
 					<a href="/about/value/">VALUE・VISION・PRINCIPLE</a>
 				</li>
 				<li class="hdNavLower3">
+					<a href="/dayservice/">デイサービスTOP</a>
 					<a href="/dayservice/qa/">よくある質問</a>
 					<a href="/dayservice/office/">事業所</a>
 					<a href="/dayservice/care/">クローバーの介護観</a>
@@ -63,9 +64,9 @@
 			<nav class="nav layer1">
 				<ul>
 					<li>
-						<a class="hasLower" href="#">経営理念</a>
+						<a class="hasLower" href="#">プロミス</a>
 						<nav class="nav layer2">
-							<a href="/management/">経営理念TOP</a>
+							<a href="/management/">プロミス</a>
 							<a href="/management/blog/">ブログ一覧</a>
 						</nav>
 					</li>
@@ -81,6 +82,7 @@
 					<li>
 						<a class="hasLower" href="#">デイサービス</a>
 						<nav class="nav layer2">
+					       <a href="/dayservice/">デイサービスTOP</a>
 							<a href="/dayservice/qa/">よくある質問</a>
 							<a href="/dayservice/office/">事業所</a>
 							<a href="/dayservice/care/">クローバーの介護観</a>

@@ -28,12 +28,16 @@
 			border-style: solid;
 			border-width: 0 0 30vw 100vw;
 			border-color: transparent transparent transparent $mainColor;
+            @include mq{
+                padding-top: 30vw;
+                border: 0px;
+            }
 		}
 		.inner{
 			max-width: 1252px;
 			position: relative;
 			.bg{
-				background:url(../img/career/main_bg.png) center top no-repeat;
+				background:url(../img/career/main.jpg) center top no-repeat;
 				background-size: 100% auto;
 				padding-top: (683/1252) * $per;
 				position: relative;
@@ -298,4 +302,41 @@
 /* 社員エピソード集 */
 .catCareer.pageEpisode{
 }
+.catCareer.pageOmoi{
+    
+    .omoiBlock{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 0 100px 0;
+        text-align: center;
+        @include mq{
+            padding: 25px 0 50px 0;
+            .ttl1{
+                line-height: 1.6;
+            }
+        }
+        p{
+            font-size: 2rem;
+            @include mq{
+                font-size: 1.5rem;
+            }
+            &.omoiCatch{
+                font-size: 5rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 50px 10px 80px 10px;
+                color: #358f31;
+                @include mq{
+                    font-size: 2rem;
+                    padding: 25px 0 50px 0;
+                }
+            }
+            &.taR{
+                padding-top: 50px;
+            }
+        }
+    }
+}
+
+
 

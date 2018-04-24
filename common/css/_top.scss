@@ -26,6 +26,7 @@
 //			animation-timing-function: linear;
 //			animation-iteration-count: infinite;
 //			animation-fill-mode: forwards;
+            
 		}
 		.bg2{
 			background:url(../img/top/main_bg2.png) center top repeat-x;
@@ -46,12 +47,14 @@
 		@include mq{
 			margin-bottom: (8/640) * $per;
 			.bg1{
-				background-size: auto 100%;
-				height: 140px;
+                background:url(../img/top/main_bg1_sp.png) center top no-repeat;
+				background-size: cover;
+				height: 48vw;
 			}
 			.bg2{
-				background-size: auto 100%;
-				height: 140px;
+                background:url(../img/top/main_bg2_sp.png) center top no-repeat;
+				background-size: cover;
+				height: 48vw;
 			}
 			h2{
 				padding: (30/640) * $per (20/640) * $per;
@@ -201,6 +204,12 @@
 		}
 		.ttl1{
 			color: #fff;
+            em{
+                color: #fff;
+            }
+            &:before{
+                background-color: #FFF;
+            }
 			> div{
 				> em{
 					color: inherit;
