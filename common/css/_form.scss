@@ -9,19 +9,21 @@
 .catForm{
 	.content{
 		padding: 50px 0 20px;
+		.btn{
+			margin: 0 0.5em;
+		}
 	}
 	table{
 		color: #333;
 	}
-	.btn{
-		margin: 0 0.5em;
-	}
 	@include mq{
-		.btn{
-			margin: 0;
-			width: 100%;
-			& + .btn{
-				margin-top: 3%;
+		.content{
+			.btn{
+				margin: 0;
+				width: 100%;
+				& + .btn{
+					margin-top: 3%;
+				}
 			}
 		}
 	}
