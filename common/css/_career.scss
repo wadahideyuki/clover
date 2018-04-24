@@ -7,6 +7,66 @@
   採用情報
 ---------------------------------------*/
 .catCareer{
+	.staffTags{
+		background-color: #fff;
+		padding: 20px 30px 30px;
+		text-align: center;
+		box-shadow: 0 7px 7px rgba(0,0,0,0.11);
+		dt{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 10px;
+			color: $mainColor;
+			span{
+				display: inline-block;
+				margin-right: 15px;
+				font-size: 17.0rem;
+				line-height: 1;
+				opacity: 0.6;
+			}
+			h3{
+				font-size: 4.0rem;
+				line-height: (47/40);
+				border-bottom: 1px solid #bfd7bf;
+			}
+		}
+		dd{
+			padding: 0 50px;
+			a{
+				display: inline-block;
+				margin: 0 0.5em 1em;
+				color: $mainColor;
+				font-size: 2.0rem;
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+		@include mq{
+			padding: (10/320) * 100vw;
+			box-shadow: 0 7px 7px rgba(0,0,0,0.11);
+			dt{
+				margin-bottom: 3%;
+				span{
+					margin-right: 3%;
+					font-size: 6.0rem;
+				}
+				h3{
+					font-size: 1.8rem;
+				}
+			}
+			dd{
+				padding: 0;
+				a{
+					font-size: 1.4rem;
+					&:hover{
+					}
+				}
+			}
+		}
+	}
 }
 /* トップ */
 .catCareer.pageTop{
@@ -28,10 +88,10 @@
 			border-style: solid;
 			border-width: 0 0 30vw 100vw;
 			border-color: transparent transparent transparent $mainColor;
-            @include mq{
-                padding-top: 30vw;
-                border: 0px;
-            }
+			@include mq{
+				padding-top: 30vw;
+				border: 0px;
+			}
 		}
 		.inner{
 			max-width: 1252px;
@@ -74,44 +134,6 @@
 	.content{
 		padding-top: 50px;
 		position: relative;
-		.tags{
-			background-color: #fff;
-			padding: 20px 30px 30px;
-			text-align: center;
-			box-shadow: 0 7px 7px rgba(0,0,0,0.11);
-			dt{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				margin-bottom: 10px;
-				color: $mainColor;
-				span{
-					display: inline-block;
-					margin-right: 15px;
-					font-size: 17.0rem;
-					line-height: 1;
-					opacity: 0.6;
-				}
-				h3{
-					font-size: 4.0rem;
-					line-height: (47/40);
-					border-bottom: 1px solid #bfd7bf;
-				}
-			}
-			dd{
-				padding: 0 50px;
-				a{
-					display: inline-block;
-					margin: 0 0.5em 1em;
-					color: $mainColor;
-					font-size: 2.0rem;
-					text-decoration: underline;
-					&:hover{
-						text-decoration: none;
-					}
-				}
-			}
-		}
 		.links1{
 			padding-top: 65px;
 		}
@@ -145,28 +167,6 @@
 		}
 		.content{
 			padding-top: 5%;
-			.tags{
-				padding: (10/320) * 100vw;
-				box-shadow: 0 7px 7px rgba(0,0,0,0.11);
-				dt{
-					margin-bottom: 3%;
-					span{
-						margin-right: 3%;
-						font-size: 6.0rem;
-					}
-					h3{
-						font-size: 1.8rem;
-					}
-				}
-				dd{
-					padding: 0;
-					a{
-						font-size: 1.4rem;
-						&:hover{
-						}
-					}
-				}
-			}
 			.links1{
 				padding-top: 10%;
 			}
@@ -174,7 +174,39 @@
 	}
 }
 /* 人材育成への想い */
-.catCareer.pageTrain{
+.catCareer.pageOmoi{
+    .omoiBlock{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 0 100px 0;
+        text-align: center;
+        @include mq{
+            padding: 25px 0 50px 0;
+            .ttl1{
+                line-height: 1.6;
+            }
+        }
+        p{
+            font-size: 2rem;
+            @include mq{
+                font-size: 1.5rem;
+            }
+            &.omoiCatch{
+                font-size: 5rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 50px 10px 80px 10px;
+                color: #358f31;
+                @include mq{
+                    font-size: 2rem;
+                    padding: 25px 0 50px 0;
+                }
+            }
+            &.taR{
+                padding-top: 50px;
+            }
+        }
+    }
 }
 /* 募集要項 */
 .catCareer.pageRecruit{
@@ -301,41 +333,172 @@
 }
 /* 社員エピソード集 */
 .catCareer.pageEpisode{
-}
-.catCareer.pageOmoi{
-    
-    .omoiBlock{
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 50px 0 100px 0;
-        text-align: center;
-        @include mq{
-            padding: 25px 0 50px 0;
-            .ttl1{
-                line-height: 1.6;
-            }
-        }
-        p{
-            font-size: 2rem;
-            @include mq{
-                font-size: 1.5rem;
-            }
-            &.omoiCatch{
-                font-size: 5rem;
-                font-weight: bold;
-                text-align: center;
-                padding: 50px 10px 80px 10px;
-                color: #358f31;
-                @include mq{
-                    font-size: 2rem;
-                    padding: 25px 0 50px 0;
-                }
-            }
-            &.taR{
-                padding-top: 50px;
-            }
-        }
-    }
+	.content{
+		padding: 60px 0 30px;
+		.profBox{
+			background-color: #fff;
+			margin-bottom: 70px;
+			.img{
+				position: relative;
+				img{
+					width: 100%;
+				}
+				.name{
+					display: flex;
+					align-items: center;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					dl{
+						background-color: rgba(53,143,49,0.9);
+						padding: 2em 3em;
+						color: #fff;
+						font-size: 1.0rem;
+						line-height: 1;
+					}
+					dt{
+						margin-bottom: .9em;
+						font-size: 1.6rem;
+						line-height: 1.2;
+					}
+					dd{
+						font-size: 6.1rem;
+					}
+				}
+			}
+			.txt{
+				display: flex;
+				padding: 20px 30px;
+				dt{
+					color: #42933f;
+					font-size: 3.8rem;
+				}
+				dd{
+					padding-left: 40px;
+					@include noto;
+					font-size: 1.5rem;
+					line-height: (24/15);
+				}
+			}
+		}
+		.episodeBox{
+			padding: 0 12.5%;
+			h3{
+				font-size: 4.2rem;
+				line-height: (60/42);
+			}
+			p{
+				margin-bottom: 30px;
+				@include noto;
+				font-size: 1.6rem;
+				line-height: (28/16);
+			}
+			.img{
+				margin-bottom: 30px;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.content2{
+		padding: 80px 0 90px;
+	}
+	@include mqMaxW($bp:1030px){
+		$waru: 1030;
+		.content{
+			padding: 5% 0 3%;
+			.profBox{
+				margin-bottom: 7%;
+				.img{
+					img{
+					}
+					.name{
+						dl{
+							padding: 2em 3em;
+							font-size: 1.0vw;
+						}
+						dt{
+							font-size: (16/$waru) * 100vw;
+						}
+						dd{
+							font-size: (61/$waru) * 100vw;
+						}
+					}
+				}
+				.txt{
+					padding: 2em 3em;
+					font-size: 1.0vw;
+					dt{
+						font-size: (38/$waru) * 100vw;
+					}
+					dd{
+						padding-left: (40/15) * 1em;
+					}
+				}
+			}
+		}
+		.content2{
+			padding: 5% 0;
+		}
+	}
+	@include mq{
+		.content{
+			.profBox{
+				margin-bottom: 15%;
+				.img{
+					img{
+					}
+					.name{
+						display: block;
+						position: static;
+						dl{
+							padding: 5% 4%;
+						}
+						dt{
+							margin-bottom: .5em;
+							font-size: 1.4rem;
+						}
+						dd{
+							font-size: 3.6rem;
+						}
+					}
+				}
+				.txt{
+					display: block;
+					padding: 3% 5%;
+					dt{
+						margin-bottom: 3%;
+						padding-bottom: 2%;
+						font-size: 2.4rem;
+						text-align: center;
+						border-bottom: 1px solid #42933f;
+					}
+					dd{
+						padding-left: 0;
+					}
+				}
+			}
+			.episodeBox{
+				padding: 0;
+				h3{
+					font-size: 2rem;
+				}
+				p{
+					margin-bottom: 5%;
+					font-size: 1.4rem;
+				}
+				.img{
+					margin-bottom: 5%;
+					img{
+					}
+				}
+			}
+		}
+		.content2{
+			padding: 5% 0;
+		}
+	}
 }
 
 
