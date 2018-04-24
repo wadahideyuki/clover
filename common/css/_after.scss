@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+ 放課後デイサービス
+---------------------------------------*/
+.catAfter{
+    .inner{
+        max-width: 1000px;
+    }
+    .font-green{
+        color: $mainColor;
+    }
+    .lead-box{
+        padding: 60px 10px 80px 10px;
+        text-align: center;
+        @include mq{
+            padding: 30px 10px;
+            text-align: left;
+        }
+        h3{
+            font-size: 4rem;
+            padding: 50px 0 40px 0;
+            @include mq{
+                font-size: 2rem;
+                padding: 20px 0;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            line-height: 1.8;
+            @include mq{
+            font-size: 1.2rem;
+            }
+        }
+    }
+    .about-box{
+        background: #FFF;
+        display: flex;
+        @include mq{
+            display: block;
+        }
+        dt{
+            width: 50%;
+            @include mq{
+                width: auto;
+            }
+        }
+        dd{
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+            font-size: 1.6rem;
+            @include noto;
+            line-height: 1.7;
+            @include mq{
+                padding: 2%;
+                font-size: 1.2rem;
+                line-height: 1.6;
+                width: auto;
+            }
+            p{
+                padding: 8px;
+            }
+        }
+    }
+    .clover-feature{
+        background: $mainColor;
+        text-align: center;
+        position: relative;
+        margin-top: 60px;
+        border-radius: 5px;
+             font-size: 1.7rem;
+        @include mq{
+            font-size: 1.4rem;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h4{
+            top: -1.0em;
+            position: relative;
+            background: $mainColor;
+            display: inline-block;
+            color: #FFF;
+            border-radius: 50px;
+            padding: 10px;
+            font-size: 2.2rem;
+            @include mq{
+                font-size: 1.8rem;
+                margin-bottom: -1em;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            padding: 0 15px 20px  15px;
+            @include noto;
+            @include mq{
+                display: block;
+                padding: 0px 10px 0px 10px;
+            }
+            li{
+                background: #FFF;
+                padding: 20px 10px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                text-align: center;
+                border-radius: 5px;
+                @include mq{
+                    padding: 8px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+            &.col4{
+                li{
+                    width: 23.5%;
+                    @include mq{
+                        width: 100%;
+                    }
+                }
+            }
+            &.col3{
+                li{
+                    width: 32%;
+                    @include mq{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .clover-feature-col2{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        @include mq{
+            display: block;
+        }
+        .clover-feature{
+            width: 49%;
+            @include mq{
+                width: 100%;
+            }
+            & > div{
+            @include noto;
+                background: #FFF;
+                padding: 15px 10px;
+                border-radius: 5px;
+                margin:0 15px 15px 15px;
+                p{
+                    padding-top: 10px;
+                }
+                ol{
+                    color: $mainColor;
+                    text-align: left;
+                    display: inline-block;
+                    li{
+                        
+                    list-style: decimal;
+                    }
+                }
+            }
+        }
+    }
+    #map{
+        width: 100%;
+        height: 400px;
+        @include mq{
+            height: 70vw;
+        }
+    }
+    .map-box2{
+        margin-top: 30px;
+        background: #d8f4c6;
+        padding: 25px;
+        border-radius: 5px;
+        display: flex;
+        @include noto;
+        font-size: 1.6rem;
+        @include mq{
+            display: block;
+            font-size: 1.2rem;
+        }
+        dt{
+            padding: 5px;
+            background: #FFF;
+            border-radius: 5px;
+        }
+        dd{
+            padding: 20px;
+            @include mq{
+                padding: 0px;
+            }
+            p{
+                padding: 5px 0;
+                strong{
+                    color: $mainColor;
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+    .outline-box{
+        padding-top: 70px;
+        
+        table{
+            margin: 0 auto;            
+            max-width: 800px;
+            @include noto;
+            font-size: 1.6rem;      
+      width: 100%;
+            @include mq{
+                font-size: 1.2rem;
+            }
+            th{
+                border-top: 1px solid #CCC;
+                padding: 10px;
+                @include mq{
+                    display:block;
+                    padding: 5px 0 0 0;
+                    font-size: 1rem;
+                    color: #999;
+                }
+            }
+            td{
+                border-top: 1px solid #CCC;
+                padding: 10px;
+                @include mq{
+                    border: none;
+                    display:block;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+    .btnBox{
+        padding: 70px 0;
+        text-align: center;
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+        justify-content: space-between;
+        @include mq{
+            display: block;
+            padding: 25px 0;
+        }
+        li{
+            @include noto;
+            width: 48%;
+            margin: 0 10px;
+            @include mq{
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+            a{
+                display: block;
+                padding: 15px 40px;
+                background: #CCC;
+                border-radius: 5px;
+                color: #FFF;
+                font-size: 1.6rem;
+                @include mq{
+                    padding: 15px 0;
+                    font-size: 1.4rem;
+                }
+                &.btn-inquiry{
+                    background: #D06E00;
+                }
+                &.btn-cloverkids{
+                    background: $mainColor;
+                }
+            }
+        }
+        
+    }
+}
