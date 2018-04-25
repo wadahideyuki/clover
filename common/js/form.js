@@ -6,11 +6,12 @@ var validation = $("#validForm").exValidation({
 		name_: "laterCall",
 		kana: "chkrequired chkkatakana",
 		kana_: "laterCall",
-		email: "chkrequired chkemail chkhankaku chkgroup",
-		email_: "laterCall",
+		Email: "chkrequired chkemail chkhankaku chkgroup",
+		Email_: "laterCall",
 		birthday: "chkrequired chkgroup",
 		birthday_: "laterCall",
-		radio: "chkradio"
+		radio: "chkradio",
+		txArea: "chkrequired"
 	},
 	customListener: "blur", // onBlur時のみにしてみる
 	stepValidation: true,
