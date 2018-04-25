@@ -262,6 +262,8 @@ select{
 				border-color: #fff #fff transparent transparent;
 			}
 		}
+		@include mq{
+		}
 	}
 	&.type2{
 		text-align: center;

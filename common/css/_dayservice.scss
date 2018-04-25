@@ -576,78 +576,80 @@
 			line-height: (26/16);
 		}
 		.flowBox{
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            &:before{
-                content: "";
-                width: 8px;
-                height: 100%;
-                position: absolute;
-                left: 50%;
-                top: 0px;
-                background: #CCC;
-            }
+			max-width: 900px;
+			padding: 0 20px;
+			margin: 0 auto;
+			position: relative;
+			&:before{
+				content: "";
+				width: 8px;
+				height: 100%;
+				margin-left: -4px;
+				position: absolute;
+				left: 50%;
+				top: 0px;
+				background: #CCC;
+			}
 			> li{
 				background-color: #fff;
 				position: relative;
-                border: 2px solid #CCC;
+        border: 2px solid #CCC;
 				padding:30px;
-                border-radius: 10px;
-                margin-top: 15px;
-                display: flex;
-                font-size: 1.8rem;
-                text-align: left;
-                align-items: top;
-                @include noto;
-                .img{
-                    width: 12%;
-                    color: $mainColor;
-                }
-                dt{
-                    font-weight: bold;
-                    padding-bottom: 5px;
-                }
-                dd{
-                    p{
-                        display: inline-block;
-                        width: 80px;
-                        height: 80px;
-                        border-radius: 50%;
-                        color: #FFF;
-                        position: absolute;
-                        right: -20px;
-                        top: -20px;
-                        font-size: 1.4rem;
-                        text-align: center;
-                        background: $mainColor;
-                        &:after{
-                            content: "";
-                            display: inline-block;
-                            border-top: 20px solid $mainColor;
-                            border-right: 10px solid transparent;
-                            border-left: 10px solid transparent;
-                            position: absolute;
-                            right:40px;
-                            top: 70px;
-                            transform: rotate(25deg);
-                        }
-                        a{
-                            display: inline-block;
-                            padding-top: 20px;
-                            &:before{
-                                content: "";
-                                width: 7px;
-                                height: 7px;
-                                margin-right: 3px;
-                                border-top: 2px solid #FFF;
-                                border-right: 2px solid #FFF;
-                                transform: rotate(45deg);
-                                display: inline-block;
-                            }
-                        }
-                    }
-                }
+				border-radius: 10px;
+				margin-top: 15px;
+				display: flex;
+				font-size: 1.8rem;
+				text-align: left;
+				align-items: top;
+				@include noto;
+				.img{
+					width: 12%;
+					color: $mainColor;
+				}
+				dt{
+					font-weight: bold;
+					padding-bottom: 5px;
+				}
+				dd{
+					p{
+						display: inline-block;
+						width: 80px;
+						height: 80px;
+						border-radius: 50%;
+						color: #FFF;
+						position: absolute;
+						right: -20px;
+						top: -20px;
+						font-size: 1.4rem;
+						text-align: center;
+						background: $mainColor;
+						&:after{
+							content: "";
+							display: inline-block;
+							border-top: 20px solid $mainColor;
+							border-right: 10px solid transparent;
+							border-left: 10px solid transparent;
+							position: absolute;
+							right:40px;
+							top: 70px;
+							transform: rotate(25deg);
+						}
+						a{
+							display: inline-block;
+							padding-top: 20px;
+							&:before{
+								content: "";
+								width: 7px;
+								height: 7px;
+								margin-right: 3px;
+								border-top: 2px solid #FFF;
+								border-right: 2px solid #FFF;
+								transform: rotate(45deg);
+								display: inline-block;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -732,6 +734,142 @@
 				width: (380/800) * $per;
 				th{
 					width: 150px;
+				}
+			}
+		}
+	}
+	@include mq{
+		.dayZone{//クローバーの１日
+			padding-top: 7%;
+			.inner{
+				&.no1{
+					padding-bottom: 7%;
+				}
+			}
+			.pageScrl{
+				margin-bottom: 7%;
+				font-size: 1.2rem;
+				.clkScrl{
+					width: 48%;
+					padding: 3vw 0;
+					& + .clkScrl{
+						margin-left: 2%;
+					}
+				}
+			}
+			.thisLead{
+				font-size: 1.4rem;
+			}
+			.flowBox{
+				padding: 0 (15/320) * 100vw;
+				&:before{
+					width: (8/320) * 100vw;
+					margin-left: -(4/320) * 100vw;
+				}
+				> li{
+					border-width: (1/320) * 100vw;
+					padding:(15/320) * 100vw;
+					border-radius: 5px;
+					margin-top: (15/320) * 100vw;
+					display: block;
+					font-size: 1.6rem;
+					.img{
+						width: auto;
+						margin: 0 (50/320) * 100vw (5/320) * 100vw 0;
+					}
+					dt{
+						margin-right: (50/320) * 100vw;
+						padding-bottom: (5/320) * 100vw;
+					}
+					dd{
+						p{
+							width: 6em;
+							height: 6em;
+							right: -1.2em;
+							top: -1.2em;
+							font-size: 1.2rem;
+							&:after{
+								border-top-width: 1em;
+								border-right-width: 0.5em;
+								border-left-width: 0.5em;
+								right:4em;
+								top: 5.3em;
+							}
+							a{
+								padding-top: 1.5em;
+								&:before{
+									width: 0.5em;
+									height: 0.5em;
+									margin-right: 0.25em;
+									border-top-width: 0.2em;
+									border-right-width: 0.2em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.payZone{//利用料金
+			padding: 7% 0 10%;
+			.thisLead{
+				padding: (15/320) * 100vw;
+				dt{
+					font-size: 1.6rem;
+				}
+				dd{
+					font-size: 1.4rem;
+				}
+			}
+			h4{
+				margin: 10% 0 5%;
+				padding-bottom: 2%;
+				font-size: 1.6rem;
+				border-bottom-width: (2/320) * 100vw;
+			}
+			h5{
+				padding-left: (10/320) * 100vw;
+				font-size: 1.2rem;
+				&:before{
+					width: (4/320) * 100vw;
+					top: (3/320) * 100vw;
+					bottom: (3/320) * 100vw;
+				}
+			}
+			table{
+				font-size: 1.0rem;
+			}
+			th,
+			td{
+				padding: (5/320) * 100vw (5/320) * 100vw;
+			}
+			th{
+				width: auto;
+			}
+			td{
+			}
+			thead{
+				td{
+				}
+			}
+			tbody{
+			}
+			small{
+				margin-top: 2%;
+				font-size: 1.0rem;
+			}
+			ul{
+				display: block;
+				> li{
+					width: auto;
+					& + li{
+						h5{
+							margin-top: 2em !important;
+						}
+					}
+					th{
+						width: 30%;
+					}
 				}
 			}
 		}
