@@ -29,18 +29,32 @@
 			margin-bottom: 30px;
 			font-size: 2.2rem;
 			letter-spacing: 0;
+            @include mq{
+                font-size: 1.6rem;
+            }
 		}
 		dd{
 			@include noto;
 			font-size: 1.6rem;
 			line-height: (29/16);
+            @include mq{
+                font-size: 1.2rem;
+            }
 		}
 	}
 	.outlineZone{
 		padding-top: 80px;
+        .tblBox1 .tblCap{
+            @include mq{
+                font-size: 1.6rem;
+            }
+        }
 	}
 	.historyZone{
 		padding: 90px 0 110px;
+        @include mq{
+            padding: 30px 0;
+        }
 	}
 	.histry-table{
 		margin: 0 auto;
@@ -48,6 +62,9 @@
 		font-size: 1.6rem;
 		line-height: 1.8;
 		@include noto;
+        @include mq{
+            font-size: 1.2rem;
+        }
 		tr:last-child{
 			td,th{
 				border: none;
@@ -56,11 +73,19 @@
 		th,td{
 			padding: 8px 0;
 			border-bottom: 1px dotted #CCC;
+            
 		}
 		th{
 			width: 20%;
 			font-weight: bold;
 			vertical-align: top;
+            @include mq{
+            display: block;
+                width: 100%;
+                padding: 10px 0 0 0;
+                border-top:1px dotted #CCC;
+                border-bottom: 0px;
+            }
 		}
 		td{
 			p{
@@ -69,7 +94,14 @@
 					max-width: 100%;
 				}
 			}
+            @include mq{
+            display: block;
+                width: 100%;
+                padding: 0 0 10px 0;
+                border: 0px;
+            }
 		}
+        
 	}
 }
 /* トップメッセージ */
@@ -94,6 +126,10 @@
 					@media all and (-ms-high-contrast:none) {
 						bottom: -0.35em;
 					}
+                    @include mq{
+                        font-size: 4rem;
+                        left: 5%;
+                    }
 					small{
 						display: block;
 						font-size: (33/140) * 1em;
@@ -107,13 +143,29 @@
 			}
 			dd{
 				padding: 60px 15px 90px;
+                @include mq{
+                    padding:4%;
+                }
 				h4{
 					margin-bottom: 30px;
 					font-size: 3.5rem;
+                    @include mq{
+                        font-size: 1.8rem;
+                        text-align: left;
+                        margin-bottom: 15px;
+                    }
 				}
 				p{
 					font-size: 1.8rem;
 					line-height: 2;
+                    @include mq{
+                        font-size: 1.2rem;
+                        line-height: 1.6;
+                        text-align: left;
+                        br{
+                            display: none;
+                        }
+                    }
 				}
 			}
 			&:nth-child(2n){
@@ -131,6 +183,9 @@
 					}
 					p + h4{
 						margin-top: 50px;
+                        @include mq{
+                            margin-top: 20px;
+                        }
 					}
 				}
 			}

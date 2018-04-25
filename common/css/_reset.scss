@@ -4,6 +4,7 @@
 @import "mq";
 
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr{
 	margin:0;
@@ -87,6 +88,7 @@ body{
 	font:10px/1.4 "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
 	@include mq{
 		-webkit-text-size-adjust: 100%;
+        font-family: "Sawarabi Mincho";
 	}
 }
 

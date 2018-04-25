@@ -4,7 +4,7 @@
 	<div class="pcHd">
 		<div class="hdIn">
 			<div class="colL">
-				<h1 class="logo"><a href="#"><img src="/common/img/logo.png" alt=""></a></h1>
+				<h1 class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></h1>
 			</div>
 			<div class="colR">
 				<nav class="nav layer1">
