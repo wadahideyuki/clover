@@ -10,14 +10,29 @@
 }
 /* トップ */
 .catManagement.pageTop{
+    @include mq{
+        width: 100%;
+        overflow: hidden;
+    }
 	.content{
 		padding: 90px 0 70px;
+        @include mq{
+            padding: 30px 0;
+        }
 		.block1{
 			margin-bottom: 60px;
 			text-align: center;
+            @include mq{
+                margin-bottom: 20px;
+            }
 			h3{
 				margin-bottom: 50px;
 				font-size: 3.5rem;
+                @include mq{
+                    margin-bottom: 25px;
+                    font-size: 2.2rem;
+                    
+                }
 			}
 			p{
 				font-size: 1.8rem;
@@ -25,6 +40,13 @@
 					margin-top: 1em;
 					line-height: 2;
 				}
+                @include mq{
+                    text-align: left;
+                    font-size: 1.4rem;
+                    br{
+                        display: none;
+                    }
+                }
 			}
 		}
 		.menus{
@@ -35,6 +57,9 @@
 				& + a{
 					margin-top: 25px;
 				}
+                @include mq{
+                    display: block
+                }
 				&:nth-child(even){
 					flex-direction: row-reverse;
 				}
@@ -46,6 +71,11 @@
 					background-repeat: no-repeat;
 					background-size: cover;
 					width: (811/1205) * $per;
+                    @include mq{
+                        width: 100%;
+                        height: 40vw;
+                        background-size: 100% auto;
+                    }
 				}
 				&:nth-child(1):before{background-image: url(../img/management/menu01.png);}
 				&:nth-child(2):before{background-image: url(../img/management/menu02.png);}
@@ -55,8 +85,15 @@
 					width: 100%;
 					padding: 70px 15px 80px;
 					text-align: center;
+                    box-sizing: border-box;
+                    @include mq{
+                        padding: 5%;
+                    }
 					h4{
 						font-size: 3.5rem;
+                        @include mq{
+                            font-size: 1.8rem;
+                        }
 						em{
 							display: block;
 							font-size: (50/35) * 1em;
@@ -64,6 +101,9 @@
 							&.szS{
 								font-size: (42/35) * 1em;
 							}
+                            @include mq{
+                                line-height: 1;
+                            }
 						}
 						span{
 							display: block;
@@ -73,6 +113,9 @@
 					.btnWrap{
 						margin-top: 30px;
 						@include noto;
+                        @include mq{
+                            margin-top: 3%;
+                        }
 						span{
 							display: inline-flex;
 							align-items: center;
@@ -84,6 +127,11 @@
 								width: 0.6em;
 								height: 0.6em;
 							}
+                            @include mq{
+                                
+                                padding: 0.5em;
+                                font-size: 1.2rem;
+                            }
 						}
 					}
 				}
@@ -96,6 +144,11 @@
 	.content{
 		padding: 50px 0;
 		text-align: center;
+        @include mq{
+            .lead1{
+                font-size: 1.2rem;
+            }
+        }
 		.blogList{
 			display: flex;
 			justify-content: space-between;
@@ -104,6 +157,10 @@
 			> li{
 				width: (238/1094) * $per;
 				margin-bottom: 50px;
+                @include mq{
+                    width: 46%;
+                    margin-bottom: 25px;
+                }
 				a{
 					display: block;
 					dl{
@@ -118,6 +175,11 @@
 							margin-top: 1em;
 							font-size: 1.6rem;
 							line-height: (24/16);
+                            @include mq{
+                                font-size: 1.2rem;
+                                margin-top: 3px;
+                                
+                            }
 						}
 					}
 					&:hover{
