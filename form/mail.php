@@ -273,9 +273,6 @@ else if($confirmDsp == 1){
 <!-- ▼ Footerその他コンテンツなど　※編集可 ▼-->
 
 
-<!--フッター-->
-<!--#include virtual="/common/inc/footer.inc" -->
-<!--/フッター-->
 
 </div><!--/.wrapper-->
 </body>
