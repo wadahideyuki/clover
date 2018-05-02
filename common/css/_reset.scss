@@ -85,10 +85,11 @@ html{
 body{
 	margin:0;
 	padding:0;
-	font:10px/1.4 "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+	font-size:10px;
+    line-height: 1.4;
+    font-family: "a-otf-futo-min-a101-pr6n",serif;
 	@include mq{
 		-webkit-text-size-adjust: 100%;
-        font-family: "Sawarabi Mincho";
 	}
 }
 
