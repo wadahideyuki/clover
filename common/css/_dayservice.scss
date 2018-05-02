@@ -8,112 +8,6 @@
 ---------------------------------------*/
 .catDayservice{
 }
-.catDayservice.pageDayTop{
-    .top-copy{
-        text-align: center;
-        padding: 70px 0 0 0;
-        font-size: 5rem;
-        @include mq{
-            font-size: 1.8rem;
-            padding: 30px 0 0 0;
-        }
-    }
-    .day-box{
-        display: flex;
-        padding: 70px 0 0 0;
-        align-items: center;
-        @include mq(l){
-            display: block;
-            .photo{
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-            }
-        }
-        @include mq{
-            padding: 30px 0 0 0;
-        }
-        .txt{
-            padding: 40px;
-            box-sizing: border-box;
-            width: 50%;
-            @include mq(l){
-                width: 100%;
-                padding: 0px;
-                margin: 0 auto;
-            }
-            p{
-                font-size: 1.6rem;
-                padding-bottom: 15px;
-                line-height: 1.8;
-                @include mq{
-                    font-size: 1.3rem;
-                    padding: 10px 0 0 0;
-                    br{
-                        display: none;
-                    }
-                }
-            }
-        }
-        &.day-box2{
-            flex-direction: row-reverse;
-            .txt{
-                padding:0 20px 0 10px;
-                @include mq(l){
-                    padding: 0px;
-                }
-            }
-        }
-        &.day-box3{
-            padding-bottom: 70px;
-            @include mq{
-                padding-bottom: 30px;
-            }
-        }
-    }
-    
-    .featureBlock{
-        padding: 50px 0;
-        @include mq{
-            margin-top: 25px;
-            padding: 25px 0;
-        }
-        .featureBox{
-        display: flex;
-            justify-content: space-between;
-            @include mq{
-                display: block;
-            }
-            dl{
-                width: 32%;
-                box-sizing: border-box;
-                padding: 20px;
-                border: 5px solid $mainColor;
-                margin: 20px 0;
-                @include mq{
-                    width: auto;
-                }
-                dt{
-                    font-size: 1.7rem;
-                    text-align: center;
-                    color: $mainColor;
-                    font-weight: bold;
-                    padding-bottom: 15px;
-                }
-                dd{
-                    font-size: 1.5rem;
-                    @include noto;
-                    line-height: 1.8;
-                    @include mq{
-                        font-size: 1.3rem;
-                    }
-                }
-            }
-    }
-    }
-
-    
-}
 /* 事業所 */
 .catDayservice.pageOffice{
 	.acrdList{
@@ -179,15 +73,6 @@
 			padding-bottom: 85px;
 			.mainImg{
 				margin-bottom: 30px;
-                position: relative;
-                p{
-                    position: absolute;
-                    left: 5%;
-                    top: 40%;
-                    font-size: 3rem;
-                    color: #FFF;
-                    text-shadow: 2px 2px 2px #000;
-                }
 			}
 			.thisLead{
 				margin-bottom: 40px;
@@ -282,98 +167,6 @@
 			}
 		}
 	}
-	@include mq{
-		.acrdList{
-		> ul{
-			> li{
-				&:before{
-					padding-top: 40%;
-				}
-			}
-		}
-		.accSlkBox{
-			text-align: left;
-		}
-		.accBtn{
-			padding: (15/320) * $per (40/320) * $per (15/320) * $per (15/320) * $per;
-			font-size: 1.6rem;
-			&:after{
-				right: 6%;
-			}
-			&.show{
-				&:after{
-				}
-			}
-		}
-		.accCont{
-			padding-bottom: (10/320) * $per;
-			.mainImg{
-				margin-bottom: (20/320) * $per;
-			}
-			.thisLead{
-				margin-bottom: (20/320) * $per;
-				font-size: 1.4rem;
-				line-height: 1.4;
-			}
-			.officeSlk{
-				margin-bottom: 10%;
-				padding: 0;
-				.slick-slider{
-					padding-bottom: 10%;
-				}
-				.slick-dots{
-					bottom: 0;
-				}
-				.slick-list{
-					margin: 0 -5px;
-				}
-				.liItem{
-					padding: 0 5px;
-				}
-			}
-			.infoBox{
-				> ul{
-					display: block;
-					> li{
-						width: auto;
-						& + li{
-							margin-top: 10%;
-						}
-						dt{
-							margin-bottom: 1em;
-							font-size: 2.0rem;
-							text-align: center;
-							span{
-								padding-bottom: 1%;
-							}
-						}
-						&.access{
-							dd{
-								iframe{
-								}
-							}
-						}
-						&.gaiyo{
-							dd{
-								table{
-									$padTB: 2%;
-									tr{
-									}
-									th{
-										padding: $padTB 5% $padTB 0;
-									}
-									td{
-										padding: $padTB 0;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	}
 }
 /* よくある質問 */
 .catDayservice.pageQa{
@@ -427,40 +220,18 @@
 				margin-top: 1em;
 			}
 			em{
-				background:linear-gradient(transparent 40%, #fc0 40%, #fc0 90%, transparent 90%);
 				position: relative;
-			}
-		}
-	}
-	@include mq{
-		.content{
-			padding: (25/320) * $per 0 (30/320) * $per;
-		}
-		.accBox{
-			> li{
-			}
-		}
-		.accBtn{
-			padding: (15/320) * 100vw 3em (15/320) * 100vw 0;
-			font-size: 1.6rem;
-			&:after{
-				width: (20/30) * 1em;
-				height: (20/30) * 1em;
-				right: 1%;
-			}
-			&.show{
-				&:after{
+				&:before{
+					content: "";
+					background-color: #ffcc00;
+					width: 100%;
+					height: (11/16) * 1em;
+					position: absolute;
+					bottom: 0.1em;
+					left: 0;
 				}
-			}
-		}
-		.accCont{
-			padding-bottom: (15/320) * 100vw;
-			font-size: 1.4rem;
-			line-height: 1.5;
-			p{
-				& + p{
-				}
-				em{
+				span{
+					position: relative;
 				}
 			}
 		}
@@ -468,22 +239,9 @@
 }
 /* クローバーの介護観 */
 .catDayservice.pageCare{
-	.inner{
-		.ttl2{
-			padding-bottom: 30px;
-			margin-bottom: 0px;
-		}
-	}
-	section{
-		background: #FFF;
-	}
-	#pankz{
-		background: #FFF;
-	}
 	.content{
 		padding: 65px 0 100px;
 		text-align: center;
-        background-color: #EEE;
 		.thisLead{
 			@include noto;
 			font-size: 1.6rem;
@@ -496,69 +254,17 @@
 		}
 	}
 	.careBox{
-		background:url(../img/dayservice/care/care_bg_fix.jpg) top center no-repeat;
+		background:url(../img/dayservice/care/care_bg_fix.png) center center no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
-        padding-top: 50px;
+		padding: (80/1400) * $per;
 		.box{
-			background:url(../img/dayservice/care/quote.png) left 47px no-repeat rgba(255,255,255,0.3);
+			background:url(../img/dayservice/care/quote.png) left 47px no-repeat rgba(255,255,255,0.5);
 			padding: 80px 40px 40px;
 			p{
 				@include noto;
 				font-size: 1.6rem;
 				line-height: (26/16);
-				text-shadow: 0 0 5px #fff;
-				&.name{
-					margin-top: 5px;
-					text-align: right;
-				}
-			}
-		}
-	}
-	@include mq{
-		&:before{
-			content: "";
-			background:url(../img/dayservice/care/care_bg_fix.jpg) top center no-repeat;
-			background-size: cover;
-			width: 100vw;
-			height: 100vh;
-			position: fixed;
-			top: 0;
-			bottom: 0;
-		}
-		.spCont{
-			position: relative;
-		}
-		.content{
-			padding: (25/320) * $per 0 (30/320) * $per;
-			.thisLead{
-				font-size: 1.4rem;
-				text-align: left;
-				line-height: 1.4;
-				p{
-					& + p{
-						margin-top: 0.7em;
-					}
-				}
-			}
-		}
-		.careBox{
-			background: none;
-			padding: (15/320) * $per 0;
-			position: relative;
-			.box{
-				background-position: left 1em;
-				background-size: 4em auto;
-				padding: (30/320) * 100vw (15/320) * 100vw (15/320) * 100vw;
-				font-size: 1.4rem;
-				position: relative;
-				p{
-					font-size: inherit;
-					line-height: 1.4;
-					&.name{
-						margin-top: 0.5em;
-					}
-				}
 			}
 		}
 	}
@@ -570,7 +276,7 @@
 		text-align: center;
 		.inner{
 			&.no1{
-				padding-bottom: 70px;
+				padding-bottom: 140px;
 			}
 		}
 		.pageScrl{
@@ -591,78 +297,119 @@
 			line-height: (26/16);
 		}
 		.flowBox{
-			max-width: 900px;
-			padding: 0 20px;
-			margin: 0 auto;
-			position: relative;
-			&:before{
-				content: "";
-				width: 8px;
-				height: 100%;
-				margin-left: -4px;
-				position: absolute;
-				left: 50%;
-				top: 0px;
-				background: #CCC;
-			}
 			> li{
 				background-color: #fff;
 				position: relative;
-        border: 2px solid #CCC;
-				padding:30px;
-				border-radius: 10px;
-				margin-top: 15px;
-				display: flex;
-				font-size: 1.8rem;
-				text-align: left;
-				align-items: top;
-				@include noto;
-				.img{
-					width: 12%;
-					color: $mainColor;
+				padding-top: 50px;
+				h4{
+					display: block;
+					background-color: inherit;
+					width: 170px;
+					height: 170px;
+					margin: auto;
+					padding-top: 0.7em;
+					font-size: 3.5rem;
+					letter-spacing: 0;
+					border-radius: 50% 50% 0 0;
+					box-sizing: border-box;
+					position: absolute;
+					top: -66px;
+					left: 0;
+					right: 0;
+					span{
+						margin: 0 -0.2em;
+					}
 				}
-				dt{
-					font-weight: bold;
-					padding-bottom: 5px;
-				}
-				dd{
-					p{
-						display: inline-block;
-						width: 80px;
-						height: 80px;
-						border-radius: 50%;
-						color: #FFF;
+				> .inner{
+					padding-bottom: 130px;
+					position: relative;
+					&:before{
+						content: "";
+						background-color: #f0f0f0;
+						width: 8px;
+						margin: auto;
 						position: absolute;
-						right: -20px;
-						top: -20px;
-						font-size: 1.4rem;
-						text-align: center;
-						background: $mainColor;
-						&:after{
-							content: "";
-							display: inline-block;
-							border-top: 20px solid $mainColor;
-							border-right: 10px solid transparent;
-							border-left: 10px solid transparent;
-							position: absolute;
-							right:40px;
-							top: 70px;
-							transform: rotate(25deg);
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+					}
+				}
+				.flowDtl{
+					> li{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						dl{
+							width: 100%;
+							@include noto;
+							text-align: left;
 						}
-						a{
-							display: inline-block;
-							padding-top: 20px;
-							&:before{
-								content: "";
-								width: 7px;
-								height: 7px;
-								margin-right: 3px;
-								border-top: 2px solid #FFF;
-								border-right: 2px solid #FFF;
-								transform: rotate(45deg);
+						dt{
+							margin-bottom: 0.5em;
+							padding: 0.5em 10px 0.5em 0;
+							color: $mainColor;
+							font-size: 2.2rem;
+							line-height: (30/22);
+							border-bottom: 1px solid $mainColor;
+							small{
 								display: inline-block;
+								font-size: (15/22) * 1em;
 							}
 						}
+						dd{
+							padding: 0 10px 10px 0;
+							font-size: 1.6rem;
+							line-height: (25/16);
+						}
+						.img{
+							flex-shrink: 0;
+							width: 69.7%;
+							position: relative;
+							em{
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								background-color: $mainColor;
+								width: 111px;
+								height: 111px;
+								color: #fff;
+								@include noto;
+								font-size: 2.0rem;
+								border-radius: 50%;
+								position: absolute;
+								top: -17px;
+								left: -51px;
+							}
+						}
+						& + li{
+							margin-top: 50px;
+						}
+						&:nth-child(2n){
+							flex-direction: row-reverse;
+							dl{
+							}
+							dt{
+								padding: 0.5em 0 0.5em 20px;
+							}
+							dd{
+								padding: 0 0 10px 20px;
+							}
+						}
+					}
+				}
+				&:nth-child(2n){
+					background-color: #f0f0f0;
+					> .inner{
+						&:before{
+							background-color: #fff;
+						}
+					}
+				}
+				&:last-child{
+					padding-bottom: 80px;
+					> .inner{
+						padding-bottom: 0;
 					}
 				}
 			}
@@ -753,142 +500,7 @@
 			}
 		}
 	}
-	@include mq{
-		.dayZone{//クローバーの１日
-			padding-top: 7%;
-			.inner{
-				&.no1{
-					padding-bottom: 7%;
-				}
-			}
-			.pageScrl{
-				margin-bottom: 7%;
-				font-size: 1.2rem;
-				.clkScrl{
-					width: 48%;
-					padding: 3vw 0;
-					& + .clkScrl{
-						margin-left: 2%;
-					}
-				}
-			}
-			.thisLead{
-				font-size: 1.4rem;
-			}
-			.flowBox{
-				padding: 0 (15/320) * 100vw;
-				&:before{
-					width: (8/320) * 100vw;
-					margin-left: -(4/320) * 100vw;
-				}
-				> li{
-					border-width: (1/320) * 100vw;
-					padding:(15/320) * 100vw;
-					border-radius: 5px;
-					margin-top: (15/320) * 100vw;
-					display: block;
-					font-size: 1.6rem;
-					.img{
-						width: auto;
-						margin: 0 (50/320) * 100vw (5/320) * 100vw 0;
-					}
-					dt{
-						margin-right: (50/320) * 100vw;
-						padding-bottom: (5/320) * 100vw;
-					}
-					dd{
-						p{
-							width: 6em;
-							height: 6em;
-							right: -1.2em;
-							top: -1.2em;
-							font-size: 1.2rem;
-							&:after{
-								border-top-width: 1em;
-								border-right-width: 0.5em;
-								border-left-width: 0.5em;
-								right:4em;
-								top: 5.3em;
-							}
-							a{
-								padding-top: 1.5em;
-								&:before{
-									width: 0.5em;
-									height: 0.5em;
-									margin-right: 0.25em;
-									border-top-width: 0.2em;
-									border-right-width: 0.2em;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		.payZone{//利用料金
-			padding: 7% 0 10%;
-			.thisLead{
-				padding: (15/320) * 100vw;
-				dt{
-					font-size: 1.6rem;
-				}
-				dd{
-					font-size: 1.4rem;
-				}
-			}
-			h4{
-				margin: 10% 0 5%;
-				padding-bottom: 2%;
-				font-size: 1.6rem;
-				border-bottom-width: (2/320) * 100vw;
-			}
-			h5{
-				padding-left: (10/320) * 100vw;
-				font-size: 1.2rem;
-				&:before{
-					width: (4/320) * 100vw;
-					top: (3/320) * 100vw;
-					bottom: (3/320) * 100vw;
-				}
-			}
-			table{
-				font-size: 1.0rem;
-			}
-			th,
-			td{
-				padding: (5/320) * 100vw (5/320) * 100vw;
-			}
-			th{
-				width: auto;
-			}
-			td{
-			}
-			thead{
-				td{
-				}
-			}
-			tbody{
-			}
-			small{
-				margin-top: 2%;
-				font-size: 1.0rem;
-			}
-			ul{
-				display: block;
-				> li{
-					width: auto;
-					& + li{
-						h5{
-							margin-top: 2em !important;
-						}
-					}
-					th{
-						width: 30%;
-					}
-				}
-			}
-		}
-	}
 }
+
 
 
