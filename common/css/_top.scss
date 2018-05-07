@@ -41,8 +41,35 @@
 		h2{
 			background-color: #fff;
 			padding: 25px;
-			font-size: 4.5rem;
+			font-size: 5rem;
 			text-align: center;
+            line-height: 1.2;
+            span{
+                font-size: 80%;
+                
+            }
+            a{
+                font-size: 2rem;
+                padding-top: 10px;
+                display: block;
+                color: $mainColor;
+                @include mq{
+                    font-size: 1rem;
+                }
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    border-top: 2px solid $mainColor;
+                    border-right: 2px solid $mainColor;
+                    transform: rotate(45deg);
+                    @include mq{
+                        width: 4px;
+                        height: 4px;
+                    }
+                }
+            }
 		}
 		@include mq{
 			margin-bottom: (8/640) * $per;

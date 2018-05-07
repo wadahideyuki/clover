@@ -6,9 +6,20 @@
 /*--------------------------------------
  レイアウト
 ---------------------------------------*/
+.wrapper{
+    padding-top: 90px;
+    @include mqMaxW(999px){
+        padding-top: 17vw;
+    }
+}
 .header{
 	border-bottom: 1px solid #ebe9e6;
     background: #FFF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
 	.pcHd{
 		.hdIn{
 			display: flex;
@@ -17,6 +28,7 @@
 			height: 90px;
 			padding: 0px 15px;
 			box-sizing: border-box;
+           
 			> .colL{
 				max-width: (170/1400) * $per;
 				.logo{
