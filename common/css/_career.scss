@@ -67,6 +67,36 @@
 			}
 		}
 	}
+    
+    .cast-list{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        @include mq{
+            justify-content: space-between;
+        }
+        li{
+        margin:0 1% 30px 1% ;
+            width: 23%;
+            @include mq{
+                width: 48%;
+                margin: 0;
+                margin-bottom: 5%;
+            }
+            img{
+                max-width: 100%;
+            }
+            p{
+                @include noto;
+                padding-top: 5px;
+                font-size: 1.6rem;
+                @include mq{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
 }
 /* トップ */
 .catCareer.pageTop{
@@ -172,6 +202,131 @@
 			}
 		}
 	}
+    
+    .career-message{
+        background: $mainColor;
+        color: #FFF;
+        line-height: 2;
+        padding-bottom: 70px;
+        @include mq{
+           padding-bottom: 30px; 
+            br{
+                display: none;
+            }
+        }
+        h2{
+            font-size: 4rem;
+            text-align: center;
+            @include mq{
+                font-size: 2.5rem;
+            }
+        }
+        p{
+            padding: 20px 0 0 0;
+            line-height: 2;
+          font-size: 1.8rem;  
+            text-align: center;
+            @include noto; 
+            @include mq{
+                padding: 0px;
+                text-align: left;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .jinzai-inner{
+        padding:80px 0 0 0;
+        margin-bottom: 80px;
+        border-top: 1px dotted $mainColor;
+        line-height: 2;
+        @include mq{
+            padding: 5% 0;
+            margin-bottom: 0px;
+        }
+        
+    }
+    .jinzai{
+        padding: 70px 0;
+        text-align: center;
+        @include mq{
+            padding: 10% 0;
+        }
+        h3{
+            font-size: 3rem;
+            padding-bottom: 20px;
+            color: $mainColor;
+            @include mq{
+                font-size: 1.6rem;
+                padding-bottom: 3%;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            @include noto; 
+            @include mq{
+                font-size: 1.2rem;
+                br{
+                    display: none;
+                }
+            }
+        }
+        .jinzai4{
+            line-height: 2;
+            display: flex;
+            padding: 40px 0;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @include mq{
+                padding: 5% 0;
+            }
+            li{
+                padding: 20px;
+                box-sizing: border-box;
+                border: 5px solid #EEE;
+                width: 23%;
+                @include mq{
+                    width: 100%;
+                    padding: 3% 0;
+                    margin-bottom: 5%;
+                }
+                &:first-child{
+                    color: $mainColor;
+                    border: 5px solid $mainColor;
+                }
+                strong{
+                    display:block;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    @include mq{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        .jinzai-power{
+            padding: 40px 0;
+            text-align: center;
+            @include mq{
+                padding: 5% 0;
+            }
+            li{
+                padding: 20px 0;
+                display: inline-block;
+                font-size: 2rem;
+                box-sizing: border-box;
+                 background: $mainColor;
+                color: #FFF;
+                margin: 1%;
+                width: 47%;
+                @include mq{
+                    width: 100%;
+                    padding: 3% 0;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
 }
 /* 人材育成への想い */
 .catCareer.pageOmoi{
