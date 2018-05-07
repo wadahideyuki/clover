@@ -44,17 +44,18 @@
 				<h2 class="logo"><a href="#"><img src="/common/img/logo.png" alt=""></a></h2>
 				<ul class="layer1">
 					<li>
-						<h3>経営理念</h3>
+						<h3>3つのHappiness</h3>
 						<ul class="layer2">
-							<li><a href="/management/">経営理念TOP</a></li>
-							<li><a href="/management/blog/">ブログ一覧</a></li>
+							<li><a href="/cast/">キャスト紹介</a></li>
+							<li><a href="/management/blog/">ブログ</a></li>
+							<li><a href="/career/">採用情報TOP</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>CLOVERとは</h3>
 						<ul class="layer2">
 							<li><a href="/about/">CLOVERとはTOP</a></li>
-							<li><a href="/about/clover/">CLOVERとは</a></li>
+							<li><a href="/about/clover/">社名の由来・会社概要・沿革</a></li>
 							<li><a href="/about/message/">トップメッセージ</a></li>
 							<li><a href="/about/value/">VALUE・VISION・PRINCIPLE</a></li>
 						</ul>
@@ -62,7 +63,8 @@
 					<li>
 						<h3>デイサービス</h3>
 						<ul class="layer2">
-							<li><a href="/dayservice/qa/">よくある質問</a></li>
+							<li><a href="/dayservice/">デイサービスTOP</a></li>
+							<li><a href="/dayservice/qa/">社名の由来・会社概要・沿革</a></li>
 							<li><a href="/dayservice/office/">事業所</a></li>
 							<li><a href="/dayservice/care/">クローバーの介護観</a></li>
 							<li><a href="/dayservice/day/">クローバーの１日・利用料金</a></li>
@@ -75,12 +77,16 @@
 						</ul>
 					</li>
 					<li>
+						<h3>キャスト紹介</h3>
+						<ul class="layer2">
+							<li><a href="/cast/">キャスト紹介TOP</a></li>
+						</ul>
+					</li>
+					<li>
 						<h3>採用情報</h3>
 						<ul class="layer2">
 							<li><a href="/career/">採用情報TOP</a></li>
-							<li><a href="/career/train/">人材育成への想い</a></li>
 							<li><a href="/career/recruit/">募集要項</a></li>
-							<li><a href="/cast/episode/index.html">社員エピソード集</a></li>
 						</ul>
 					</li>
 				</ul>
