@@ -31,6 +31,10 @@
         p{
             font-size: 1.8rem;
             line-height: 1.8;
+            strong{
+                font-weight: bold;
+                font-size: 140%;
+            }
             @include mq{
             font-size: 1.2rem;
             }
@@ -71,6 +75,7 @@
         text-align: center;
         position: relative;
         margin-top: 60px;
+        margin-bottom: 60px;
         border-radius: 5px;
              font-size: 1.7rem;
         @include mq{
@@ -133,6 +138,26 @@
                     width: 32%;
                     @include mq{
                         width: 100%;
+                    }
+                }
+            }
+            &.col2{
+                li{
+                    text-align: left;
+                    width: 49%;
+                    padding: 3%;
+                    @include mq{
+                        width: 100%;
+                    }
+                    p{
+                        text-align: left;
+                        strong{
+                            display: block;
+                            text-align: center;
+                            padding:0 0 5px 0;
+                            color: $mainColor;
+                            font-weight: bold;
+                        }
                     }
                 }
             }

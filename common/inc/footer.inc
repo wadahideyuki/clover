@@ -51,9 +51,9 @@
 						</ul>
 					</li>
 					<li>
-						<h3>私たちについて</h3>
+						<h3>CLOVERとは</h3>
 						<ul class="layer2">
-							<li><a href="/about/">私たちについてTOP</a></li>
+							<li><a href="/about/">CLOVERとはTOP</a></li>
 							<li><a href="/about/clover/">CLOVERとは</a></li>
 							<li><a href="/about/message/">トップメッセージ</a></li>
 							<li><a href="/about/value/">VALUE・VISION・PRINCIPLE</a></li>
@@ -80,7 +80,7 @@
 							<li><a href="/career/">採用情報TOP</a></li>
 							<li><a href="/career/train/">人材育成への想い</a></li>
 							<li><a href="/career/recruit/">募集要項</a></li>
-							<li><a href="/career/episode/">社員エピソード集</a></li>
+							<li><a href="/cast/episode/index.html">社員エピソード集</a></li>
 						</ul>
 					</li>
 				</ul>

@@ -36,6 +36,7 @@
 					a{
 						display: block;
 						@include hvr;
+                        word-break: keep-all;
 					}
 				}
 			}
@@ -45,19 +46,20 @@
 				align-items: center;
 				padding-left: 15px;
 			}
+
 			.spBtnMenu{display: none;}
 			.nav.layer1{
 				ul{
 					display: flex;
 					align-items: center;
 					font-size: 1.6rem;
-					border-right: 1px dotted #929292;
+                    align-items: center;
 					> li{
-						padding: 5px 15px;
-						border-left: 1px dotted #929292;
+						padding: 0px 15px;
 						a{
 							display: inline-block;
 							text-align: center;
+                            word-break: keep-all;
 							&.show{
 								color: $mainColor;
 							}
@@ -88,13 +90,14 @@
 				}
 			}
 			.tel{
-				width: (185/1140) * $per;
+				width: 171px;
 				margin-left: 35px;
 			}
 			.btnWrap{
 				margin-left: 20px;
 				a{
 					display: flex;
+                    word-break: keep-all;
 					align-items: center;
 					font-size: 1.6rem;
 					svg{
@@ -186,7 +189,7 @@
 					}
 				}
 				.tel{
-					width: 18%;
+					width: 171px;
 					margin-left: 15px;
 				}
 				.btnWrap{
@@ -209,7 +212,7 @@
 					}
 				}
 				.tel{
-					width: 18%;
+					width: 171px;
 					margin-left: 15px;
 				}
 				.btnWrap{
