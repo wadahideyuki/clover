@@ -8,6 +8,155 @@
 ---------------------------------------*/
 .catDayservice{
 }
+.catDayservice.pageDayTop{
+    .top-copy{
+        text-align: center;
+        padding: 70px 0 0 0;
+        font-size: 5rem;
+        @include mq{
+            font-size: 1.8rem;
+            padding: 30px 0 0 0;
+        }
+    }
+    .day-box{
+        display: flex;
+        padding: 70px 0 0 0;
+        align-items: center;
+        @include mq(l){
+            display: block;
+            .photo{
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+        @include mq{
+            padding: 30px 0 0 0;
+        }
+        .txt{
+            padding: 40px;
+            box-sizing: border-box;
+            width: 50%;
+            @include mq(l){
+                width: 100%;
+                padding: 0px;
+                margin: 0 auto;
+            }
+            p{
+                font-size: 1.6rem;
+                padding-bottom: 15px;
+                line-height: 1.8;
+                @include mq{
+                    font-size: 1.3rem;
+                    padding: 10px 0 0 0;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.day-box2{
+            flex-direction: row-reverse;
+            .txt{
+                padding:0 20px 0 10px;
+                @include mq(l){
+                    padding: 0px;
+                }
+            }
+        }
+        &.day-box3{
+            padding-bottom: 70px;
+            @include mq{
+                padding-bottom: 30px;
+            }
+        }
+    }
+    
+    .featureBlock{
+			padding: 50px 0;
+			@include mq{
+				margin-top: 25px;
+				padding: 25px 0;
+			}
+			.lowLinks{
+				display: flex;
+				justify-content: center;
+				margin-bottom: 50px;
+				@include noto;
+				a{
+					background-color: #fff;
+					padding: 0.5em 1em;
+					color: $mainColor;
+					font-size: 1.7rem;
+					font-weight: bold;
+					border: 1px solid $mainColor;
+					border-radius: 50px;
+					transition: 0.3s;
+					& + a{
+						margin-left: 1em;
+					}
+					&:hover{
+						background-color: $mainColor;
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+				@include mq{
+					display: block;
+					a{
+						display: block;
+						font-size: 1.4rem;
+						border-radius: 0;
+						border-left: none;
+						border-right: none;
+						& + a{
+							margin: 0;
+							border-top: none;
+						}
+					}
+				}
+			}
+			.featureBox{
+				display: flex;
+				justify-content: space-between;
+				@include mq{
+					display: block;
+				}
+				dl{
+					width: 32%;
+					box-sizing: border-box;
+					border: 5px solid $mainColor;
+					margin: 20px 0;
+					@include mq{
+						width: auto;
+					}
+					dt{
+					}
+					dd{
+						padding: 20px;
+						strong{
+							display: block;
+							font-size: 1.7rem;
+							text-align: center;
+							color: $mainColor;
+							font-weight: bold;
+							padding-bottom: 15px;
+						}
+						p{
+							font-size: 1.5rem;
+							@include noto;
+							line-height: 1.8;
+							@include mq{
+								font-size: 1.3rem;
+							}
+						}
+					}
+				}
+    	}
+    }
+
+    
+}
 /* 事業所 */
 .catDayservice.pageOffice{
 	.acrdList{
@@ -73,6 +222,15 @@
 			padding-bottom: 85px;
 			.mainImg{
 				margin-bottom: 30px;
+                position: relative;
+                p{
+                    position: absolute;
+                    left: 5%;
+                    top: 40%;
+                    font-size: 3rem;
+                    color: #FFF;
+                    text-shadow: 2px 2px 2px #000;
+                }
 			}
 			.thisLead{
 				margin-bottom: 40px;
@@ -167,6 +325,98 @@
 			}
 		}
 	}
+	@include mq{
+		.acrdList{
+		> ul{
+			> li{
+				&:before{
+					padding-top: 40%;
+				}
+			}
+		}
+		.accSlkBox{
+			text-align: left;
+		}
+		.accBtn{
+			padding: (15/320) * $per (40/320) * $per (15/320) * $per (15/320) * $per;
+			font-size: 1.6rem;
+			&:after{
+				right: 6%;
+			}
+			&.show{
+				&:after{
+				}
+			}
+		}
+		.accCont{
+			padding-bottom: (10/320) * $per;
+			.mainImg{
+				margin-bottom: (20/320) * $per;
+			}
+			.thisLead{
+				margin-bottom: (20/320) * $per;
+				font-size: 1.4rem;
+				line-height: 1.4;
+			}
+			.officeSlk{
+				margin-bottom: 10%;
+				padding: 0;
+				.slick-slider{
+					padding-bottom: 10%;
+				}
+				.slick-dots{
+					bottom: 0;
+				}
+				.slick-list{
+					margin: 0 -5px;
+				}
+				.liItem{
+					padding: 0 5px;
+				}
+			}
+			.infoBox{
+				> ul{
+					display: block;
+					> li{
+						width: auto;
+						& + li{
+							margin-top: 10%;
+						}
+						dt{
+							margin-bottom: 1em;
+							font-size: 2.0rem;
+							text-align: center;
+							span{
+								padding-bottom: 1%;
+							}
+						}
+						&.access{
+							dd{
+								iframe{
+								}
+							}
+						}
+						&.gaiyo{
+							dd{
+								table{
+									$padTB: 2%;
+									tr{
+									}
+									th{
+										padding: $padTB 5% $padTB 0;
+									}
+									td{
+										padding: $padTB 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	}
 }
 /* よくある質問 */
 .catDayservice.pageQa{
@@ -220,18 +470,40 @@
 				margin-top: 1em;
 			}
 			em{
+				background:linear-gradient(transparent 40%, #fc0 40%, #fc0 90%, transparent 90%);
 				position: relative;
-				&:before{
-					content: "";
-					background-color: #ffcc00;
-					width: 100%;
-					height: (11/16) * 1em;
-					position: absolute;
-					bottom: 0.1em;
-					left: 0;
+			}
+		}
+	}
+	@include mq{
+		.content{
+			padding: (25/320) * $per 0 (30/320) * $per;
+		}
+		.accBox{
+			> li{
+			}
+		}
+		.accBtn{
+			padding: (15/320) * 100vw 3em (15/320) * 100vw 0;
+			font-size: 1.6rem;
+			&:after{
+				width: (20/30) * 1em;
+				height: (20/30) * 1em;
+				right: 1%;
+			}
+			&.show{
+				&:after{
 				}
-				span{
-					position: relative;
+			}
+		}
+		.accCont{
+			padding-bottom: (15/320) * 100vw;
+			font-size: 1.4rem;
+			line-height: 1.5;
+			p{
+				& + p{
+				}
+				em{
 				}
 			}
 		}
@@ -239,9 +511,22 @@
 }
 /* クローバーの介護観 */
 .catDayservice.pageCare{
+	.inner{
+		.ttl2{
+			padding-bottom: 30px;
+			margin-bottom: 0px;
+		}
+	}
+	section{
+		background: #FFF;
+	}
+	#pankz{
+		background: #FFF;
+	}
 	.content{
 		padding: 65px 0 100px;
 		text-align: center;
+        background-color: #EEE;
 		.thisLead{
 			@include noto;
 			font-size: 1.6rem;
@@ -254,17 +539,69 @@
 		}
 	}
 	.careBox{
-		background:url(../img/dayservice/care/care_bg_fix.png) center center no-repeat;
+		background:url(../img/dayservice/care/care_bg_fix.jpg) top center no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
-		padding: (80/1400) * $per;
+        padding-top: 50px;
 		.box{
-			background:url(../img/dayservice/care/quote.png) left 47px no-repeat rgba(255,255,255,0.5);
+			background:url(../img/dayservice/care/quote.png) left 47px no-repeat rgba(255,255,255,0.3);
 			padding: 80px 40px 40px;
 			p{
 				@include noto;
 				font-size: 1.6rem;
 				line-height: (26/16);
+				text-shadow: 0 0 5px #fff;
+				&.name{
+					margin-top: 5px;
+					text-align: right;
+				}
+			}
+		}
+	}
+	@include mq{
+		&:before{
+			content: "";
+			background:url(../img/dayservice/care/care_bg_fix.jpg) top center no-repeat;
+			background-size: cover;
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+		}
+		.spCont{
+			position: relative;
+		}
+		.content{
+			padding: (25/320) * $per 0 (30/320) * $per;
+			.thisLead{
+				font-size: 1.4rem;
+				text-align: left;
+				line-height: 1.4;
+				p{
+					& + p{
+						margin-top: 0.7em;
+					}
+				}
+			}
+		}
+		.careBox{
+			background: none;
+			padding: (15/320) * $per 0;
+			position: relative;
+			.box{
+				background-position: left 1em;
+				background-size: 4em auto;
+				padding: (30/320) * 100vw (15/320) * 100vw (15/320) * 100vw;
+				font-size: 1.4rem;
+				position: relative;
+				p{
+					font-size: inherit;
+					line-height: 1.4;
+					&.name{
+						margin-top: 0.5em;
+					}
+				}
 			}
 		}
 	}
