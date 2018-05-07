@@ -22,17 +22,16 @@
 		.block1{
 			margin-bottom: 60px;
 			text-align: center;
-            @include mq{
-                margin-bottom: 20px;
-            }
+			@include mq{
+				margin-bottom: 20px;
+			}
 			h3{
 				margin-bottom: 50px;
 				font-size: 3.5rem;
-                @include mq{
-                    margin-bottom: 25px;
-                    font-size: 2.2rem;
-                    
-                }
+				@include mq{
+					margin-bottom: 25px;
+					font-size: 2.2rem;
+				}
 			}
 			p{
 				font-size: 1.8rem;
@@ -40,13 +39,17 @@
 					margin-top: 1em;
 					line-height: 2;
 				}
-                @include mq{
-                    text-align: left;
-                    font-size: 1.4rem;
-                    br{
-                        display: none;
-                    }
-                }
+				strong{
+					display: block;
+					font-size: 1.4em;
+				}
+				@include mq{
+					font-size: 1.4rem;
+					text-align: left;
+					> br{
+						display: none;
+					}
+				}
 			}
 		}
 		.menus{
@@ -108,6 +111,10 @@
 						span{
 							display: block;
 							margin-top: 0.4em;
+							line-height: 1.2;
+							small{
+								font-size: 0.8em;
+							}
 						}
 					}
 					.btnWrap{
