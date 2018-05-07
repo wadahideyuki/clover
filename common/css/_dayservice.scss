@@ -103,6 +103,7 @@
 				}
 				@include mq{
 					display: block;
+					margin-bottom: 10%;
 					a{
 						display: block;
 						font-size: 1.4rem;
@@ -658,10 +659,10 @@
 					}
 				}
 				> .inner{
-					padding-bottom: 130px;
+					padding: 0 60px 130px;
 					position: relative;
 					&:before{
-						content: "";
+//						content: "";
 						background-color: #f0f0f0;
 						width: 8px;
 						margin: auto;
@@ -677,6 +678,7 @@
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
+						position: relative;
 						dl{
 							width: 100%;
 							@include noto;
@@ -684,7 +686,7 @@
 						}
 						dt{
 							margin-bottom: 0.5em;
-							padding: 0.5em 10px 0.5em 0;
+							padding: 0.5em 0 0.5em 80px;
 							color: $mainColor;
 							font-size: 2.2rem;
 							line-height: (30/22);
@@ -695,42 +697,64 @@
 							}
 						}
 						dd{
-							padding: 0 10px 10px 0;
+							padding: 0 0 10px 80px;
 							font-size: 1.6rem;
 							line-height: (25/16);
 						}
+						.time{
+							display: flex;
+							flex-shrink: 0;
+							justify-content: center;
+							align-items: center;
+							background-color: $mainColor;
+							width: 111px;
+							height: 111px;
+							color: #fff;
+							@include noto;
+							font-size: 2.0rem;
+							border-radius: 50%;
+							position: absolute;
+							top: 0;
+							left: -51px;
+						}
 						.img{
 							flex-shrink: 0;
-							width: 69.7%;
+//							width: 69.7%;
+							width: 50%;
 							position: relative;
-							em{
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								background-color: $mainColor;
-								width: 111px;
-								height: 111px;
-								color: #fff;
-								@include noto;
-								font-size: 2.0rem;
-								border-radius: 50%;
-								position: absolute;
+							img{
+								border-radius: 10px;
+							}
+							.time{
 								top: -17px;
-								left: -51px;
 							}
 						}
 						& + li{
 							margin-top: 50px;
 						}
 						&:nth-child(2n){
-							flex-direction: row-reverse;
+//							flex-direction: row-reverse;
 							dl{
 							}
+							dt{
+							}
+							dd{
+							}
+						}
+						&.hasImg{
 							dt{
 								padding: 0.5em 0 0.5em 20px;
 							}
 							dd{
 								padding: 0 0 10px 20px;
+							}
+							&:nth-child(2n){
+								dt{
+//									padding: 0.5em 10px 0.5em 0;
+								}
+								dd{
+//									padding: 0 10px 10px 0;
+								}
 							}
 						}
 					}
@@ -740,6 +764,12 @@
 					> .inner{
 						&:before{
 							background-color: #fff;
+						}
+					}
+					.flowDtl{
+						> li{
+							dd{
+							}
 						}
 					}
 				}
@@ -834,6 +864,186 @@
 				th{
 					width: 150px;
 				}
+			}
+		}
+	}
+	@include mq{
+		.dayZone{//クローバーの１日
+			padding-top: 10%;
+			.inner{
+				&.no1{
+					padding-bottom: 20%;
+				}
+			}
+			.pageScrl{
+				margin-bottom: 10%;
+				font-size: 1.2rem;
+				.clkScrl{
+					width: 48%;
+					padding: 2.4vw 0;
+					& + .clkScrl{
+						margin-left: 4%;
+					}
+				}
+			}
+			.thisLead{
+				font-size: 1.3rem;
+			}
+			.flowBox{
+				> li{
+					padding-top: 5%;
+					h4{
+						width: (120/320) * 100vw;
+						height: (120/320) * 100vw;
+						font-size: 2.4rem;
+						top: -15vw;
+						span{
+						}
+					}
+					> .inner{
+						padding: 0 (15/320) * $per (65/320) * $per;
+					}
+					.flowDtl{
+						> li{
+							display: block;
+							dl{
+								width: auto;
+							}
+							dt{
+								padding: 0.5em 0;
+								font-size: 1.8rem;
+								small{
+								}
+							}
+							dd{
+								padding: 0 0 0.5em 0;
+								font-size: 1.4rem;
+							}
+							.time{
+								width: (110/320) * 100vw;
+								height: (110/320) * 100vw;
+								margin: auto;
+								font-size: 1.8rem;
+								position: static;
+							}
+							.img{
+								width: auto;
+								img{
+									margin-top: 5%;
+								}
+								.time{
+								}
+							}
+							& + li{
+								margin-top: 5%;
+							}
+							&:nth-child(2n){
+								dl{
+								}
+								dt{
+								}
+								dd{
+								}
+							}
+							&.hasImg{
+								dt{
+									padding: 0.5em 0;
+								}
+								dd{
+									padding: 0 0 0.5em 0;
+								}
+								&:nth-child(2n){
+									dt{
+									}
+									dd{
+									}
+								}
+							}
+						}
+					}
+					&:nth-child(2n){
+						> .inner{
+							&:before{
+							}
+						}
+						.flowDtl{
+							> li{
+								dd{
+								}
+							}
+						}
+					}
+					&:last-child{
+						padding-bottom: 5%;
+						> .inner{
+						}
+					}
+				}
+			}
+		}
+		.payZone{//利用料金
+			padding: 10% 0 10%;
+			.thisLead{
+				padding: 5%;
+				dt{
+					margin-bottom: 0.5em;
+					font-size: 1.6rem;
+				}
+				dd{
+					font-size: 1.4rem;
+				}
+			}
+			h4{
+				font-size: 1.7rem;
+			}
+			h5{
+				margin-bottom: 0.5em;
+				padding-left: 0.8em;
+				font-size: 1.4rem;
+				&:before{
+					width: 0.3em;
+					top: 0.2em;
+					bottom: 0.2em;
+				}
+			}
+			table{
+				font-size: 1.0rem;
+			}
+			th,
+			td{
+				padding: 1% 2%;
+			}
+			th{
+				width: auto;
+			}
+			td{
+			}
+			thead{
+				td{
+				}
+			}
+			tbody{
+			}
+			small{
+				margin-top: 2%;
+				font-size: 1.0rem;
+			}
+			ul{
+				display: block;
+				> li{
+					width: auto;
+					& + li{
+						h5{
+							margin-top: 2em !important;
+						}
+					}
+					th{
+						width: 45%;
+					}
+				}
+			}
+			h4 + ul li:first-child th{
+				width: auto;
 			}
 		}
 	}
