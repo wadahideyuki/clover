@@ -10,7 +10,24 @@
 }
 /* トップ */
 .catAbout.pageTop{
-	
+	.mainImg{
+		padding-top: 30px;
+		text-align: center;
+		img{
+			max-width: 1000px;
+		}
+	}
+	.links1{
+		padding-top: 30px;
+	}
+	@include mq{
+		.mainImg{
+			padding-top: 0;
+		}
+		.links1{
+			padding-top: 10%;
+		}
+	}
 }
 /* CLOVERとは */
 .catAbout.pageClover{
@@ -30,7 +47,8 @@
 		}
 		dt{
 			margin-bottom: 30px;
-			font-size: 2.1rem;
+			font-size: 1.9rem;
+			text-align: center;
 			letter-spacing: 0;
 			em{
 				color: #90c830;
@@ -39,6 +57,7 @@
 			@include mq{
 				margin-bottom: 1em;
 				font-size: 1.8rem;
+				text-align: left;
 				line-height: 1.7;
 			}
 		}

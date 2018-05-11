@@ -73,20 +73,20 @@ $(".tabBox .tabs a").click(function(){
     レイアウト別
 --------------------*/
 //PCのヘッダーのnav
-$(".header .pcHd .nav.layer1 a").click(function(){
-	if($(this).hasClass("show")){
-		$(".header .pcHd .nav.layer1 a").removeClass("show");
-		$(".header .pcHd .nav.layer2 li").slideUp("fast");
-	}else{
-		$(".header .pcHd .nav.layer1 a").removeClass("show");
-		$(this).addClass("show");
-		var hdNavNo = $(this).parent("li").attr("class").replace("hdNav", "");
-		console.log(hdNavNo);
-		$(".header .pcHd .nav.layer2 li").slideUp("fast");
-		$(".header .pcHd .nav.layer2 li.hdNavLower" + hdNavNo).slideDown("fast");
-	}
-	return false;
-});
+//$(".header .pcHd .nav.layer1 a").click(function(){
+//	if($(this).hasClass("show")){
+//		$(".header .pcHd .nav.layer1 a").removeClass("show");
+//		$(".header .pcHd .nav.layer2 li").slideUp("fast");
+//	}else{
+//		$(".header .pcHd .nav.layer1 a").removeClass("show");
+//		$(this).addClass("show");
+//		var hdNavNo = $(this).parent("li").attr("class").replace("hdNav", "");
+//		console.log(hdNavNo);
+//		$(".header .pcHd .nav.layer2 li").slideUp("fast");
+//		$(".header .pcHd .nav.layer2 li.hdNavLower" + hdNavNo).slideDown("fast");
+//	}
+//	return false;
+//});
 
 //spヘッダーのメニューボタン
 $(".spBtnMenu").click(function(){

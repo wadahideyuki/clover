@@ -8,6 +8,7 @@
 ---------------------------------------*/
 .pageSitetop{
 	.main{
+		padding-top: 5px;
 		margin-bottom: 8px;
 		@keyframes mainSld1{//1400pxは背景画像の横幅
 			0%{background-position: 0 top;}
@@ -43,33 +44,38 @@
 			padding: 25px;
 			font-size: 5rem;
 			text-align: center;
-            line-height: 1.2;
-            span{
-                font-size: 80%;
-                
-            }
-            a{
-                font-size: 2rem;
-                padding-top: 10px;
-                display: block;
-                color: $mainColor;
-                @include mq{
-                    font-size: 1rem;
-                }
-                &:after{
-                    content: "";
-                    display: inline-block;
-                    width: 8px;
-                    height: 8px;
-                    border-top: 2px solid $mainColor;
-                    border-right: 2px solid $mainColor;
-                    transform: rotate(45deg);
-                    @include mq{
-                        width: 4px;
-                        height: 4px;
-                    }
-                }
-            }
+			.in{
+				display: inline-block;
+			}
+			line-height: 1.2;
+			small{
+				font-size: 80%;
+			}
+			span{
+				display: block;
+				padding-top: 10px;
+				font-size: 2rem;
+				text-align: right;
+				@include mq{
+					font-size: 1rem;
+				}
+				a{
+					color: $mainColor;
+					&:after{
+						content: "";
+						display: inline-block;
+						width: 8px;
+						height: 8px;
+						border-top: 2px solid $mainColor;
+						border-right: 2px solid $mainColor;
+						transform: rotate(45deg);
+						@include mq{
+								width: 4px;
+								height: 4px;
+						}
+					}
+				}
+			}
 		}
 		@include mq{
 			margin-bottom: (8/640) * $per;

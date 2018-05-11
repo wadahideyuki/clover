@@ -7,16 +7,6 @@
 				<h1 class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></h1>
 			</div>
 			<div class="colR">
-				<nav class="nav layer1">
-					<ul>
-						<li class="hdNav1"><a href="#">3つのHappiness</a></li>
-						<li class="hdNav2"><a href="#">CLOVERとは</a></li>
-						<li class="hdNav3"><a href="#">デイサービス</a></li>
-						<li class="hdNav4"><a href="#">放課後等<br>デイサービス</a></li>
-						<li class="hdNav5"><a href="#">キャスト紹介</a></li>
-						<li class="hdNav6"><a href="#">採用情報</a></li>
-					</ul>
-				</nav>
 				<div class="tel"><img src="/common/img/hd_tel.png" alt=""></div>
 				<div class="btnWrap">
 					<a class="btn withIcn icnMail" href="/form/">
@@ -25,7 +15,18 @@
 				</div>
 			</div>
 		</div>
+		<nav class="nav layer1">
+			<ul>
+				<li class="hdNav1"><a href="/management/">3つのHappiness</a></li>
+				<li class="hdNav2"><a href="/about/">CLOVERとは</a></li>
+				<li class="hdNav3"><a href="/dayservice/">デイサービス</a></li>
+				<li class="hdNav4"><a href="/after/">放課後等デイサービス</a></li>
+				<li class="hdNav5"><a href="/cast/">キャスト紹介</a></li>
+				<li class="hdNav6"><a href="/career/">採用情報</a></li>
+			</ul>
+		</nav>
 
+		<!--
 		<nav class="nav layer2">
 			<ul>
 				<li class="hdNavLower1">
@@ -55,6 +56,7 @@
 				</li>
 			</ul>
 		</nav>
+		-->
 	</div>
 
 	<div class="spHd">

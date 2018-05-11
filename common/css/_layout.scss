@@ -7,7 +7,7 @@
  レイアウト
 ---------------------------------------*/
 .wrapper{
-    padding-top: 90px;
+    padding-top: 145px;
     @include mqMaxW(999px){
         padding-top: 17vw;
     }
@@ -30,7 +30,7 @@
 			box-sizing: border-box;
            
 			> .colL{
-				max-width: (170/1400) * $per;
+//				max-width: (170/1400) * $per;
 				.logo{
 					max-width: 170px;
 					a{
@@ -46,52 +46,9 @@
 				align-items: center;
 				padding-left: 15px;
 			}
-
 			.spBtnMenu{display: none;}
-			.nav.layer1{
-				ul{
-					display: flex;
-					align-items: center;
-					font-size: 1.6rem;
-                    align-items: center;
-					> li{
-						padding: 0px 15px;
-						a{
-							display: inline-block;
-							text-align: center;
-                            word-break: keep-all;
-							&.show{
-								color: $mainColor;
-							}
-						}
-						.layer2{
-							display: none;
-							width: 100%;
-							padding-top: 30px;
-							color: #fff;
-							position: absolute;
-                            z-index: 999;
-							top: 65px;
-							left: 0;
-							text-align: center;
-							.in{
-								background-color: rgba(53,143,49,0.8);
-								padding: 20px 10px;
-								a{
-									@include noto;
-									font-size: 1.6rem;
-									& + a{
-										margin-left: 25px;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
 			.tel{
 				width: 171px;
-				margin-left: 35px;
 			}
 			.btnWrap{
 				margin-left: 20px;
@@ -110,6 +67,50 @@
 						letter-spacing: -0.05em;
 						br{
 							display: none;
+						}
+					}
+				}
+			}
+		}
+		.nav.layer1{
+			background-color: rgba(53,143,49,0.8);
+			ul{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 55px;
+				font-size: 1.8rem;
+				> li{
+					padding: 15px 15px;
+					a{
+						display: inline-block;
+						color: #fff;
+						text-align: center;
+						word-break: keep-all;
+						&.show{
+							color: $mainColor;
+						}
+					}
+					.layer2{
+						display: none;
+						width: 100%;
+						padding-top: 30px;
+						color: #fff;
+						position: absolute;
+													z-index: 999;
+						top: 65px;
+						left: 0;
+						text-align: center;
+						.in{
+							background-color: rgba(53,143,49,0.8);
+							padding: 20px 10px;
+							a{
+								@include noto;
+								font-size: 1.6rem;
+								& + a{
+									margin-left: 25px;
+								}
+							}
 						}
 					}
 				}
@@ -143,27 +144,20 @@
 		}
 		@include mqMaxW(1360px){
 			.hdIn{
-				.nav.layer1{
-					ul{
-						font-size: 1.4rem;
-						li{
-							padding: 5px 10px;
+				.tel{
+				}
+				.btnWrap{
+					a{
+						span{
+							br{
+							}
 						}
 					}
 				}
-				.tel{
-					margin-left: 20px;
-				}
-				.btnWrap{
-					margin-left: 10px;
-					a{
-						padding: 5px 10px;
-						font-size: 1.3rem;
-						span{
-							br{
-								display: inline;
-							}
-						}
+			}
+			.nav.layer1{
+				ul{
+					li{
 					}
 				}
 			}
@@ -177,24 +171,20 @@
 		}
 		@include mqMaxW(1200px){
 			.hdIn{
-				.nav.layer1{
-					ul{
-						border-right: none;
-						li{
-							padding: 5px 7px;
-							border-left: none;
-							a{
-							}
-						}
-					}
-				}
 				.tel{
-					width: 171px;
-					margin-left: 15px;
 				}
 				.btnWrap{
 					a{
-						font-size: 1.2rem;
+					}
+				}
+			}
+			.nav.layer1{
+				ul{
+					border-right: none;
+					li{
+						border-left: none;
+						a{
+						}
 					}
 				}
 			}

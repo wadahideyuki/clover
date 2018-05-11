@@ -422,7 +422,7 @@
 /* よくある質問 */
 .catDayservice.pageQa{
 	.content{
-		padding: 70px 0 100px;
+		padding: 50px 0 100px;
 	}
 	.accBox{
 		> li{
@@ -525,13 +525,23 @@
 		background: #FFF;
 	}
 	.content{
-		padding: 65px 0 100px;
+		padding: 65px 0 0px;
 		text-align: center;
         background-color: #EEE;
 		.thisLead{
+			display: flex;
 			@include noto;
 			font-size: 1.6rem;
 			line-height: (26/16);
+			.img{
+				width: 40%;
+			}
+			.txts{
+				width: 60%;
+				padding-left: 20px;
+				text-align: left;
+				box-sizing: border-box;
+			}
 			p{
 				& + p{
 					margin-top: 0.7em;
@@ -540,10 +550,8 @@
 		}
 	}
 	.careBox{
-		background:url(../img/dayservice/care/care_bg_fix.jpg) top center no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-        padding-top: 50px;
+		background-color: #eee;
+		padding: 50px 0 50px;
 		.box{
 			background:url(../img/dayservice/care/quote.png) left 47px no-repeat rgba(255,255,255,0.3);
 			padding: 80px 40px 40px;
@@ -561,7 +569,7 @@
 	}
 	@include mq{
 		&:before{
-			content: "";
+//			content: "";
 			background:url(../img/dayservice/care/care_bg_fix.jpg) top center no-repeat;
 			background-size: cover;
 			width: 100vw;
@@ -574,20 +582,27 @@
 			position: relative;
 		}
 		.content{
-			padding: (25/320) * $per 0 (30/320) * $per;
+			padding: (25/320) * $per 0 (15/320) * $per;
 			.thisLead{
+				display: block;
 				font-size: 1.4rem;
 				text-align: left;
 				line-height: 1.4;
-				p{
-					& + p{
-						margin-top: 0.7em;
+				.img{
+					width: auto;
+				}
+				.txts{
+					width: auto;
+					padding: 3% 0 0;
+					p{
+						& + p{
+							margin-top: 0.7em;
+						}
 					}
 				}
 			}
 		}
 		.careBox{
-			background: none;
 			padding: (15/320) * $per 0;
 			position: relative;
 			.box{

@@ -461,6 +461,9 @@ select{
 			}
 			dt{
 				overflow: hidden;
+				img{
+					width: 100%;
+				}
 			}
 			dd{
 				padding: 20px 30px;
@@ -488,19 +491,22 @@ select{
 			}
 		}
 	}
+	&.single{
+		justify-content: center;
+		li{
+			width: percentage(600/1000);
+		}
+	}
 	@include mq{
 		display: block;
 		padding: 10% 0 4%;
 		li{
 			margin-bottom: 5%;
-			width: auto;
+			width: auto !important;
 			> *{
 				dl{
 				}
 				dt{
-					img{
-						width: 100%;
-					}
 				}
 				dd{
 					padding: 4% 5% 6%;
@@ -515,13 +521,6 @@ select{
 			}
 			> a{
 				img{
-					transition: 0.3s;
-				}
-				&:hover{
-					text-decoration: none;
-					img{
-						transform: scale(1.1);
-					}
 				}
 			}
 		}
