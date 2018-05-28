@@ -7,7 +7,7 @@
  レイアウト
 ---------------------------------------*/
 .wrapper{
-    padding-top: 145px;
+    padding-top: 72px;
     @include mqMaxW(999px){
         padding-top: 17vw;
     }
@@ -21,18 +21,21 @@
     width: 100%;
     z-index: 9999;
 	.pcHd{
+    background: rgba(53,143,49,1);
 		.hdIn{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			height: 90px;
-			padding: 0px 15px;
+			height: 71px;
+			padding: 0px 15px 0 0;
 			box-sizing: border-box;
            
 			> .colL{
 //				max-width: (170/1400) * $per;
+        padding: 15px;
+        background: #FFF;
 				.logo{
-					max-width: 170px;
+					width: 170px;
 					a{
 						display: block;
 						@include hvr;
@@ -75,13 +78,14 @@
 		.nav.layer1{
 			background-color: rgba(53,143,49,0.8);
 			ul{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				height: 55px;
-				font-size: 1.8rem;
+				font-size: 1.6rem;
+        text-align: center;
+        @include mq(xl){
+          font-size: 1.4rem;
+        }
 				> li{
-					padding: 15px 15px;
+					padding: 5px 15px 0px 15px;
+          display: inline-block;
 					a{
 						display: inline-block;
 						color: #fff;
@@ -364,7 +368,7 @@ footer{
 		padding: 30px 0;
 		> .inner{
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			align-items: center;
 			.tel{
 				width: 185px;
@@ -373,13 +377,13 @@ footer{
 			.ftSns{
 				display: flex;
 				justify-content: space-around;
-				width: (236) * 4 * 1px;
+				width: 500px;
 				border-left: 1px solid rgba(255,255,255,0.1);
 				> li{
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					width: 25%;
+					width: 48%;
 					padding: 10px 0;
 					border-right: 1px solid rgba(255,255,255,0.1);
 					a{

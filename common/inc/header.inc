@@ -6,15 +6,6 @@
 			<div class="colL">
 				<h1 class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></h1>
 			</div>
-			<div class="colR">
-				<div class="tel"><img src="/common/img/hd_tel.png" alt=""></div>
-				<div class="btnWrap">
-					<a class="btn withIcn icnMail" href="/form/">
-						<span>メールでの<br>お問い合わせ</span>
-					</a>
-				</div>
-			</div>
-		</div>
 		<nav class="nav layer1">
 			<ul>
 				<li class="hdNav1"><a href="/management/">3つのHappiness</a></li>
@@ -25,6 +16,14 @@
 				<li class="hdNav6"><a href="/career/">採用情報</a></li>
 			</ul>
 		</nav>
+			<div class="colR">
+				<div class="btnWrap">
+					<a class="btn withIcn icnMail" href="/form/">
+						<span>お問い合わせ</span>
+					</a>
+				</div>
+			</div>
+		</div>
 
 		<!--
 		<nav class="nav layer2">

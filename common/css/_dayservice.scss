@@ -7,6 +7,120 @@
   デイサービス
 ---------------------------------------*/
 .catDayservice{
+  
+			.lowLinks{
+				display: flex;
+				justify-content: center;
+				margin-bottom: 50px;
+				@include noto;
+				a{
+					background-color: #fff;
+					padding: 0.5em 1em;
+					color: $mainColor;
+					font-size: 1.7rem;
+					font-weight: bold;
+					border: 1px solid $mainColor;
+					border-radius: 50px;
+					transition: 0.3s;
+					& + a{
+						margin-left: 1em;
+					}
+					&:hover,&.cur{
+						background-color: $mainColor;
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+				@include mq{
+					display: block;
+					margin-bottom: 10%;
+					a{
+						display: block;
+						font-size: 1.4rem;
+						border-radius: 0;
+						border-left: none;
+						border-right: none;
+						& + a{
+							margin: 0;
+							border-top: none;
+						}
+					}
+				}
+			}
+    .officeTop{
+        font-size: 2.2rem;
+        padding: 20px 100px;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        background: $mainColor;
+        color: #FFF;
+        text-align: center;
+        display: inline-block;
+        z-index: 9999;
+      @include mq{
+        font-size: 1.6rem;
+        padding: 10px 20px;
+      }
+        &:before{
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid #FFF;
+            border-right: 2px solid #FFF;
+            display: inline-block;
+            transform: rotate(-45deg);
+            margin-right: 10px;
+        }
+    }
+    .officeBtns{
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 0;
+        a{
+            width: 33.3%;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #FFF;
+            padding: 10px 5px;
+            background-color: $mainColor;
+            &:before{
+                background-size: contain;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                margin-right: 5px;
+            }
+            color: #FFF;
+            @include mq{
+                font-size: 1.2rem;
+                padding: 2%;
+            }
+            &.btnBlog{
+                &:before{
+                    background-image: url(../img/ft_sns_blog.png);
+                   
+                }
+            }
+            &.btnTwitter{
+                &:before{
+                    background-image: url(../img/ft_sns_tw.png);
+                }
+            }
+            &.btnInstagram{
+                &:before{
+                    background-image: url(../img/ft_sns_ig.png);
+                }
+            }
+        }
+    }
 }
 .catDayservice.pageDayTop{
     .top-copy{
@@ -78,45 +192,6 @@
 				margin-top: 25px;
 				padding: 25px 0;
 			}
-			.lowLinks{
-				display: flex;
-				justify-content: center;
-				margin-bottom: 50px;
-				@include noto;
-				a{
-					background-color: #fff;
-					padding: 0.5em 1em;
-					color: $mainColor;
-					font-size: 1.7rem;
-					font-weight: bold;
-					border: 1px solid $mainColor;
-					border-radius: 50px;
-					transition: 0.3s;
-					& + a{
-						margin-left: 1em;
-					}
-					&:hover{
-						background-color: $mainColor;
-						color: #fff;
-						text-decoration: none;
-					}
-				}
-				@include mq{
-					display: block;
-					margin-bottom: 10%;
-					a{
-						display: block;
-						font-size: 1.4rem;
-						border-radius: 0;
-						border-left: none;
-						border-right: none;
-						& + a{
-							margin: 0;
-							border-top: none;
-						}
-					}
-				}
-			}
 			.featureBox{
 				display: flex;
 				justify-content: space-between;
@@ -160,6 +235,7 @@
 }
 /* 事業所 */
 .catDayservice.pageOffice{
+  
 	.acrdList{
 		> ul{
 			border-bottom: 1px solid #42963f;
@@ -171,7 +247,7 @@
 					content: "";
 					display: block;
 					background-color: $mainColor;
-					padding-top: 393px;
+					padding-top: 363px;
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -184,13 +260,24 @@
 			position: relative;
 		}
 		.accBtn{
-			background-color: #fff;
+			
+			background-color: transparent;
+			color: #fff !important;
 			padding: 40px 2.4em;
 			color: $mainColor;
 			font-size: 3.0rem;
 			font-weight: bold;
 			position: relative;
 			transition: 0.3s;
+      &:after{
+					border-color: #fff #fff transparent transparent;
+					transform: rotate(-45deg);
+					top: 0.5em;
+					bottom: 0;
+				}
+      em{
+        font-size: 80%;
+      }
 			&:after{
 				content: "";
 				display: inline-block;
@@ -208,18 +295,10 @@
 				right: 35px;
 			}
 			&.show{
-				background-color: transparent;
-				color: #fff;
-				&:after{
-					border-color: #fff #fff transparent transparent;
-					transform: rotate(-45deg);
-					top: 0.5em;
-					bottom: 0;
-				}
+				
 			}
 		}
 		.accCont{
-			display: none;
 			padding-bottom: 85px;
 			.mainImg{
 				margin-bottom: 30px;
@@ -234,12 +313,26 @@
                 }
 			}
 			.thisLead{
-				margin-bottom: 40px;
+                max-width: 800px;
+                margin: 0 auto 50px auto;
 				font-size: 1.6rem;
 				line-height: (26/16);
+                text-align: left;
 				@include noto;
+                strong{
+                    display: block;
+                    color: $mainColor;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 70px 0 10px 0;
+                    font-size: 2.5rem;
+                  @include mq{
+                    font-size: 1.8rem;
+                    margin: 30px 0 10px 0;
+                  }
+                }
 			}
-			.officeSlk{
+			.officeSlk,.officeSlk2{
 				margin-bottom: 90px;
 				padding: 0 64px;
 				.slick-arrow{
@@ -271,6 +364,17 @@
 					padding: 0 10px;
 				}
 			}
+      
+      .officeSlk2{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0px 10px 20px 10px;
+        @include mq{
+          .slick-dots{
+            bottom: -25px;
+          }
+        }
+      }
 			.infoBox{
 				> ul{
 					display: flex;
@@ -418,6 +522,9 @@
 		}
 	}
 	}
+  
+  
+  
 }
 /* よくある質問 */
 .catDayservice.pageQa{
@@ -1063,6 +1170,7 @@
 		}
 	}
 }
+
 
 
 

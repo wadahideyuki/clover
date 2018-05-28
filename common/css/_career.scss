@@ -8,11 +8,35 @@
   採用情報
 ---------------------------------------*/
 .catCareer{
+  .page-title{
+    text-align: center;
+    padding: 40px 0 0 0;
+    font-size: 3rem;
+  }
+  .tag-title{
+    text-align: center;
+    padding: 40px 0 0 0;
+    font-size: 3rem;
+    @include mq{
+      font-size: 1.8rem;
+      padding: 5%;
+    }
+  }
+  img{
+    height: auto;
+  }
 	.staffTags{
 		background-color: #fff;
 		padding: 20px 30px 30px;
 		text-align: center;
 		box-shadow: 0 7px 7px rgba(0,0,0,0.11);
+    margin-bottom: 40px;
+    @include mq{
+      margin-bottom: 5%;
+    }
+    li{
+      display: inline-block;
+    }
 		dt{
 			display: flex;
 			justify-content: center;
@@ -73,20 +97,44 @@
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        padding: 40px 0;
+        padding: 0 0 40px 0;
         @include mq{
             justify-content: space-between;
         }
         li{
         margin:0 1% 30px 1% ;
-            width: 23%;
+          width: 23%;
             @include mq{
-                width: 48%;
-                margin: 0;
-                margin-bottom: 5%;
+              width: 48%;
+            }
+          .entry-title{
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 10px;
+            @include mq{
+              font-size: 1.6rem;
+            }
+          }
+          .photoBox{
+            display: flex;
+            justify-content: center;
+            width: 230px;
+            height: 230px;
+          overflow: hidden;
+            @include mq{
+              width: 40vw;
+              height: 40vw;
             }
             img{
-                max-width: 100%;
+              height: 230px;
+              width: auto;
+              @include mq{
+                height: 40vw;
+              }
+            }
+          }
+            img{
+              max-width: inherit;
             }
             p{
                 @include noto;
@@ -488,16 +536,26 @@
 	}
 }
 /* 社員エピソード集 */
-.catCareer.pageEpisode{
+.cast-detail{
+  .content2{
+    padding: 40px 0;
+  }
 	.content{
 		padding: 60px 0 30px;
 		.profBox{
 			background-color: #fff;
 			margin-bottom: 70px;
+      
 			.img{
 				position: relative;
+      height: 500px;
+      overflow: hidden;
+      @include mq{
+        height: auto;
+      }
 				img{
 					width: 100%;
+          margin-top: -10%;
 				}
 				.name{
 					display: flex;
@@ -505,6 +563,9 @@
 					position: absolute;
 					top: 0;
 					bottom: 0;
+          @include mq{
+            text-align: center;
+          }
 					dl{
 						background-color: rgba(53,143,49,0.9);
 						padding: 2em 3em;
@@ -617,6 +678,11 @@
 						}
 						dd{
 							font-size: 3.6rem;
+              
+            @include mq{
+              font-size: 2.4rem;
+              
+            }
 						}
 					}
 				}

@@ -152,25 +152,50 @@ $(".topNewsSlk ul").slick({
 
 
 /*----- デイサービス -----*/
-//事業所のスライド
-var officeSlk = $(".officeSlk ul").slick({
+  
+//事業所のスライド2
+var officeSlk2 = $(".officeSlk2 ul").slick({
 	arrows:true,
-	dots:false,
-	slidesToShow:4,
+	dots:true,
+	slidesToShow:1,
 	responsive:[
 		{
 			breakpoint:768,
 			settings:{
 				arrows:false,
 				dots:true,
-				slidesToShow:2,
-				slidesToScroll:2
+				slidesToShow:1
 			}
 		}
 	]
 });
+  
+//事業所のスライド
+  var getDevice = (function(){
+    var ua = navigator.userAgent;
+    if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+        return 'sp';
+    }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+        return 'tab';
+    }else{
+        return 'other';
+    }
+})();
+if( getDevice == 'sp' ){
+  var officeSlk = $(".officeSlk ul").slick({
+          arrows:false,
+          dots:true,
+          slidesToShow:1,
+          slidesToScroll:1
+  });
+}else if( getDevice == 'tab' ){
+    //タブレット
+}else if( getDevice == 'other' ){
+    //その他
+}
+  
 //アコーディオン内でのslick
-$(".catDayservice.pageOffice .accSlkBox .accBtn").click(function(){
+/*$(".catDayservice.pageOffice .accSlkBox .accBtn").click(function(){
 	if($(this).hasClass("show")){
 		$(this).removeClass("show");
 		$(this).next(".accCont").slideUp();
@@ -178,9 +203,10 @@ $(".catDayservice.pageOffice .accSlkBox .accBtn").click(function(){
 		$(this).addClass("show");
 		$(this).next(".accCont").slideDown();
 		officeSlk.slick("setPosition");
+		officeSlk2.slick("setPosition");
 	}
 	return false;
-});
+});*/
 
 
 });//fncEnd

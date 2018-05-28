@@ -50,6 +50,7 @@
 			line-height: 1.2;
 			small{
 				font-size: 80%;
+        color: rgba(0,0,0,0.7);
 			}
 			span{
 				display: block;
@@ -91,7 +92,7 @@
 			}
 			h2{
 				padding: (30/640) * $per (20/640) * $per;
-				font-size: 1.5rem;
+				font-size: 2rem;
 			}
 			@include mq{
 
@@ -163,7 +164,10 @@
 								font-size: 1.2rem;
 							}
 							p{
-								font-size: 0.7rem;
+								font-size: 1rem;
+                                br{
+                                    display: none;
+                                }
 							}
 						}
 					}
@@ -218,7 +222,7 @@
 							margin-bottom: (10/640) * 100vw;
 						}
 						dd{
-							font-size: 0.7rem;
+							font-size: 1rem;
 							small{
 							}
 							p{

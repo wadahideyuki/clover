@@ -4,15 +4,7 @@
 			<div class="tel"><img src="/common/img/ft_tel.png" alt=""></div>
 			<ul class="ftSns">
 				<li class="ftSnsXXX">
-					<a href="#">
-						<dl>
-							<dt><img src="/common/img/ft_sns_yt.png" alt=""></dt>
-							<dd>YouTube</dd>
-						</dl>
-					</a>
-				</li>
-				<li class="ftSnsXXX">
-					<a href="#">
+					<a href="https://www.facebook.com/%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E6%96%B0%E5%8D%92%E6%8E%A1%E7%94%A8-480419259019130/?modal=admin_todo_tour" target="_blank">
 						<dl>
 							<dt><img src="/common/img/ft_sns_fb.png" alt=""></dt>
 							<dd>Facebook</dd>
@@ -20,18 +12,10 @@
 					</a>
 				</li>
 				<li class="ftSnsXXX">
-					<a href="#">
+					<a href="https://twitter.com/day_clovergroup/following?lang=ja&lang=ja&lang=ja" target="_blank">
 						<dl>
 							<dt><img src="/common/img/ft_sns_tw.png" alt=""></dt>
 							<dd>Twitter</dd>
-						</dl>
-					</a>
-				</li>
-				<li class="ftSnsXXX">
-					<a href="#">
-						<dl>
-							<dt><img src="/common/img/ft_sns_ig.png" alt=""></dt>
-							<dd>Instagram</dd>
 						</dl>
 					</a>
 				</li>
