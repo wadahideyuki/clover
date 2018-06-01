@@ -41,7 +41,7 @@
 				<li class="hdNavLower3">
 					<a href="/dayservice/">デイサービスTOP</a>
 					<a href="/dayservice/qa/">よくある質問</a>
-					<a href="/dayservice/office/">事業所</a>
+					<a href="/dayservice/#office">事業所</a>
 					<a href="/dayservice/care/">クローバーの介護観</a>
 					<a href="/dayservice/day/">クローバーの１日・利用料金</a>
 				</li>
@@ -88,7 +88,7 @@
 						<nav class="nav layer2">
 					       <a href="/dayservice/">デイサービスTOP</a>
 							<a href="/dayservice/qa/">社名の由来・会社概要・沿革</a>
-							<a href="/dayservice/office/">事業所</a>
+							<a href="/dayservice/#office">事業所</a>
 							<a href="/dayservice/care/">クローバーの介護観</a>
 							<a href="/dayservice/day/">クローバーの１日・利用料金</a>
 						</nav>

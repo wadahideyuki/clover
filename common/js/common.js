@@ -191,7 +191,12 @@ if( getDevice == 'sp' ){
 }else if( getDevice == 'tab' ){
     //タブレット
 }else if( getDevice == 'other' ){
-    //その他
+  $(".officeSlk img").click(function(){
+    var src = $(this).attr("src");
+     $(".officeSlk img").removeClass("selected");
+     $(this).addClass("selected");
+    $(".mainImg img").attr("src",src);
+  });
 }
   
 //アコーディオン内でのslick

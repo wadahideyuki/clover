@@ -49,7 +49,7 @@
 						<ul class="layer2">
 							<li><a href="/dayservice/">デイサービスTOP</a></li>
 							<li><a href="/dayservice/qa/">社名の由来・会社概要・沿革</a></li>
-							<li><a href="/dayservice/office/">事業所</a></li>
+							<li><a href="/dayservice/#office">事業所</a></li>
 							<li><a href="/dayservice/care/">クローバーの介護観</a></li>
 							<li><a href="/dayservice/day/">クローバーの１日・利用料金</a></li>
 						</ul>

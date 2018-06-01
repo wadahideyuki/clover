@@ -328,16 +328,16 @@
 						&Sangubasi{width:(302/$officeZoneW) * $per}
 						&Kagurazaka{width:(301/$officeZoneW) * $per}
 						&Yotuya{width:(301/$officeZoneW) * $per}
-						&Motoyawata{width:(302/$officeZoneW) * $per}
+						&Motoyawata{width:96%}
 						//位置 上下
 						&Sendagaya{top: 0;bottom: auto;}
 						&Yoyogiuehara{top: (372/$officeZoneH) * $per;bottom: auto;}
 						&Sangubasi{top: 0;bottom: auto;}
-						&Motoyawata{top: auto;bottom: 0;}
-						&Hiroo{top: (674/$officeZoneH) * $per;bottom: auto;}
+						&Motoyawata{top:76%;}
+						&Hiroo{top: 52%;bottom: auto;}
 						&Azabujuban{top: auto;bottom: 0;}
 						&Kagurazaka{top: (308/$officeZoneH) * $per;bottom: auto;}
-						&Yotuya{top: (707/$officeZoneH) * $per;bottom: auto;}
+						&Yotuya{top: 55%;bottom: auto;}
 						//位置 左右
 						&Sendagaya,
 						&Yoyogiuehara,
