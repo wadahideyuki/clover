@@ -26,6 +26,28 @@
 		}
 		.links1{
 			padding-top: 10%;
+			dl{
+				display: flex;
+				dt{
+					width: 40%;
+					overflow: hidden;
+					display: flex;
+					justify-content: center;
+					&.about1{
+						background: url(../img/about/link_img01.png) no-repeat center;
+						background-size: 100% auto;
+					}
+					&.about2{
+						background: url(../img/about/link_img02.png) no-repeat center;
+						background-size:auto 100% ;
+					}
+					img{
+						display: none;
+					}
+				}
+				dd{width: 60%;
+				}
+			}
 		}
 	}
 }

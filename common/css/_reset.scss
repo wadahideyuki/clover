@@ -4,7 +4,7 @@
 @import "mq";
 
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+//@import url("https://use.typekit.net/vfk5vzc.css");
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr{
 	margin:0;
@@ -87,7 +87,8 @@ body{
 	padding:0;
 	font-size:10px;
     line-height: 1.4;
-    font-family: "a-otf-futo-min-a101-pr6n",serif;
+    //font-family: "a-otf-futo-min-a101-pr6n";
+	font-family: "source-han-serif-japanese";
 	@include mq{
 		-webkit-text-size-adjust: 100%;
 	}

@@ -23,11 +23,7 @@
 <script type="text/javascript" src="../common/js/exvalidation.js"></script>
 <script type="text/javascript" src="../common/js/exchecker-ja.js"></script>
 <script type="text/javascript" src="../common/js/slick.min.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<script>FontAwesomeConfig = { searchPseudoElements: true };</script>
-<script src="https://use.typekit.net/oox4hnp.js"></script>
-<script>FontAwesomeConfig = { searchPseudoElements: true };</script>
-<script type="text/javascript" src="../common/js/common.js"></script>
+<!--#include virtual="/common/inc/script.inc" -->
 <script type="text/javascript" src="../common/js/form.js"></script>
 </head>
 
@@ -65,12 +61,10 @@
 						<th>ご用件</th>
 						<td>
 							<div class="selectWrap">
-								<select name="ご用件">
-									<option value="">選択してください</option>
-									<option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
-									<option value="採用について">採用について</option>
-								</select>
-							</div>
+								<label><input type="radio" name="youken" value="ご質問・お問い合わせ">ご質問・お問い合わせ</label><br><label>
+								<input type="radio" name="youken" value="採用について">採用について</label>
+								
+						  </div>
 						</td>
 					</tr>
 					<tr>
@@ -86,10 +80,20 @@
 						<td><input size="30" type="text" name="Email" id="Email" /></td>
 					</tr>
 					<tr>
-						<th>性別</th>
-						<td><input type="radio" name="性別" value="男" /> 男　
-							<input type="radio" name="性別" value="女" /> 女 </td>
-					</tr>
+					  <th>お問い合わせ<br>事業所</th>
+					  <td><div class="selectWrap">
+					    <label><input type="checkbox" name="jigyousho" value="全事業">全事業</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー千駄ヶ谷">デイサービスクローバー千駄ヶ谷</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー神楽坂">デイサービスクローバー神楽坂</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー代">デイサービスクローバー代々木上原</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー広尾">デイサービスクローバー広尾</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー四谷">デイサービスクローバー四谷</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー参宮橋">デイサービスクローバー参宮橋</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー本八幡">デイサービスクローバー本八幡</label><br>
+					    <label><input type="checkbox" name="jigyousho" value="アフタースクールクローバーキッズ麻布十番">アフタースクールクローバーキッズ麻布十番</label>
+					    
+				      </div></td>
+				  </tr>
 					<tr>
 						<th>お問い合わせ内容 <p class="txRed fz12">※必須</p></th>
 						<td><textarea name="お問い合わせ内容" cols="50" rows="5" id="txArea"></textarea></td>

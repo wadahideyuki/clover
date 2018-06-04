@@ -60,14 +60,14 @@
 
 	<div class="spHd">
 		<div class="hdIn">
-			<h1 class="logo"><a href="#"><img src="/common/img/logo.png" alt=""></a></h1>
+			<h1 class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></h1>
 
 			<a class="spBtnMenu" href="#"></a>
 
 			<nav class="nav layer1">
 				<ul>
 					<li>
-						<a class="hasLower" href="#">3つのHappiness</a>
+						<a class="hasLower" href="/management/">3つのHappiness</a>
 						<nav class="nav layer2">
 					       <a href="/cast/">キャスト紹介</a>
 					       <a href="/management/blog/">ブログ</a>
@@ -75,7 +75,7 @@
 						</nav>
 					</li>
 					<li>
-						<a class="hasLower" href="#">CLOVERとは</a>
+						<a class="hasLower" href="/about/">CLOVERとは</a>
 						<nav class="nav layer2">
 							<a href="/about/">CLOVERとはTOP</a>
 							<a href="/about/clover/">社名の由来・会社概要・沿革</a>
@@ -84,7 +84,7 @@
 						</nav>
 					</li>
 					<li>
-						<a class="hasLower" href="#">デイサービス</a>
+						<a class="hasLower" href="/dayservice/">デイサービス</a>
 						<nav class="nav layer2">
 					       <a href="/dayservice/">デイサービスTOP</a>
 							<a href="/dayservice/qa/">社名の由来・会社概要・沿革</a>
@@ -94,19 +94,19 @@
 						</nav>
 					</li>
 					<li>
-						<a class="hasLower" href="#">放課後等デイサービス</a>
+						<a class="hasLower" href="/after/">放課後等デイサービス</a>
 						<nav class="nav layer2">
 							<a href="/after/">放課後等デイサービスTOP</a>
 						</nav>
 					</li>
 					<li>
-						<a class="hasLower" href="#">キャスト紹介</a>
+						<a class="hasLower" href="/after/">キャスト紹介</a>
 						<nav class="nav layer2">
 							<a href="/cast/">キャスト紹介TOP</a>
 						</nav>
 					</li>
 					<li>
-						<a class="hasLower" href="#">採用情報</a>
+						<a class="hasLower" href="/career/">採用情報</a>
 						<nav class="nav layer2">
 							<a href="/career/">採用情報TOP</a>
 							<a href="/career/recruit/">募集要項</a>

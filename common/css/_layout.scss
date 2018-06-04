@@ -250,6 +250,10 @@
 					position: absolute;
 					top: 0;
 					right: 0;
+					&.on{
+					background:url(../img/sp_btn_menu_on.png) 0 0 no-repeat;
+					background-size: 100% 100%;
+					}
 				}
 				.nav.layer1{
 					position: relative;
@@ -286,7 +290,7 @@
 										border-width: 0.2em 0.2em 0 0;
 										border-color: $mainColor $mainColor transparent transparent;
 										box-sizing: border-box;
-										transform: rotate(135deg);
+										transform: rotate(45deg);
 										position: absolute;
 										top: -0.5em;
 										bottom: 0;
@@ -352,8 +356,9 @@
 	@include noto;
 	font-size: 14px;
 	@include mq{
-		padding: (5/320) * $per (10/320) * $per (15/320) * $per;
+		padding: (5/320) * $per (10/320) * $per (10/320) * $per;
 		font-size: 1.0rem;
+		border-bottom: 1px solid #CCC;
 	}
 }
 

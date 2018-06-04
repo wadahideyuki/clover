@@ -8,45 +8,6 @@
 ---------------------------------------*/
 .catDayservice{
   
-			.lowLinks{
-				display: flex;
-				justify-content: center;
-				margin-bottom: 50px;
-				@include noto;
-				a{
-					background-color: #fff;
-					padding: 0.5em 1em;
-					color: $mainColor;
-					font-size: 1.7rem;
-					font-weight: bold;
-					border: 1px solid $mainColor;
-					border-radius: 50px;
-					transition: 0.3s;
-					& + a{
-						margin-left: 1em;
-					}
-					&:hover,&.cur{
-						background-color: $mainColor;
-						color: #fff;
-						text-decoration: none;
-					}
-				}
-				@include mq{
-					display: block;
-					margin-bottom: 10%;
-					a{
-						display: block;
-						font-size: 1.4rem;
-						border-radius: 0;
-						border-left: none;
-						border-right: none;
-						& + a{
-							margin: 0;
-							border-top: none;
-						}
-					}
-				}
-			}
     .officeTop{
         font-size: 2.2rem;
         padding: 20px 100px;

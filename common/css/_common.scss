@@ -38,6 +38,45 @@ select{
 /*--------------------------------------
  パーツ
 ---------------------------------------*/
+			.lowLinks{
+				display: flex;
+				justify-content: center;
+				margin-bottom: 50px;
+				@include noto;
+				a{
+					background-color: #fff;
+					padding: 0.5em 1em;
+					color: $mainColor;
+					font-size: 1.7rem;
+					font-weight: bold;
+					border: 1px solid $mainColor;
+					border-radius: 50px;
+					transition: 0.3s;
+					& + a{
+						margin-left: 1em;
+					}
+					&:hover,&.cur{
+						background-color: $mainColor;
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+				@include mq{
+					display: block;
+					margin-bottom:0;
+					a{
+						display: block;
+						font-size: 1.4rem;
+						border-radius: 0;
+						border-left: none;
+						border-right: none;
+						& + a{
+							margin: 0;
+							border-top: none;
+						}
+					}
+				}
+			}
 /* インナー */
 .inner{
 	max-width: 1200px;
@@ -107,13 +146,18 @@ select{
 		}
 	}
 	@include mq{
-		margin-bottom: (28/640) * 100vw;
+		margin-bottom: 3%;
+		padding-top: 3%;
 		> div{
-			font-size: 2.6rem;
+			font-size: 1.6rem;
+			display: block;
+			margin-left: -2%;
 			span{
+				text-align: left;
+				border-bottom: 0px;
 			}
 			small{
-				font-size: (18/26) * 1em;
+				display: none;
 			}
 		}
 	}

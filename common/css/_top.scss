@@ -83,12 +83,12 @@
 			.bg1{
                 background:url(../img/top/main_bg1_sp.png) center top no-repeat;
 				background-size: cover;
-				height: 48vw;
+				height: 17vw;
 			}
 			.bg2{
                 background:url(../img/top/main_bg2_sp.png) center top no-repeat;
 				background-size: cover;
-				height: 48vw;
+				height: 17vw;
 			}
 			h2{
 				padding: (30/640) * $per (20/640) * $per;
@@ -131,6 +131,13 @@
 							@include noto;
 							font-size: 1.6rem;
 							line-height: 1.5;
+						}
+						
+						&.spB{
+							display: none;
+							@include mq{
+								display: block;
+							}
 						}
 					}
 				}

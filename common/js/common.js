@@ -90,16 +90,17 @@ $(".tabBox .tabs a").click(function(){
 
 //spヘッダーのメニューボタン
 $(".spBtnMenu").click(function(){
+	$(this).toggleClass("on");
 	$(".header .spHd .nav.layer1 ul").slideToggle();
 	return false;
 });
 
 //spヘッダーのNav
-$(".header .spHd .hasLower").click(function(){
+/*$(".header .spHd .hasLower").click(function(){
 	$(this).toggleClass("show");
 	$(this).next().slideToggle();
 	return false;
-});
+});*/
 
 //spフッターのアコーディオン
 $(".footer .part2 .layer1 > li h3").click(function(){
