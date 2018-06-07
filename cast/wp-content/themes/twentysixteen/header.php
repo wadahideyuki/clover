@@ -13,9 +13,9 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>キャスト紹介 | CLOVER</title>
+<title>先輩インタビュー｜株式会社CLOVER</title>
 <meta name="keywords" content="" />
-<meta name="description" content="" />
+<meta name="description" content="先輩インタビュー 介護と子どもたちの療育事業を行う株式会社CLOVER（クローバーグループ）のキャストをご紹介しています。「何をするかよりも、誰とするか」。現場で働く先輩たちの生の声を発信しています。未経験からスタートしたキャスト、ママとして働くキャストなど、多彩なキャストが活躍中です。" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
