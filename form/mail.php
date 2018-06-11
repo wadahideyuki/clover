@@ -233,14 +233,14 @@ else if($confirmDsp == 1){
 
 <section class="">
 	<div class="inner">
-		<h2 class="ttl2">
+		<h1 class="ttl2">
 			<div>
 				<span>お問い合わせ</span>
 				<small>Contact</small>
 			</div>
-		</h2>
-	</div>
-</section>
+		</h1>
+    </div>
+  </section>
 
 
 <!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
@@ -299,14 +299,14 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 
 <section class="">
 	<div class="inner">
-		<h2 class="ttl2">
+		<h1 class="ttl2">
 			<div>
 				<span>お問い合わせ</span>
 				<small>Contact</small>
 			</div>
-		</h2>
-	</div>
-</section>
+		</h1>
+    </div>
+  </section>
 
 
 <div align="center">

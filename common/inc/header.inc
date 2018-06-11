@@ -4,11 +4,11 @@
 	<div class="pcHd">
 		<div class="hdIn">
 			<div class="colL">
-				<h1 class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></h1>
+				<div class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></div>
 			</div>
 		<nav class="nav layer1">
 			<ul>
-				<li class="hdNav1"><a href="/management/">3つのHappiness</a></li>
+				<li class="hdNav1"><a href="/philosophy/index.html">3つのHappiness</a></li>
 				<li class="hdNav2"><a href="/about/">CLOVERとは</a></li>
 				<li class="hdNav3"><a href="/dayservice/">デイサービス</a></li>
 				<li class="hdNav4"><a href="/after/">放課後等デイサービス</a></li>
@@ -60,17 +60,17 @@
 
 	<div class="spHd">
 		<div class="hdIn">
-			<h1 class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></h1>
+			<div class="logo"><a href="/"><img src="/common/img/logo.png" alt=""></a></div>
 
 			<a class="spBtnMenu" href="#"></a>
 
 			<nav class="nav layer1">
 				<ul>
 					<li>
-						<a class="hasLower" href="/management/">3つのHappiness</a>
+						<a class="hasLower" href="/philosophy/index.html">3つのHappiness</a>
 						<nav class="nav layer2">
 					       <a href="/cast/">キャスト紹介</a>
-					       <a href="/management/blog/">ブログ</a>
+					       <a href="/philosophy/blog/index.html">ブログ</a>
 					       <a href="/career/">採用情報TOP</a>
 						</nav>
 					</li>
@@ -78,7 +78,7 @@
 						<a class="hasLower" href="/about/">CLOVERとは</a>
 						<nav class="nav layer2">
 							<a href="/about/">CLOVERとはTOP</a>
-							<a href="/about/clover/">社名の由来・会社概要・沿革</a>
+							<a href="/about/company/index.html">社名の由来・会社概要・沿革</a>
 							<a href="/about/message/">トップメッセージ</a>
 							<a href="/about/value/">VALUE・VISION・PRINCIPLE</a>
 						</nav>

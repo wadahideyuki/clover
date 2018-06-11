@@ -26,8 +26,8 @@
 				<?php twentysixteen_post_thumbnail(); ?>
 				<div class="name">
 					<dl>
-						<!--<dt>役職が入るマネージャー</dt>--->
 						<dd><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></dd>
+						<dt><?php echo esc_html( $post->POSITION ); ?></dt>
 					</dl>
 				</div>
 			</div>

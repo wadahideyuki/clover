@@ -694,6 +694,41 @@
 }
 /* デイサービスクローバーの一日 */
 .catDayservice.pageDay{
+  .pageNavi{
+    padding: 1em 0 4em 0;
+    font-size: 2rem;
+    @include mq{
+      font-size: 1.2rem;
+      padding: 1em 0 3em 0;
+    }
+    a{
+      display: inline-block;
+      margin: 0 1em;
+      color: $mainColor;
+      @include mq{
+        margin: 0;
+        &:first-of-type{
+          margin-right: 1em;
+        }
+      }
+      &:hover{
+      text-decoration: underline;
+      }
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 0.6em;
+			height: 0.6em;
+			margin:-0.2em 0.5em 0 0;
+			border-style: solid;
+			border-width: 0.2em 0.2em 0 0;
+			border-color: $mainColor $mainColor transparent transparent;
+			box-sizing: border-box;
+			transform: rotate(135deg);
+			transition: inherit;
+		}
+    }
+  }
 	.dayZone{//クローバーの１日
 		padding-top: 75px;
 		text-align: center;
@@ -867,91 +902,6 @@
 			}
 		}
 	}
-	.payZone{//利用料金
-		padding: 70px 0 120px;
-		.thisLead{
-			background-color: #fff;
-			padding: 30px 20px;
-			border-radius: 5px;
-			dt{
-				margin-bottom: 0.5em;
-				color: $mainColor;
-				font-size: 2.0rem;
-				font-weight: bold;
-			}
-			dd{
-				@include noto;
-				font-size: 1.6rem;
-				line-height: (26/16);
-			}
-		}
-		h4{
-			margin: (77/(23 * 1.4)) * 1em 0 (20/23) * 1em;
-			padding-bottom: (15/(23 * 1.4)) * 1em;
-			color: #000;
-			font-size: 2.3rem;
-			border-bottom: 2px solid #499745;
-		}
-		h5{
-			margin:2em 0 1em;
-			padding-left: 15px;
-			font-size: 1.6rem;
-			font-weight: bold;
-			position: relative;
-			&:before{
-				content: "";
-				display: inline-block;
-				background-color: #499745;
-				width: 4px;
-				position: absolute;
-				top: 5px;
-				bottom: 5px;
-				left: 0;
-			}
-		}
-		table{
-			width: 100%;
-			@include noto;
-			font-size: 1.6rem;
-			border: 1px solid #ccc;
-		}
-		th,
-		td{
-			padding: 8px 10px;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
-		}
-		th{
-			background-color: #499745;
-			width: 200px;
-			color: #fff;
-		}
-		td{
-			background-color: #fff;
-		}
-		thead{
-			td{
-				background-color: #e5e5e7;
-			}
-		}
-		tbody{
-		}
-		small{
-			margin-top: 10px;
-			@include noto;
-			font-size: 1.2rem;
-		}
-		ul{
-			display: flex;
-			justify-content: space-between;
-			> li{
-				width: (380/800) * $per;
-				th{
-					width: 150px;
-				}
-			}
-		}
-	}
 	@include mq{
 		.dayZone{//クローバーの１日
 			padding-top: 10%;
@@ -990,12 +940,12 @@
 					}
 					.flowDtl{
 						> li{
-							display: block;
+              display: block;
 							dl{
 								width: auto;
 							}
 							dt{
-								padding: 0.5em 0;
+								padding: 0.5em 0 0.5em 15vw;
 								font-size: 1.8rem;
 								small{
 								}
@@ -1005,11 +955,11 @@
 								font-size: 1.4rem;
 							}
 							.time{
-								width: (110/320) * 100vw;
-								height: (110/320) * 100vw;
+								width: 15vw;
+								height: 15vw;
 								margin: auto;
-								font-size: 1.8rem;
-								position: static;
+								font-size: 1rem;
+                left: -3vw;
 							}
 							.img{
 								width: auto;
@@ -1064,71 +1014,6 @@
 						}
 					}
 				}
-			}
-		}
-		.payZone{//利用料金
-			padding: 10% 0 10%;
-			.thisLead{
-				padding: 5%;
-				dt{
-					margin-bottom: 0.5em;
-					font-size: 1.6rem;
-				}
-				dd{
-					font-size: 1.4rem;
-				}
-			}
-			h4{
-				font-size: 1.7rem;
-			}
-			h5{
-				margin-bottom: 0.5em;
-				padding-left: 0.8em;
-				font-size: 1.4rem;
-				&:before{
-					width: 0.3em;
-					top: 0.2em;
-					bottom: 0.2em;
-				}
-			}
-			table{
-				font-size: 1.0rem;
-			}
-			th,
-			td{
-				padding: 1% 2%;
-			}
-			th{
-				width: auto;
-			}
-			td{
-			}
-			thead{
-				td{
-				}
-			}
-			tbody{
-			}
-			small{
-				margin-top: 2%;
-				font-size: 1.0rem;
-			}
-			ul{
-				display: block;
-				> li{
-					width: auto;
-					& + li{
-						h5{
-							margin-top: 2em !important;
-						}
-					}
-					th{
-						width: 45%;
-					}
-				}
-			}
-			h4 + ul li:first-child th{
-				width: auto;
 			}
 		}
 	}

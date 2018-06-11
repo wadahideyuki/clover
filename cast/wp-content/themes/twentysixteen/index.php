@@ -27,14 +27,14 @@ get_header(); ?>
 		<div id="content" class="site-content">
 <section class="">
 	<div class="inner">
-		<h2 class="ttl2">
+		<h1 class="ttl2">
 			<div>
 				<span>キャスト紹介</span>
 				<small>Cast</small>
 			</div>
-		</h2>
-	</div>
-</section>
+		</h1>
+    </div>
+  </section>
 
 <div class="bgGrey1">
 <section class="main">

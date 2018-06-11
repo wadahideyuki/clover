@@ -450,6 +450,8 @@ select { padding: 0.5em 0.7em; }
 @media screen and (max-width: 767px) { .btn.withArwR { display: block; }
   .btn.withArwR:after { right: 1em; } }
 
+.link-txt { text-decoration: underline; color: #358f31; }
+
 /* スクロールボタン */
 .pageScrl { display: flex; justify-content: center; }
 .pageScrl .clkScrl { display: flex; justify-content: center; align-items: center; background-color: #fff; color: #358f31; font-family: "Noto Sans Japanese"; border: 1px solid #358f31; border-radius: 50px; transition: 0.3s; }
@@ -557,6 +559,39 @@ select { padding: 0.5em 0.7em; }
 .modalBox .modalInner p { text-align: left; padding: 20px 0; font-size: 1.5rem; font-family: "Noto Sans Japanese"; }
 .modalBox .btnClose { display: inline-block; font-size: 1.5rem; background: #333; padding: 5px; color: #FFF; }
 
+.payZone { padding: 70px 0 120px; }
+.payZone .thisLead { background-color: #fff; padding: 30px 20px; border-radius: 5px; }
+.payZone .thisLead dt { margin-bottom: 0.5em; color: #358f31; font-size: 2.0rem; font-weight: bold; }
+.payZone .thisLead dd { font-family: "Noto Sans Japanese"; font-size: 1.6rem; line-height: 1.625; }
+.payZone h4 { margin: 2.3913043478em 0 0.8695652174em; padding-bottom: 0.4658385093em; color: #000; font-size: 2.3rem; border-bottom: 2px solid #499745; }
+.payZone h5 { margin: 2em 0 1em; padding-left: 15px; font-size: 1.6rem; font-weight: bold; position: relative; }
+.payZone h5:before { content: ""; display: inline-block; background-color: #499745; width: 4px; position: absolute; top: 5px; bottom: 5px; left: 0; }
+.payZone table { width: 100%; font-family: "Noto Sans Japanese"; font-size: 1.6rem; border: 1px solid #ccc; }
+.payZone th, .payZone td { padding: 8px 10px; border: 1px solid #ccc; box-sizing: border-box; }
+.payZone th { background-color: #499745; width: 150px; color: #fff; }
+.payZone td { background-color: #fff; }
+.payZone thead td { background-color: #e5e5e7; }
+.payZone small { margin-top: 10px; font-family: "Noto Sans Japanese"; font-size: 1.2rem; }
+.payZone ul { display: flex; justify-content: space-between; }
+.payZone ul > li { width: 47.5%; }
+.payZone ul > li th { width: 150px; }
+
+@media screen and (max-width: 767px) { .payZone { padding: 10% 0 10%; }
+  .payZone .thisLead { padding: 5%; }
+  .payZone .thisLead dt { margin-bottom: 0.5em; font-size: 1.6rem; }
+  .payZone .thisLead dd { font-size: 1.4rem; }
+  .payZone h4 { font-size: 1.7rem; }
+  .payZone h5 { margin-bottom: 0.5em; padding-left: 0.8em; font-size: 1.4rem; }
+  .payZone h5:before { width: 0.3em; top: 0.2em; bottom: 0.2em; }
+  .payZone table { font-size: 1.0rem; }
+  .payZone th, .payZone td { padding: 1% 2%; }
+  .payZone th { width: auto; }
+  .payZone small { margin-top: 2%; font-size: 1.0rem; }
+  .payZone ul { display: block; }
+  .payZone ul > li { width: auto; }
+  .payZone ul > li + li h5 { margin-top: 2em !important; }
+  .payZone ul > li th { width: 45%; }
+  .payZone h4 + ul li:first-child th { width: auto; } }
 /*-------------------------------------- トップページ
 ---------------------------------------*/
 .pageSitetop .main { padding-top: 5px; margin-bottom: 8px; }
@@ -566,18 +601,18 @@ select { padding: 0.5em 0.7em; }
   100% { background-position: -1860px top; } }
 .pageSitetop .main .bg1 { background: url(../img/top/main_bg1.png) center top repeat-x; background-size: 100% auto; padding-top: 15.5555555556%; }
 .pageSitetop .main .bg2 { background: url(../img/top/main_bg2.png) center top repeat-x; background-size: 100% auto; padding-top: 15.5555555556%; }
-.pageSitetop .main h2 { background-color: #fff; padding: 25px; font-size: 5rem; text-align: center; line-height: 1.2; }
-.pageSitetop .main h2 .in { display: inline-block; }
-.pageSitetop .main h2 small { font-size: 80%; color: rgba(0, 0, 0, 0.7); }
-.pageSitetop .main h2 span { display: block; padding-top: 10px; font-size: 2rem; text-align: right; }
-@media screen and (max-width: 767px) { .pageSitetop .main h2 span { font-size: 1rem; } }
-.pageSitetop .main h2 span a { color: #358f31; }
-.pageSitetop .main h2 span a:after { content: ""; display: inline-block; width: 8px; height: 8px; border-top: 2px solid #358f31; border-right: 2px solid #358f31; transform: rotate(45deg); }
-@media screen and (max-width: 767px) { .pageSitetop .main h2 span a:after { width: 4px; height: 4px; } }
+.pageSitetop .main h1 { background-color: #fff; padding: 25px; font-size: 5rem; text-align: center; line-height: 1.2; }
+.pageSitetop .main h1 .in { display: inline-block; }
+.pageSitetop .main h1 small { font-size: 80%; color: rgba(0, 0, 0, 0.7); }
+.pageSitetop .main h1 span { display: block; padding-top: 10px; font-size: 2rem; text-align: right; }
+@media screen and (max-width: 767px) { .pageSitetop .main h1 span { font-size: 1rem; } }
+.pageSitetop .main h1 span a { color: #358f31; }
+.pageSitetop .main h1 span a:after { content: ""; display: inline-block; width: 8px; height: 8px; border-top: 2px solid #358f31; border-right: 2px solid #358f31; transform: rotate(45deg); }
+@media screen and (max-width: 767px) { .pageSitetop .main h1 span a:after { width: 4px; height: 4px; } }
 @media screen and (max-width: 767px) { .pageSitetop .main { margin-bottom: 1.25%; }
   .pageSitetop .main .bg1 { background: url(../img/top/main_bg1_sp.png) center top no-repeat; background-size: cover; height: 17vw; }
   .pageSitetop .main .bg2 { background: url(../img/top/main_bg2_sp.png) center top no-repeat; background-size: cover; height: 17vw; }
-  .pageSitetop .main h2 { padding: 4.6875% 3.125%; font-size: 2rem; } }
+  .pageSitetop .main h1 { padding: 4.6875% 3.125%; font-size: 2rem; } }
 .pageSitetop .serviceZone { background-color: #f2f2f2; padding: 70px 0 60px; text-align: center; overflow: hidden; }
 .pageSitetop .serviceZone .topServiceSlk { margin: 0 -10px; }
 .pageSitetop .serviceZone .topServiceSlk .liItem dl { margin: 0 10px; }
@@ -628,13 +663,13 @@ select { padding: 0.5em 0.7em; }
 .pageSitetop .officeZone ul li.itemMotoyawata { width: 19.4285714286%; }
 .pageSitetop .officeZone ul li.itemSendagaya, .pageSitetop .officeZone ul li.itemYoyogiuehara, .pageSitetop .officeZone ul li.itemSangubasi, .pageSitetop .officeZone ul li.itemMotoyawata { top: 0; }
 .pageSitetop .officeZone ul li.itemHiroo, .pageSitetop .officeZone ul li.itemAzabujuban, .pageSitetop .officeZone ul li.itemKagurazaka, .pageSitetop .officeZone ul li.itemYotuya { bottom: 0; }
-.pageSitetop .officeZone ul li.itemSendagaya { left: 0; }
-.pageSitetop .officeZone ul li.itemYoyogiuehara { left: 40.3571428571%; }
-.pageSitetop .officeZone ul li.itemHiroo { left: 40.3571428571%; }
+.pageSitetop .officeZone ul li.itemYoyogiuehara { left: 0; }
+.pageSitetop .officeZone ul li.itemSendagaya { left: 40.3571428571%; }
+.pageSitetop .officeZone ul li.itemKagurazaka { left: 40.3571428571%; }
 .pageSitetop .officeZone ul li.itemAzabujuban { right: 0; }
-.pageSitetop .officeZone ul li.itemSangubasi { left: 20.2142857143%; }
-.pageSitetop .officeZone ul li.itemKagurazaka { left: 0; }
-.pageSitetop .officeZone ul li.itemYotuya { left: 60.5%; }
+.pageSitetop .officeZone ul li.itemYotuya { left: 20.2142857143%; }
+.pageSitetop .officeZone ul li.itemHiroo { left: 0; }
+.pageSitetop .officeZone ul li.itemSangubasi { left: 60.5%; }
 .pageSitetop .officeZone ul li.itemMotoyawata { right: 0; }
 .pageSitetop .officeZone ul li a { display: block; transition: 0.3s; }
 .pageSitetop .officeZone ul li a:hover { transform: scale(1.1); }
@@ -649,8 +684,8 @@ select { padding: 0.5em 0.7em; }
   .pageSitetop .officeZone ul li.itemKagurazaka { width: 47.03125%; }
   .pageSitetop .officeZone ul li.itemYotuya { width: 47.03125%; }
   .pageSitetop .officeZone ul li.itemMotoyawata { width: 96%; }
-  .pageSitetop .officeZone ul li.itemSendagaya { top: 0; bottom: auto; }
-  .pageSitetop .officeZone ul li.itemYoyogiuehara { top: 28.8148721921%; bottom: auto; }
+  .pageSitetop .officeZone ul li.itemYoyogiuehara { top: 0; bottom: auto; }
+  .pageSitetop .officeZone ul li.itemSendagaya { top: 23.2%; bottom: auto; }
   .pageSitetop .officeZone ul li.itemSangubasi { top: 0; bottom: auto; }
   .pageSitetop .officeZone ul li.itemMotoyawata { top: 76%; }
   .pageSitetop .officeZone ul li.itemHiroo { top: 52%; bottom: auto; }
@@ -702,13 +737,13 @@ select { padding: 0.5em 0.7em; }
 .catManagement.pageTop .content .menus > a:nth-child(3):before { background-image: url(../img/management/menu03.png); }
 .catManagement.pageTop .content .menus > a > div { background-color: #358f31; width: 100%; padding: 70px 15px 80px; text-align: center; box-sizing: border-box; }
 @media screen and (max-width: 767px) { .catManagement.pageTop .content .menus > a > div { padding: 5%; } }
-.catManagement.pageTop .content .menus > a > div h4 { font-size: 3.5rem; }
-@media screen and (max-width: 767px) { .catManagement.pageTop .content .menus > a > div h4 { font-size: 1.8rem; } }
-.catManagement.pageTop .content .menus > a > div h4 em { display: block; font-size: 1.4285714286em; opacity: 0.2; }
-.catManagement.pageTop .content .menus > a > div h4 em.szS { font-size: 1.2em; }
-@media screen and (max-width: 767px) { .catManagement.pageTop .content .menus > a > div h4 em { line-height: 1; } }
-.catManagement.pageTop .content .menus > a > div h4 span { display: block; margin-top: 0.4em; line-height: 1.2; }
-.catManagement.pageTop .content .menus > a > div h4 span small { font-size: 0.8em; }
+.catManagement.pageTop .content .menus > a > div h2 { font-size: 3.5rem; }
+@media screen and (max-width: 767px) { .catManagement.pageTop .content .menus > a > div h2 { font-size: 1.8rem; } }
+.catManagement.pageTop .content .menus > a > div h2 em { display: block; font-size: 1.4285714286em; opacity: 0.2; }
+.catManagement.pageTop .content .menus > a > div h2 em.szS { font-size: 1.2em; }
+@media screen and (max-width: 767px) { .catManagement.pageTop .content .menus > a > div h2 em { line-height: 1; } }
+.catManagement.pageTop .content .menus > a > div h2 span { display: block; margin-top: 0.4em; line-height: 1.2; }
+.catManagement.pageTop .content .menus > a > div h2 span small { font-size: 0.8em; }
 .catManagement.pageTop .content .menus > a > div .btnWrap { margin-top: 30px; font-family: "Noto Sans Japanese"; }
 @media screen and (max-width: 767px) { .catManagement.pageTop .content .menus > a > div .btnWrap { margin-top: 3%; } }
 .catManagement.pageTop .content .menus > a > div .btnWrap span { display: inline-flex; align-items: center; padding: 0.7em 1.5em; font-size: 1.8rem; border: 1px solid #f8f8f8; }
@@ -719,9 +754,10 @@ select { padding: 0.5em 0.7em; }
 /* ブログ一覧 */
 .catManagement.pageBlog .content { padding: 50px 0; text-align: center; }
 @media screen and (max-width: 767px) { .catManagement.pageBlog .content .lead1 { font-size: 1.2rem; } }
-.catManagement.pageBlog .content .blogList { display: flex; justify-content: space-between; flex-wrap: wrap; font-family: "Noto Sans Japanese"; }
-.catManagement.pageBlog .content .blogList > li { width: 21.7550274223%; margin-bottom: 50px; }
-@media screen and (max-width: 767px) { .catManagement.pageBlog .content .blogList > li { width: 46%; margin-bottom: 25px; } }
+.catManagement.pageBlog .content .blogList { text-align: center; font-family: "Noto Sans Japanese"; }
+@media screen and (max-width: 767px) { .catManagement.pageBlog .content .blogList { display: flex; justify-content: space-between; flex-wrap: wrap; } }
+.catManagement.pageBlog .content .blogList > li { width: 17%; display: inline-block; margin: 0 1% 50px 1%; margin-bottom: 50px; }
+@media screen and (max-width: 767px) { .catManagement.pageBlog .content .blogList > li { width: 46%; margin: 0 0 25px 0; } }
 .catManagement.pageBlog .content .blogList > li a { display: block; }
 .catManagement.pageBlog .content .blogList > li a dl dt span img { transition: 0.3s; }
 .catManagement.pageBlog .content .blogList > li a dl dd { margin-top: 1em; font-size: 1.6rem; line-height: 1.5; }
@@ -866,6 +902,13 @@ select { padding: 0.5em 0.7em; }
   .catDayservice.pageCare .careBox .box p.name { margin-top: 0.5em; } }
 
 /* デイサービスクローバーの一日 */
+.catDayservice.pageDay .pageNavi { padding: 1em 0 4em 0; font-size: 2rem; }
+@media screen and (max-width: 767px) { .catDayservice.pageDay .pageNavi { font-size: 1.2rem; padding: 1em 0 3em 0; } }
+.catDayservice.pageDay .pageNavi a { display: inline-block; margin: 0 1em; color: #358f31; }
+@media screen and (max-width: 767px) { .catDayservice.pageDay .pageNavi a { margin: 0; }
+  .catDayservice.pageDay .pageNavi a:first-of-type { margin-right: 1em; } }
+.catDayservice.pageDay .pageNavi a:hover { text-decoration: underline; }
+.catDayservice.pageDay .pageNavi a:before { content: ""; display: inline-block; width: 0.6em; height: 0.6em; margin: -0.2em 0.5em 0 0; border-style: solid; border-width: 0.2em 0.2em 0 0; border-color: #358f31 #358f31 transparent transparent; box-sizing: border-box; transform: rotate(135deg); transition: inherit; }
 .catDayservice.pageDay .dayZone { padding-top: 75px; text-align: center; }
 .catDayservice.pageDay .dayZone .inner.no1 { padding-bottom: 140px; }
 .catDayservice.pageDay .dayZone .pageScrl { margin-bottom: 70px; font-size: 1.7rem; font-weight: bold; }
@@ -893,22 +936,6 @@ select { padding: 0.5em 0.7em; }
 .catDayservice.pageDay .dayZone .flowBox > li:nth-child(2n) > .inner:before { background-color: #fff; }
 .catDayservice.pageDay .dayZone .flowBox > li:last-child { padding-bottom: 80px; }
 .catDayservice.pageDay .dayZone .flowBox > li:last-child > .inner { padding-bottom: 0; }
-.catDayservice.pageDay .payZone { padding: 70px 0 120px; }
-.catDayservice.pageDay .payZone .thisLead { background-color: #fff; padding: 30px 20px; border-radius: 5px; }
-.catDayservice.pageDay .payZone .thisLead dt { margin-bottom: 0.5em; color: #358f31; font-size: 2.0rem; font-weight: bold; }
-.catDayservice.pageDay .payZone .thisLead dd { font-family: "Noto Sans Japanese"; font-size: 1.6rem; line-height: 1.625; }
-.catDayservice.pageDay .payZone h4 { margin: 2.3913043478em 0 0.8695652174em; padding-bottom: 0.4658385093em; color: #000; font-size: 2.3rem; border-bottom: 2px solid #499745; }
-.catDayservice.pageDay .payZone h5 { margin: 2em 0 1em; padding-left: 15px; font-size: 1.6rem; font-weight: bold; position: relative; }
-.catDayservice.pageDay .payZone h5:before { content: ""; display: inline-block; background-color: #499745; width: 4px; position: absolute; top: 5px; bottom: 5px; left: 0; }
-.catDayservice.pageDay .payZone table { width: 100%; font-family: "Noto Sans Japanese"; font-size: 1.6rem; border: 1px solid #ccc; }
-.catDayservice.pageDay .payZone th, .catDayservice.pageDay .payZone td { padding: 8px 10px; border: 1px solid #ccc; box-sizing: border-box; }
-.catDayservice.pageDay .payZone th { background-color: #499745; width: 200px; color: #fff; }
-.catDayservice.pageDay .payZone td { background-color: #fff; }
-.catDayservice.pageDay .payZone thead td { background-color: #e5e5e7; }
-.catDayservice.pageDay .payZone small { margin-top: 10px; font-family: "Noto Sans Japanese"; font-size: 1.2rem; }
-.catDayservice.pageDay .payZone ul { display: flex; justify-content: space-between; }
-.catDayservice.pageDay .payZone ul > li { width: 47.5%; }
-.catDayservice.pageDay .payZone ul > li th { width: 150px; }
 @media screen and (max-width: 767px) { .catDayservice.pageDay .dayZone { padding-top: 10%; }
   .catDayservice.pageDay .dayZone .inner.no1 { padding-bottom: 20%; }
   .catDayservice.pageDay .dayZone .pageScrl { margin-bottom: 10%; font-size: 1.2rem; }
@@ -920,31 +947,15 @@ select { padding: 0.5em 0.7em; }
   .catDayservice.pageDay .dayZone .flowBox > li > .inner { padding: 0 4.6875% 20.3125%; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li { display: block; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li dl { width: auto; }
-  .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li dt { padding: 0.5em 0; font-size: 1.8rem; }
+  .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li dt { padding: 0.5em 0 0.5em 15vw; font-size: 1.8rem; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li dd { padding: 0 0 0.5em 0; font-size: 1.4rem; }
-  .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li .time { width: 34.375vw; height: 34.375vw; margin: auto; font-size: 1.8rem; position: static; }
+  .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li .time { width: 15vw; height: 15vw; margin: auto; font-size: 1rem; left: -3vw; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li .img { width: auto; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li .img img { margin-top: 5%; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li + li { margin-top: 5%; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li.hasImg dt { padding: 0.5em 0; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li.hasImg dd { padding: 0 0 0.5em 0; }
-  .catDayservice.pageDay .dayZone .flowBox > li:last-child { padding-bottom: 5%; }
-  .catDayservice.pageDay .payZone { padding: 10% 0 10%; }
-  .catDayservice.pageDay .payZone .thisLead { padding: 5%; }
-  .catDayservice.pageDay .payZone .thisLead dt { margin-bottom: 0.5em; font-size: 1.6rem; }
-  .catDayservice.pageDay .payZone .thisLead dd { font-size: 1.4rem; }
-  .catDayservice.pageDay .payZone h4 { font-size: 1.7rem; }
-  .catDayservice.pageDay .payZone h5 { margin-bottom: 0.5em; padding-left: 0.8em; font-size: 1.4rem; }
-  .catDayservice.pageDay .payZone h5:before { width: 0.3em; top: 0.2em; bottom: 0.2em; }
-  .catDayservice.pageDay .payZone table { font-size: 1.0rem; }
-  .catDayservice.pageDay .payZone th, .catDayservice.pageDay .payZone td { padding: 1% 2%; }
-  .catDayservice.pageDay .payZone th { width: auto; }
-  .catDayservice.pageDay .payZone small { margin-top: 2%; font-size: 1.0rem; }
-  .catDayservice.pageDay .payZone ul { display: block; }
-  .catDayservice.pageDay .payZone ul > li { width: auto; }
-  .catDayservice.pageDay .payZone ul > li + li h5 { margin-top: 2em !important; }
-  .catDayservice.pageDay .payZone ul > li th { width: 45%; }
-  .catDayservice.pageDay .payZone h4 + ul li:first-child th { width: auto; } }
+  .catDayservice.pageDay .dayZone .flowBox > li:last-child { padding-bottom: 5%; } }
 
 /*-------------------------------------- CLOVERとは
 ---------------------------------------*/
@@ -990,11 +1001,11 @@ select { padding: 0.5em 0.7em; }
 /* VALUE・VISION・PRINCIPLE */
 .catAbout.pageValue .imgTxts { text-align: center; }
 .catAbout.pageValue .imgTxts dl dt { position: relative; overflow: hidden; }
-.catAbout.pageValue .imgTxts dl dt h3 { color: #f0f0f0; font-size: 14.0rem; text-align: left; line-height: 1; position: absolute; bottom: -0.2em; left: 40px; }
-@media all and (-ms-high-contrast: none) { .catAbout.pageValue .imgTxts dl dt h3 { bottom: -0.35em; } }
-@media screen and (max-width: 767px) { .catAbout.pageValue .imgTxts dl dt h3 { font-size: 4rem; left: 5%; } }
-.catAbout.pageValue .imgTxts dl dt h3 small { display: block; font-size: 0.2357142857em; }
-.catAbout.pageValue .imgTxts dl dt h3 span { display: block; margin-top: 0.1em; vertical-align: bottom; }
+.catAbout.pageValue .imgTxts dl dt h2 { color: #f0f0f0; font-size: 14.0rem; text-align: left; line-height: 1; position: absolute; bottom: -0.2em; left: 40px; }
+@media all and (-ms-high-contrast: none) { .catAbout.pageValue .imgTxts dl dt h2 { bottom: -0.35em; } }
+@media screen and (max-width: 767px) { .catAbout.pageValue .imgTxts dl dt h2 { font-size: 4rem; left: 5%; } }
+.catAbout.pageValue .imgTxts dl dt h2 small { display: block; font-size: 0.2357142857em; }
+.catAbout.pageValue .imgTxts dl dt h2 span { display: block; margin-top: 0.1em; vertical-align: bottom; }
 .catAbout.pageValue .imgTxts dl dd { padding: 60px 15px 90px; }
 @media screen and (max-width: 767px) { .catAbout.pageValue .imgTxts dl dd { padding: 4%; } }
 .catAbout.pageValue .imgTxts dl dd h4 { margin-bottom: 30px; font-size: 3.5rem; }
@@ -1131,7 +1142,7 @@ select { padding: 0.5em 0.7em; }
 .cast-detail .content .profBox .img .name { display: flex; align-items: center; position: absolute; top: 0; bottom: 0; }
 @media screen and (max-width: 767px) { .cast-detail .content .profBox .img .name { text-align: center; } }
 .cast-detail .content .profBox .img .name dl { background-color: rgba(53, 143, 49, 0.9); padding: 2em 3em; color: #fff; font-size: 1.0rem; line-height: 1; }
-.cast-detail .content .profBox .img .name dt { margin-bottom: .9em; font-size: 1.6rem; line-height: 1.2; }
+.cast-detail .content .profBox .img .name dt { margin-top: .9em; font-size: 1.6rem; line-height: 1.2; }
 .cast-detail .content .profBox .img .name dd { font-size: 6.1rem; }
 .cast-detail .content .profBox .txt { display: flex; padding: 20px 30px; }
 .cast-detail .content .profBox .txt dt { color: #42933f; font-size: 3.8rem; }

@@ -39,7 +39,7 @@
 //			animation-iteration-count: infinite;
 //			animation-fill-mode: forwards;
 		}
-		h2{
+		h1{
 			background-color: #fff;
 			padding: 25px;
 			font-size: 5rem;
@@ -90,7 +90,7 @@
 				background-size: cover;
 				height: 17vw;
 			}
-			h2{
+			h1{
 				padding: (30/640) * $per (20/640) * $per;
 				font-size: 2rem;
 			}
@@ -291,13 +291,21 @@
 					@mixin officeItemPos($officeItemPos){
 						left:($officeItemPos/$officeZoneW) * $per;
 					}
-					&Sendagaya{left:0;}
-					&Yoyogiuehara{@include officeItemPos(565);}
-					&Hiroo{@include officeItemPos(565);}
+					//&Sendagaya{left:0;}
+//					&Yoyogiuehara{@include officeItemPos(565);}
+//					&Hiroo{@include officeItemPos(565);}
+//					&Azabujuban{right: 0;}
+//					&Sangubasi{@include officeItemPos(283);}
+//					&Kagurazaka{left:0;}
+//					&Yotuya{@include officeItemPos(847);}
+//					&Motoyawata{right:0;}
+          &Yoyogiuehara{left:0;}
+					&Sendagaya{@include officeItemPos(565);}
+					&Kagurazaka{@include officeItemPos(565);}
 					&Azabujuban{right: 0;}
-					&Sangubasi{@include officeItemPos(283);}
-					&Kagurazaka{left:0;}
-					&Yotuya{@include officeItemPos(847);}
+					&Yotuya{@include officeItemPos(283);}
+					&Hiroo{left:0;}
+					&Sangubasi{@include officeItemPos(847);}
 					&Motoyawata{right:0;}
 				}
 				a{
@@ -337,14 +345,15 @@
 						&Yotuya{width:(301/$officeZoneW) * $per}
 						&Motoyawata{width:96%}
 						//位置 上下
-						&Sendagaya{top: 0;bottom: auto;}
-						&Yoyogiuehara{top: (372/$officeZoneH) * $per;bottom: auto;}
+						&Yoyogiuehara{top: 0;bottom: auto;}
+						&Sendagaya{top:23.2%;bottom: auto;}
 						&Sangubasi{top: 0;bottom: auto;}
 						&Motoyawata{top:76%;}
 						&Hiroo{top: 52%;bottom: auto;}
 						&Azabujuban{top: auto;bottom: 0;}
 						&Kagurazaka{top: (308/$officeZoneH) * $per;bottom: auto;}
 						&Yotuya{top: 55%;bottom: auto;}
+
 						//位置 左右
 						&Sendagaya,
 						&Yoyogiuehara,

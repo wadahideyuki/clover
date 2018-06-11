@@ -31,7 +31,7 @@
 						<h3>3つのHappiness</h3>
 						<ul class="layer2">
 							<li><a href="/cast/">キャスト紹介</a></li>
-							<li><a href="/management/blog/">ブログ</a></li>
+							<li><a href="/philosophy/blog/index.html">ブログ</a></li>
 							<li><a href="/career/">採用情報TOP</a></li>
 						</ul>
 					</li>
@@ -39,7 +39,7 @@
 						<h3>CLOVERとは</h3>
 						<ul class="layer2">
 							<li><a href="/about/">CLOVERとはTOP</a></li>
-							<li><a href="/about/clover/">社名の由来・会社概要・沿革</a></li>
+							<li><a href="/about/company/index.html">社名の由来・会社概要・沿革</a></li>
 							<li><a href="/about/message/">トップメッセージ</a></li>
 							<li><a href="/about/value/">VALUE・VISION・PRINCIPLE</a></li>
 						</ul>
