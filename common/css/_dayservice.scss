@@ -231,6 +231,11 @@
       }
       .office-box{
         width: 48%;
+          .payZone{
+              h5{
+                  text-align: left;
+              }
+          }
         @include mq{
           width: 100%;
         }
@@ -958,7 +963,7 @@
 								width: 15vw;
 								height: 15vw;
 								margin: auto;
-								font-size: 1rem;
+								font-size: 0.9rem;
                 left: -3vw;
 							}
 							.img{
