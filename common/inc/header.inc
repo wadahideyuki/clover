@@ -14,6 +14,7 @@
 				<li class="hdNav4"><a href="/after/">放課後等デイサービス</a></li>
 				<li class="hdNav5"><a href="/cast/">キャスト紹介</a></li>
 				<li class="hdNav6"><a href="/career/">採用情報</a></li>
+				<li class="hdNav6"><a href="/philosophy/blog/index.html">ブログ</a></li>
 			</ul>
 		</nav>
 			<div class="colR">
@@ -53,6 +54,9 @@
 					<a href="/career/">採用情報TOP</a>
 					<a href="/career/recruit/">募集要項</a>
 				</li>
+                <li>
+                <a href="/philosophy/blog/index.html">ブログ</a>
+                </li>
 			</ul>
 		</nav>
 		-->
@@ -112,6 +116,9 @@
 							<a href="/career/recruit/">募集要項</a>
 						</nav>
 					</li>
+                <li>
+                <a href="/philosophy/blog/index.html">ブログ</a>
+                </li>
 				</ul>
 			</nav>
 		</div>

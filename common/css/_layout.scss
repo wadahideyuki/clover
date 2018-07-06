@@ -84,7 +84,7 @@
           font-size: 1.4rem;
         }
 				> li{
-					padding: 5px 15px 0px 15px;
+					padding: 5px 9px 0px 9px;
           display: inline-block;
 					a{
 						display: inline-block;
@@ -382,15 +382,13 @@ footer{
 			.ftSns{
 				display: flex;
 				justify-content: space-around;
-				width: 500px;
-				border-left: 1px solid rgba(255,255,255,0.1);
+				width: 180px;
 				> li{
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					width: 48%;
 					padding: 10px 0;
-					border-right: 1px solid rgba(255,255,255,0.1);
 					a{
 						display: inline-block;
 						color: #fff;
@@ -399,11 +397,8 @@ footer{
 							display: flex;
 							justify-content: space-around;
 							align-items: center;
-							background:url(../img/icn_blank.png) right center no-repeat;
-							padding-right: 28px;
 						}
 						dt{
-							padding-right: 15px;
 						}
 						dd{
 							font-size: 1.4rem;
@@ -420,9 +415,12 @@ footer{
 		}
 	}
 	.part2{
-		padding: 40px 0;
+		padding: 40px 5%;
 		.in{
 			margin-bottom: 80px;
+            @include mq{
+                padding: 0 3%;
+            }
 		}
 		.logo{
 			margin-bottom: 54px;
@@ -434,9 +432,9 @@ footer{
 		.layer1{
 			display: flex;
 			border-right: 1px dotted #929292;
-			> li{
-				width: 20%;
-				padding: 0 (30/1200) * $per;
+			> li, > div{
+				width: 14%;
+				padding: 0 1%;
 				text-align: left;
 				border-left: 1px dotted #929292;
 				h3{
@@ -447,7 +445,7 @@ footer{
 				}
 				.layer2{
 					> li{
-						font-size: 1.4rem;
+						font-size: 1.2rem;
 						& + li{
 							margin-top: 5px;
 						}
@@ -541,7 +539,7 @@ footer{
 			.layer1{
 				display: block;
 				border-right: none;
-				> li{
+				> li, > div{
 					width: auto;
 					padding: 3vw 0;
 					border-bottom: 1px solid #529f4f;
@@ -553,6 +551,12 @@ footer{
 						margin-bottom: 0;
 						font-size: 1.2rem;
 						font-weight: normal;
+                        &.blog{
+                            color: #529f4f;
+                            &:after{
+							transform: rotate(-45deg);
+                            }
+                        }
 						&:after{
 							content: "";
 							display: inline-block;

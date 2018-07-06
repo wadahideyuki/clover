@@ -277,12 +277,14 @@
 					&Sangubasi{width:(272/$officeZoneW) * $per}
 					&Kagurazaka{width:(555/$officeZoneW) * $per}
 					&Yotuya{width:(272/$officeZoneW) * $per}
+					&Motoyawata2{width:(272/$officeZoneW) * $per}
 					&Motoyawata{width:(272/$officeZoneW) * $per}
 					//位置 上下
 					&Sendagaya,
 					&Yoyogiuehara,
 					&Sangubasi,
 					&Motoyawata{top:0;}
+					&Motoyawata2{top:0;}
 					&Hiroo,
 					&Azabujuban,
 					&Kagurazaka,
@@ -307,6 +309,7 @@
 					&Hiroo{left:0;}
 					&Sangubasi{@include officeItemPos(847);}
 					&Motoyawata{right:0;}
+					&Motoyawata2{right:0;}
 				}
 				a{
 					display: block;
@@ -344,13 +347,15 @@
 						&Kagurazaka{width:(301/$officeZoneW) * $per}
 						&Yotuya{width:(301/$officeZoneW) * $per}
 						&Motoyawata{width:96%}
+						&Motoyawata2{width:(301/$officeZoneW) * $per}
 						//位置 上下
 						&Yoyogiuehara{top: 0;bottom: auto;}
 						&Sendagaya{top:23.2%;bottom: auto;}
 						&Sangubasi{top: 0;bottom: auto;}
 						&Motoyawata{top:76%;}
+						&Motoyawata2{top: 76%;bottom: auto;}
 						&Hiroo{top: 52%;bottom: auto;}
-						&Azabujuban{top: auto;bottom: 0;}
+						&Azabujuban{top: auto;bottom: 5%;}
 						&Kagurazaka{top: (308/$officeZoneH) * $per;bottom: auto;}
 						&Yotuya{top: 55%;bottom: auto;}
 
@@ -363,6 +368,7 @@
 						&Kagurazaka,
 						&Yotuya,
 						&Motoyawata{left: auto;right:(12/$officeZoneW) * $per;}
+            &Motoyawata2{left: auto;right:(12/$officeZoneW) * $per;}
 					}
 					a{
 						img{

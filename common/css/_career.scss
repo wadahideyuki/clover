@@ -414,6 +414,31 @@
 }
 /* 募集要項 */
 .catCareer.pageRecruit{
+  .numList1{
+    li{
+      border-bottom: 1px dotted #CCC;
+      padding-bottom: 0.5em;
+      margin-bottom: 0.5em;
+      &:last-of-type{
+        border-bottom: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .tblBox1{
+    td,th{
+      font-size: 1.4rem;
+      line-height: 1.6;
+      border-bottom: 1px solid #CCC;
+      a{
+        text-decoration: underline !important;
+      }
+      @include mq{
+        font-size: 1.2rem;
+      }
+    }
+  }
 	.mainImg{
 		img{
 			width: 100%;
