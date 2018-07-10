@@ -39,50 +39,53 @@
 						<h3>3つのHappiness</h3>
 						<ul class="layer2">
 							<li><a href="/cast/">キャスト紹介</a></li>
-							<li><a href="/philosophy/blog/index.html">ブログ</a></li>
-							<li><a href="/career/">採用情報TOP</a></li>
+							<li><a href="/philosophy/blog/index.php">ブログ</a></li>
+							<li><a href="/career/index.php">採用情報TOP</a></li>
 						</ul>
 					</li>
 					<li>
-						<h3>CLOVERとは</h3>
+						<h3>会社情報</h3>
 						<ul class="layer2">
-							<li><a href="/about/">CLOVERとはTOP</a></li>
-							<li><a href="/about/company/index.html">社名の由来・会社概要・沿革</a></li>
-							<li><a href="/about/message/">トップメッセージ</a></li>
-							<li><a href="/about/value/">VALUE・VISION・PRINCIPLE</a></li>
+							<li><a href="/about/index.php">会社情報TOP</a></li>
+							<li><a href="/about/company/index.php">社名の由来・会社概要・沿革</a></li>
+							<li><a href="/about/value/index.php">VALUE・VISION・PRINCIPLE</a></li>
+							<li><a href="http://day-clover.com/news/category/media/">メディア掲載</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>デイサービス</h3>
 						<ul class="layer2">
-							<li><a href="/dayservice/">デイサービスTOP</a></li>
-							<li><a href="/dayservice/qa/">社名の由来・会社概要・沿革</a></li>
-							<li><a href="/dayservice/#office">事業所</a></li>
-							<li><a href="/dayservice/care/">クローバーの介護観</a></li>
-							<li><a href="/dayservice/day/">クローバーの１日・利用料金</a></li>
+							<li><a href="/dayservice/index.php">デイサービスTOP</a></li>
+							<li><a href="/dayservice/care/index.php">クローバーの介護観</a></li>
+							<li><a href="/dayservice/index.php#office">事業所一覧</a></li>
+							<li><a href="/dayservice/day/index.php">クローバーの１日・利用料金</a></li>
+							<li><a href="/dayservice/day/index.php">お客様の声</a></li>
+							<li><a href="/dayservice/day/index.php">よくある質問</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>放課後等デイサービス</h3>
 						<ul class="layer2">
-							<li><a href="/after/">放課後等デイサービスTOP</a></li>
+							<li><a href="/after/index.php">放課後等デイサービスTOP</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>キャスト紹介</h3>
 						<ul class="layer2">
 							<li><a href="/cast/">キャスト紹介TOP</a></li>
+							<li><a href="/cast/gallery/">フォトギャラリー</a></li>
 						</ul>
 					</li>
 					<li>
 						<h3>採用情報</h3>
 						<ul class="layer2">
-							<li><a href="/career/">採用情報TOP</a></li>
-							<li><a href="/career/recruit/">募集要項</a></li>
+							<li><a href="/career/index.php">採用情報TOP</a></li>
+							<li><a href="/career/recruit/index.php">募集要項</a></li>
+							<li><a href="/career/welfare/index.php">福利厚生</a></li>
 						</ul>
 					</li>
 					<div>
-						<h3 class="blog"><a href="/philosophy/blog/index.html">ブログ</a></h3>
+						<h3 class="blog"><a href="/philosophy/blog/index.php">ブログ</a></h3>
 					</div>
 				</ul>
 			</div>

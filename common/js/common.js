@@ -135,6 +135,7 @@ $(".topServiceSlk ul").slick({
 });
 
 //ニュースのスライド
+  $(".topNewsSlk ul").load( "news/toplist/index.php", function() {
 $(".topNewsSlk ul").slick({
 	arrows:false,
 	dots:false,
@@ -149,6 +150,7 @@ $(".topNewsSlk ul").slick({
 			}
 		}
 	]
+});
 });
 
 

@@ -7,6 +7,48 @@
 /*--------------------------------------
   採用情報
 ---------------------------------------*/
+.galleryBanner{
+  text-align: center;
+  padding: 50px 10px;
+  @include mq{
+    padding: 3%;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+.entryBtn{
+  position: fixed;
+  right: 0px;
+  font-size: 1.8rem;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  top: 10%;
+  background: #FF7E00;
+  border-radius: 8px 0 0 8px;
+  @include mq{
+    width: 100%;
+    box-sizing: border-box;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    left: 0px;
+  }
+  span{
+    display: inline-block;
+    -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+    @include mq{
+    -ms-writing-mode: inherit;
+  writing-mode: horizontal-tb;
+    }
+  }
+  &:hover{
+    opacity: 0.8;
+  }
+}
 .catCareer{
   .page-title{
     text-align: center;
@@ -747,5 +789,47 @@
 	}
 }
 
-
+.welfare-list{
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  @include mq{
+    display: block;
+  }
+  li{
+    width: 48%;
+    margin: 1%;
+    background: #FFF;
+    padding: 35px;
+    box-sizing: border-box;
+    @include mq{
+      width: auto;
+      padding: 4%;
+      margin: 0 3% 3% 3%;
+    }
+    img{
+      height: auto;
+    }
+    h3{
+      font-size: 2.4rem;
+      color: $mainColor;
+      font-weight: bold;
+      padding: 0.3em 0 0.8em 0;
+      @include mq{
+        font-size: 5vw;
+      }
+    }
+    p{
+      font-size: 1.8rem;
+      line-height: 1.6;
+      @include noto;
+      @include mq{
+        font-size: 4vw;
+      }
+    }
+  }
+}
 

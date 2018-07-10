@@ -383,6 +383,25 @@ footer .part2 #copyRight { color: #333; font-size: 1.4rem; }
   footer .part2 .layer1 > li .layer2 > li + li, footer .part2 .layer1 > div .layer2 > li + li { margin-top: 0; }
   footer .part2 #copyRight { font-size: 0.7rem; } }
 
+.btmLinkZone .in { display: flex; justify-content: space-between; padding: 10px 0; }
+.btmLinkZone .in a { display: block; background-position: center center; background-repeat: no-repeat; background-size: cover; width: 49.6428571429%; font-family: "Noto Sans Japanese"; transition: 0.3s; }
+.btmLinkZone .in a:hover { opacity: 0.7; text-decoration: none; }
+.btmLinkZone .in a.btnNo1 { background-image: url(../img/top/btm_link_img01.png); }
+.btmLinkZone .in a.btnNo2 { background-image: url(../img/top/btm_link_img02.png); }
+.btmLinkZone .in a.btnNo3 { background-image: url(/common/img/career/link_img04.png); }
+.btmLinkZone .in a.btnNo4 { background-image: url(/common/img/career/link_img03.png); }
+.btmLinkZone .in a:hover { text-decoration: none; }
+.btmLinkZone .in a dl { display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 165px 10px 140px; color: #fff; font-weight: bold; }
+.btmLinkZone .in a dl dt { margin-bottom: 34px; font-size: 3.6rem; }
+.btmLinkZone .in a dl dd { display: inline-block; padding: 11px 48px; font-size: 2.2rem; border: 1px solid #fff; }
+@media screen and (max-width: 767px) { .btmLinkZone .in { display: block; padding: 1.875%; }
+  .btmLinkZone .in a { width: auto; }
+  .btmLinkZone .in a.btnNo2 { margin-top: 1.875vw; }
+  .btmLinkZone .in a.btnNo4 { margin-top: 1.875vw; }
+  .btmLinkZone .in a dl { padding: 11.40625vw 2.34375vw 10.3125vw; }
+  .btmLinkZone .in a dl dt { margin-bottom: 0; font-size: 1.8rem; }
+  .btmLinkZone .in a dl dd { display: none; } }
+
 /*-------------------------------------- 要素
 ---------------------------------------*/
 img { max-width: 100%; }
@@ -637,9 +656,10 @@ select { padding: 0.5em 0.7em; }
   .pageSitetop .serviceZone .topServiceSlk .liItem dl dd p br { display: none; } }
 .pageSitetop .newsZone { padding: 80px 0 70px; }
 .pageSitetop .newsZone .topNewsSlk { margin: 0 -12px; }
+.pageSitetop .newsZone .topNewsSlk img { height: auto; }
 .pageSitetop .newsZone .topNewsSlk .liItem > a { display: block; margin: 0 12px; transition: 0.3s; }
 .pageSitetop .newsZone .topNewsSlk .liItem > a:hover { opacity: 0.7; text-decoration: none; }
-.pageSitetop .newsZone .topNewsSlk .liItem dl dt { margin-bottom: 10px; }
+.pageSitetop .newsZone .topNewsSlk .liItem dl dt { margin-bottom: 10px; text-align: center; display: flex; justify-content: center; align-content: center; align-items: center; overflow: hidden; height: 150px; border: 1px solid #CCC; }
 .pageSitetop .newsZone .topNewsSlk .liItem dl dd { font-family: "Noto Sans Japanese"; font-size: 1.4rem; line-height: 1.5714285714; }
 .pageSitetop .newsZone .topNewsSlk .liItem dl dd small { display: block; color: #666; }
 @media screen and (max-width: 767px) { .pageSitetop .newsZone { padding: 19.375% 0 3.75%; }
@@ -704,21 +724,6 @@ select { padding: 0.5em 0.7em; }
   .pageSitetop .officeZone ul li.itemSendagaya, .pageSitetop .officeZone ul li.itemYoyogiuehara, .pageSitetop .officeZone ul li.itemHiroo, .pageSitetop .officeZone ul li.itemAzabujuban { left: 1.875%; right: auto; }
   .pageSitetop .officeZone ul li.itemSangubasi, .pageSitetop .officeZone ul li.itemKagurazaka, .pageSitetop .officeZone ul li.itemYotuya, .pageSitetop .officeZone ul li.itemMotoyawata { left: auto; right: 1.875%; }
   .pageSitetop .officeZone ul li.itemMotoyawata2 { left: auto; right: 1.875%; } }
-.pageSitetop .btmLinkZone .in { display: flex; justify-content: space-between; padding: 10px 0; }
-.pageSitetop .btmLinkZone .in a { display: block; background-position: center center; background-repeat: no-repeat; background-size: cover; width: 49.6428571429%; font-family: "Noto Sans Japanese"; transition: 0.3s; }
-.pageSitetop .btmLinkZone .in a:hover { opacity: 0.7; text-decoration: none; }
-.pageSitetop .btmLinkZone .in a.btnNo1 { background-image: url(../img/top/btm_link_img01.png); }
-.pageSitetop .btmLinkZone .in a.btnNo2 { background-image: url(../img/top/btm_link_img02.png); }
-.pageSitetop .btmLinkZone .in a:hover { text-decoration: none; }
-.pageSitetop .btmLinkZone .in a dl { display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 165px 10px 140px; color: #fff; font-weight: bold; }
-.pageSitetop .btmLinkZone .in a dl dt { margin-bottom: 34px; font-size: 3.6rem; }
-.pageSitetop .btmLinkZone .in a dl dd { display: inline-block; padding: 11px 48px; font-size: 2.2rem; border: 1px solid #fff; }
-@media screen and (max-width: 767px) { .pageSitetop .btmLinkZone .in { display: block; padding: 1.875%; }
-  .pageSitetop .btmLinkZone .in a { width: auto; }
-  .pageSitetop .btmLinkZone .in a.btnNo2 { margin-top: 1.875vw; }
-  .pageSitetop .btmLinkZone .in a dl { padding: 11.40625vw 2.34375vw 10.3125vw; }
-  .pageSitetop .btmLinkZone .in a dl dt { margin-bottom: 0; font-size: 1.8rem; }
-  .pageSitetop .btmLinkZone .in a dl dd { display: none; } }
 
 /*-------------------------------------- 経営理念
 ---------------------------------------*/
@@ -804,16 +809,36 @@ select { padding: 0.5em 0.7em; }
 @media screen and (max-width: 1024px) { .catDayservice.pageDayTop .day-box.day-box2 .txt { padding: 0px; } }
 .catDayservice.pageDayTop .day-box.day-box3 { padding-bottom: 70px; }
 @media screen and (max-width: 767px) { .catDayservice.pageDayTop .day-box.day-box3 { padding-bottom: 30px; } }
-.catDayservice.pageDayTop .featureBlock { padding: 50px 0; }
-@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock { margin-top: 25px; padding: 25px 0; } }
-.catDayservice.pageDayTop .featureBlock .featureBox { display: flex; justify-content: space-between; }
-@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock .featureBox { display: block; } }
-.catDayservice.pageDayTop .featureBlock .featureBox dl { width: 32%; box-sizing: border-box; border: 5px solid #358f31; margin: 20px 0; }
-@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock .featureBox dl { width: auto; } }
-.catDayservice.pageDayTop .featureBlock .featureBox dl dd { padding: 20px; }
-.catDayservice.pageDayTop .featureBlock .featureBox dl dd strong { display: block; font-size: 1.7rem; text-align: center; color: #358f31; font-weight: bold; padding-bottom: 15px; }
-.catDayservice.pageDayTop .featureBlock .featureBox dl dd p { font-size: 1.5rem; font-family: "Noto Sans Japanese"; line-height: 1.8; }
-@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock .featureBox dl dd p { font-size: 1.3rem; } }
+.catDayservice.pageDayTop .catch-text { padding: 50px 0; font-size: 3rem; color: #FFF; text-align: center; background: #358f31; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .catch-text { padding: 5% 3%; font-size: 1.5rem; }
+  .catDayservice.pageDayTop .catch-text br.sp { display: inline !important; } }
+.catDayservice.pageDayTop .featureBlock2 { padding: 50px 0; margin: 0 auto; font-size: 2rem; line-height: 1.8; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock2 { font-size: 1.2rem; } }
+.catDayservice.pageDayTop .featureBlock2 li { display: flex; background: #FFF; margin-bottom: 30px; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock2 li { display: block; padding-bottom: 5%; } }
+.catDayservice.pageDayTop .featureBlock2 li:nth-child(even) { flex-direction: row-reverse; }
+.catDayservice.pageDayTop .featureBlock2 li > div { width: 50%; box-sizing: border-box; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock2 li > div { width: 100%; } }
+.catDayservice.pageDayTop .featureBlock2 li > div.txt { display: flex; padding: 0 80px; align-content: center; justify-content: center; align-items: center; flex-wrap: wrap; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock2 li > div.txt { padding: 4%; } }
+.catDayservice.pageDayTop .featureBlock2 li > div.txt h3 { text-align: center; font-size: 3rem; margin-bottom: 1em; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock2 li > div.txt h3 { font-size: 2rem; } }
+.catDayservice.pageDayTop .featureBlock2 li > div.txt h3 em { display: block; }
+.catDayservice.pageDayTop .featureBlock2 li > div.txt h3 strong { display: inline-block; font-size: 5rem; padding: 0 0.3em 0.3em 0.3em; border-bottom: 1px solid #000; margin-bottom: 0.3em; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock2 li > div.txt h3 strong { font-size: 5vw; } }
+.catDayservice.pageDayTop .featureBlock2 li p { font-size: 1.6rem; font-family: "Noto Sans Japanese"; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock2 li p { font-size: 1.3rem; } }
+.catDayservice.pageDayTop .featureBlock { padding: 50px 0; max-width: 900px; margin: 0 auto; font-size: 1.6rem; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock { font-size: 1.3rem; margin-top: 25px; padding: 25px 0; text-align: left; }
+  .catDayservice.pageDayTop .featureBlock .taC { text-align: left; }
+  .catDayservice.pageDayTop .featureBlock .inner-s { padding: 0 3%; } }
+.catDayservice.pageDayTop .featureBlock p { padding-bottom: 1em; line-height: 1.8; font-family: "Noto Sans Japanese"; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock p { text-align: left; } }
+.catDayservice.pageDayTop .featureBlock p.txt2 { font-size: 1.8rem; font-weight: bold; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock p.txt2 { font-size: 1.4rem; } }
+.catDayservice.pageDayTop .featureBlock p.txt3 { color: #358f31; font-size: 1.8rem; font-weight: bold; }
+@media screen and (max-width: 767px) { .catDayservice.pageDayTop .featureBlock p.txt3 { font-size: 1.4rem; } }
+.catDayservice.pageDayTop .featureBlock p.voice { padding: 1em; background: #EEEEEE; border-radius: 5px; margin-bottom: 1em; }
 
 /* 事業所 */
 .catDayservice.pageOffice .acrdList .accSlkBox { text-align: center; position: relative; }
@@ -913,7 +938,7 @@ select { padding: 0.5em 0.7em; }
   .catDayservice.pageCare .careBox .box p.name { margin-top: 0.5em; } }
 
 /* デイサービスクローバーの一日 */
-.catDayservice.pageDay .pageNavi { padding: 1em 0 4em 0; font-size: 2rem; }
+.catDayservice.pageDay .pageNavi { font-size: 2rem; }
 @media screen and (max-width: 767px) { .catDayservice.pageDay .pageNavi { font-size: 1.2rem; padding: 1em 0 3em 0; } }
 .catDayservice.pageDay .pageNavi a { display: inline-block; margin: 0 1em; color: #358f31; }
 @media screen and (max-width: 767px) { .catDayservice.pageDay .pageNavi a { margin: 0; }
@@ -968,7 +993,7 @@ select { padding: 0.5em 0.7em; }
   .catDayservice.pageDay .dayZone .flowBox > li .flowDtl > li.hasImg dd { padding: 0 0 0.5em 0; }
   .catDayservice.pageDay .dayZone .flowBox > li:last-child { padding-bottom: 5%; } }
 
-/*-------------------------------------- CLOVERとは
+/*-------------------------------------- 会社情報
 ---------------------------------------*/
 /* トップ */
 .catAbout.pageTop .mainImg { padding-top: 30px; text-align: center; }
@@ -983,7 +1008,7 @@ select { padding: 0.5em 0.7em; }
   .catAbout.pageTop .links1 dl dt img { display: none; }
   .catAbout.pageTop .links1 dl dd { width: 60%; } }
 
-/* CLOVERとは */
+/* 会社情報 */
 .catAbout.pageClover { padding-bottom: 50px; }
 .catAbout.pageClover .wishZone { padding-top: 80px; text-align: center; }
 .catAbout.pageClover .wishZone .img { margin-bottom: 70px; }
@@ -1031,6 +1056,16 @@ select { padding: 0.5em 0.7em; }
 
 /*-------------------------------------- 採用情報
 ---------------------------------------*/
+.galleryBanner { text-align: center; padding: 50px 10px; }
+@media screen and (max-width: 767px) { .galleryBanner { padding: 3%; } }
+.galleryBanner img { max-width: 100%; }
+
+.entryBtn { position: fixed; right: 0px; font-size: 1.8rem; color: #FFF; text-align: center; display: block; padding: 15px; top: 10%; background: #FF7E00; border-radius: 8px 0 0 8px; }
+@media screen and (max-width: 767px) { .entryBtn { width: 100%; box-sizing: border-box; top: auto; bottom: 0px; right: auto; left: 0px; } }
+.entryBtn span { display: inline-block; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+@media screen and (max-width: 767px) { .entryBtn span { -ms-writing-mode: inherit; writing-mode: horizontal-tb; } }
+.entryBtn:hover { opacity: 0.8; }
+
 .catCareer .page-title { text-align: center; padding: 40px 0 0 0; font-size: 3rem; }
 .catCareer .tag-title { text-align: center; padding: 40px 0 0 0; font-size: 3rem; }
 @media screen and (max-width: 767px) { .catCareer .tag-title { font-size: 1.8rem; padding: 5%; } }
@@ -1192,6 +1227,16 @@ select { padding: 0.5em 0.7em; }
   .cast-detail .content .episodeBox p { margin-bottom: 5%; font-size: 1.4rem; }
   .cast-detail .content .episodeBox .img { margin-bottom: 5%; }
   .cast-detail .content2 { padding: 5% 0; } }
+
+.welfare-list { display: flex; justify-content: flex-start; max-width: 1100px; margin: 0 auto; flex-wrap: wrap; padding: 30px 0; }
+@media screen and (max-width: 767px) { .welfare-list { display: block; } }
+.welfare-list li { width: 48%; margin: 1%; background: #FFF; padding: 35px; box-sizing: border-box; }
+@media screen and (max-width: 767px) { .welfare-list li { width: auto; padding: 4%; margin: 0 3% 3% 3%; } }
+.welfare-list li img { height: auto; }
+.welfare-list li h3 { font-size: 2.4rem; color: #358f31; font-weight: bold; padding: 0.3em 0 0.8em 0; }
+@media screen and (max-width: 767px) { .welfare-list li h3 { font-size: 5vw; } }
+.welfare-list li p { font-size: 1.8rem; line-height: 1.6; font-family: "Noto Sans Japanese"; }
+@media screen and (max-width: 767px) { .welfare-list li p { font-size: 4vw; } }
 
 /*-------------------------------------- 経営理念
 ---------------------------------------*/

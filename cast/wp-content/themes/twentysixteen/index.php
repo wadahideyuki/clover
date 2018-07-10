@@ -113,6 +113,7 @@ echo '<li><a href="'. get_tag_link($tag->term_id) .'">' . $tag->name . '</a></li
 	</div>
     
     
+  <p class="galleryBanner"><a href="/cast/gallery/"><img src="/common/img/cast/bn.png"></a></p>
 </section>
 </div>
 

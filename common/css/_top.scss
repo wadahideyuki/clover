@@ -186,6 +186,9 @@
 		padding: 80px 0 70px;
 		.topNewsSlk{
 			margin: 0 -12px;
+      img{
+        height: auto;
+      }
 			.liItem{
 				> a{
 					display: block;
@@ -195,6 +198,14 @@
 				dl{
 					dt{
 						margin-bottom: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 150px;
+            border: 1px solid #CCC;
 					}
 					dd{
 						@include noto;
@@ -372,65 +383,6 @@
 					}
 					a{
 						img{
-						}
-					}
-				}
-			}
-		}
-	}
-	.btmLinkZone{
-		.in{
-			display: flex;
-			justify-content: space-between;
-			padding: 10px 0;
-			a{
-				display: block;
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: cover;
-				width: (695/1400) * $per;
-				@include noto;
-				@include hvr;
-				&.btnNo1{background-image: url(../img/top/btm_link_img01.png);}
-				&.btnNo2{background-image: url(../img/top/btm_link_img02.png);}
-				&:hover{text-decoration: none;}
-				dl{
-					display: flex;
-					flex-direction: column;
-					justify-content: space-between;
-					align-items: center;
-					padding: 165px 10px 140px;
-					color: #fff;
-					font-weight: bold;
-					dt{
-						margin-bottom: 34px;
-						font-size: 3.6rem;
-					}
-					dd{
-						display: inline-block;
-						padding: 11px 48px;
-						font-size: 2.2rem;
-						border: 1px solid #fff;
-					}
-				}
-			}
-		}
-		@include mq{
-			.in{
-				display: block;
-				padding: (12/640) * $per;
-				a{
-					width: auto;
-					&.btnNo1{}
-					&.btnNo2{margin-top: (12/640) * 100vw;}
-					dl{
-						padding: (73/640) * 100vw (15/640) * 100vw (66/640) * 100vw;
-						dt{
-							margin-bottom: 0;
-							font-size: 1.8rem;
-						}
-						dd{
-							display: none;
 						}
 					}
 				}

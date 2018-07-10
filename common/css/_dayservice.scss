@@ -146,50 +146,134 @@
             }
         }
     }
-    
+  .catch-text{
+    padding: 50px 0;
+    font-size: 3rem;
+    color: #FFF;
+    text-align: center;
+    background: $mainColor;
+    @include mq{
+      padding: 5% 3%;
+      font-size: 1.5rem;
+      br.sp{
+        display: inline !important;
+      }
+    }
+  }
+    .featureBlock2{
+			padding: 50px 0;
+      margin: 0 auto;
+      font-size: 2rem;
+      line-height: 1.8;
+      @include mq{
+        font-size: 1.2rem;
+      }
+      li{
+        display: flex;
+        background: #FFF;
+        margin-bottom: 30px;
+        @include mq{
+          display: block;
+          padding-bottom: 5%;
+        }
+        &:nth-child(even){
+          flex-direction: row-reverse;
+        }
+        & > div{
+          width: 50%;
+          box-sizing: border-box;
+          @include mq{
+            width: 100%;
+          }
+          &.txt{
+            display: flex;
+            padding: 0 80px;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            @include mq{
+              padding: 4%;
+            }
+            h3{
+              text-align: center;
+              font-size: 3rem;
+             margin-bottom: 1em;
+              @include mq{
+                font-size:2rem;
+              }
+              em{
+                display: block;
+              }
+              strong{
+                display: inline-block;
+                 font-size:5rem;
+                padding: 0 0.3em 0.3em 0.3em;
+                border-bottom: 1px solid #000;
+                margin-bottom: 0.3em;
+                @include mq{
+                  font-size: 5vw;
+                }
+              }
+            }
+          }
+        }
+        p{
+          font-size: 1.6rem;
+          @include noto;
+          @include mq{
+            font-size: 1.3rem;
+          }
+        }
+      }
+  }
     .featureBlock{
 			padding: 50px 0;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.6rem;
 			@include mq{
+      font-size: 1.3rem;
 				margin-top: 25px;
 				padding: 25px 0;
+          text-align: left;
+        .taC{
+          text-align: left;
+        }
+        .inner-s{
+          padding: 0 3%;
+        }
 			}
-			.featureBox{
-				display: flex;
-				justify-content: space-between;
-				@include mq{
-					display: block;
-				}
-				dl{
-					width: 32%;
-					box-sizing: border-box;
-					border: 5px solid $mainColor;
-					margin: 20px 0;
-					@include mq{
-						width: auto;
-					}
-					dt{
-					}
-					dd{
-						padding: 20px;
-						strong{
-							display: block;
-							font-size: 1.7rem;
-							text-align: center;
-							color: $mainColor;
-							font-weight: bold;
-							padding-bottom: 15px;
-						}
-						p{
-							font-size: 1.5rem;
-							@include noto;
-							line-height: 1.8;
-							@include mq{
-								font-size: 1.3rem;
-							}
-						}
-					}
-				}
-    	}
+      p{
+        padding-bottom: 1em;
+        line-height: 1.8;
+        @include noto;
+        @include mq{
+          
+          text-align: left;
+        }
+        &.txt2{
+        font-size: 1.8rem;
+        font-weight: bold;
+          @include mq{
+            font-size: 1.4rem;
+          }
+        }
+        &.txt3{
+          color: $mainColor;
+          font-size: 1.8rem;
+          font-weight: bold;
+          @include mq{
+            font-size: 1.4rem;
+          }
+        }
+        &.voice{
+          padding: 1em;
+          background: #EEEEEE;
+          border-radius: 5px;
+          margin-bottom: 1em;
+        }
+      }
     }
 
     
@@ -700,7 +784,6 @@
 /* デイサービスクローバーの一日 */
 .catDayservice.pageDay{
   .pageNavi{
-    padding: 1em 0 4em 0;
     font-size: 2rem;
     @include mq{
       font-size: 1.2rem;
