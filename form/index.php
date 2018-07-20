@@ -82,7 +82,6 @@
 					<tr>
 					  <th>お問い合わせ<br>事業所</th>
 					  <td><div class="selectWrap">
-					    <label><input type="checkbox" name="jigyousho" value="全事業">全事業</label><br>
 					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー千駄ヶ谷">デイサービスクローバー千駄ヶ谷</label><br>
 					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー神楽坂">デイサービスクローバー神楽坂</label><br>
 					    <label><input type="checkbox" name="jigyousho" value="デイサービスクローバー代">デイサービスクローバー代々木上原</label><br>

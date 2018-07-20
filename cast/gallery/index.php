@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" type="text/css" href="/common/css/style.css">
 <link rel="stylesheet" type="text/css" href="/common/css/class.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css?201807">
 
 <script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/common/js/slick.min.js"></script>
@@ -55,9 +55,11 @@ include('../../common/inc/header.inc');
 <section class="content bgGrey1">
 
 <div id="instafeed"></div>
-<!--<div id="btn-more">もっとみる</div>-->
+<!--<div id="btn-more">もっとみる</div>--><br>
+
   <p class="taC">
-  <a href="https://www.instagram.com/clover_group2018/" target="_blank" class="btnIns">クローバーのインスタグラムはこちら</a></p>
+  <a href="https://www.instagram.com/clover_group2018/" target="_blank" class="btnIns">Instagramトップへ</a>
+  </p>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="instafeed.min.js"></script>
@@ -72,7 +74,7 @@ $(document).ready(function() {
   links: true ,
   limit: 50,
   resolution: 'standard_resolution',
-  template: '<div class="col-sm-3 col-xs-6 insta-box"><a href="{{link}}"><img src="{{image}}" target="_blank" /></a><p>{{caption}}</p></div>'
+  template: '<div class="col-sm-3 col-xs-6 insta-box"><a href="{{link}}"><img src="{{image}}" target="_blank" /></a><div class="ellipsis"><p>{{caption}}</p></div></div>'
 });
 $('#btn-more').click(function() {
   feed.next();

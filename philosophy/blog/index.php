@@ -85,7 +85,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="http://day-clover.com/index.php?%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%90%E3%83%BC%E5%8D%83%E9%A7%84%E3%83%B6%E8%B0%B7">
+				<a href="https://ameblo.jp/clover-sendagaya/" target="_blank">
 					<dl>
 						<dt class="circleImg"><span class="imgWrap"><img src="../../common/img/management/blog/list_img01.png" alt=""></span></dt>
 						<dd>千駄ヶ谷<br>スタッフブログ♪</dd>

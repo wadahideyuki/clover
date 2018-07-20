@@ -2,14 +2,14 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>お問い合わせ | CLOVER</title>
+<title>中途採用・パート採用に関するお問い合わせ | CLOVER</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
-<meta property="og:title" content="お問い合わせ | CLOVER" />
+<meta property="og:title" content="中途採用・パート採用に関するお問い合わせ | CLOVER" />
 <meta property="og:site_name" content="CLOVER" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website">
@@ -36,7 +36,7 @@
 
 
 <section id="pankz">
-	<p><a href="/">クローバー（ホーム）</a>&gt; <span>お問い合わせ</span></p>
+	<p><a href="/">クローバー（ホーム）</a>&gt; <span>中途採用・パート採用に関するお問い合わせ</span></p>
 </section>
 
 
@@ -44,55 +44,31 @@
 	<div class="inner">
 		<h1 class="ttl2">
 			<div>
-				<span>お問い合わせ</span>
+				<span>中途採用・パート採用に関するお問い合わせ</span>
 				<small>Contact</small>
 			</div>
 		</h1>
     </div>
   </section>
 
-<style>
-	input[type="text"]{width: 40%;}
-</style>
+
 <section class="content bgGrey1">
-	<div class="inner sz3" style="font-size: 1.6rem;">
+	<div class="inner sz3">
 		<form method="post" action="mail.php" id="validForm">
 			<div class="tblBox1 noBd">
 				<table>
 					<tr>
-					<th>お名前<span>*</span></th>
-					<td><input type="text" id="name" name="name" value="" />
-					<input type="button" id="name_" value="チェック" /></td>
-				</tr>
-				<tr>
-					<th>ふりがな<span>*</span></th>
-					<td><input type="text" id="kana" name="kana" value="" />
-					<input type="button" id="kana_" value="チェック" /></td>
-				</tr>
-				<tr>
-					<th>メールアドレス<span>*</span></th>
-					<td><span id="email"><input type="text" id="email1" name="email" value="" />
-					@
-					<input type="text" name="email2" value="" /></span>
-					<input type="button" id="email_" value="チェック" /></td>
-				</tr>
-				<tr>
-					<th>生年月日<span>*</span></th>
-					<td><span id="birthday"><input type="text" name="birthdayY" value="" />
-					年
-					<input type="text" name="birthdayM" value="" />
-					月
-					<input type="text" name="birthdayD" value="" />
-					日</span><input type="button" id="birthday_" value="チェック" />
-					</td>
-				</tr>
-				<tr>
-					<th>ラジオ</th>
-					<td id="radio">
-						<label for=""><input type="radio" id="radio1" name="radio1" value="1">1</label>
-						<label for=""><input type="radio" id="radio2" name="radio1" value="2">2</label>
-					</td>
-				</tr>
+					  <th>お名前 <p class="txRed fz12">※必須</p></th>
+					  <td><input size="20" type="text" name="お名前" id="name" /></td>
+					  </tr>
+					<tr>
+						<th>電話番号（半角）</th>
+						<td><input size="30" type="text" name="電話番号" /></td>
+					</tr>
+					<tr>
+						<th>Mail（半角） <p class="txRed fz12">※必須</p></th>
+						<td><input size="30" type="text" name="Email" id="Email" /></td>
+					</tr>
 				</table>
 				<p align="center" class="btnWrap">
 					<input class="btn clr2 sz3" type="submit" value="　 確認 　" />

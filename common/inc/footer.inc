@@ -21,9 +21,16 @@
 <div class="fb-like" data-href="http://day-clover.com" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 				</li>
 				<li class="ftSnsXXX">
-					<a href="https://twitter.com/day_clovergroup/following?lang=ja&lang=ja&lang=ja" target="_blank">
+					<a href="https://twitter.com/day_clovergroup" target="_blank">
 						<dl>
 							<dt><img src="/common/img/ft_sns_tw_top.png" alt=""></dt>
+						</dl>
+					</a>
+				</li>
+				<li class="ftSnsXXX">
+					<a href="https://www.instagram.com/clover_group2018/" target="_blank">
+						<dl>
+							<dt><img src="/common/img/ft_sns_insta_top.png" alt=""></dt>
 						</dl>
 					</a>
 				</li>
@@ -50,6 +57,7 @@
 							<li><a href="/about/company/index.php">社名の由来・会社概要・沿革</a></li>
 							<li><a href="/about/value/index.php">VALUE・VISION・PRINCIPLE</a></li>
 							<li><a href="http://day-clover.com/news/category/media/">メディア掲載</a></li>
+							<li><a href="http://day-clover.com/cast/%E9%A6%99%E4%B8%B8%E4%BF%8A%E5%B9%B8/">トップメッセージ</a></li>
 						</ul>
 					</li>
 					<li>

@@ -24,7 +24,7 @@ get_header(); ?>
 	<div class="inner sz2">
 
 		
-    <ul class="cast-list">
+    <ul class="cast-list" style="display: none;">
       
     <?php
     global $post;
@@ -35,7 +35,6 @@ get_header(); ?>
         ?>
  
         <li class="blog-card">
-            <figure>
                 <p class="photoThumb">
                     <a href="<?php the_permalink() ?>">
  
@@ -47,7 +46,6 @@ get_header(); ?>
  
                     </a>
                 </p>
-            </figure>
         </li>
         <?php
         }
@@ -56,6 +54,27 @@ get_header(); ?>
  
 
     </ul>
+    
+
+		<dl class="staffTags">
+			<dt>
+				<span>#</span>
+				<h3>ハッシュタグから探す<br>お客様の声</h3>
+			</dt>
+			<dd><ul>
+<?php
+$posttags = get_tags();
+if ($posttags) {
+foreach($posttags as $tag) {
+echo '<li><a href="'. get_tag_link($tag->term_id) .'">' . $tag->name . '</a></li>';
+}
+}
+?>
+</ul>
+			</dd>
+		</dl>
+    
+    
 	</div>
     
     

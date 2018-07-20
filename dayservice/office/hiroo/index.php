@@ -52,7 +52,7 @@
 		<a href="/dayservice/index.php#office" class="cur">事業所一覧</a>
 		<a href="/dayservice/day/index.php">クローバーの1日・利用料金</a>
 		<a href="http://day-clover.com/voice/">お客様の声</a>
-		<a href="/dayservice/day/index.php">クローバーの1日・利用料金</a>
+		<a href="/dayservice/qa/index.php">よくある質問</a>
 	</div>
 </section>
 

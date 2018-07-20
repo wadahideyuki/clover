@@ -81,7 +81,6 @@
 
 <section class="bosyuZone">
 	<div class="inner sz3">
-		<h2 class="ttl1">募集要項</h2>
 
 		<div class="pageScrl type2">
 			<a class="clkScrl" href="#scrlSinsotu"><span>新卒・第二新卒の方</span></a>
@@ -146,8 +145,7 @@
 								<li>①送迎8：30～17：30</li>
 <li>②日勤9：00～18：00</li>
 <li>③夜勤18：00～9：00又は22：00～9：00</li>
-<li>※デイサービスは週1、または月2回程度の夜勤のある事業所もあり、
-事業所によっていずれかで異なる
+<li>※デイサービスは夜勤のない事業所もあります。
 </li>
 
 							</ul>
@@ -175,10 +173,15 @@
 					</tr>
 				</tbody>
 			</table>
-
-			<div class="btnWrap">
-				<a class="btn clr2 sz2 withArwR" href="/form/index.php">エントリーはこちら</a>
-			</div>
+      
+      <div  class="btnrecruit">
+<p class="taC">エントリーはリクナビ、マイナビから！</p>
+      <ul>
+      <li>
+			<a  href="https://job.rikunabi.com/2019/company/r152202042/" target="_blank"><span><img src="/common/img/career/recruit/btn_recnavi.png"></span></a></li>
+      <li><a  href="https://job.mynavi.jp/19/pc/search/corp228103/outline.html" target="_blank"><span><img src="/common/img/career/recruit/btn_mynave.png"></span></a></li>
+      </ul>
+      </div>
 		</div>
 
 		<a id="scrlTyuto" name="scrlTyuto"></a>
@@ -216,7 +219,7 @@
 <li>【4】27万〜35万円</li>
 <li>【5】27万〜35万円</li>
 <li>【6】時給1，500円</li>
-<li>【7】18:00～9:00 日給15,000円<br>20:00～9:00 日給12,000円<br>22:00～9:00 日給10,000円</li>
+<li>【7】18:00～9:00 日給15,500円<br>20:00～9:00 日給12,000円<br>22:00～9:00 日給10,000円</li>
 <li>【8】時給1,000円</li>
 
 							</ul>
@@ -288,7 +291,7 @@
 <li>②日勤9：00～18：00</li>
 <li>③夜勤18：00～9：00</li>
 <li>④機能訓練士は週1回2時間～3時間程度　状況により変更あり</li>
-<li>※デイサービスは週1、または月2回程度の夜勤のある事業所もあり、事業所によっていずれかで異なる</li>
+<li>※デイサービスは夜勤のない事業所もあります。</li>
 
 							</ul>
 						</td>
@@ -318,7 +321,7 @@
 			</table>
 
 			<div class="btnWrap">
-				<a class="btn clr2 sz2 withArwR" href="/form/index.php">エントリーはこちら</a>
+				<a class="btn clr2 sz2 withArwR" href="/form_recruit/index.php">エントリーはこちら</a>
 			</div>
 		</div>
 	</div>

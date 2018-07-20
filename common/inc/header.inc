@@ -12,7 +12,7 @@
 				<li class="hdNav2"><a href="/about/index.php">会社情報</a></li>
 				<li class="hdNav3"><a href="/dayservice/index.php">デイサービス</a></li>
 				<li class="hdNav4"><a href="/after/index.php">放課後等デイサービス</a></li>
-				<li class="hdNav5"><a href="/cast/">キャスト紹介</a></li>
+				<li class="hdNav5"><a href="http://day-clover.com/cast/">キャスト紹介</a></li>
 				<li class="hdNav6"><a href="/career/index.php">採用情報</a></li>
 				<li class="hdNav6"><a href="/philosophy/blog/index.php">ブログ</a></li>
 			</ul>
@@ -30,7 +30,7 @@
 		<nav class="nav layer2">
 			<ul>
 				<li class="hdNavLower1">
-					<a href="/cast/">キャスト紹介</a>
+					<a href="http://day-clover.com/cast/">キャスト紹介</a>
 					<a href="/management/blog/">ブログ</a>
 					<a href="/career/">採用情報TOP</a>
 				</li>
@@ -48,7 +48,7 @@
 				</li>
 				<li class="hdNavLower4"><a href="/after/">放課後等デイサービスTOP</a></li>
 				<li class="hdNavLower5">
-					<a href="/cast/">キャスト紹介TOP</a>
+					<a href="http://day-clover.com/cast/">キャスト紹介TOP</a>
 				</li>
 				<li class="hdNavLower6">
 					<a href="/career/">採用情報TOP</a>
@@ -73,7 +73,7 @@
 					<li>
 						<a class="hasLower" href="/philosophy/index.php">3つのHappiness</a>
 						<nav class="nav layer2">
-					       <a href="/cast/">キャスト紹介</a>
+					       <a href="http://day-clover.com/cast/">キャスト紹介</a>
 					       <a href="/philosophy/blog/index.php">ブログ</a>
 					       <a href="/career/index.php">採用情報TOP</a>
 						</nav>
@@ -104,9 +104,9 @@
 						</nav>
 					</li>
 					<li>
-						<a class="hasLower" href="/after/index.php">キャスト紹介</a>
+						<a class="hasLower" href="http://day-clover.com/cast/">キャスト紹介</a>
 						<nav class="nav layer2">
-							<a href="/cast/">キャスト紹介TOP</a>
+							<a href="http://day-clover.com/cast/">キャスト紹介TOP</a>
 						</nav>
 					</li>
 					<li>

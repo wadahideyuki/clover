@@ -76,7 +76,7 @@
 			<li>
 				<a href="http://day-clover.com/news/category/media/">
 					<dl>
-						<dt class="about2"><img src="../common/img/about/link_img04.png" alt=""></dt>
+						<dt class="about4"><img src="../common/img/about/link_img04.png" alt=""></dt>
 						<dd>
 							<strong>メディア掲載</strong>
 							<p>CLOVERのメディア掲載情報です。</p>
@@ -84,18 +84,18 @@
 					</dl>
 				</a>
 			</li>
-<!--第1弾公開時には非表示
 			<li>
-				<a href="message/index.html">
+				<a href="http://day-clover.com/cast/%E9%A6%99%E4%B8%B8%E4%BF%8A%E5%B9%B8/">
 					<dl>
-						<dt><img src="../common/img/about/link_img03.png" alt=""></dt>
+						<dt class="about3"><img src="../common/img/about/link_img03.png" alt=""></dt>
 						<dd>
 							<strong>トップメッセージ</strong>
-							<p>当社代表 香丸俊幸からのメッセージをご紹介します。</p>
+							<p>クローバーグループ代表の香丸のメッセージをご紹介いたします。</p>
 						</dd>
 					</dl>
 				</a>
 			</li>
+<!--第1弾公開時には非表示
 			<li>
 				<span>
 					<dl>

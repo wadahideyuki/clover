@@ -332,9 +332,11 @@ overflow: hidden;
 footer { padding-bottom: 40px; background: #FFF; font-family: "Noto Sans Japanese"; text-align: center; }
 footer .part1 { background-color: #333; padding: 30px 0; }
 footer .part1 > .inner { display: flex; justify-content: space-between; align-items: center; }
+@media screen and (max-width: 767px) { footer .part1 > .inner { display: block; } }
 footer .part1 > .inner .tel { width: 185px; padding-right: 10px; }
-footer .part1 > .inner .ftSns { display: flex; justify-content: space-around; width: 180px; }
-footer .part1 > .inner .ftSns > li { display: flex; justify-content: center; align-items: center; width: 48%; padding: 10px 0; }
+footer .part1 > .inner .ftSns { display: flex; justify-content: space-around; width: 260px; }
+footer .part1 > .inner .ftSns > li { display: flex; justify-content: center; align-items: center; padding: 10px 0; margin-right: 20px; }
+footer .part1 > .inner .ftSns > li img { max-width: 45px; }
 footer .part1 > .inner .ftSns > li a { display: inline-block; color: #fff; transition: 0.3s; }
 footer .part1 > .inner .ftSns > li a:hover { opacity: 0.7; text-decoration: none; }
 footer .part1 > .inner .ftSns > li a dl { display: flex; justify-content: space-around; align-items: center; }
@@ -359,10 +361,9 @@ footer .part2 #copyRight { color: #333; font-size: 1.4rem; }
 @media screen and (min-width: 768px) { footer .part2 .layer1 > li .layer2 { display: block !important; } }
 @media screen and (max-width: 767px) { footer { padding-bottom: 5%; }
   footer .part1 { padding: 2.34375% 0; }
-  footer .part1 > .inner .tel { width: 50%; padding-right: 0; }
-  footer .part1 > .inner .tel img { max-width: 82.7586206897%; }
-  footer .part1 > .inner .ftSns { width: 50%; }
-  footer .part1 > .inner .ftSns > li { justify-content: right; width: 25%; padding: 1% 0 1% 10%; border-right: none; }
+  footer .part1 > .inner .tel { width: 50%; margin: 0 auto 3% auto; padding-right: 0; }
+  footer .part1 > .inner .ftSns { margin: 0 auto; }
+  footer .part1 > .inner .ftSns > li { justify-content: right; border-right: none; }
   footer .part1 > .inner .ftSns > li a { margin-right: 0; }
   footer .part1 > .inner .ftSns > li a dl { background: none; padding-left: 0; padding-right: 0; }
   footer .part1 > .inner .ftSns > li a dt { padding-right: 0; }
@@ -1005,6 +1006,8 @@ select { padding: 0.5em 0.7em; }
   .catAbout.pageTop .links1 dl dt { width: 40%; overflow: hidden; display: flex; justify-content: center; }
   .catAbout.pageTop .links1 dl dt.about1 { background: url(../img/about/link_img01.png) no-repeat center; background-size: 100% auto; }
   .catAbout.pageTop .links1 dl dt.about2 { background: url(../img/about/link_img02.png) no-repeat center; background-size: auto 100%; }
+  .catAbout.pageTop .links1 dl dt.about4 { background: url(../img/about/link_img04.png) no-repeat center; background-size: auto 100%; }
+  .catAbout.pageTop .links1 dl dt.about3 { background: url(../img/about/link_img03.png) no-repeat center; background-size: auto 100%; }
   .catAbout.pageTop .links1 dl dt img { display: none; }
   .catAbout.pageTop .links1 dl dd { width: 60%; } }
 
@@ -1237,6 +1240,13 @@ select { padding: 0.5em 0.7em; }
 @media screen and (max-width: 767px) { .welfare-list li h3 { font-size: 5vw; } }
 .welfare-list li p { font-size: 1.8rem; line-height: 1.6; font-family: "Noto Sans Japanese"; }
 @media screen and (max-width: 767px) { .welfare-list li p { font-size: 4vw; } }
+
+.btnrecruit { text-align: center; }
+.btnrecruit p { text-align: center; padding: 20px; font-size: 1.6rem; }
+.btnrecruit li { display: inline-block; margin: 5px 10px; }
+.btnrecruit li a { border-radius: 10px; display: block; padding: 10px 30px; border: 1px solid #CCC; text-align: center; }
+.btnrecruit li a:hover { opacity: 0.7; }
+.btnrecruit li a img { max-width: 200px; }
 
 /*-------------------------------------- 経営理念
 ---------------------------------------*/

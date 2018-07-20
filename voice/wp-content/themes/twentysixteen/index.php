@@ -49,6 +49,23 @@ get_header(); ?>
 <section class="content">
 	<div class="inner sz2">
 
+		<dl class="staffTags">
+			<dt>
+				<span>#</span>
+				<h3>ハッシュタグから探す<br>お客様の声</h3>
+			</dt>
+			<dd><ul>
+<?php
+$posttags = get_tags();
+if ($posttags) {
+foreach($posttags as $tag) {
+echo '<li><a href="'. get_tag_link($tag->term_id) .'">' . $tag->name . '</a></li>';
+}
+}
+?>
+</ul>
+			</dd>
+		</dl>
 		
     <ul class="cast-list">
       
