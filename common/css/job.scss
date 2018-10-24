@@ -4,3 +4,27 @@
 @import "var";
 
 
+.content-area{
+  p{
+    padding-bottom: 1em;
+  }
+}
+.entry-meta{
+  display: none;
+}
+.list-page{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #FFF;
+  font-size: 1.6rem;
+  #primary{
+    width: 100%;
+    max-width: 800px;
+  }
+}
+.job-list-title{
+  text-align: left;
+  font-size: 3rem;
+}
