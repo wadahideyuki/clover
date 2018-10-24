@@ -82,7 +82,7 @@ include('../../common/inc/header.inc');
 
 
 
-<div class="wrap">
+<div class="job-tag">
   <?php
 	//一番親階層のカテゴリをすべて取得
 	$categories = get_categories('parent=0');
@@ -100,9 +100,7 @@ include('../../common/inc/header.inc');
 		$attachment_id=get_field('category_icon_small',$post_id);
 		$icon_src = wp_get_attachment_image($attachment_id,'full');
 		//親カテゴリのリスト出力
-		echo '<li class>';
-		echo '<p class="fleft">' . $icon_src . '</p>';
-		echo '<div class="overflow"><span class="' . $cat_slug . '">' . $val -> name . '</span>';
+		echo '<span class="' . $cat_slug . '">' . $val -> name . '</span>';
 		
 		//子カテゴリのIDを配列で取得。配列の長さを変数に格納
 		$child_cat_num = count(get_term_children($val->cat_ID,'category'));
@@ -121,10 +119,9 @@ include('../../common/inc/header.inc');
 			}
 			echo '</ul>';
 		}
-		echo '</div></li>';
 	}
 ?>
 
-</div><!-- .wrap -->
+</div>
 
 <?php get_footer();

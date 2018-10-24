@@ -24,3 +24,18 @@
   text-align: left;
   font-size: 3rem;
 }
+
+.widget-title {
+  background: #666;
+  padding: 0.3em;
+}
+
+.widget_categories > ul > li a {
+  background: #CCC;
+  display: block;
+}
+
+.widget_categories > ul > li li a {
+  background: #FFF;
+  border-bottom: 1px dotted #CCC;
+}

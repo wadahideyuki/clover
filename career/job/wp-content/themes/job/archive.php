@@ -17,19 +17,17 @@ get_header(); ?>
   <div class="list-page">
 	<div id="primary" class="content-area">
       
-  <h1 class="job-list-title">
-  <?php
-  $cats = get_the_category();
-foreach($cats as $cat):
-  if($cat->parent) echo $cat->cat_name;
-endforeach;
-  ?>
-  </h1>
       
-      
-      
-      
-		<main id="main" class="site-main" role="main">
+      <?php if (is_category()) { ?>
+      <h1 class="job-list-title">
+          <?php
+          $cats = get_the_category();
+            foreach($cats as $cat):
+              if($cat->parent) echo $cat->cat_name;
+            endforeach;
+          ?>
+        </h1>
+      <main id="main" class="site-main" role="main">
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -59,6 +57,15 @@ endforeach;
 		endif; ?>
 
 		</main><!-- #main -->
+      <?php } ?>
+      
+      <?php if (is_tag()) { ?>
+      <h1 class="job-list-title">
+          tag
+        </h1>
+      <?php } ?>
+      
+      
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
     </div>

@@ -13,6 +13,7 @@
 get_header(); ?>
 
 <div class="wrap">
+  <div class="list-page">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -20,7 +21,7 @@ get_header(); ?>
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/post/content', get_post_format() );
+				get_template_part( 'template-parts/post/content-detail', get_post_format() );
 
 			endwhile; // End of the loop.
 			?>
