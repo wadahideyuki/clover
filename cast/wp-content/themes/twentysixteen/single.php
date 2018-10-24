@@ -20,7 +20,7 @@ get_header(); ?>
 			// End of the loop.
 		endwhile;
 		?>
-
+    
 
   <?php
 include('../common/inc/footer.inc');

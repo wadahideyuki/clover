@@ -33,8 +33,12 @@ select{
 		appearance:none;
 	}
 }
-
-
+.entry-content a{
+  color: #002FE3;
+  text-decoration: underline;
+  word-break: break-all;
+  word-wrap: break-word;
+}
 /*--------------------------------------
  パーツ
 ---------------------------------------*/

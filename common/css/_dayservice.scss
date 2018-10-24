@@ -45,9 +45,13 @@
             font-size: 1.5rem;
             text-align: center;
             display: inline-block;
-            border: 1px solid #FFF;
+            border: 1px solid #CCC;
+          border-right: 0px;
+          color: #333;
             padding: 10px 5px;
-            background-color: $mainColor;
+          &:last-child{
+            border-right: 1px solid #CCC;
+          }
             &:before{
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -59,7 +63,6 @@
                 background-size: contain;
                 margin-right: 5px;
             }
-            color: #FFF;
             @include mq{
                 font-size: 1.2rem;
                 padding: 2%;
@@ -72,12 +75,12 @@
             }
             &.btnTwitter{
                 &:before{
-                    background-image: url(../img/ft_sns_tw.png);
+                    background-image: url(../img/ft_sns_tw_top.png);
                 }
             }
             &.btnInstagram{
                 &:before{
-                    background-image: url(../img/ft_sns_ig.png);
+                    background-image: url(../img/ft_sns_insta_top.png);
                 }
             }
         }

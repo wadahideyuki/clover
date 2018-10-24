@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50023646-1');
+</script>
 <meta charset="UTF-8">
 <title>クローバーの介護観 | デイサービス | CLOVER</title>
-<meta name="keywords" content="" />
+ <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
 <meta name="description" content="私がもし認知症になったら・・・。『湘南長寿園病院院長フレディ松川先生』が、ご自分が認知症になった時に介護者にお願いしたい事として残されたメッセージです。このメッセージをデイサービスクローバーの介護に対する基本的な姿勢・介護感として心に刻み、サービスを提供してまいります。" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
 <meta property="og:title" content="クローバーの介護観 | デイサービス | CLOVER" />
-<meta property="og:site_name" content="CLOVER" />
-<meta property="og:description" content="" />
+<meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />
+<meta property="og:description" content="株式会社CLOVER（クローバーグループ）は、東京都心・千葉県でお泊りデイサービスや、子どもの療育を行う放課後等デイサービスを運営。「Happinessを提供する」を経営理念に、「休日に自宅やカフェでくつろいでいる」ような新しいケア・サービスを目指します。" />
 <meta property="og:type" content="website">
 <!-- /OGs -->
 

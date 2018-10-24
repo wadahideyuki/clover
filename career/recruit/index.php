@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50023646-1');
+</script>
 <meta charset="UTF-8">
 <title>募集要項｜株式会社CLOVER</title>
-<meta name="keywords" content="" />
+ <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
 <meta name="description" content="株式会社CLOVER（クローバーグループ）の募集要項ページです。新卒、第二新卒、中途、アルバイト・パートを募集しています。私たちは、「人柄・人物重視採用」を行なっています。資格支援制度、研修制度が充実しているので、未経験方でも大歓迎です。" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
 <meta property="og:title" content="募集要項 | 採用情報 | CLOVER" />
-<meta property="og:site_name" content="CLOVER" />
-<meta property="og:description" content="" />
+<meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />
+<meta property="og:description" content="株式会社CLOVER（クローバーグループ）は、東京都心・千葉県でお泊りデイサービスや、子どもの療育を行う放課後等デイサービスを運営。「Happinessを提供する」を経営理念に、「休日に自宅やカフェでくつろいでいる」ような新しいケア・サービスを目指します。" />
 <meta property="og:type" content="website">
 <!-- /OGs -->
 
@@ -133,7 +142,7 @@
 ・普通自動車免許あれば優遇<br>
 ・社会福祉士、社会福祉主事任用等、介護福祉士（デイサービスキャスト）<br>
 ・児童指導員、保育士、児童発達管理者責任者（療育スタッフ）<br>
-（文系大学出身者は社会福祉主事任用条件を満たしていることが多いです。詳しくは<a href="/contact/">お問合せ</a>ください。）
+（文系大学出身者は社会福祉主事任用条件を満たしていることが多いです。詳しくは<a href="/form_recruit/">お問合せ</a>ください。）
 
 
 						</td>
@@ -274,7 +283,7 @@
 ※児発管には「相談支援業務」「直接支援業務」「国家資格および従事経験」 いずれかの要件が求められます。 要件の詳細については、厚労省や各自治体のHP等でご確認頂けます。 </li>
 
 <li>【5】社会福祉士、社会福祉主事任用、介護福祉士等
-（文系大学出身者は社会福祉主事任用条件を満たしていることが多いです。詳しくは<a href="/contact/">お問合せ</a>ください。）</li>
+（文系大学出身者は社会福祉主事任用条件を満たしていることが多いです。詳しくは<a href="/form_recruit/">お問合せ</a>ください。）</li>
 <li>【6】機能訓練士
 （看護師、OT、PT、言語聴覚士、柔道整復師、あん摩マッサージ指圧師）</li>
 <li>【7】特になし</li>

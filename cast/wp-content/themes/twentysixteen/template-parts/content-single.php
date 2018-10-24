@@ -13,7 +13,7 @@
 </section>
 <div id="page" class="site">
 	<div class="site-inner">
-
+  
 		<!-- .site-header -->
 
 		<div id="content" class="site-content">
@@ -24,15 +24,9 @@
 		<div class="profBox">
 			<div class="img">
 				<?php twentysixteen_post_thumbnail(); ?>
-				<div class="name">
-					<dl>
-						<dd><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></dd>
-						<dt><?php echo esc_html( $post->POSITION ); ?></dt>
-					</dl>
-				</div>
 			</div>
 			<dl class="txt">
-				<dt>Profile</dt>
+				<dt><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?><p><?php echo esc_html( $post->POSITION ); ?></p></dt>
 				<dd><?php echo esc_html( $post->PROFILE ); ?></dd>
 			</dl>
 		</div>

@@ -67,8 +67,8 @@
 							<li><a href="/dayservice/care/index.php">クローバーの介護観</a></li>
 							<li><a href="/dayservice/index.php#office">事業所一覧</a></li>
 							<li><a href="/dayservice/day/index.php">クローバーの１日・利用料金</a></li>
-							<li><a href="/dayservice/day/index.php">お客様の声</a></li>
-							<li><a href="/dayservice/day/index.php">よくある質問</a></li>
+							<li><a href="/voice/">お客様の声</a></li>
+							<li><a href="/dayservice/qa/">よくある質問</a></li>
 						</ul>
 					</li>
 					<li>

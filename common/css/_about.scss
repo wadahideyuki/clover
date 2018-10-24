@@ -48,12 +48,21 @@
 					&.about3{
 						background: url(../img/about/link_img03.png) no-repeat center;
 						background-size:auto 100% ;
+            @include mq{
+              background-position: 80%;
+            }
 					}
 					img{
 						display: none;
 					}
 				}
 				dd{width: 60%;
+          @include mq{
+            strong{
+              font-size: 1.4rem;
+              line-height: 1.6;
+            }
+          }
 				}
 			}
 		}

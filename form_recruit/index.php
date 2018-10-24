@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50023646-1');
+</script>
 <meta charset="UTF-8">
-<title>中途採用・パート採用に関するお問い合わせ | CLOVER</title>
-<meta name="keywords" content="" />
+<title>採用に関するお問い合わせ | CLOVER</title>
+ <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
 <meta name="description" content="" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
-<meta property="og:title" content="中途採用・パート採用に関するお問い合わせ | CLOVER" />
-<meta property="og:site_name" content="CLOVER" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="採用に関するお問い合わせ | CLOVER" />
+<meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />
+<meta property="og:description" content="株式会社CLOVER（クローバーグループ）は、東京都心・千葉県でお泊りデイサービスや、子どもの療育を行う放課後等デイサービスを運営。「Happinessを提供する」を経営理念に、「休日に自宅やカフェでくつろいでいる」ような新しいケア・サービスを目指します。" />
 <meta property="og:type" content="website">
 <!-- /OGs -->
 
@@ -36,7 +45,7 @@
 
 
 <section id="pankz">
-	<p><a href="/">クローバー（ホーム）</a>&gt; <span>中途採用・パート採用に関するお問い合わせ</span></p>
+	<p><a href="/">クローバー（ホーム）</a>&gt; <span>採用に関するお問い合わせ</span></p>
 </section>
 
 
@@ -44,7 +53,7 @@
 	<div class="inner">
 		<h1 class="ttl2">
 			<div>
-				<span>中途採用・パート採用に関するお問い合わせ</span>
+				<span>採用に関するお問い合わせ</span>
 				<small>Contact</small>
 			</div>
 		</h1>

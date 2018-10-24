@@ -6,7 +6,7 @@ var validation = $("#validForm").exValidation({
 		name_: "laterCall",
 		kana: "chkrequired chkkatakana",
 		kana_: "laterCall",
-		Email: "chkrequired chkemail chkhankaku chkgroup",
+		Email: "chkrequired",
 		Email_: "laterCall",
 		birthday: "chkrequired chkgroup",
 		birthday_: "laterCall",

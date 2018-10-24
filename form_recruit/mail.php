@@ -36,7 +36,7 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 $site_top = "/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "masuzawa@wadakoubou.com,wadahideyuki@gmail.com";
+$to = "recruit@day-clover.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Email";
@@ -67,7 +67,7 @@ $userMail = 1;
 $BccMail = "";
 
 // 管理者宛に送信されるメールのタイトル（件名）
-$subject = "ホームページのお問い合わせ";
+$subject = "採用お問い合わせ";
 
 // 送信確認画面の表示(する=1, しない=0)
 $confirmDsp = 1;
@@ -86,7 +86,7 @@ $requireCheck = 1;
 /* 必須入力項目(入力フォームで指定したname属性の値を指定してください。（上記で1を設定した場合のみ）
 値はシングルクォーテーションで囲み、複数の場合はカンマで区切ってください。フォーム側と順番を合わせると良いです。 
 配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。*/
-$require = array('お名前','Email','お問い合わせ内容');
+$require = array('お名前','Email');
 
 
 //----------------------------------------------------------------------
@@ -98,7 +98,7 @@ $require = array('お名前','Email','お問い合わせ内容');
 $remail = 1;
 
 //自動返信メールの送信者欄に表示される名前　※あなたの名前や会社名など（もし自動返信メールの送信者名が文字化けする場合ここは空にしてください）
-$refrom_name = "cloverのフォームから";
+$refrom_name = "株式会社CLOVER";
 
 // 差出人に送信確認メールを送る場合のメールのタイトル（上記で1を設定した場合のみ）
 $re_subject = "送信ありがとうございました";
@@ -219,9 +219,18 @@ else if($confirmDsp == 1){
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50023646-1');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>確認画面 | お問い合わせ | CLOVER</title>
+<title>確認画面 | 採用に関するお問い合わせ | CLOVER</title>
 <link rel="stylesheet" type="text/css" href="../common/css/style.css">
 <link rel="stylesheet" type="text/css" href="../common/css/class.css">
 <style type="text/css">
@@ -235,7 +244,7 @@ else if($confirmDsp == 1){
 	<div class="inner">
 		<h1 class="ttl2">
 			<div>
-				<span>お問い合わせ</span>
+				<span>採用に関するお問い合わせ</span>
 				<small>Contact</small>
 			</div>
 		</h1>
@@ -288,9 +297,18 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50023646-1');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>完了画面 | お問い合わせ | CLOVER</title>
+<title>完了画面 | 採用に関するお問い合わせ | CLOVER</title>
 <link rel="stylesheet" type="text/css" href="../common/css/style.css">
 <link rel="stylesheet" type="text/css" href="../common/css/class.css">
 </head>
@@ -301,7 +319,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 	<div class="inner">
 		<h1 class="ttl2">
 			<div>
-				<span>お問い合わせ</span>
+				<span>採用に関するお問い合わせ</span>
 				<small>Contact</small>
 			</div>
 		</h1>

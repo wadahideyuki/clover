@@ -168,6 +168,7 @@
 				width: 17%;
         display: inline-block;
         margin: 0 1% 50px 1%;
+        vertical-align: top;
 				margin-bottom: 50px;
                 @include mq{
                     width: 46%;
@@ -175,6 +176,15 @@
                 }
 				a{
 					display: block;
+          &.btnTwt,&.btnInsta{
+            display: inline-block;  
+            vertical-align: middle;
+            margin: 10px 5px;
+            img{
+              max-width: 30px;
+              height: auto;
+            }
+          }
 					dl{
 						dt{
 							span{

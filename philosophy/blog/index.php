@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50023646-1');
+</script>
 <meta charset="UTF-8">
 <title>ブログ一覧｜株式会社CLOVER</title>
-<meta name="keywords" content="" />
+ <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
 <meta name="description" content="株式会社CLOVERが運営する「デイサービスクローバー」、「クローバーキッズ麻布十番」のブログページです。クローバーがどんなサービスを心がけているか、日々のゲストやキャストの雰囲気が伝わるブログを目指しています。" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
 <meta property="og:title" content="ブログ一覧 | 経営理念 | CLOVER" />
-<meta property="og:site_name" content="CLOVER" />
-<meta property="og:description" content="" />
+<meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />
+<meta property="og:description" content="株式会社CLOVER（クローバーグループ）は、東京都心・千葉県でお泊りデイサービスや、子どもの療育を行う放課後等デイサービスを運営。「Happinessを提供する」を経営理念に、「休日に自宅やカフェでくつろいでいる」ような新しいケア・サービスを目指します。" />
 <meta property="og:type" content="website">
 <!-- /OGs -->
 
@@ -48,7 +57,7 @@
 
 <section class="content bgGrey1">
 	<div class="inner">
-		<p class="lead1">クローバーの各事業所が更新する<br class="sp spDisI">ブログのご紹介です。</p>
+		<p class="lead1">クローバーの各事業所が更新する<br class="sp spDisI">ブログ、Twitter、Instagramのご紹介です。</p>
 
 		<ul class="blogList">
       
@@ -59,6 +68,7 @@
 						<dd>新宿<br>スタッフブログ♪</dd>
 					</dl>
 				</a>
+        <a href="https://twitter.com/clover428cast?lang=ja" class="btnTwt" target="_blank"><img src="/common/img/ft_sns_tw_top.png" alt=""></a>
 			</li>
 			<li>
 				<a href="https://ameblo.jp/clover-kagurazaka/" target="_blank">
@@ -67,6 +77,7 @@
 						<dd>神楽坂<br>スタッフブログ♪</dd>
 					</dl>
 				</a>
+        <a href="https://twitter.com/kagurazakacast?lang=ja" class="btnTwt" target="_blank"><img src="/common/img/ft_sns_tw_top.png" alt=""></a>
 			</li>
 			<li>
 				<a href="https://ameblo.jp/clover-yoyogiuehara/" target="_blank">
@@ -75,6 +86,8 @@
 						<dd>代々木上原<br>スタッフブログ♪</dd>
 					</dl>
 				</a>
+        <a href="https://twitter.com/clover_yoyogi?lang=ja" class="btnTwt" target="_blank"><img src="/common/img/ft_sns_tw_top.png" alt=""></a>
+        <a href="https://www.instagram.com/clover_yoyogiuehara/?hl=ja" class="btnInsta" target="_blank"><img src="/common/img/ft_sns_insta_top.png" alt=""></a>
 			</li>
 			<li>
 				<a href="https://ameblo.jp/clover-hiroo/" target="_blank">
@@ -83,6 +96,8 @@
 						<dd>広尾<br>スタッフブログ♪</dd>
 					</dl>
 				</a>
+        <a href="https://twitter.com/cloverhirooday?lang=ja" class="btnTwt" target="_blank"><img src="/common/img/ft_sns_tw_top.png" alt=""></a>
+        <a href="https://www.instagram.com/clover.hiroo/?hl=ja" class="btnInsta" target="_blank"><img src="/common/img/ft_sns_insta_top.png" alt=""></a>
 			</li>
 			<li>
 				<a href="https://ameblo.jp/clover-sendagaya/" target="_blank">
@@ -99,6 +114,7 @@
 						<dd>参宮橋<br>スタッフブログ♪</dd>
 					</dl>
 				</a>
+        <a href="https://www.instagram.com/clover2010.12.24/?hl=ja" class="btnInsta" target="_blank"><img src="/common/img/ft_sns_insta_top.png" alt=""></a>
 			</li>
 			<li>
 				<a href="https://ameblo.jp/clover-motoyawata/" target="_blank">

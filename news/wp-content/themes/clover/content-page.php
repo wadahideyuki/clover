@@ -37,6 +37,15 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
+<?php // ファイルの表示
+$file = get_field('mediapdf'); // フィールド名を指定
+    ?>
+    <?php if($file) : ?> 
+<p class="pdfIcon"><a href="<?php echo $file['url']; ?>" >PDFファイル</a></p>
+    
+<?php endif; ?>
+    
+    
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
