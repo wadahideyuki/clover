@@ -30,6 +30,24 @@
 
 <script type="text/javascript" src="../../common/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="../../common/js/slick.min.js"></script>
+
+<script>
+$(function(){
+  $(".job-tag .partTtl li").click(function(){
+    if($(this).hasClass("show")){
+      return false; 
+    }else{
+      var thisName = $(this).attr("class");
+      $(".job-tag .partTtl li").removeClass("show");
+      $(this).addClass("show");
+      $(".job-tag .partTag li").removeClass("show");
+      $(".job-tag .partTag li." + thisName).addClass("show");
+      return false;
+    }
+  });
+});
+</script>
+
  <?php include('../../common/inc/script.inc');?> 
 </head>
 
@@ -69,9 +87,17 @@
   
   
   
-  <section class="job-list">
-  <li class><p class="fleft"></p><div class="overflow"><span class="part">パート・アルバイト</span><ul><li><a href="https://day-clover.com/career/job/category/part/day-seikatsu/">生活相談員</a><li><a href="https://day-clover.com/career/job/category/part/driver/">送迎ドライバー</a></ul></div></li><li class><p class="fleft"></p><div class="overflow"><span class="seisyain">正社員</span><ul><li><a href="https://day-clover.com/career/job/category/seisyain/day-kanri/">デイサービス管理者候補</a><li><a href="https://day-clover.com/career/job/category/seisyain/seikatsu/">生活相談員</a><li><a href="https://day-clover.com/career/job/category/seisyain/jidou-hattatsu/">児童発達支援管理責任者</a><li><a href="https://day-clover.com/career/job/category/seisyain/day-kaigo/">デイサービス介護スタッフ</a></ul></div></li>
+<section class="job-tag">
+	<div class="inner sz2">
+		<h2 class="ttl1">募集職種一覧</h2>
+
+    <ul class="partTtl"><li class="show seisyain">正社員</li><li class="part">パート・アルバイト</li></ul>
+    <ul class="partTag"><li class="show seisyain"><a href="https://day-clover.com/career/job/category/seisyain/day-kanri/">デイサービス管理者候補</a><a href="https://day-clover.com/career/job/category/seisyain/seikatsu/">生活相談員</a><a href="https://day-clover.com/career/job/category/seisyain/jidou-hattatsu/">児童発達支援管理責任者</a><a href="https://day-clover.com/career/job/category/seisyain/day-kaigo/">デイサービス介護スタッフ</a></li><li class="part"><a href="https://day-clover.com/career/job/category/part/day-seikatsu/">生活相談員</a><a href="https://day-clover.com/career/job/category/part/driver/">送迎ドライバー</a></li></ul></div>
 </section>
+  
+  
+  
+  
   
 <section class="statueZone">
 	<div class="inner sz2">
