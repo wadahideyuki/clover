@@ -2,51 +2,5 @@
 
 @import "mq";
 @import "var";
-.wrap{
-  background: #EEE;
-  padding: 40px 0;
-}
-.job-wrap{
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 1.6rem;
-    h3{
-      font-weight: bold;
-      font-size: 2rem;
-      color: $mainColor;
-      padding-bottom: 15px;
-      border-bottom: 2px solid $mainColor;
-      padding-bottom: 0.5em;
-      margin-bottom: 0.5em;
-    }
-    .job-list{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      & > li{
-      border-radius: 5px;
-        width: 31%;
-      background: #FFF;
-        box-sizing: border-box;
-        padding: 20px;
-        margin-bottom: 40px;
-        li{
-          padding-bottom: 10px;
-          border-bottom: 1px dotted #CCC;
-          margin-bottom: 10px;
-          .cate{
-            display: inline-block;
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
-  .widget-title{
-    background: $mainColor;
-    color: #FFF;
-    padding: 0.2em;
-  }
-}
 
 
