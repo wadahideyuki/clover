@@ -13,11 +13,10 @@
 get_header(); ?>
 
 <div class="wrap">
-
+<div class="bgGrey1">
   <div class="list-page">
 	<div id="primary" class="content-area">
-      
-      
+
       <?php if (is_category()) { ?>
       <h1 class="job-list-title">
           <?php
@@ -27,8 +26,9 @@ get_header(); ?>
             endforeach;
           ?>
         </h1>
-      <main id="main" class="site-main" role="main">
 
+
+      <main id="main" class="site-main job-list" role="main">
 		<?php
 		if ( have_posts() ) : ?>
 			<?php
@@ -69,6 +69,9 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
     </div>
+
+
+</div>
 </div><!-- .wrap -->
 
 <?php get_footer();

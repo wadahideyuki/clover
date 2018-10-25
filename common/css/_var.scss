@@ -1,5 +1,9 @@
 @charset "UTF-8";
 //変数用scss
+//切替
+$breakPoint:767;
+$tabletDesign:1024;
+$spDesign:640;
 
 //単位
 $px:100px;
@@ -17,6 +21,29 @@ $rem:100rem;
 $mainColor:#358f31;
 $color1:#fff;
 
+
+//function
+@function px($suuji){
+	@return $suuji * 1px;
+}
+@function px100($suuji){
+	@return $suuji * 100px;
+}
+@function vw1($suuji){
+	@return ($suuji / $spDesign) * 1vw;
+}
+@function vw($suuji){
+	@return ($suuji / $spDesign) * 100vw;
+}
+@function vwL($suuji){
+	@return ($suuji / $tabletDesign) * 100vw;
+}
+@function per1($suuji){
+	@return percentage($suuji / 100);
+}
+@function em($suuji){
+	@return ($suuji) * 1em;
+}
 
 
 
