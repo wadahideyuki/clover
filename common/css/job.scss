@@ -394,6 +394,105 @@
   }
 }
 
-
+//エントリー(/career/job/entry/)
+.catForm.is_entry{
+  .entryFormTbl{
+    background-color: #fff;
+    margin-bottom: 50px;
+    padding: 45px 35px;
+    border-radius: 5px;
+    @include mq{
+      padding: 5% 5%;
+    }
+    .hissu{
+      display: inline-block;
+      background-color: #FF4B4B;
+      margin-right: 0.5em;
+      padding: 0.1em 0.5em;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    input[type="text"]{
+      width: 80%;
+      border: 1px solid #959595;
+      border-radius: 5px;
+      @include mq{
+        width: 100%;
+      }
+    }
+    .genderRdo{
+      display: flex;
+      align-items: center;
+      li{
+        display: flex;
+        align-items: center;
+        margin-right: 1.0em;
+        input[type="radio"]{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .birth{
+      display: flex;
+      align-items: center;
+      @include mq{
+        display: block;
+      }
+      li{
+        margin-right: 1.0em;
+        @include mq{
+          + li{
+            margin-top: vw(10);
+          }
+        }
+        select{
+          margin-right: 0.3em;
+          @include mq{
+            width: 90%;
+          }
+        }
+      }
+    }
+    table{
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 1.4rem;
+      border-bottom: 1px solid #ccc;
+      @include mq{
+        display: block;
+      }
+      tbody{
+        @include mq{
+          display: block;
+        }
+      }
+      tr{
+        border-top: 1px solid #ccc;
+        &:nth-child(odd){
+          background-color: #F3F3F3;
+        }
+        @include mq{
+          display: block;
+          padding: vw(16) vw(20);
+        }
+      }
+      th{
+        padding: 20px 10px 20px 20px;
+        @include mq{
+          display: block;
+          padding: 0 0 vw(10);
+        }
+      }
+      td{
+        padding: 20px 20px 20px 0;
+        @include mq{
+          display: block;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
 
 

@@ -91,7 +91,7 @@
     </div>
 
     <div class="btnEntry">
-      <a href="/career/job/entry/index.php?jobtitle=<?php the_title(); ?>&?office=<?php the_field('office'); ?>">エントリーはこちら</a>
+      <a href="/career/job/entry/index.php?jobtitle=<?php the_title(); ?>&office=<?php the_field('office'); ?>">エントリーはこちら</a>
     </div>
 
   </div><!-- .entry-content -->
