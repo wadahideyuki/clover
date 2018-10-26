@@ -20,10 +20,13 @@ get_header(); ?>
       <?php if (is_category()) { ?>
       <h1 class="job-list-title">
           <?php
-          $cats = get_the_category();
+          if(1 == 2){
+            $cats = get_the_category();
             foreach($cats as $cat):
               if($cat->parent) echo $cat->cat_name;
             endforeach;
+          }
+          single_cat_title();
           ?>
         </h1>
 
