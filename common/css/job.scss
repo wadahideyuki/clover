@@ -430,6 +430,10 @@
         input[type="radio"]{
           width: 20px;
           height: 20px;
+          margin-right: 0;
+        }
+        label{
+          padding-left: 5px;
         }
       }
     }
@@ -440,16 +444,34 @@
         display: block;
       }
       li{
+        display: flex;
+        align-items: center;
         margin-right: 1.0em;
         @include mq{
-          + li{
-            margin-top: vw(10);
-          }
+          margin-right: 0;
         }
         select{
-          margin-right: 0.3em;
           @include mq{
-            width: 90%;
+            width: 100%;
+          }
+        }
+        span{
+          flex-shrink: 0;
+          display: block;
+          width: 1em;
+          padding-left: 0.3em;
+        }
+      }
+      ul{
+        display: flex;
+        align-items: center;
+        @include mq{
+          justify-content: space-between;
+          margin-top: 0.5em;
+        }
+        li{
+          @include mq{
+            width: 48%;
           }
         }
       }

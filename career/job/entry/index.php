@@ -69,11 +69,11 @@
 				<table>
 					<tr>
 					  <th><p class="hissu">必須</p>応募職種</th>
-					  <td><?php echo $_GET["jobtitle"] ?></td>
+					  <td><?php echo $_GET["jobtitle"] ?><input type="hidden" name="応募職種" value="<?php echo $_GET["jobtitle"] ?>"></td>
 					  </tr>
 					<tr>
 					  <th><p class="hissu">必須</p>事業所</th>
-					  <td><?php echo $_GET["office"] ?></td>
+					  <td><?php echo $_GET["office"] ?><input type="hidden" name="事業所" value="<?php echo $_GET["office"] ?>"></td>
 					  </tr>
 					<tr>
 					  <th><p class="hissu">必須</p>お名前</th>
@@ -95,8 +95,8 @@
 						<th><p class="hissu">必須</p>性別</th>
 						<td>
               <ul class="genderRdo">
-                <li><input type="radio" name="gender" value="m" id="genderM"><label for="genderM">男性</label></li>
-                <li><input type="radio" name="gender" value="f" id="genderF"><label for="genderF">女性</label></li>
+                <li><input type="radio" name="gender" value="男性" id="genderM"><label for="genderM">男性</label></li>
+                <li><input type="radio" name="gender" value="女性" id="genderF"><label for="genderF">女性</label></li>
               </ul>
             </td>
 					</tr>
@@ -108,20 +108,22 @@
                   <select name="" id="" placeholder="1900">
                     <option value=""></option>
                     <option value="1901">1901</option>
-                  </select>年
+                  </select><span>年</span>
                 </li>
-                <li>
-                  <select name="" id="">
-                    <option value=""></option>
-                    <option value="01">01</option>
-                  </select>月
-                </li>
-                <li>
-                  <select name="" id="">
-                    <option value=""></option>
-                    <option value="01">01</option>
-                  </select>日
-                </li>
+                <ul>
+                  <li>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="01">01</option>
+                    </select><span>月</span>
+                  </li>
+                  <li>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="01">01</option>
+                    </select><span>日</span>
+                  </li>
+                </ul>
               </ul>
             </td>
 					</tr>

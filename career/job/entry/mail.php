@@ -231,9 +231,10 @@ else if($confirmDsp == 1){
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>確認画面 | 採用に関するお問い合わせ | CLOVER</title>
-<link rel="stylesheet" type="text/css" href="../common/css/style.css">
-<link rel="stylesheet" type="text/css" href="../common/css/class.css">
+<title>確認画面 | エントリー | CLOVER</title>
+<link rel="stylesheet" type="text/css" href="../../../common/css/style.css">
+<link rel="stylesheet" type="text/css" href="../../../common/css/class.css">
+ <?php include('../../../common/inc/script.inc');?>
 <style type="text/css">
 /* 自由に編集下さい */
 </style>
@@ -245,8 +246,8 @@ else if($confirmDsp == 1){
 	<div class="inner">
 		<h1 class="ttl2">
 			<div>
-				<span>採用に関するお問い合わせ</span>
-				<small>Contact</small>
+				<span>エントリー</span>
+				<small>Entry</small>
 			</div>
 		</h1>
     </div>
@@ -257,26 +258,26 @@ else if($confirmDsp == 1){
 
 <!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
 <div class="formConfBox">
-<?php if($empty_flag == 1){ ?>
-<div align="center">
-<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-<?php echo $errm; ?><br /><br /><input class="btn clr3 sz3" type="button" value=" 前画面に戻る " onClick="history.back()">
-</div>
-<?php }else{ ?>
-<h3 class="ttl1">確認画面</h3>
-<p align="center" class="spFz15">以下の内容で間違いがなければ、<br />「送信する」ボタンを押してください。</p>
-<form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST">
-<div class="tblBox1 noBd">
-<table>
-<?php echo confirmOutput($_POST);//入力内容を表示?>
-</table>
-<p align="center" class="btnWrap"><input type="hidden" name="mail_set" value="confirm_submit">
-<input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']);?>">
-<input class="btn clr2 sz3" type="submit" value="　送信する　">
-<input class="btn clr3 sz3" type="button" value="前画面に戻る" onClick="history.back()"></p>
-</div>
-</form>
-<?php } ?>
+  <?php if($empty_flag == 1){ ?>
+  <div align="center">
+  <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
+  <?php echo $errm; ?><br /><br /><input class="btn clr3 sz3" type="button" value=" 前画面に戻る " onClick="history.back()">
+  </div>
+  <?php }else{ ?>
+  <h3 class="ttl1">確認画面</h3>
+  <p align="center" class="spFz15">以下の内容で間違いがなければ、<br />「送信する」ボタンを押してください。</p>
+  <form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST">
+  <div class="tblBox1 noBd">
+  <table>
+  <?php echo confirmOutput($_POST);//入力内容を表示?>
+  </table>
+  <p align="center" class="btnWrap"><input type="hidden" name="mail_set" value="confirm_submit">
+  <input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']);?>">
+  <input class="btn clr2 sz3" type="submit" value="　送信する　">
+  <input class="btn clr3 sz3" type="button" value="前画面に戻る" onClick="history.back()"></p>
+  </div>
+  </form>
+  <?php } ?>
 </div><!-- /formConfBox -->
 <!-- ▲ *********** 送信内容確認部　※編集は自己責任で ************ ▲-->
 
@@ -309,9 +310,10 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>完了画面 | 採用に関するお問い合わせ | CLOVER</title>
-<link rel="stylesheet" type="text/css" href="../common/css/style.css">
-<link rel="stylesheet" type="text/css" href="../common/css/class.css">
+<title>完了画面 | エントリー | CLOVER</title>
+<link rel="stylesheet" type="text/css" href="../../../common/css/style.css">
+<link rel="stylesheet" type="text/css" href="../../../common/css/class.css">
+ <?php include('../../../common/inc/script.inc');?>
 </head>
 <body>
 <div class="wrapper catForm pageMailComp">
@@ -320,8 +322,8 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 	<div class="inner">
 		<h1 class="ttl2">
 			<div>
-				<span>採用に関するお問い合わせ</span>
-				<small>Contact</small>
+				<span>エントリー</span>
+				<small>Entry</small>
 			</div>
 		</h1>
     </div>
