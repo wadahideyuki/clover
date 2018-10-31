@@ -41,6 +41,24 @@
 
 <script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/common/js/slick.min.js"></script>
+
+<script>
+$(function(){
+  $(".job-tag .partTtl li").click(function(){
+    if($(this).hasClass("show")){
+      return false; 
+    }else{
+      var thisName = $(this).attr("class");
+      $(".job-tag .partTtl li").removeClass("show");
+      $(this).addClass("show");
+      $(".job-tag .partTag li").removeClass("show");
+      $(".job-tag .partTag li." + thisName).addClass("show");
+      return false;
+    }
+  });
+});
+</script>
+
   <!--ヘッダー-->
   <?php
 include('../../common/inc/script.inc');
@@ -50,7 +68,7 @@ include('../../common/inc/script.inc');
 
 
 <body <?php body_class(); ?>>
-<div class="wrapper cateNews pageTop">
+<div class="wrapper catCareer pageRecruit">
 
 <!--ヘッダー-->
   <?php
@@ -81,6 +99,7 @@ include('../../common/inc/header.inc');
   </section>
 
 
+<div class="bgGrey1 PB30">
 
 <section class="job-tag">
 	<div class="inner sz2">
@@ -154,5 +173,30 @@ include('../../common/inc/header.inc');
 ?>
 </div>
 </section>
+
+
+<section class="statueZone">
+	<div class="inner sz2">
+		<h2 class="ttl1">求める人物像</h2>
+		<ul>
+			<li>素直で前向きな人</li>
+			<li>気配り、目配りが出来る人</li>
+			<li>仲間を大切にする人</li>
+			<li>負けず嫌いな人</li>
+			<li>行動力のある人</li>
+			<li>思いやりのある人</li>
+			<li>人の気持ちのわかる<br class="pc">やさしい人</li>
+			<li>ちょっと癒し系な人</li>
+			<li>楽しい人、面白い人</li>
+		</ul>
+		<dl>
+			<dt>こんな方は<br>お断りします</dt>
+			<dd><span>自己中心的で相手の事を考えられない人、</span><span>プラスアルファの仕事をしない人、</span><br class="pc">
+				<span>不平、不満、愚痴が多く言い訳をしてやらない人、</span><span>チームの和を乱す人</span></dd>
+		</dl>
+	</div>
+</section>
+
+</div>
 
 <?php get_footer();

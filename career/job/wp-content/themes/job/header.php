@@ -22,7 +22,15 @@
   gtag('config', 'UA-50023646-1');
 </script>
 <meta charset="UTF-8">
-<title><?php the_title(); ?>｜株式会社CLOVER</title>
+<title>
+  <?php
+  if(is_category())://カテゴリー
+    single_cat_title();
+  else://投稿
+    the_title();
+  endif;
+  ?>
+｜株式会社CLOVER</title>
  <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
 <meta name="description" content="先輩インタビュー 介護と子どもたちの療育事業を行う株式会社CLOVER（クローバーグループ）のキャストをご紹介しています。「何をするかよりも、誰とするか」。現場で働く先輩たちの生の声を発信しています。未経験からスタートしたキャスト、ママとして働くキャストなど、多彩なキャストが活躍中です。" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -60,9 +68,14 @@ include('../../common/inc/header.inc');
 
 
 <section id="pankz">
-	<p><a href="/">クローバー（ホーム）</a>&gt; <a href="/career/index.php">採用情報</a>&gt; <a href="/career/job/index.php">募集要項</a>&gt; <?php single_post_title(); ?></p>
+	<p><a href="/">クローバー（ホーム）</a>&gt; <a href="/career/index.php">採用情報</a>&gt; <a href="/career/job/index.php">募集要項</a>&gt; <?php
+    if(is_category())://カテゴリー
+      single_cat_title();
+    else://投稿
+      single_post_title();
+    endif;
+    ?></p>
 </section>
-
 
 <section class="">
 	<div class="inner">

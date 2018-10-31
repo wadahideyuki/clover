@@ -12,23 +12,8 @@
 .entry-meta{
   display: none;
 }
-.list-page{
-  display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px;
-  background: #FFF;
-  font-size: 1.6rem;
-  #primary{
-    width: 100%;
-    max-width: 800px;
-  }
-}
-.job-list-title{
-  text-align: left;
-  font-size: 3rem;
-}
 
+//募集職種一覧(/career/job/)
 .job-tag{
   padding-top: 55px;
   text-align: center;
@@ -38,7 +23,7 @@
   .partTtl{
     display: flex;
     justify-content: space-between;
-    border-bottom: 8px solid #358F31;
+    border-bottom: 8px solid $mainColor;
     > li{
       background-color: #AFAFAF;
       width: 49%;
@@ -55,7 +40,7 @@
       }
       &:hover{opacity: 0.7;}
       &.show{
-        background-color: #358F31;
+        background-color: $mainColor;
         &:hover{opacity: 1;}
       }
     }
@@ -82,10 +67,10 @@
         width: 23%;
         margin: 0 1% 2.4%;
         padding: 0.6em 0.5em;
-        color: #358F31;
+        color: $mainColor;
         font-size: 1.6rem;
         font-weight: bold;
-        border: 2px solid #358F31;
+        border: 2px solid $mainColor;
         border-radius: 100px;
         box-sizing: border-box;
         transition: 0.3s;
@@ -95,7 +80,7 @@
           font-size: 1.4rem;
         }
         &:hover{
-          background-color: #358F31;
+          background-color: $mainColor;
           color: #fff;
           text-decoration: none;
         }
@@ -104,8 +89,432 @@
   }
 }
 
+//カテゴリー(/career/job/category/～)
+.list-page{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 1.6rem;
+  @include mq{
+    display: block;
+    padding: vw(30);
+  }
+  #primary{
+    width: 100%;
+    max-width: 800px;
+    .job-list-title{
+      margin-bottom: 1.0em;
+      padding-left: 0.5em;
+      font-size: 3rem;
+      text-align: left;
+      border-left: 8px solid $mainColor;
+      @include mq{
+        margin-bottom: 0.8em;
+        font-size: 2.2rem;
+        border-left-width: vw(8);
+      }
+    }
+    #main{
+      padding-right: 40px;
+      @include mq(l){
+        padding-right: vwL(40);
+      }
+      @include mq{
+        padding: 0 0 vw(40);
+      }
+    }
+  }
+  #secondary{
+    flex-shrink: 0;
+    width: 200px;
+    @include mq{
+      width: auto;
+    }
+    section{
+      h2{
+        background-color: $mainColor;
+        padding: 0.2em 0.5em 0.3em;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      li{
+        a{
+          display: block;
+          padding: 0.2em 0.5em 0.3em;
+        }
+      }
+      > ul{
+        > li{
+          > a{
+            background-color: #CDCDCD;
+            color: #7B7B7B;
+            font-size: 1.6rem;
+            font-weight: bold;
+          }
+        }
+      }
+      ul.children,
+      ul.wp-tag-cloud{
+        > li{
+          + li{
+            border-top: 1px dashed #707070;
+          }
+          > a{
+            padding: 0.5em;
+            font-size: 1.4rem !important;
+          }
+        }
+      }
+    }
+  }
+  //カテゴリー一覧
+  .job-list{
+    article{
+      + article{
+        margin-top: 10px;
+        @include mq{
+          margin-top: vw(20);
+        }
+      }
+      a{
+        display: block;
+        background-color: #fff;
+        padding: 20px 50px 20px 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        position: relative;
+        @include mq{
+          padding: vw(30) vw(70) vw(30) vw(30);
+        }
+        &:before{
+          content: "";
+          display: block;
+          width: 1.0em;
+          height: 1.0em;
+          margin: auto;
+          border-bottom: 0.3em solid #FF8D0C;
+          border-right: 0.3em solid #FF8D0C;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 20px;
+          transform: translate(-0.2em,0) rotate(-45deg);
+          @include mq{
+            width: 0.8em;
+            height: 0.8em;
+            margin: auto;
+            border-bottom-width: 0.2em;
+            border-right-width: 0.2em;
+            right: vw(20);
+          }
+        }
+        &:hover{
+          background-color: rgba(53,143,49,0.2);
+          text-decoration: none;
+        }
+      }
+      h2{
+        margin-bottom: 0.5em;
+        color: $mainColor;
+        font-size: 1.8rem;
+        font-weight: bold;
+        @include mq{
+          font-size: 1.6rem;
+        }
+      }
+      .job-table{
+        font-size: 1.4rem;
+        dl{
+          display: flex;
+          align-items: flex-start;
+          dt{
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  //応募詳細
+  .job-detail{
+    article{
+      background-color: #fff;
+      padding: 25px 25px 45px;
+      border-radius: 5px;
+      @include mq{
+        padding: vw(20);
+      }
+    }
+    .entry-header{
+      margin-bottom: 1.0em;
+      padding-bottom: 0.5em;
+      color: $mainColor;
+      font-size: 2.5rem;
+      border-bottom: 3px solid $mainColor;
+      @include mq{
+        margin-bottom: 0.8em;
+        font-size: 2.0rem;
+      }
+    }
+    .jobDtlMain{
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      @include mq{
+        display: block;
+        margin-bottom: vw(30);
+      }
+      .photo{
+        flex-shrink: 0;
+        width: percentage(300/710);
+        @include mq{
+          width: auto;
+          margin-bottom: vw(20);
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .txt{
+        width: 100%;
+        padding-left: 30px;
+        font-size: 1.4rem;
+        box-sizing: border-box;
+        @include mq{
+          width: auto;
+          padding-left: 0;
+        }
+        p{
+          &:last-child{
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+    h2{
+      margin-bottom: 1.0em;
+      padding-bottom: 0.5em;
+      color: $mainColor;
+      font-size: 1.8rem;
+      border-bottom: 1px solid $mainColor;
+      @include mq{
+        margin-bottom: 0.8em;
+      }
+    }
+    .job-table{
+      display: table;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 1.4rem;
+      @include mq{
+        display: block;
+        width: auto;
+      }
+      dl{
+        display: table-row;
+        border-bottom: 1px dashed #ccc;
+        @include mq{
+          display: block;
+          padding: 1.0em 0;
+          &:nth-child(1){
+            padding-top: 0;
+          }
+        }
+        dt{
+          display: table-cell;
+          width: percentage(100/710);
+          padding: 1em 0;
+          @include mq{
+            display: block;
+            width: auto;
+            padding: 0;
+            font-weight: bold;
+          }
+        }
+        dd{
+          display: table-cell;
+          padding: 1em 0 1em 1em;
+          @include mq{
+            display: block;
+            padding: 0.3em 0 0;
+          }
+        }
+        &:nth-child(1){
+          dt,
+          dd{
+            padding-top: 0;
+          }
+        }
+      }
+    }
+    .btnEntry{
+      margin-top: 30px;
+      text-align: center;
+      @include mq{
+        margin-top: vw(30);
+      }
+      a{
+        display: inline-block;
+        background-color: $mainColor;
+        width: 364px;
+        padding: 1.1em 1.2em;
+        color: #fff;
+        font-size: 2.0rem;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        box-sizing: border-box;
+        position: relative;
+        @include hvr;
+        @include mq{
+          display: block;
+          width: auto;
+          padding: 1.1em 1.5em;
+          font-size: 1.6rem;
+        }
+        &:before{
+          content: "";
+          width: 0.5em;
+          height: 0.5em;
+          margin: auto;
+          border-bottom: 1px solid #fff;
+          border-right: 1px solid #fff;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 15px;
+          transform: translate(0,0) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
 
-
-
+//エントリー(/career/job/entry/)
+.catForm.is_entry{
+  .entryFormTbl{
+    background-color: #fff;
+    margin-bottom: 50px;
+    padding: 45px 35px;
+    border-radius: 5px;
+    @include mq{
+      padding: 5% 5%;
+    }
+    .hissu{
+      display: inline-block;
+      background-color: #FF4B4B;
+      margin-right: 0.5em;
+      padding: 0.1em 0.5em;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    input[type="text"]{
+      width: 80%;
+      border: 1px solid #959595;
+      border-radius: 5px;
+      @include mq{
+        width: 100%;
+      }
+    }
+    .genderRdo{
+      display: flex;
+      align-items: center;
+      li{
+        display: flex;
+        align-items: center;
+        margin-right: 1.0em;
+        input[type="radio"]{
+          width: 20px;
+          height: 20px;
+          margin-right: 0;
+        }
+        label{
+          padding-left: 5px;
+        }
+      }
+    }
+    .birth{
+      display: flex;
+      align-items: center;
+      @include mq{
+        display: block;
+      }
+      li{
+        display: flex;
+        align-items: center;
+        margin-right: 1.0em;
+        @include mq{
+          margin-right: 0;
+        }
+        select{
+          @include mq{
+            width: 100%;
+          }
+        }
+        span{
+          flex-shrink: 0;
+          display: block;
+          width: 1em;
+          padding-left: 0.3em;
+        }
+      }
+      ul{
+        display: flex;
+        align-items: center;
+        @include mq{
+          justify-content: space-between;
+          margin-top: 0.5em;
+        }
+        li{
+          @include mq{
+            width: 48%;
+          }
+        }
+      }
+    }
+    table{
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 1.4rem;
+      border-bottom: 1px solid #ccc;
+      @include mq{
+        display: block;
+      }
+      tbody{
+        @include mq{
+          display: block;
+        }
+      }
+      tr{
+        border-top: 1px solid #ccc;
+        &:nth-child(odd){
+          background-color: #F3F3F3;
+        }
+        @include mq{
+          display: block;
+          padding: vw(16) vw(20);
+        }
+      }
+      th{
+        padding: 20px 10px 20px 20px;
+        @include mq{
+          display: block;
+          padding: 0 0 vw(10);
+        }
+      }
+      td{
+        padding: 20px 20px 20px 0;
+        @include mq{
+          display: block;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
 
 

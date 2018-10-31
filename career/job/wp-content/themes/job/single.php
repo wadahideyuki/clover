@@ -13,9 +13,10 @@
 get_header(); ?>
 
 <div class="wrap">
+<div class="bgGrey1">
   <div class="list-page">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main job-detail" role="main">
 
 			<?php
 			/* Start the Loop */
@@ -29,6 +30,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
+</div>
+
+</div>
 </div><!-- .wrap -->
 
 <?php get_footer();
