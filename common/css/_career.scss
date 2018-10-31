@@ -3,29 +3,33 @@
 @import "mq";
 @import "var";
 
-.pdfIcon{
-  a{
-    
-  color: #0064FF;
-  text-decoration: underline;
-  background: url(../img/icon-link-pdf.svg) no-repeat left center;
-  padding-left: 25px;
+.pdfIcon {
+  a {
+
+    color: #0064FF;
+    text-decoration: underline;
+    background: url(../img/icon-link-pdf.svg) no-repeat left center;
+    padding-left: 25px;
   }
 }
+
 /*--------------------------------------
   採用情報
 ---------------------------------------*/
-.galleryBanner{
+.galleryBanner {
   text-align: center;
   padding: 50px 10px;
-  @include mq{
+
+  @include mq {
     padding: 3%;
   }
-  img{
+
+  img {
     max-width: 100%;
   }
 }
-.entryBtn{
+
+.entryBtn {
   position: fixed;
   right: 0px;
   font-size: 1.8rem;
@@ -36,7 +40,8 @@
   top: 10%;
   background: #FF7E00;
   border-radius: 8px 0 0 8px;
-  @include mq{
+
+  @include mq {
     width: 100%;
     box-sizing: border-box;
     top: auto;
@@ -44,848 +49,1059 @@
     right: auto;
     left: 0px;
   }
-  span{
+
+  span {
     display: inline-block;
     -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-    @include mq{
-    -ms-writing-mode: inherit;
-  writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
+
+    @include mq {
+      -ms-writing-mode: inherit;
+      writing-mode: horizontal-tb;
     }
   }
-  &:hover{
+
+  &:hover {
     opacity: 0.8;
   }
 }
-.catCareer{
-  .page-title{
+
+.catCareer {
+  .page-title {
     text-align: center;
     padding: 40px 0 0 0;
     font-size: 3rem;
   }
-  .tag-title{
+
+  .tag-title {
     text-align: center;
     padding: 40px 0 0 0;
     font-size: 3rem;
-    @include mq{
+
+    @include mq {
       font-size: 1.8rem;
       padding: 5%;
     }
   }
-  img{
+
+  img {
     height: auto;
   }
-	.staffTags{
-		background-color: #fff;
-		padding: 20px 30px 30px;
-		text-align: center;
-		box-shadow: 0 7px 7px rgba(0,0,0,0.11);
+
+  .staffTags {
+    background-color: #fff;
+    padding: 20px 30px 30px;
+    text-align: center;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.11);
     margin-bottom: 40px;
-    @include mq{
+
+    @include mq {
       margin-bottom: 5%;
     }
-    li{
+
+    li {
       display: inline-block;
     }
-		dt{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 10px;
-			color: $mainColor;
-			span{
-				display: inline-block;
-				margin-right: 15px;
-				font-size: 17.0rem;
-				line-height: 1;
-				opacity: 0.6;
-			}
-			h3{
-				font-size: 4.0rem;
-				line-height: (47/40);
-				border-bottom: 1px solid #bfd7bf;
-			}
-		}
-		dd{
-			padding: 0 50px;
-			a{
-				display: inline-block;
-				margin: 0 0.5em 1em;
-				color: $mainColor;
-				font-size: 2.0rem;
-				text-decoration: underline;
-				&:hover{
-					text-decoration: none;
-				}
-			}
-		}
-		@include mq{
-			padding: (10/320) * 100vw;
-			box-shadow: 0 7px 7px rgba(0,0,0,0.11);
-			dt{
-				margin-bottom: 3%;
-				span{
-					margin-right: 3%;
-					font-size: 6.0rem;
-				}
-				h3{
-					font-size: 1.8rem;
-				}
-			}
-			dd{
-				padding: 0;
-				a{
-					font-size: 1.4rem;
-					&:hover{
-					}
-				}
-			}
-		}
-	}
-    
-    .cast-list{
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding: 0 0 40px 0;
-        @include mq{
-            justify-content: space-between;
-        }
-        li{
-        margin:0 1% 30px 1% ;
-          width: 23%;
-            @include mq{
-              width: 48%;
-            }
-          .entry-title{
-            font-size: 2rem;
-            font-weight: bold;
-            margin-top: 10px;
-            @include mq{
-              font-size: 1.6rem;
-            }
-          }
-          .pos{
-            font-size: 1.4rem;
-          }
-          .photoBox{
-            display: flex;
-            justify-content: center;
-            width: 230px;
-            height: 230px;
-          overflow: hidden;
-            @include mq{
-              width: 40vw;
-              height: 40vw;
-            }
-            img{
-              height: 230px;
-              width: auto;
-              @include mq{
-                height: 40vw;
-              }
-            }
-          }
-            img{
-              max-width: inherit;
-            }
-            p{
-                @include noto;
-                padding-top: 5px;
-                font-size: 1.6rem;
-                @include mq{
-                    font-size: 1.2rem;
-                }
-            }
-        }
+
+    dt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      color: $mainColor;
+
+      span {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 17.0rem;
+        line-height: 1;
+        opacity: 0.6;
+      }
+
+      h3 {
+        font-size: 4.0rem;
+        line-height: (47/40);
+        border-bottom: 1px solid #bfd7bf;
+      }
     }
+
+    dd {
+      padding: 0 50px;
+
+      a {
+        display: inline-block;
+        margin: 0 0.5em 1em;
+        color: $mainColor;
+        font-size: 2.0rem;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    @include mq {
+      padding: (10/320) * 100vw;
+      box-shadow: 0 7px 7px rgba(0, 0, 0, 0.11);
+
+      dt {
+        margin-bottom: 3%;
+
+        span {
+          margin-right: 3%;
+          font-size: 6.0rem;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+        }
+      }
+
+      dd {
+        padding: 0;
+
+        a {
+          font-size: 1.4rem;
+
+          &:hover {}
+        }
+      }
+    }
+  }
+
+  .cast-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 0 40px 0;
+
+    @include mq {
+      justify-content: space-between;
+    }
+
+    li {
+      margin: 0 1% 30px 1%;
+      width: 23%;
+
+      @include mq {
+        width: 48%;
+      }
+
+      .entry-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 10px;
+
+        @include mq {
+          font-size: 1.6rem;
+        }
+      }
+
+      .pos {
+        font-size: 1.4rem;
+      }
+
+      .photoBox {
+        display: flex;
+        justify-content: center;
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+
+        @include mq {
+          width: 40vw;
+          height: 40vw;
+        }
+
+        img {
+          height: 230px;
+          width: auto;
+
+          @include mq {
+            height: 40vw;
+          }
+        }
+      }
+
+      img {
+        max-width: inherit;
+      }
+
+      p {
+        @include noto;
+        padding-top: 5px;
+        font-size: 1.6rem;
+
+        @include mq {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }
+
 /* トップ */
-.catCareer.pageTop{
-	.main{
-		margin-bottom: -30vw;
-		position: relative;
-		overflow: hidden;
-		.in{
-			background-color: $mainColor;
-			padding-top: 65px;
-		}
-		&:after{
-			content: "";
-			display: block;
-			width: 0;
-			height: 0;
-			margin: auto;
-			font-size: 0;
-			border-style: solid;
-			border-width: 0 0 30vw 100vw;
-			border-color: transparent transparent transparent $mainColor;
-			@include mq{
-				padding-top: 30vw;
-				border: 0px;
-			}
-		}
-		.inner{
-			max-width: 1252px;
-			position: relative;
-			.bg{
-				background:url(../img/career/main.jpg) center top no-repeat;
-				background-size: 100% auto;
-				padding-top: (683/1252) * $per;
-				position: relative;
-			}
-			h2{
-				display: table;
-				width: 100%;
-				height: 100%;
-				color: #fff;
-				font-size: 7.2rem;
-				line-height: (95/72);
-				position: absolute;
-				top: 0;
-				left: 0;
-				> div{
-					display: table-cell;
-					text-align: center;
-					vertical-align: middle;
-					> span{
-						display: inline-block;
-						height: 8.5em;
-						padding-top: 1em;
-						-webkit-writing-mode: vertical-rl;
-						-moz-writing-mode: vertical-rl;
-						-ms-writing-mode: tb-rl;
-						-ms-writing-mode: vertical-rl;
-						writing-mode: vertical-rl;
-						text-align: left;
-					}
-				}
-			}
-		}
-	}
-	.content{
-		padding-top: 50px;
-		position: relative;
-		.links1{
-			padding-top: 65px;
-		}
-	}
-	@include mqMaxW(1282px){
-		.main{
-			.inner{
-				h2{
-					font-size: (72/1282) * 100vw;
-				}
-			}
-		}
-	}
-	@include mq{
-		.main{
-			.in{
-				padding-top: 0;
-			}
-			&:after{
-			}
-			.inner{
-				.bg{
-				}
-				h2{
-					> div{
-						> span{
-						}
-					}
-				}
-			}
-		}
-		.content{
-			padding-top: 5%;
-			.links1{
-				padding-top: 10%;
-			}
-		}
-	}
-    
-    .career-message{
+.catCareer.pageTop {
+  .main {
+    margin-bottom: -30vw;
+    position: relative;
+    overflow: hidden;
+
+    .in {
+      background-color: $mainColor;
+      padding-top: 65px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin: auto;
+      font-size: 0;
+      border-style: solid;
+      border-width: 0 0 30vw 100vw;
+      border-color: transparent transparent transparent $mainColor;
+
+      @include mq {
+        padding-top: 30vw;
+        border: 0px;
+      }
+    }
+
+    .inner {
+      max-width: 1252px;
+      position: relative;
+
+      .bg {
+        background: url(../img/career/main.jpg) center top no-repeat;
+        background-size: 100% auto;
+        padding-top: (683/1252) * $per;
+        position: relative;
+      }
+
+      h2 {
+        display: table;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 7.2rem;
+        line-height: (95/72);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        > div {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+
+          > span {
+            display: inline-block;
+            height: 8.5em;
+            padding-top: 1em;
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -ms-writing-mode: tb-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding-top: 50px;
+    position: relative;
+
+    .links1 {
+      padding-top: 65px;
+    }
+  }
+
+  @include mqMaxW(1282px) {
+    .main {
+      .inner {
+        h2 {
+          font-size: (72/1282) * 100vw;
+        }
+      }
+    }
+  }
+
+  @include mq {
+    .main {
+      .in {
+        padding-top: 0;
+      }
+
+      &:after {}
+
+      .inner {
+        .bg {}
+
+        h2 {
+          > div {
+            > span {}
+          }
+        }
+      }
+    }
+
+    .content {
+      padding-top: 5%;
+
+      .links1 {
+        padding-top: 10%;
+      }
+    }
+  }
+
+  .career-message {
+    background: $mainColor;
+    color: #FFF;
+    line-height: 2;
+    padding-bottom: 70px;
+
+    @include mq {
+      padding-bottom: 30px;
+
+      br {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-size: 4rem;
+      text-align: center;
+
+      @include mq {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      padding: 20px 0 0 0;
+      line-height: 2;
+      font-size: 1.8rem;
+      text-align: center;
+      @include noto;
+
+      @include mq {
+        padding: 0px;
+        text-align: left;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .jinzai-inner {
+    padding: 80px 0 0 0;
+    margin-bottom: 80px;
+    border-top: 1px dotted $mainColor;
+    line-height: 2;
+
+    @include mq {
+      padding: 5% 0;
+      margin-bottom: 0px;
+    }
+
+  }
+
+  .jinzai {
+    padding: 70px 0;
+    text-align: center;
+
+    @include mq {
+      padding: 10% 0;
+    }
+
+    h3 {
+      font-size: 3rem;
+      padding-bottom: 20px;
+      color: $mainColor;
+
+      @include mq {
+        font-size: 1.6rem;
+        padding-bottom: 3%;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      @include noto;
+
+      @include mq {
+        font-size: 1.2rem;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .jinzai4 {
+      line-height: 2;
+      display: flex;
+      padding: 40px 0;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include mq {
+        padding: 5% 0;
+      }
+
+      li {
+        padding: 20px;
+        box-sizing: border-box;
+        border: 5px solid #EEE;
+        width: 23%;
+
+        @include mq {
+          width: 100%;
+          padding: 3% 0;
+          margin-bottom: 5%;
+        }
+
+        &:first-child {
+          color: $mainColor;
+          border: 5px solid $mainColor;
+        }
+
+        strong {
+          display: block;
+          font-size: 3rem;
+          font-weight: bold;
+
+          @include mq {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    .jinzai-power {
+      padding: 40px 0;
+      text-align: center;
+
+      @include mq {
+        padding: 5% 0;
+      }
+
+      li {
+        padding: 20px 0;
+        display: inline-block;
+        font-size: 2rem;
+        box-sizing: border-box;
         background: $mainColor;
         color: #FFF;
-        line-height: 2;
-        padding-bottom: 70px;
-        @include mq{
-           padding-bottom: 30px; 
-            br{
-                display: none;
-            }
+        margin: 1%;
+        width: 47%;
+
+        @include mq {
+          width: 100%;
+          padding: 3% 0;
+          font-size: 1.5rem;
         }
-        h2{
-            font-size: 4rem;
-            text-align: center;
-            @include mq{
-                font-size: 2.5rem;
-            }
-        }
-        p{
-            padding: 20px 0 0 0;
-            line-height: 2;
-          font-size: 1.8rem;  
-            text-align: center;
-            @include noto; 
-            @include mq{
-                padding: 0px;
-                text-align: left;
-                font-size: 1.4rem;
-            }
-        }
+      }
     }
-    .jinzai-inner{
-        padding:80px 0 0 0;
-        margin-bottom: 80px;
-        border-top: 1px dotted $mainColor;
-        line-height: 2;
-        @include mq{
-            padding: 5% 0;
-            margin-bottom: 0px;
-        }
-        
-    }
-    .jinzai{
-        padding: 70px 0;
-        text-align: center;
-        @include mq{
-            padding: 10% 0;
-        }
-        h3{
-            font-size: 3rem;
-            padding-bottom: 20px;
-            color: $mainColor;
-            @include mq{
-                font-size: 1.6rem;
-                padding-bottom: 3%;
-            }
-        }
-        p{
-            font-size: 1.8rem;
-            @include noto; 
-            @include mq{
-                font-size: 1.2rem;
-                br{
-                    display: none;
-                }
-            }
-        }
-        .jinzai4{
-            line-height: 2;
-            display: flex;
-            padding: 40px 0;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            @include mq{
-                padding: 5% 0;
-            }
-            li{
-                padding: 20px;
-                box-sizing: border-box;
-                border: 5px solid #EEE;
-                width: 23%;
-                @include mq{
-                    width: 100%;
-                    padding: 3% 0;
-                    margin-bottom: 5%;
-                }
-                &:first-child{
-                    color: $mainColor;
-                    border: 5px solid $mainColor;
-                }
-                strong{
-                    display:block;
-                    font-size: 3rem;
-                    font-weight: bold;
-                    @include mq{
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
-        .jinzai-power{
-            padding: 40px 0;
-            text-align: center;
-            @include mq{
-                padding: 5% 0;
-            }
-            li{
-                padding: 20px 0;
-                display: inline-block;
-                font-size: 2rem;
-                box-sizing: border-box;
-                 background: $mainColor;
-                color: #FFF;
-                margin: 1%;
-                width: 47%;
-                @include mq{
-                    width: 100%;
-                    padding: 3% 0;
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    }
-    
+  }
+
 }
+
 /* 人材育成への想い */
-.catCareer.pageOmoi{
-    .omoiBlock{
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 50px 0 100px 0;
-        text-align: center;
-        @include mq{
-            padding: 25px 0 50px 0;
-            .ttl1{
-                line-height: 1.6;
-            }
-        }
-        p{
-            font-size: 2rem;
-            @include mq{
-                font-size: 1.5rem;
-            }
-            &.omoiCatch{
-                font-size: 5rem;
-                font-weight: bold;
-                text-align: center;
-                padding: 50px 10px 80px 10px;
-                color: #358f31;
-                @include mq{
-                    font-size: 2rem;
-                    padding: 25px 0 50px 0;
-                }
-            }
-            &.taR{
-                padding-top: 50px;
-            }
-        }
+.catCareer.pageOmoi {
+  .omoiBlock {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0 100px 0;
+    text-align: center;
+
+    @include mq {
+      padding: 25px 0 50px 0;
+
+      .ttl1 {
+        line-height: 1.6;
+      }
     }
+
+    p {
+      font-size: 2rem;
+
+      @include mq {
+        font-size: 1.5rem;
+      }
+
+      &.omoiCatch {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 50px 10px 80px 10px;
+        color: #358f31;
+
+        @include mq {
+          font-size: 2rem;
+          padding: 25px 0 50px 0;
+        }
+      }
+
+      &.taR {
+        padding-top: 50px;
+      }
+    }
+  }
 }
+
 /* 募集要項 */
-.catCareer.pageRecruit{
-  .numList1{
-    li{
+.catCareer.pageRecruit {
+  .numList1 {
+    li {
       border-bottom: 1px dotted #CCC;
       padding-bottom: 0.5em;
       margin-bottom: 0.5em;
-      &:last-of-type{
+
+      &:last-of-type {
         border-bottom: 0px;
         padding-bottom: 0px;
         margin-bottom: 0px;
       }
     }
   }
-  .tblBox1{
-    td,th{
+
+  .tblBox1 {
+
+    td,
+    th {
       font-size: 1.4rem;
       line-height: 1.6;
       border-bottom: 1px solid #CCC;
-      a{
+
+      a {
         text-decoration: underline !important;
       }
-      @include mq{
+
+      @include mq {
         font-size: 1.2rem;
       }
     }
   }
-	.mainImg{
-		img{
-			width: 100%;
-		}
-	}
-	.statueZone{
-		padding-top: 55px;
-		ul{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			color: #fff;
-			li{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background-color: $mainColor;
-				width: 31.4%;
-				height: 108px;
-				margin-bottom: 24px;
-				font-size: 2.0rem;
-				text-align: center;
-				box-sizing: border-box;
-			}
-		}
-		dl{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: #727272;
-			margin-top: 10px;
-			padding: 15px 30px;
-			color: #fff;
-		}
-		dt{
-			padding:5px 35px 5px 0;
-			font-size: 2.2rem;
-			text-align: center;
-			line-height: (32/22);
-			border-right: 1px solid #fff;
-		}
-		dd{
-			padding-left: 35px;
-			font-size: 1.8rem;
-			line-height: (32/18);
-			span{
-				margin-right: 1.5em;
-			}
-		}
-	}
-	.bosyuZone{
-		padding: 140px 0 70px;
-		.pageScrl{
-			margin-bottom: 40px;
-			a{
-				font-size: 1.6rem;
-			}
-		}
-		.tblBox1{
-			.btnWrap{
-				a{
-					width: 364px;
-				}
-			}
-		}
-	}
-	@include mq{
-		.mainImg{
-			img{
-			}
-		}
-		.statueZone{
-			padding-top: 5%;
-			ul{
-				display: block;
-				li{
-					width: auto;
-					height: auto;
-					margin-bottom: 3%;
-					padding: 3%;
-					font-size: 1.4rem;
-				}
-			}
-			dl{
-				display: block;
-				margin-top: 5%;
-				padding: 3%;
-			}
-			dt{
-				padding:0 0 3% 0;
-				font-size: 1.8rem;
-				border-bottom: 1px solid #fff;
-				border-right: none;
-			}
-			dd{
-				padding:3% 0 0 0;
-				font-size: 1.4rem;
-				span{
-					margin-right: 0;
-				}
-			}
-		}
-		.bosyuZone{
-			padding: 10% 0 1%;
-			.pageScrl{
-				margin-bottom: 5%;
-				a{
-					font-size: 1.4rem;
-				}
-			}
-			.tblBox1{
-				.btnWrap{
-					a{
-						width: auto;
-					}
-				}
-			}
-		}
-	}
+
+  .mainImg {
+    img {
+      width: 100%;
+    }
+  }
+
+  .statueZone {
+    padding-top: 55px;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: #fff;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $mainColor;
+        width: 31.4%;
+        height: 108px;
+        margin-bottom: 24px;
+        font-size: 2.0rem;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
+
+    dl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #727272;
+      margin-top: 10px;
+      padding: 15px 30px;
+      color: #fff;
+    }
+
+    dt {
+      padding: 5px 35px 5px 0;
+      font-size: 2.2rem;
+      text-align: center;
+      line-height: (32/22);
+      border-right: 1px solid #fff;
+    }
+
+    dd {
+      padding-left: 35px;
+      font-size: 1.8rem;
+      line-height: (32/18);
+
+      span {
+        margin-right: 1.5em;
+      }
+    }
+  }
+
+  .bosyuZone {
+    padding: 140px 0 70px;
+
+    .pageScrl {
+      margin-bottom: 40px;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+
+    .tblBox1 {
+      .btnWrap {
+        a {
+          width: 364px;
+        }
+      }
+    }
+  }
+
+  @include mq {
+    .mainImg {
+      img {}
+    }
+
+    .statueZone {
+      padding-top: 5%;
+
+      ul {
+        display: block;
+
+        li {
+          width: auto;
+          height: auto;
+          margin-bottom: 3%;
+          padding: 3%;
+          font-size: 1.4rem;
+        }
+      }
+
+      dl {
+        display: block;
+        margin-top: 5%;
+        padding: 3%;
+      }
+
+      dt {
+        padding: 0 0 3% 0;
+        font-size: 1.8rem;
+        border-bottom: 1px solid #fff;
+        border-right: none;
+      }
+
+      dd {
+        padding: 3% 0 0 0;
+        font-size: 1.4rem;
+
+        span {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .bosyuZone {
+      padding: 10% 0 1%;
+
+      .pageScrl {
+        margin-bottom: 5%;
+
+        a {
+          font-size: 1.4rem;
+        }
+      }
+
+      .tblBox1 {
+        .btnWrap {
+          a {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
 }
+
 /* 社員エピソード集 */
-.cast-detail{
-  .content2{
+.cast-detail {
+  .content2 {
     padding: 40px 0;
   }
-	.content{
-		padding: 60px 0 30px;
-		.profBox{
-			background-color: #fff;
-			margin-bottom: 70px;
-      
-			.img{
-				position: relative;
-      overflow: hidden;
-      @include mq{
-        height: auto;
-      }
-				img{
-					width: 100%;
-				}
-				.name{
-					display: block;
-					align-items: center;
-          @include mq{
+
+  .content {
+    padding: 60px 0 30px;
+
+    .profBox {
+      background-color: #fff;
+      margin-bottom: 70px;
+
+      .img {
+        position: relative;
+        overflow: hidden;
+
+        @include mq {
+          height: auto;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .name {
+          display: block;
+          align-items: center;
+
+          @include mq {
             text-align: center;
           }
-					dl{
-						background-color: rgba(53,143,49,0.9);
-						padding: 2em 3em;
-						color: #fff;
-						font-size: 1.0rem;
-						line-height: 1;
-            
-					}
-					dt{
-						margin-top: .9em;
-						font-size: 1.6rem;
-						line-height: 1.2;
+
+          dl {
+            background-color: rgba(53, 143, 49, 0.9);
+            padding: 2em 3em;
+            color: #fff;
+            font-size: 1.0rem;
+            line-height: 1;
+
+          }
+
+          dt {
+            margin-top: .9em;
+            font-size: 1.6rem;
+            line-height: 1.2;
             display: inline-block;
             vertical-align: bottom;
-					}
-					dd{
-						font-size: 6.1rem;
+          }
+
+          dd {
+            font-size: 6.1rem;
             display: inline-block;
             vertical-align: bottom;
             margin-right: 5px;
-					}
-				}
-			}
-			.txt{
-				display: flex;
-				dt{
-					color: #FFF;
-				padding: 20px 30px;
+          }
+        }
+      }
+
+      .txt {
+        display: flex;
+
+        dt {
+          color: #FFF;
+          padding: 20px 30px;
           box-sizing: border-box;
           background: #42933f;
-					font-size: 3.8rem;
-            width: 30%;
-            h1{
-              font-size: 5rem;
-              @include mq{
-                font-size: 3rem;
+          font-size: 3.8rem;
+          width: 30%;
+
+          h1 {
+            font-size: 5rem;
+
+            @include mq {
+              font-size: 3rem;
+            }
+          }
+
+          p {
+            font-size: 1.6rem;
+            padding-top: 0.5em;
+          }
+
+          @include mq {
+            width: auto;
+          }
+        }
+
+        dd {
+          padding: 20px 0px 20px 30px;
+          box-sizing: border-box;
+          @include noto;
+          font-size: 1.5rem;
+          line-height: (24/15);
+          width: 65%;
+
+          @include mq {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .episodeBox {
+      padding: 0 12.5%;
+
+      h3 {
+        font-size: 4.2rem;
+        line-height: (60/42);
+      }
+
+      p {
+        margin-bottom: 30px;
+        @include noto;
+        font-size: 1.6rem;
+        line-height: (28/16);
+      }
+
+      .img {
+        margin-bottom: 30px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .content2 {
+    padding: 80px 0 90px;
+  }
+
+  @include mqMaxW($bp:1030px) {
+    $waru: 1030;
+
+    .content {
+      padding: 5% 0 3%;
+
+      .profBox {
+        margin-bottom: 7%;
+
+        .img {
+          img {}
+
+          .name {
+            dl {
+              padding: 2em 3em;
+              font-size: 1.0vw;
+            }
+
+            dt {
+              font-size: (16/$waru) * 100vw;
+            }
+
+            dd {
+              font-size: (61/$waru) * 100vw;
+            }
+          }
+        }
+
+        .txt {
+          padding: 2em 3em;
+          font-size: 1.0vw;
+
+          dt {
+            font-size: (38/$waru) * 100vw;
+          }
+
+          dd {
+            padding-left: (40/15) * 1em;
+          }
+        }
+      }
+    }
+
+    .content2 {
+      padding: 5% 0;
+    }
+  }
+
+  @include mq {
+    .content {
+      .profBox {
+        margin-bottom: 15%;
+
+        .img {
+          img {}
+
+          .name {
+            display: block;
+            position: static;
+
+            dl {
+              padding: 5% 4%;
+            }
+
+            dt {
+              margin-bottom: .5em;
+              font-size: 1.4rem;
+            }
+
+            dd {
+              font-size: 3.6rem;
+
+              @include mq {
+                font-size: 2.4rem;
+
               }
             }
-            p{
-              font-size: 1.6rem;
-              padding-top: 0.5em;
-            }
-            @include mq{
-              width: auto;
-            }
-				}
-				dd{
-				padding: 20px 0px 20px 30px;
-          box-sizing: border-box;
-					@include noto;
-					font-size: 1.5rem;
-					line-height: (24/15);
-            width: 65%;
-            @include mq{
-              width: auto;
-            }
-				}
-			}
-		}
-		.episodeBox{
-			padding: 0 12.5%;
-			h3{
-				font-size: 4.2rem;
-				line-height: (60/42);
-			}
-			p{
-				margin-bottom: 30px;
-				@include noto;
-				font-size: 1.6rem;
-				line-height: (28/16);
-			}
-			.img{
-				margin-bottom: 30px;
-				img{
-					width: 100%;
-				}
-			}
-		}
-	}
-	.content2{
-		padding: 80px 0 90px;
-	}
-	@include mqMaxW($bp:1030px){
-		$waru: 1030;
-		.content{
-			padding: 5% 0 3%;
-			.profBox{
-				margin-bottom: 7%;
-				.img{
-					img{
-					}
-					.name{
-						dl{
-							padding: 2em 3em;
-							font-size: 1.0vw;
-						}
-						dt{
-							font-size: (16/$waru) * 100vw;
-						}
-						dd{
-							font-size: (61/$waru) * 100vw;
-						}
-					}
-				}
-				.txt{
-					padding: 2em 3em;
-					font-size: 1.0vw;
-					dt{
-						font-size: (38/$waru) * 100vw;
-					}
-					dd{
-						padding-left: (40/15) * 1em;
-					}
-				}
-			}
-		}
-		.content2{
-			padding: 5% 0;
-		}
-	}
-	@include mq{
-		.content{
-			.profBox{
-				margin-bottom: 15%;
-				.img{
-					img{
-					}
-					.name{
-						display: block;
-						position: static;
-						dl{
-							padding: 5% 4%;
-						}
-						dt{
-							margin-bottom: .5em;
-							font-size: 1.4rem;
-						}
-						dd{
-							font-size: 3.6rem;
-              
-            @include mq{
-              font-size: 2.4rem;
-              
-            }
-						}
-					}
-				}
-				.txt{
-					display: block;
-					padding:0;
-					dt{
-						margin-bottom: 0;
-						padding: 5vw;
-						font-size: 2.4rem;
-						text-align: center;
-						border-bottom: 1px solid #42933f;
-					}
-					dd{
+          }
+        }
+
+        .txt {
+          display: block;
+          padding: 0;
+
+          dt {
+            margin-bottom: 0;
             padding: 5vw;
-					}
-				}
-			}
-			.episodeBox{
-				padding: 0;
-				h3{
-					font-size: 2rem;
-				}
-				p{
-					margin-bottom: 5%;
-					font-size: 1.4rem;
-				}
-				.img{
-					margin-bottom: 5%;
-					img{
-					}
-				}
-			}
-		}
-		.content2{
-			padding: 5% 0;
-		}
-	}
+            font-size: 2.4rem;
+            text-align: center;
+            border-bottom: 1px solid #42933f;
+          }
+
+          dd {
+            padding: 5vw;
+          }
+        }
+      }
+
+      .episodeBox {
+        padding: 0;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          margin-bottom: 5%;
+          font-size: 1.4rem;
+        }
+
+        .img {
+          margin-bottom: 5%;
+
+          img {}
+        }
+      }
+    }
+
+    .content2 {
+      padding: 5% 0;
+    }
+  }
+
+  .introduce-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    .ttl1{
+      line-height: 1.6;
+    }
+    dl {
+      display: flex;
+      justify-content: space-between;
+      &.reverse{
+        flex-direction: row-reverse;
+      }
+      dt {
+        width: 20%;
+        text-align: center;
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+
+      dd {
+        width: 80%;
+      }
+
+      img {
+        max-width: 100%;
+
+      }
+    }
+  }
+
+
 }
 
-.welfare-list{
+.welfare-list {
   display: flex;
   justify-content: flex-start;
   max-width: 1100px;
   margin: 0 auto;
   flex-wrap: wrap;
   padding: 30px 0;
-  @include mq{
+
+  @include mq {
     display: block;
   }
-  li{
+
+  li {
     width: 48%;
     margin: 1%;
     background: #FFF;
     padding: 35px;
     box-sizing: border-box;
-    @include mq{
+
+    @include mq {
       width: auto;
       padding: 4%;
       margin: 0 3% 3% 3%;
     }
-    img{
+
+    img {
       height: auto;
     }
-    h3{
+
+    h3 {
       font-size: 2.4rem;
       color: $mainColor;
       font-weight: bold;
       padding: 0.3em 0 0.8em 0;
-      @include mq{
+
+      @include mq {
         font-size: 5vw;
       }
     }
-    p{
+
+    p {
       font-size: 1.8rem;
       line-height: 1.6;
       @include noto;
-      @include mq{
+
+      @include mq {
         font-size: 4vw;
       }
     }
   }
 }
-.btnrecruit{
+
+.btnrecruit {
   text-align: center;
-  p{
+
+  p {
     text-align: center;
     padding: 20px;
     font-size: 1.6rem;
   }
-  li{
+
+  li {
     display: inline-block;
     margin: 5px 10px;
-    a{
+
+    a {
       border-radius: 10px;
       display: block;
       padding: 10px 30px;
-      border:1px solid #CCC;
+      border: 1px solid #CCC;
       text-align: center;
-      &:hover{
+
+      &:hover {
         opacity: 0.7;
       }
-      img{max-width: 200px;}
+
+      img {
+        max-width: 200px;
+      }
     }
   }
 }
-

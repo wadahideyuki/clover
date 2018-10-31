@@ -16,9 +16,6 @@
 
 get_header(); ?>
 
-<section id="pankz">
-	<p><a href="/">クローバー（ホーム）</a>&gt; <span>キャスト紹介</span></p>
-</section>
 <div id="page" class="site">
 	<div class="site-inner">
 

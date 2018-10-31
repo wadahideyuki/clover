@@ -133,8 +133,8 @@ if (!function_exists('breadcrumb')) {
 		            $tagAttribute .= sprintf(' %s="%s"', $attrName, $attrValue);
 		        }
 		        $str.= '<div'. $tagAttribute .'>';
-		        $str.= '<ul>';
-		        $str.= '<li itemscope itemtype="//data-vocabulary.org/Breadcrumb"><a href="'. esc_url(home_url( '/' )) .'" itemprop="url"><i class="fa fa-home"></i><span itemprop="title"> HOME</span></a></li>';
+		        $str.= '<ul><li><a href="/">クローバー（ホーム）</a></li>';
+		        $str.= '<li itemscope itemtype="//data-vocabulary.org/Breadcrumb"><a href="'. esc_url(home_url( '/' )) .'" itemprop="url"><i class=""></i><span itemprop="title"> コラム</span></a></li>';
 		 
 		        if(is_category()) {
 		            $cat = get_queried_object();

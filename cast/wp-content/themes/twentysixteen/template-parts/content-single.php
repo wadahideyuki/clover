@@ -53,6 +53,42 @@
 	</div>
 </section>
   
+<?php if(get_field('O1_NAME')): // 1人目の入力がある場合 ?>
+<section class="content2 introduce-box">
+  <h2 class="ttl1">他のキャストに聞きました！<br>
+    <?php the_title(); ?>さんってどんな人？</h2>
+ 
+  <dl class="">
+    
+  <dt>
+    <img src="<?php the_field('O1_PHOTO'); ?>">
+    <span class="intro-name"><?php the_field('O1_NAME'); ?></span>
+    <span class="intro-role"><?php the_field('O1_ROLE'); ?></span>
+    </dt>
+    <dd>
+    <p><?php the_field('O1_TEXT'); ?></p>
+    </dd>
+  </dl>
+  <?php if(get_field('O2_NAME')): // 2人目の入力がある場合 ?>
+  <dl class="reverse">
+  <dt>
+    <img src="<?php the_field('O2_PHOTO'); ?>">
+    <span class="intro-name"><?php the_field('O2_NAME'); ?></span>
+    <span class="intro-role"><?php the_field('O2_ROLE'); ?></span>
+    </dt>
+    <dd>
+    <p><?php the_field('O2_TEXT'); ?></p>
+    </dd>
+  </dl>
+  <?php endif; ?>
+  
+</section>
+  
+ 
+<?php endif; ?>
+  
+  
+  
 <section class="content2 bgMainColor">
 	<div class="inner sz2">
 		<dl class="staffTags">

@@ -92,6 +92,10 @@ jQuery(function( $ ) {
 	});
 });
 </script>
+<section id="pankz" class="columntop">
+	<p><a href="/">クローバー（ホーム）</a>&gt; <span>キャスト紹介</span></p>
+</section>
+
 
 <div id="top_carousel" class="carouselwrap wrap cf">
 <ul class="slider slickcar" style="opacity: 0;">
