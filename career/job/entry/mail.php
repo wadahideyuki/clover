@@ -37,7 +37,7 @@ $site_top = "/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 //$to = "recruit@day-clover.com";
-$to = "koubousei@gmail.com";
+$to = "wadahideyuki@gmail.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Email";

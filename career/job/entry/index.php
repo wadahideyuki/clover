@@ -34,7 +34,7 @@
 <script type="text/javascript" src="../../../common/js/exchecker-ja.js"></script>
 <script type="text/javascript" src="../../../common/js/slick.min.js"></script>
  <?php include('../../../common/inc/script.inc');?>
-<script type="text/javascript" src="../../../common/js/form.js"></script>
+<script type="text/javascript" src="/common/js/job.js"></script>
 </head>
 
 <body class="">
@@ -81,11 +81,11 @@
 					  </tr>
 					<tr>
 					  <th><p class="hissu">必須</p>フリガナ</th>
-					  <td><input size="20" type="text" name="フリガナ" id="nameF" placeholder="例）ヤマダタロウ" /></td>
+					  <td><input size="20" type="text" name="フリガナ" id="kana" placeholder="例）ヤマダタロウ" /></td>
 					  </tr>
 					<tr>
 						<th><p class="hissu">必須</p>電話番号（半角）</th>
-						<td><input size="30" type="text" name="電話番号" placeholder="例）090-0000-0000" /></td>
+						<td><input size="30" type="text" name="電話番号" id="tell" placeholder="例）090-0000-0000" /></td>
 					</tr>
 					<tr>
 						<th><p class="hissu">必須</p>メールアドレス</th>
@@ -95,37 +95,31 @@
 						<th><p class="hissu">必須</p>性別</th>
 						<td>
               <ul class="genderRdo">
-                <li><input type="radio" name="gender" value="男性" id="genderM"><label for="genderM">男性</label></li>
-                <li><input type="radio" name="gender" value="女性" id="genderF"><label for="genderF">女性</label></li>
+                <li><input type="radio" name="性別" value="男性" id="genderM" checked><label for="genderM">男性</label></li>
+                <li><input type="radio" name="性別" value="女性" id="genderF"><label for="genderF">女性</label></li>
               </ul>
             </td>
 					</tr>
 					<tr>
 						<th><p class="hissu">必須</p>生年月日</th>
 						<td>
-              <ul class="birth">
-                <li>
-                  <select name="" id="" placeholder="1900">
-                    <option value=""></option>
-                    <option value="1901">1901</option>
-                  </select><span>年</span>
+              <ul class="birth" id="birthday">
+                <li><input size="5" type="text" name="生年月日（年）" id="birthday1" placeholder="例）1950" /><span>年</span>
                 </li>
                 <ul>
-                  <li>
-                    <select name="" id="">
-                      <option value=""></option>
-                      <option value="01">01</option>
-                    </select><span>月</span>
+                  <li><input size="2" type="text" name="生年月日（月）" id="birthday2" placeholder="例）10" /><span>月</span>
                   </li>
-                  <li>
-                    <select name="" id="">
-                      <option value=""></option>
-                      <option value="01">01</option>
-                    </select><span>日</span>
+                  <li><input size="2" type="text" name="生年月日（日）" id="birthday3" placeholder="例）1" /><span>日</span>
                   </li>
                 </ul>
               </ul>
             </td>
+					</tr>
+					<tr>
+						<th><p class="nini">任意</p>その他</th>
+						<td>
+                      <textarea name="その他" ></textarea>
+                      </td>
 					</tr>
 				</table>
 				<p align="center" class="btnWrap">

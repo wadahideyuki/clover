@@ -19,10 +19,26 @@
 
   <div class="entry-content">
     <div class="jobDtlMain">
-      <div class="photo">
-        <?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
+      <div class="photo photoslick">
+        <ul>
+<?php if(get_field('job-photo1')): // 1枚目がある場合 ?>
+          <li><img src="<?php the_field('job-photo1'); ?>"></li>
+  <?php endif; ?>
+<?php if(get_field('job-photo2')): // 2枚目がある場合 ?>
+          <li><img src="<?php the_field('job-photo2'); ?>"></li>
+  <?php endif; ?>
+<?php if(get_field('job-photo3')): // 3枚目がある場合 ?>
+          <li><img src="<?php the_field('job-photo3'); ?>"></li>
+  <?php endif; ?>
+          
+          
+        </ul>
+        
       </div>
       <div class="txt">
+    <div class="btnEntry topbtn">
+      <a href="/career/job/entry/index.php?jobtitle=<?php the_title(); ?>&office=<?php the_field('office'); ?>">エントリーはこちら</a>
+    </div>
         <?php
       /* translators: %s: Name of current post */
       the_content( sprintf(
@@ -58,6 +74,12 @@
         </dd>
       </dl>
       <dl>
+        <dt>最寄り駅 </dt>
+        <dd>
+          <?php the_field('moyori'); ?>
+        </dd>
+      </dl>
+      <dl>
         <dt>資　格</dt>
         <dd>
           <?php the_field('license'); ?>
@@ -79,7 +101,13 @@
       <dl>
         <dt>待　遇 </dt>
         <dd>
-          <?php the_field('treetment'); ?>
+          <?php the_field('treatment'); ?>
+        </dd>
+      </dl>
+      <dl>
+        <dt>求める人物像</dt>
+        <dd>
+          <?php the_field('person'); ?>
         </dd>
       </dl>
       <dl>

@@ -53,6 +53,7 @@
   <?php
 include('../../common/inc/script.inc');
 ?>
+<script type="text/javascript" src="/common/js/job.js"></script>
 <!--/ヘッダー-->
 </head>
 

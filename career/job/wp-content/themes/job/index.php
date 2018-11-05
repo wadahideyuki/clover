@@ -125,7 +125,7 @@ include('../../common/inc/header.inc');
 		$icon_src = wp_get_attachment_image($attachment_id,'full');
 
 		//親カテゴリのリスト出力
-		if($cat_slug == "seisyain"){
+		if($cat_slug == "regular"){
 		  echo '<li class="show ' . $cat_slug . '">' . $val -> name . '</li>';
     }else{
       echo '<li class="' . $cat_slug . '">' . $val -> name . '</li>';
@@ -152,7 +152,7 @@ include('../../common/inc/header.inc');
 
 		//子カテゴリが存在する場合
 		if($child_cat_num > 0){
-      if($cat_slug == "seisyain"){
+      if($cat_slug == "regular"){
         echo '<li class="show ' . $cat_slug . '">';
       }else{
         echo '<li class="' . $cat_slug . '">';

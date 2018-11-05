@@ -42,6 +42,11 @@ $(".slkBox1 ul").slick({
 	]
 });
 
+$(function(){
+  $(".cat-item-13 > a,.cat-item-12 > a").click(function(){
+    return false;
+  })
+})  
 
 //アコーディオン
 $(".accBox .accBtn").click(function(){
