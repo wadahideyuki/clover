@@ -81,6 +81,18 @@
     </dd>
   </dl>
   <?php endif; ?>
+  <?php if(get_field('O3_NAME')): // 2人目の入力がある場合 ?>
+  <dl>
+  <dt>
+    <img src="<?php the_field('O3_PHOTO'); ?>">
+    <span class="intro-name"><?php the_field('O3_NAME'); ?></span>
+    <span class="intro-role"><?php the_field('O3_ROLE'); ?></span>
+    </dt>
+    <dd>
+    <p><?php the_field('O3_TEXT'); ?></p>
+    </dd>
+  </dl>
+  <?php endif; ?>
   
 </section>
   

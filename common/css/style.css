@@ -5638,43 +5638,6 @@ select {
   }
 }
 
-.cast-detail .introduce-box {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.cast-detail .introduce-box .ttl1 {
-  line-height: 1.6;
-}
-
-.cast-detail .introduce-box dl {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cast-detail .introduce-box dl.reverse {
-  flex-direction: row-reverse;
-}
-
-.cast-detail .introduce-box dl dt {
-  width: 20%;
-  text-align: center;
-}
-
-.cast-detail .introduce-box dl dt span {
-  display: block;
-  text-align: center;
-}
-
-.cast-detail .introduce-box dl dd {
-  width: 80%;
-}
-
-.cast-detail .introduce-box dl img {
-  max-width: 100%;
-}
-
 .welfare-list {
   display: flex;
   justify-content: flex-start;
@@ -6256,4 +6219,41 @@ select {
 
 .catAfter .btnBox li a.btn-cloverkids {
   background: #358f31;
+}
+
+.introduce-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.introduce-box .ttl1 {
+  line-height: 1.6;
+}
+
+.introduce-box dl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduce-box dl.reverse {
+  flex-direction: row-reverse;
+}
+
+.introduce-box dl dt {
+  width: 20%;
+  text-align: center;
+}
+
+.introduce-box dl dt span {
+  display: block;
+  text-align: center;
+}
+
+.introduce-box dl dd {
+  width: 80%;
+}
+
+.introduce-box dl img {
+  max-width: 100%;
 }
