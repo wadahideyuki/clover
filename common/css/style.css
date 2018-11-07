@@ -6223,6 +6223,7 @@ select {
 
 .introduce-box {
   max-width: 1000px;
+  background: #fff;
   margin: 0 auto;
   width: 100%;
 }
@@ -6240,6 +6241,32 @@ select {
   flex-direction: row-reverse;
 }
 
+.introduce-box dl:nth-of-type(2n+1) dd p:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 3rem;
+  left: -3rem;
+  border-top: 2rem solid #eaf4ea;
+  border-right: 3rem solid #eaf4ea;
+  border-bottom: 2rem solid transparent;
+  border-left: 3rem solid transparent;
+}
+
+.introduce-box dl:nth-of-type(2n) dd p:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 3rem;
+  right: -3rem;
+  border-top: 2rem solid #eaf4ea;
+  border-right: 3rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-left: 3rem solid #eaf4ea;
+}
+
 .introduce-box dl dt {
   width: 20%;
   text-align: center;
@@ -6251,9 +6278,20 @@ select {
 }
 
 .introduce-box dl dd {
-  width: 80%;
+  width: 75%;
+  background: #eaf4ea;
+}
+
+.introduce-box dl dd p {
+  position: relative;
+  font-size: 1.4rem;
+  padding: 2rem 3rem;
 }
 
 .introduce-box dl img {
   max-width: 100%;
+}
+
+.introduce-box dl + dl {
+  margin-top: 3.5rem;
 }
