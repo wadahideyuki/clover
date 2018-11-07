@@ -239,9 +239,10 @@
       background-color: #fff;
       margin-bottom: 15px;
       border-radius: 8px;
-      padding: 20px 20px 5px 20px;
+      padding: 20px 20px 12px 20px;
       @include mq{
         display: block;
+        padding-bottom: 5px;
       }
       .job-photo {
         width: 18%;
@@ -430,15 +431,17 @@
         padding-left: 30px;
         font-size: 1.4rem;
         box-sizing: border-box;
-
         @include mq {
           width: auto;
           padding-left: 0;
         }
-
-        p {
-          &:last-child {
-            padding-bottom: 0;
+        dl {
+          dt{
+          }
+          dd{
+            + dt{
+              margin-top: 15px;
+            }
           }
         }
       }
