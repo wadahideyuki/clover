@@ -6235,6 +6235,16 @@ select {
 .introduce-box dl {
   display: flex;
   justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .introduce-box dl {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 4.6875%;
+  }
 }
 
 .introduce-box dl.reverse {
@@ -6247,11 +6257,17 @@ select {
   width: 0;
   height: 0;
   top: 3rem;
-  left: -3rem;
+  left: -6rem;
   border-top: 2rem solid #eaf4ea;
   border-right: 3rem solid #eaf4ea;
   border-bottom: 2rem solid transparent;
   border-left: 3rem solid transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .introduce-box dl:nth-of-type(2n+1) dd p:after {
+    content: none;
+  }
 }
 
 .introduce-box dl:nth-of-type(2n) dd p:after {
@@ -6260,11 +6276,17 @@ select {
   width: 0;
   height: 0;
   top: 3rem;
-  right: -3rem;
+  right: -6rem;
   border-top: 2rem solid #eaf4ea;
   border-right: 3rem solid transparent;
   border-bottom: 2rem solid transparent;
   border-left: 3rem solid #eaf4ea;
+}
+
+@media screen and (max-width: 767px) {
+  .introduce-box dl:nth-of-type(2n) dd p:after {
+    content: none;
+  }
 }
 
 .introduce-box dl dt {
@@ -6272,9 +6294,34 @@ select {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .introduce-box dl dt {
+    position: relative;
+    width: 100%;
+    padding: 1.45rem 3rem;
+    background: #eaf4ea;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .introduce-box dl dt img {
+    position: absolute;
+    width: 20%;
+    top: 1rem;
+    left: 5vw;
+  }
+}
+
 .introduce-box dl dt span {
   display: block;
-  text-align: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .introduce-box dl dt span {
+    font-size: 1rem;
+    padding-left: 25.5%;
+  }
 }
 
 .introduce-box dl dd {
@@ -6282,10 +6329,24 @@ select {
   background: #eaf4ea;
 }
 
+@media screen and (max-width: 767px) {
+  .introduce-box dl dd {
+    width: 100%;
+  }
+}
+
 .introduce-box dl dd p {
   position: relative;
   font-size: 1.4rem;
-  padding: 2rem 3rem;
+  margin: 2rem 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .introduce-box dl dd p {
+    margin: 0 5vw 5vw;
+    padding-top: 1rem;
+    border-top: 1px solid #358f31;
+  }
 }
 
 .introduce-box dl img {
