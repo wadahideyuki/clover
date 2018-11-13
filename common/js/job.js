@@ -4,6 +4,8 @@ $(function(){
 $(".photoslick ul").slick({
 	arrows:false,
 	dots:true,
+  fade:true,
+  autoplay:true,
 	slidesToShow:1
 });
 

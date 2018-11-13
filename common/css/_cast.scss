@@ -9,6 +9,8 @@
   background: #fff;
   margin: 0 auto;
   width: 100%;
+  @include noto;
+
   .ttl1 {
     line-height: 1.6;
   }
@@ -18,67 +20,75 @@
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 15px;
+
     @include mq {
       justify-content: flex-start;
       flex-wrap: wrap;
       margin: 0 4.6875%;
     }
+
     &.reverse {
       flex-direction: row-reverse;
     }
-        &:nth-of-type(2n+1) {
-          dd {
-            p {
+
+    &:nth-of-type(2n+1) {
+      dd {
+        p {
           &:after {
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 0;
-          top: 3rem;
-          left: -6rem;
-          border-top: 2rem solid #eaf4ea;
-          border-right: 3rem solid #eaf4ea;
-          border-bottom: 2rem solid transparent;
-          border-left: 3rem solid transparent;
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 3rem;
+            left: -6rem;
+            border-top: 2rem solid #eaf4ea;
+            border-right: 3rem solid #eaf4ea;
+            border-bottom: 2rem solid transparent;
+            border-left: 3rem solid transparent;
+
             @include mq {
               content: none;
             }
-        }              
-            }
           }
         }
-        &:nth-of-type(2n) {
-          dd {
-            p {
+      }
+    }
+
+    &:nth-of-type(2n) {
+      dd {
+        p {
           &:after {
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 0;
-          top: 3rem;
-          right: -6rem;
-          border-top: 2rem solid #eaf4ea;
-          border-right: 3rem solid transparent;
-          border-bottom: 2rem solid transparent;
-          border-left: 3rem solid #eaf4ea;
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 3rem;
+            right: -6rem;
+            border-top: 2rem solid #eaf4ea;
+            border-right: 3rem solid transparent;
+            border-bottom: 2rem solid transparent;
+            border-left: 3rem solid #eaf4ea;
+
             @include mq {
               content: none;
-              
-            }
-        }
+
             }
           }
         }
+      }
+    }
 
     dt {
       width: 20%;
       text-align: center;
+
       @include mq {
         position: relative;
         width: 100%;
-        padding: 1.45rem 3rem; 
+        padding: 1.45rem 3rem;
         background: #eaf4ea;
       }
+
       img {
         @include mq {
           position: absolute;
@@ -87,11 +97,13 @@
           left: 5vw;
         }
       }
+
       span {
         display: block;
         text-align: left;
+        font-size: 1.4rem;
         @include mq {
-          font-size: 1rem;
+          font-size: 1.2rem;
           padding-left: 25.5%;
         }
       }
@@ -100,25 +112,31 @@
     dd {
       width: 75%;
       background: #eaf4ea;
+
       @include mq {
         width: 100%;
       }
+
       p {
         position: relative;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin: 2rem 3rem;
+
         @include mq {
           margin: 0 5vw 5vw;
           padding-top: 1rem;
+          font-size: 1.4rem;
           border-top: 1px solid #358f31;
         }
       }
     }
+
     img {
       max-width: 100%;
 
     }
   }
+
   dl + dl {
     margin-top: 3.5rem;
   }

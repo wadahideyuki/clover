@@ -53,6 +53,7 @@
 	</div>
 </section>
   
+  <!--ほかのキャストにききました-->
 <?php if(get_field('O1_NAME')): // 1人目の入力がある場合 ?>
 <section class="content2 introduce-box">
   <h2 class="ttl1">他のキャストに聞きました！<br>
