@@ -241,13 +241,14 @@
       border-radius: 8px;
       padding: 20px 20px 12px 20px;
       @include mq{
-        display: block;
+        flex-direction: column;
         padding-bottom: 5px;
       }
       .job-photo {
         width: 18%;
         @include mq{
-          display: none;
+          width: 100%;
+          margin-bottom: 3vw;
         }
 
         img {
@@ -284,7 +285,7 @@
           margin-top: vw(20);
         }
       }
-
+      ul{
       a {
         display: block;
         text-align: center;
@@ -334,6 +335,7 @@
           background-color: rgba(53, 143, 49, 0.2);
           text-decoration: none;
         }
+      }
       }
 
       h2 {

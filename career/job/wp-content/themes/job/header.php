@@ -89,7 +89,7 @@ include('../../common/inc/header.inc');
     </div>
   <div class="lowLinks">
 		<a href="/career/index.php">採用情報TOP</a>
-		<a href="/career/recruit/index.php" class="cur">募集要項</a>
+		<a href="/career/job/index.php" class="cur">募集要項</a>
 		<a href="/career/welfare/index.php">福利厚生</a>
 	</div>
   </section>

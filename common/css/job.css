@@ -236,7 +236,7 @@
 
 @media screen and (max-width: 767px) {
   .list-page .job-list .list-item {
-    display: block;
+    flex-direction: column;
     padding-bottom: 5px;
   }
 }
@@ -247,7 +247,8 @@
 
 @media screen and (max-width: 767px) {
   .list-page .job-list .list-item .job-photo {
-    display: none;
+    width: 100%;
+    margin-bottom: 3vw;
   }
 }
 
@@ -290,7 +291,7 @@
   }
 }
 
-.list-page .job-list article a {
+.list-page .job-list article ul a {
   display: block;
   text-align: center;
   padding: 1.3em 10px;
@@ -300,21 +301,21 @@
   color: #FFF;
 }
 
-.list-page .job-list article a.btn-detail {
+.list-page .job-list article ul a.btn-detail {
   background: #358f31;
 }
 
-.list-page .job-list article a.btn-entry {
+.list-page .job-list article ul a.btn-entry {
   background: #FF8D0C;
 }
 
 @media screen and (max-width: 767px) {
-  .list-page .job-list article a {
+  .list-page .job-list article ul a {
     padding: 4.6875vw 10.9375vw 4.6875vw 4.6875vw;
   }
 }
 
-.list-page .job-list article a:before {
+.list-page .job-list article ul a:before {
   content: "";
   display: block;
   width: 0.3em;
@@ -330,7 +331,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .list-page .job-list article a:before {
+  .list-page .job-list article ul a:before {
     width: 0.8em;
     height: 0.8em;
     margin: auto;
@@ -340,7 +341,7 @@
   }
 }
 
-.list-page .job-list article a:hover {
+.list-page .job-list article ul a:hover {
   background-color: rgba(53, 143, 49, 0.2);
   text-decoration: none;
 }

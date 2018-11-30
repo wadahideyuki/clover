@@ -36,8 +36,8 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 $site_top = "/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-//$to = "recruit@day-clover.com";
-$to = "wadahideyuki@gmail.com";
+$to = "recruit@day-clover.com";
+//$to = "wadahideyuki@gmail.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Email";
@@ -242,16 +242,6 @@ else if($confirmDsp == 1){
 <body>
 <div class="wrapper catForm pageMailConf">
 
-<section class="">
-	<div class="inner">
-		<h1 class="ttl2">
-			<div>
-				<span>エントリー</span>
-				<small>Entry</small>
-			</div>
-		</h1>
-    </div>
-  </section>
 
 
 <!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
@@ -318,16 +308,6 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <body>
 <div class="wrapper catForm pageMailComp">
 
-<section class="">
-	<div class="inner">
-		<h1 class="ttl2">
-			<div>
-				<span>エントリー</span>
-				<small>Entry</small>
-			</div>
-		</h1>
-    </div>
-  </section>
 
 
 <div align="center">
@@ -352,6 +332,19 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 
 
 </div><!--/.wrapper-->
+<!-- Begin INDEED conversion code -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var indeed_conversion_id = '4799556725931679';
+var indeed_conversion_label = '';
+/* ]]> */
+</script>
+<script type="text/javascript" src="//conv.indeed.com/applyconversion.js">
+</script>
+<noscript>
+<img height=1 width=1 border=0 src="//conv.indeed.com/pagead/conv/4799556725931679/?script=0">
+</noscript>
+<!-- End INDEED conversion code -->
 </body>
 </html>
 <?php 

@@ -17,6 +17,8 @@
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="0;URL=../job/">
+
 <!-- OGs -->
 <meta property="og:title" content="募集要項 | 採用情報 | CLOVER" />
 <meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />

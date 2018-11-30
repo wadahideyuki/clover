@@ -12,15 +12,15 @@
 </script>
 <meta charset="UTF-8">
 <title>採用情報｜株式会社CLOVER</title>
- <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
+<meta name="keywords" content="" />
 <meta name="description" content="株式会社CLOVER（クローバーグループ）の採用情報ページです。私たちは、「美点凝視＝人の良い所を見て、出来ない所は皆でフォローする」という価値観を大切にしています。資格支援制度、研修制度が充実しているので、未経験方でも大歓迎です。" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- OGs -->
 <meta property="og:title" content="採用情報 | CLOVER" />
-<meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />
-<meta property="og:description" content="株式会社CLOVER（クローバーグループ）は、東京都心・千葉県でお泊りデイサービスや、子どもの療育を行う放課後等デイサービスを運営。「Happinessを提供する」を経営理念に、「休日に自宅やカフェでくつろいでいる」ような新しいケア・サービスを目指します。" />
+<meta property="og:site_name" content="CLOVER" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="website">
 <!-- /OGs -->
 
@@ -53,7 +53,7 @@
     </div>
   <div class="lowLinks">
 		<a href="/career/index.php" class="cur">採用情報TOP</a>
-		<a href="/career/recruit/index.php">募集要項</a>
+		<a href="/career/job/index.php">募集要項</a>
 		<a href="/career/welfare/index.php">福利厚生</a>
 	</div>
   </section>
@@ -116,7 +116,7 @@
 
 <section class="btmLinkZone">
 	<div class="in">
-		<a class="btnNo3" href="recruit/index.php">
+		<a class="btnNo3" href="job/index.php">
 			<dl>
 				<dt>募集要項</dt>
 				<dd><span>詳細はこちら</span></dd>
@@ -131,7 +131,7 @@
 	</div>
 </section>
   
-  <a class="entryBtn" href="recruit/index.php" class="entryBtn"><span>エントリーはこちら</span></a>
+  <a class="entryBtn" href="job/index.php" class="entryBtn"><span>エントリーはこちら</span></a>
 <!--フッター-->
  <?php include('../common/inc/footer.inc');?>
 <!--/フッター-->
