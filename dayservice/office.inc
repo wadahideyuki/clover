@@ -56,4 +56,12 @@
 					</picture>
 				</a>
 			</li>
+			<li class="itemGakudai gakudai2">
+				<a href="/dayservice/office/gakugeidaigaku/index.php#">
+					<picture>
+						<source media="(max-width:767px)" srcset="/common/img/top/sp_office_img_gakudai.png">
+						<img src="/common/img/top/office_img_gakudai_l.png" alt="">
+					</picture>
+				</a>
+			</li>
 		</ul>
