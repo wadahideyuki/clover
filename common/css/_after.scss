@@ -6,319 +6,621 @@
 /*--------------------------------------
  放課後デイサービス
 ---------------------------------------*/
-.catAfter{
-    .inner{
-        max-width: 1000px;
-    }
-    .font-green{
-        color: $mainColor;
-    }
-    .lead-box{
-        padding: 60px 10px 80px 10px;
-        text-align: center;
-        @include mq{
-            padding: 30px 10px;
-            text-align: left;
-        }
-        h3{
-            font-size: 4rem;
-            padding: 50px 0 40px 0;
-            @include mq{
-                font-size: 2rem;
-                padding: 20px 0;
-            }
-        }
-        p{
-            font-size: 1.8rem;
-            line-height: 1.8;
-            strong{
-                font-weight: bold;
-                font-size: 140%;
-            }
-            @include mq{
-            font-size: 1.2rem;
-            }
-        }
-    }
-    .about-box{
-        background: #FFF;
-        display: flex;
-        @include mq{
-            display: block;
-        }
-        dt{
-            width: 50%;
-            @include mq{
-                width: auto;
-            }
-        }
-        dd{
-            width: 50%;
-            box-sizing: border-box;
-            padding: 20px;
-            font-size: 1.6rem;
-            @include noto;
-            line-height: 1.7;
-            @include mq{
-                padding: 2%;
-                font-size: 1.2rem;
-                line-height: 1.6;
-                width: auto;
-            }
-            p{
-                padding: 8px;
-            }
-        }
-    }
-    .clover-feature{
-        background: $mainColor;
-        text-align: center;
-        position: relative;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        border-radius: 5px;
-             font-size: 1.7rem;
-        @include mq{
-            font-size: 1.4rem;
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-        h4{
-            top: -1.0em;
-            position: relative;
-            background: $mainColor;
-            display: inline-block;
-            color: #FFF;
-            border-radius: 50px;
-            padding: 10px;
-            font-size: 2.2rem;
-            @include mq{
-                font-size: 1.8rem;
-                margin-bottom: -1em;
-            }
-        }
-        ul{
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-            padding: 0 15px 20px  15px;
-            @include noto;
-            @include mq{
-                display: block;
-                padding: 0px 10px 0px 10px;
-            }
-            li{
-                background: #FFF;
-                padding: 20px 10px;
-                box-sizing: border-box;
-                display: flex;
-                align-items: top;
-                align-content: center;
-                text-align: center;
-                border-radius: 5px;
-                @include mq{
-                    padding: 8px;
-                    margin-bottom: 10px;
-                }
-                p{
-                    text-align: center;
-                    width: 100%;
-                }
-            }
-            &.col4{
-                li{
-                    width: 23.5%;
-                    @include mq{
-                        width: 100%;
-                    }
-                }
-            }
-            &.col3{
-                li{
-                    width: 32%;
-                    @include mq{
-                        width: 100%;
-                    }
-                }
-            }
-            &.col2{
-                li{
-                    text-align: left;
-                    width: 49%;
-                    padding: 3%;
-                    @include mq{
-                        width: 100%;
-                    }
-                    p{
-                        text-align: left;
-                        strong{
-                            display: block;
-                            text-align: center;
-                            padding:0 0 5px 0;
-                            color: $mainColor;
-                            font-weight: bold;
-                        }
-                      span{
-                        display: block;
-                        padding: 10px 0;
-                      }
-                    }
-                }
-            }
-        }
-    }
-  .meguro{
+.catAfter {
+  .inner {
+    max-width: 1000px;
+  }
+
+  .font-green {
+    color: $mainColor;
+  }
+
+  .lead-box {
+    padding: 60px 10px 80px 10px;
     text-align: center;
-    padding: 30px ;
+
+    @include mq {
+      padding: 30px 10px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 4rem;
+      padding: 50px 0 40px 0;
+
+      @include mq {
+        font-size: 2rem;
+        padding: 20px 0;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 1.8;
+
+      strong {
+        font-weight: bold;
+        font-size: 140%;
+      }
+
+      @include mq {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .about-box {
+    background: #FFF;
+    display: flex;
+
+    @include mq {
+      display: block;
+    }
+
+    dt {
+      width: 50%;
+
+      @include mq {
+        width: auto;
+      }
+    }
+
+    dd {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 20px;
+      font-size: 1.6rem;
+      @include noto;
+      line-height: 1.7;
+
+      @include mq {
+        padding: 2%;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        width: auto;
+      }
+
+      p {
+        padding: 8px;
+      }
+    }
+  }
+
+  .clover-feature {
+    background: $mainColor;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    font-size: 1.7rem;
+
+    @include mq {
+      font-size: 1.4rem;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+
+    h4 {
+      top: -1.0em;
+      position: relative;
+      background: $mainColor;
+      display: inline-block;
+      color: #FFF;
+      border-radius: 50px;
+      padding: 10px;
+      font-size: 2.2rem;
+
+      @include mq {
+        font-size: 1.8rem;
+        margin-bottom: -1em;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 0 15px 20px 15px;
+      @include noto;
+
+      @include mq {
+        display: block;
+        padding: 0px 10px 0px 10px;
+      }
+
+      li {
+        background: #FFF;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: top;
+        align-content: center;
+        text-align: center;
+        border-radius: 5px;
+
+        @include mq {
+          padding: 8px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      &.col4 {
+        li {
+          width: 23.5%;
+
+          @include mq {
+            width: 100%;
+          }
+        }
+      }
+
+      &.col3 {
+        li {
+          width: 32%;
+
+          @include mq {
+            width: 100%;
+          }
+        }
+      }
+
+      &.col2 {
+        li {
+          text-align: left;
+          width: 49%;
+          padding: 3%;
+
+          @include mq {
+            width: 100%;
+          }
+
+          p {
+            text-align: left;
+
+            strong {
+              display: block;
+              text-align: center;
+              padding: 0 0 5px 0;
+              color: $mainColor;
+              font-weight: bold;
+            }
+
+            span {
+              display: block;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meguro {
+    text-align: center;
+    padding: 30px;
     font-size: 2rem;
     @include noto;
-    @include mq{
+
+    @include mq {
       font-size: 1.4rem;
       padding: 20px 0;
     }
   }
-    .clover-feature-col2{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 70px;
-        @include mq{
-            display: block;
-        }
-        .clover-feature{
-            width: 49%;
-            @include mq{
-                width: 100%;
-            }
-            & > div{
-            @include noto;
-                background: #FFF;
-                padding: 15px 10px;
-                border-radius: 5px;
-                margin:0 15px 15px 15px;
-                p{
-                    padding-top: 10px;
-                }
-                ol{
-                    color: $mainColor;
-                    text-align: left;
-                    display: inline-block;
-                    li{
-                        
-                    list-style: decimal;
-                    }
-                }
-            }
-        }
+
+  .clover-feature-col2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    @include mq {
+      display: block;
     }
-    #map{
+
+    .clover-feature {
+      width: 49%;
+
+      @include mq {
         width: 100%;
-        height: 400px;
-        @include mq{
-            height: 70vw;
-        }
-    }
-    .map-box2{
-        margin-top: 30px;
-        background: #d8f4c6;
-        padding: 25px;
-        border-radius: 5px;
-        display: flex;
+      }
+
+      & > div {
         @include noto;
-        font-size: 1.6rem;
-        @include mq{
-            display: block;
-            font-size: 1.2rem;
+        background: #FFF;
+        padding: 15px 10px;
+        border-radius: 5px;
+        margin: 0 15px 15px 15px;
+
+        p {
+          padding-top: 10px;
         }
-        dt{
-            padding: 5px;
-            background: #FFF;
-            border-radius: 5px;
+
+        ol {
+          color: $mainColor;
+          text-align: left;
+          display: inline-block;
+
+          li {
+
+            list-style: decimal;
+          }
         }
-        dd{
-            padding: 20px;
-            @include mq{
-                padding: 0px;
-            }
-            p{
-                padding: 5px 0;
-                strong{
-                    color: $mainColor;
-                    font-weight:bold;
-                }
-            }
-        }
+      }
     }
-    .outline-box{
-        padding-top: 70px;
-        
-        table{
-            margin: 0 auto;            
-            max-width: 800px;
-            @include noto;
-            font-size: 1.6rem;      
+  }
+
+  #map {
+    width: 100%;
+    height: 400px;
+
+    @include mq {
+      height: 70vw;
+    }
+  }
+
+  .map-box2 {
+    margin-top: 30px;
+    background: #d8f4c6;
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    @include noto;
+    font-size: 1.6rem;
+
+    @include mq {
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    dt {
+      padding: 5px;
+      background: #FFF;
+      border-radius: 5px;
+    }
+
+    dd {
+      padding: 20px;
+
+      @include mq {
+        padding: 0px;
+      }
+
+      p {
+        padding: 5px 0;
+
+        strong {
+          color: $mainColor;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .outline-box {
+    padding-top: 70px;
+
+    table {
+      margin: 0 auto;
+      max-width: 800px;
+      @include noto;
+      font-size: 1.6rem;
       width: 100%;
-            @include mq{
-                font-size: 1.2rem;
-            }
-            th{
-                border-top: 1px solid #CCC;
-                padding: 10px;
-                @include mq{
-                    display:block;
-                    padding: 5px 0 0 0;
-                    font-size: 1rem;
-                    color: #999;
-                }
-            }
-            td{
-                border-top: 1px solid #CCC;
-                padding: 10px;
-                @include mq{
-                    border: none;
-                    display:block;
-                    padding: 5px 0;
-                }
-            }
+
+      @include mq {
+        font-size: 1.2rem;
+      }
+
+      th {
+        border-top: 1px solid #CCC;
+        padding: 10px;
+
+        @include mq {
+          display: block;
+          padding: 5px 0 0 0;
+          font-size: 1rem;
+          color: #999;
         }
+      }
+
+      td {
+        border-top: 1px solid #CCC;
+        padding: 10px;
+
+        @include mq {
+          border: none;
+          display: block;
+          padding: 5px 0;
+        }
+      }
     }
-    .btnBox{
-        padding: 70px 0;
+  }
+
+  .officeZone {
+    .u-inner {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      h2 {
+        margin-bottom: 0.44444em;
+        color: #88cb7f;
+        font-family: vdl-logomaru, sans-serif;
+        font-size: 4.5rem;
         text-align: center;
-        display: flex;
-        max-width: 800px;
-        margin: 0 auto;
-        justify-content: space-between;
-        @include mq{
+      }
+
+      .u-accessBox1 {
+        padding: 40px 0;
+
+        @include mq(l) {
+          padding: vwL(40) 0;
+        }
+
+        @include mq {
+          padding: vw(40) 0;
+        }
+
+        + .u-accessBox1 {
+          border-top: 1px dotted #8c8c8c;
+        }
+
+        .in {
+          padding-left: 54.2%;
+          font-size: 1.6rem;
+          line-height: (23/16);
+          position: relative;
+          font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+          @include mq {
+            padding-left: 0;
+            font-size: 2.0rem;
+            line-height: (26/20);
+            position: static;
+          }
+
+          .btns {
+            display: flex;
+            margin-top: 20px;
+
+            @include mq(l) {
+              margin-top: vwL(20);
+            }
+
+            @include mq {
+              justify-content: space-between;
+              margin-top: vw(30);
+            }
+
+            .u-btn1 {
+              font-size: 1.6rem;
+              @include mq {
+                width: percentage(290/590);
+                font-size: 2.6rem;
+              }
+
+              + .u-btn1 {
+                margin-left: 15px;
+
+                @include mq(l) {
+                  margin-left: vwL(15);
+                }
+
+                @include mq {
+                  margin-left: 0;
+                }
+              }
+
+              a {
+                display: inline-block;
+                background-color: #88cb7f;
+                padding: 0.5em 0.9em;
+                color: #fff;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.3s;
+                text-decoration: none;
+
+                @include mq {
+                  display: block;
+                  padding: 0.64em 0.5em;
+                }
+
+                span {
+                  &:before {
+                    width: 0.5em;
+                    height: 0.5em;
+                    border-bottom-width: 0.2em;
+                    border-right-width: 0.2em;
+                    transform: translate(0, -0.1em) rotate(-45deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .ttl {
+          margin-bottom: 0.6em;
+          padding-bottom: 0.3em;
+          font-family: vdl-logomaru, sans-serif;
+          font-size: 2.6rem;
+          border-bottom: 1px solid $mainColor;
+
+          @include mq {
+            margin-bottom: 0.66667em;
+            padding-bottom: 0;
+            font-size: 3.0rem;
+            text-align: center;
+            border-bottom: none;
+          }
+
+          span {
+            display: inline-block;
+            background: url(../img/icn_clover1.png) 0 0 no-repeat;
+            background-size: em(33/26) auto;
+            padding: 0 0 0.2em 1.8em;
+            @include ieSpc;
+
+            @include mq {
+              background-position: left center;
+            }
+
+            small {
+              display: block;
+              padding-bottom: 0.1em;
+              font-size: em(20/26);
+              line-height: 1;
+            }
+          }
+        }
+
+        .map {
+          width: 50%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          @include mq {
+            width: auto;
+            height: vw(288);
+            margin-bottom: vw(20);
+            position: static;
+          }
+
+          iframe {
             display: block;
-            padding: 25px 0;
+            width: 100%;
+            height: 100%;
+          }
         }
-        li{
-            @include noto;
-            width: 48%;
-            margin: 0 10px;
-            @include mq{
-                width: 100%;
-                margin: 0 0 10px 0;
+
+        .address {
+          p {
+            + p {
+              margin-top: 0.8em;
             }
-            a{
+          }
+        }
+
+        .access {
+          margin-top: em(14/16);
+
+          strong {
+            display: block;
+            color: $mainColor;
+          }
+        }
+
+        .btns {
+          display: flex;
+          margin-top: 20px;
+
+          @include mq(l) {
+            margin-top: vwL(20);
+          }
+
+          @include mq {
+            justify-content: space-between;
+            margin-top: vw(30);
+          }
+
+          .u-btn1 {
+            font-size: 1.6rem;
+
+            @include mq {
+              width: percentage(290/590);
+              font-size: 2.6rem;
+            }
+
+            + .u-btn1 {
+              margin-left: 15px;
+
+              @include mq(l) {
+                margin-left: vwL(15);
+              }
+
+              @include mq {
+                margin-left: 0;
+              }
+            }
+
+            a {
+              padding: 0.5em 0.9em;
+
+              @include mq {
                 display: block;
-                padding: 15px 40px;
-                background: #CCC;
-                border-radius: 5px;
-                color: #FFF;
-                font-size: 1.6rem;
-                @include mq{
-                    padding: 15px 0;
-                    font-size: 1.4rem;
+                padding: 0.64em 0.5em;
+              }
+
+              span {
+                &:before {
+                  width: 0.5em;
+                  height: 0.5em;
+                  border-bottom-width: 0.2em;
+                  border-right-width: 0.2em;
+                  transform: translate(0, -0.1em) rotate(-45deg);
                 }
-                &.btn-inquiry{
-                    background: #D06E00;
-                }
-                &.btn-cloverkids{
-                    background: $mainColor;
-                }
+              }
             }
+          }
         }
-        
+      }
     }
+  }
+
+  .btnBox {
+    padding: 70px 0;
+    text-align: center;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @include mq {
+      display: block;
+      padding: 25px 0;
+    }
+
+    li {
+      @include noto;
+      width: 48%;
+      margin: 0 10px;
+
+      @include mq {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+
+      a {
+        display: block;
+        padding: 15px 40px;
+        background: #CCC;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 1.6rem;
+
+        @include mq {
+          padding: 15px 0;
+          font-size: 1.4rem;
+        }
+
+        &.btn-inquiry {
+          background: #D06E00;
+        }
+
+        &.btn-cloverkids {
+          background: $mainColor;
+        }
+      }
+    }
+
+  }
 }

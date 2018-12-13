@@ -16,6 +16,10 @@ $em:100em;
 	$em1:1em;
 $rem:100rem;
 	$rem1:1rem;
+//フォントファミリー
+$logomaru: vdl-logomaru, sans-serif;
+$logojr: vdl-logomaru-jr, sans-serif;
+
 
 //色
 $mainColor:#358f31;
@@ -108,3 +112,17 @@ $color1:#fff;
 	}
 }
 
+//IE10以降用ハック
+@mixin ie {
+	@media all and (-ms-high-contrast:none){
+		@content;
+	}
+}
+//IE10以降用ハック(余白)
+@mixin ieSpc($mb: -0.3em, $pt: 0.3em) {
+	@media all and (-ms-high-contrast:none){
+		margin-bottom: $mb;
+    padding-top: $pt;
+		@content;
+	}
+}

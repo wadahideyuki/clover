@@ -122,44 +122,48 @@
       </div>
     </section>
       
-    <section class="content ">
-      <div class="inner">
-        <h2 class="ttl1">クローバーキッズ麻布十番へのアクセス</h2>
-        <div class="map-box1">
-            <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 35.652871, lng: 139.735226};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdPEjSh5AtMUKw-Nh51wZkxboLIz9_njg&callback=initMap"  async defer>
-</script>
-          <p class="meguro">目黒区にも新規開設を予定しています！</p>
+     
+    <section class="content officeZone">
+          <div class="u-inner">
+            <h2>事業所・アクセス</h2>
+            <section class="u-accessBox1">
+              <div class="in">
+                <h3 class="ttl"><span>クローバーキッズ麻布十番</span></h3>
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.9805603848395!2d139.73301671562717!3d35.6528505802009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ba108870fb1%3A0xbb5ca7b013f0b0c3!2z44CSMTA2LTAwNDUg5p2x5Lqs6YO95riv5Yy66bq75biD5Y2B55Wq77yT5LiB55uu77yR77yR4oiS77yR77ySIOS7meWPsOWdguOCquODvOOCr-ODkuODq-OCuu-8kumajg!5e0!3m2!1sja!2sjp!4v1543567214919" style="border:0" allowfullscreen="" frameborder="0"></iframe>
+                </div>
+                <div class="address">
+                  <p>106-0045<br>東京都港区麻布十番3-11-12 仙台坂オークヒルズ２階<br>電話番号：03-3451−4141<br>営業時間：平日10：00～19：00</p>
+                </div>
+                <div class="access"><strong>◆アクセス方法</strong>
+                  <p>東京メトロ南北線・都営大江戸線<br>麻布十番駅　１番出口 徒歩４分（約250m）</p>
+                  <p>１番出口をでて、そのまま麻布通りを南へ　２つ目の信号「二の橋」を右折。<br>１つ目の信号「仙台坂下」の手前　右側のビルの２階です。</p>
+                </div>
+                <div class="btns">
+                  <div class="u-btn1"><a href="https://ameblo.jp/cloverkids-azabujuban/"><span>スタッフブログ</span></a></div>
+                  <div class="u-btn1"><a href="/office/azabu/"><span>詳細はこちら</span></a></div>
+                </div>
+              </div>
+            </section>
+            <section class="u-accessBox1">
+              <div class="in">
+                <h3 class="ttl"><span><small>【2019年1月OPEN！】</small>クローバーキッズ学芸大学</span></h3>
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.4511953452256!2d139.69579593194302!3d35.630132752306004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b2e40143359%3A0x5ac056f76ba5046!2z44CSMTUzLTAwNjUg5p2x5Lqs6YO955uu6buS5Yy65Lit55S677yR5LiB55uu77yS77yV4oiS77yS77yS!5e0!3m2!1sja!2sjp!4v1544432652797" style="border:0" allowfullscreen="" frameborder="0"></iframe>
+                </div>
+                <div class="address">
+                  <p>〒153-0065<br>東京都目黒区中町1-25-22 竹の子坊 2階<br>電話番号：03-6712-2277<br>営業時間：平日10：00〜19：00		</p>
+                  <p>東京メトロ南北線・都営大江戸線<br>麻布十番駅　１番出口 徒歩４分（約250m）</p>
+                </div>
+                <div class="access"><strong>◆アクセス方法</strong>東急東横線「学芸大学駅」東口方面に徒歩15分</div>
+                <div class="btns">
+                  <div class="u-btn1"><a href="#"><span>スタッフブログ</span></a></div>
+                  <div class="u-btn1"><a href="/office/gakudai/"><span>詳細はこちら</span></a></div>
+                </div>
+              </div>
+            </section>
           </div>
-          <dl class="map-box2">
-          <dt><img src="../common/img/after/map.png" alt=""/></dt>
-              <dd>
-                <p>106-0045 <br>
-                  東京都港区麻布十番3-11-12 <br>
-                  仙台坂オークヒルズ２階<br>
-                  03-3451−4141</p>
-                <p>東京メトロ南北線・都営大江戸線<br>
-                  麻布十番駅　１番出口  徒歩４分（約250m）</p>
-                <p><strong>◆麻布十番駅からのアクセス方法</strong><br>
-                  １番出口をでて、そのまま麻布通りを南へ　２つ目の信号「二の橋」を右折。<br>
-                １つ目の信号「仙台坂下」の手前　右側のビルの２階です。</p>
-              </dd>
-          </dl>
-        </div>
-      </section>
+    </section>
       
     <section class="content outline-box">
       <div class="inner">
