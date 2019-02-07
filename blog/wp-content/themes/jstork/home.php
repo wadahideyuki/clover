@@ -388,9 +388,117 @@ wp_reset_postdata();
 ?>
 <?php endif; ?>
 
+<script type="text/javascript">
+ $(function(){
+   $('.tagListSwitch .tabBox > li').click(function(){
+     $('.tagListSwitch .tabBox > li').removeClass('active');
+     $('.tagListSwitch .detailBox').removeClass('active');
+     var tab = $(this).attr('class');
+     $(this).addClass("active");
+     $("."+tab).addClass("active");
+   });
+ });
+</script>
+<style type="text/css">
+.tagListSwitch {
+  margin-top: 50px;
+  font-size: 12px;
+}
+.tagListSwitch a {
+  text-decoration: none;
+  color: #358f31;
+}
+.tagListSwitch ul {margin: 0;}
+.tagListSwitch ul li {list-style: none;}
+.tagListSwitch .tabBox {
+  display: flex;
+  border: 2px solid #358f31;
+}
+.tagListSwitch .tabBox li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0.5em;
+  color: #358f31;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.tagListSwitch .tabBox li.active {
+  background: #358f31;
+  color: #fff;
+}
+.tagListSwitch .tabBox li span {display: block;}
+.tagListSwitch .detailBox {display: none;}
+.tagListSwitch .detailBox.active {display: block;}
+.tagListSwitch .detailBox.tab01 ul li {
+  border-bottom: 1px dotted #358f31;
+}
+.tagListSwitch .detailBox.tab01 ul li a {
+  display: block;
+  padding: 0.7em 1.0em;
+}
+.tagListSwitch .detailBox.tab02 {padding: 1.0em 0;}
+.tagListSwitch .detailBox.tab02 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tagListSwitch .detailBox.tab02 li {
+  display: inline-block;
+  line-height: 1.6;
+}
+.tagListSwitch .detailBox.tab02 li {
+  margin: 0 1.0em;
+}
+</style>
 <div class="sp">
-  sp時のみ表示
+  <div class="tagListSwitch">
+    <ul class="tabBox">
+      <li class="tab01">
+        <span>事業所別</span>
+      </li>
+      <li class="tab02 active">
+      <span>タグ</span></li>
+    </ul>
+    <div class="detailBox tab01">
+      <ul>
+        <?php
+          $users =get_users( array('orderby'=>ID,'order'=>ASC) );
+          foreach($users as $user):
+            $uid = $user->ID;
+            $userData = get_userdata($uid);
+            echo '<li><a href="'.get_bloginfo(url).'/?author='.$uid.'">'.$user->user_nicename.'</a></li>';
+          endforeach;
+        ?>
+      </ul>
+    </div>
+    <div class="detailBox tab02 active">
+      <ul>
+        <?php
+          // パラメータを指定
+          $args = array(
+            // タグ名順で指定
+              'orderby' => 'name',
+              // 昇順で指定
+              'order' => 'ASC'
+          );
+          $posttags = get_tags( $args );
+
+          if ( $posttags ){
+            echo ' <ul class="tag-list"> ';
+            foreach( $posttags as $tag ) {
+              echo '<li><a href="'. get_tag_link( $tag->term_id ) .'">' . $tag->name . '</a></li>';
+            }
+            echo ' </ul> ';
+          }
+        ?>
+      </ul>
+    </div>
+  </div><!-- /.tagListSwitch -->
 </div>
+
 
 <div id="content">
 <div id="inner-content" class="wrap cf">
