@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+
+    .office-nav{
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: 1px solid #EEE;
+      border-top: 1px solid #EEE;
+      margin-bottom: 5em;
+      @include mq{
+        margin-bottom: 3em;
+      }
+      a{
+        font-size: 3rem;
+        display: block;
+        padding:1em;
+        text-align: center;
+        width: 50%;
+        border-right: 1px solid #EEE;
+        position: relative;
+        br{
+          display: none;
+          @include mq{
+            display: inline;
+          }
+        }
+        @include mq{
+          font-size: 1.2rem;
+        }
+        &.current{
+          background: #358f31;
+          color: #FFF;
+          &:after{
+            content: "▼";
+            color: #358f31;
+            position: absolute;
+            bottom: -0.8em;
+            left: 48%;
+          }
+        }
+        &:last-of-type{
+          border-right: none;
+        }
+      }
+    }

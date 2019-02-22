@@ -79,6 +79,7 @@
 						<div class="mainImg"><img src="img/ph01.jpg" alt=""></div>
 						<div class="officeSlk">
 							<ul>
+                                <li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph07.png" alt="">
 								<li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph01.jpg" alt=""></span></div></li>
 								<li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph02.png" alt=""></span></div></li>
 								<li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph03.png" alt=""></span></div></li>
@@ -113,67 +114,63 @@
 									<dl>
 										<dt><span>施設概要</span></dt>
 										<dd>
-											<table>
-												<tbody>
-													<tr>
-														<th>事業所名</th>
-														<td>デイサービスクローバー神楽坂</td>
-													</tr>
-													<tr>
-														<th>所在地</th>
-														<td>〒１６２-０８４２<br>
-															東京都新宿区天神町63</td>
-													</tr>
-													<tr>
-														<th>保険事業指定番号</th>
-														<td>1370404533</td>
-													</tr>
-													<tr>
-														<th>事業所　電話/FAX</th>
-														<td>電話	03‐3269‐6336　 <br>
-															FAX	03‐3269‐6366　</td>
-													</tr>
-													<tr>
-														<th>デイサービス定員</th>
-														<td>１８名</td>
-													</tr>
-													<tr>
-														<th>お泊り個室</th>
-														<td>なし</td>
-													</tr>
-													<tr>
-														<th>サービス提供地域</th>
-														<td>新宿区<br>※千代田区、港区、文京区<br>渋谷区などの地域はご相談ください。</td>
-													</tr>
-													<tr>
-														<th>営業日</th>
-														<td>３６５日年中無休</td>
-													</tr>
-													<tr>
-														<th>サービス提供時間</th>
-														<td>通常９：３０～１７：４０（１６：４０）<br>
-															介護保険外サービス１７：４１～９：２９</td>
-													</tr>
-													<tr>
-														<th>保険加入状況</th>
-														<td>東京海上日動火災保険株式会社<br>
-															「居宅介護事業者賠償責任保険」加入</td>
-													</tr>
-													<tr>
-														<th>キャンセル料金</th>
-														<td>無料</td>
-													</tr>
-													<tr>
-														<th>事業主体</th>
-														<td>株式会社ＣＬＯＶＥＲ</td>
-													</tr>
-													<tr>
-														<th>所在地</th>
-														<td>〒１６０-０００４<br>
-															東京都新宿区四谷４丁目１２番地</td>
-													</tr>
-												</tbody>
-											</table>
+										  <table cellspacing="0" cellpadding="0">
+										    <col width="174">
+										    <col width="572">
+										    <tr>
+										      <th width="174">事業所名</th>
+										      <td width="572">デイサービスクローバー神楽坂</td>
+									      </tr>
+										    <tr>
+										      <th>事業所番号</th>
+										      <td>1371302462</td>
+									      </tr>
+										    <tr>
+										      <th>所在地</th>
+										      <td>〒162-0842<br>										        東京都新宿区天神町63</td>
+									      </tr>
+										    <tr>
+										      <th>事業所<br>電話/FAX</th>
+										      <td>【電話】 03‐3269‐6336<br>										        【FAX】 03‐3269‐6366</td>
+									      </tr>
+										    <tr>
+										      <th>ディサービス定員</th>
+										      <td>18名</td>
+									      </tr>
+										    <tr>
+										      <th>サービス提供地域</th>
+										      <td width="572">新宿区<br>										        ※千代田区、港区、文京区、渋谷区などの地域はご相談ください。</td>
+									      </tr>
+										    <tr>
+										      <th>営業日</th>
+										      <td>365日年中無休</td>
+									      </tr>
+										    <tr>
+										      <th>サービス提供時間</th>
+										      <td>通常9：30～17：40（16：40）<br>										        介護保険外サービス17：41～9：29</td>
+									      </tr>
+										    <tr>
+										      <th>設備・サービス</th>
+										      <td>入浴可<br>										        お泊まり可<br>										        リフト浴可<br>
+									        フローリング床暖房</td>
+									      </tr>
+										    <tr>
+										      <th>キャンセル料金</th>
+										      <td>無料</td>
+									      </tr>
+										    <tr>
+										      <th>事業主体</th>
+										      <td>株式会社ＣＬＯＶＥＲ</td>
+									      </tr>
+										    <tr>
+										      <th>所在地</th>
+										      <td>〒160-0004<br>										        東京都新宿区四谷4-12</td>
+									      </tr>
+										    <tr>
+										      <th>保険加入状況</th>
+										      <td>東京海上日動火災保険株式会社<br>										        「居宅介護事業者賠償責任保険」加入</td>
+									      </tr>
+									    </table>
 										</dd>
 									</dl>
 								</li>

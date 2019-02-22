@@ -348,13 +348,6 @@
       padding-left: 20px;
       padding-right: 20px;
 
-      h2 {
-        margin-bottom: 0.44444em;
-        color: #88cb7f;
-        font-family: vdl-logomaru, sans-serif;
-        font-size: 4.5rem;
-        text-align: center;
-      }
 
       .u-accessBox1 {
         padding: 40px 0;
@@ -379,8 +372,8 @@
           font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
           @include mq {
+            font-size: 1.2rem;
             padding-left: 0;
-            font-size: 2.0rem;
             line-height: (26/20);
             position: static;
           }
@@ -388,85 +381,47 @@
           .btns {
             display: flex;
             margin-top: 20px;
+            a{
+              margin: 0 10px 0  0;
+            }
 
             @include mq(l) {
               margin-top: vwL(20);
             }
 
             @include mq {
-              justify-content: space-between;
+              display: block;
               margin-top: vw(30);
-            }
-
-            .u-btn1 {
-              font-size: 1.6rem;
-              @include mq {
-                width: percentage(290/590);
-                font-size: 2.6rem;
-              }
-
-              + .u-btn1 {
-                margin-left: 15px;
-
-                @include mq(l) {
-                  margin-left: vwL(15);
-                }
-
-                @include mq {
-                  margin-left: 0;
-                }
-              }
-
-              a {
-                display: inline-block;
-                background-color: #88cb7f;
-                padding: 0.5em 0.9em;
-                color: #fff;
-                border-radius: 8px;
-                cursor: pointer;
-                transition: 0.3s;
-                text-decoration: none;
-
-                @include mq {
-                  display: block;
-                  padding: 0.64em 0.5em;
-                }
-
-                span {
-                  &:before {
-                    width: 0.5em;
-                    height: 0.5em;
-                    border-bottom-width: 0.2em;
-                    border-right-width: 0.2em;
-                    transform: translate(0, -0.1em) rotate(-45deg);
-                  }
-                }
+              a{
+                display:block;
+                padding: 3vw;
+                text-align: center;
+                margin-bottom: 10px;
+                font-size: 1.4rem;
               }
             }
+
           }
         }
 
         .ttl {
           margin-bottom: 0.6em;
           padding-bottom: 0.3em;
-          font-family: vdl-logomaru, sans-serif;
           font-size: 2.6rem;
           border-bottom: 1px solid $mainColor;
 
           @include mq {
             margin-bottom: 0.66667em;
             padding-bottom: 0;
-            font-size: 3.0rem;
             text-align: center;
+            font-size: 1.6rem;
             border-bottom: none;
           }
 
           span {
             display: inline-block;
-            background: url(../img/icn_clover1.png) 0 0 no-repeat;
             background-size: em(33/26) auto;
-            padding: 0 0 0.2em 1.8em;
-            @include ieSpc;
+            padding: 0 0 0.2em 0;
 
             @include mq {
               background-position: left center;

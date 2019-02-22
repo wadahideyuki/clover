@@ -84,6 +84,7 @@
 								<li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph03.jpg" alt=""></span></div></li>
 								<li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph04.jpg" alt=""></span></div></li>
 								<li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph05.jpg" alt=""></span></div></li>
+                                <li class="liItem"><div class=""><span class="imgWrap"><img src="img/ph06.jpg" alt=""></span></div></li>
 							</ul>
 						</div>
             
@@ -155,60 +156,62 @@
 									<dl>
 										<dt><span>施設概要</span></dt>
 										<dd>
-											<table>
-												<tbody>
-													<tr>
-														<th>所在地</th>
-														<td>〒２７２-００３５<br>
-															千葉県市川市新田１丁目６番２１号若葉ヴィラ101</td>
-													</tr>
-													<tr>
-														<th>事業所　電話/FAX</th>
-														<td>【電話】 047－326－2050<br>
-															【FAX】 047－326－2051<br>
-															【事業所番号】1270804741<br>
-														</td>
-													</tr>
-                                                    <tr>
-														<th>ディサービス定員</th>
-														<td>１８名</td>
-													</tr>
-                                                    <tr>
-														<th>お泊り個室</th>
-														<td>２室</td>
-													</tr>
-                                                    <tr>
-														<th>サービス提供地域</th>
-														<td>市川市<br>※その他の地域はご相談下さい。</td>
-													</tr>
-                                                    <tr>
-														<th>営業日</th>
-														<td>３６５日年中無休</td>
-													</tr>
-													<tr>
-														<th>サービス提供時間</th>
-														<td>通常９：３０～１７：４０（１６：４０）<br>
-															介護保険外サービス１７：４１～９：２９</td>
-													</tr>
-													<tr>
-														<th>保険加入状況</th>
-														<td>東京海上日動火災保険株式会社<br>
-															「居宅介護事業者賠償責任保険」加入</td>
-													</tr>
-													<tr>
-														<th>キャンセル料金</th>
-														<td>無料</td>
-													</tr>
-													<tr>
-														<th>事業主体</th>
-														<td>株式会社ケアフィット</td>
-													</tr>
-                                                    <tr>
-														<th>所在地</th>
-														<td>〒155-0031 東京都世田谷区北沢５丁目－２番－１号</td>
-													</tr>
-												</tbody>
-											</table>
+										  <table cellspacing="0" cellpadding="0">
+										    <col width="174">
+										    <col width="572">
+										    <tr>
+										      <th width="174">事業所名</th>
+										      <td width="572">デイサービスクローバー本八幡</td>
+									      </tr>
+										    <tr>
+										      <th>事業所番号</th>
+										      <td>1270804741</td>
+									      </tr>
+										    <tr>
+										      <th>所在地</th>
+										      <td>〒272-0035<br>										        千葉県市川市新田1-6-21若葉ヴィラ101</td>
+									      </tr>
+										    <tr>
+										      <th>事業所<br>電話/FAX</th>
+										      <td>【電話】    047‐326‐2050　<br>										        【FAX】047‐326‐2051&nbsp;</td>
+									      </tr>
+										    <tr>
+										      <th>ディサービス定員</th>
+										      <td>18名</td>
+									      </tr>
+										    <tr>
+										      <th>サービス提供地域</th>
+										      <td>市川市<br>										        ※その他の地域はご相談下さい。</td>
+									      </tr>
+										    <tr>
+										      <th>営業日</th>
+										      <td>365日年中無休</td>
+									      </tr>
+										    <tr>
+										      <th>サービス提供時間</th>
+										      <td>通常9：30～17：40（16：40）<br>										        介護保険外サービス17：41～9：29</td>
+									      </tr>
+										    <tr>
+										      <th>設備・サービス</th>
+										      <td>入浴可<br>										        お泊まり可<br>										        フローリング床暖房<br>										        お泊まり個室2部屋</td>
+									      </tr>
+										    <tr>
+										      <th>キャンセル料金</th>
+										      <td>無料</td>
+									      </tr>
+										    <tr>
+										      <th>事業主体</th>
+										      <td>株式会社ケアフィット</td>
+									      </tr>
+										    <tr>
+										      <th>所在地</th>
+										      <td>〒155-0031<br>										        東京都世田谷区北沢5-2-1</td>
+									      </tr>
+										    <tr>
+										      <th>保険加入状況</th>
+										      <td>東京海上日動火災保険株式会社<br>										        「居宅介護事業者賠償責任保険」加入</td>
+									      </tr>
+									    </table>
 										</dd>
 									</dl>
 								</li>

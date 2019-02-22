@@ -107,7 +107,7 @@
 								<li class="access">
 									<dl>
 										<dt><span>アクセス</span></dt>
-										<dd><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25924.24687939777!2d139.719517!3d35.688552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cedb2046b2d%3A0xb60307746d0ad4b7!2z5pel5pys44CB44CSMTYwLTAwMDUg5p2x5Lqs6YO95paw5a6_5Yy65oSb5L2P55S677yU!5e0!3m2!1sja!2sus!4v1523600419552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></dd>
+										<dd><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0879328897695!2d139.71240631525936!3d35.69945368019005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ce105d52ea9%3A0xbfafd6488fad950a!2z44CSMTYyLTAwNTYg5p2x5Lqs6YO95paw5a6_5Yy66Iul5p2-55S677yR77yY4oiS77yT!5e0!3m2!1sja!2sjp!4v1540184387590" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></dd>
 									</dl>
                                     
 								</li>
@@ -115,60 +115,63 @@
 									<dl>
 										<dt><span>施設概要</span></dt>
 										<dd>
-											<table>
-												<tbody>
-													<tr>
-														<th>所在地</th>
-														<td>〒１６０-０００５<br>
-															東京都新宿区若松町18-3</td>
-													</tr>
-													<tr>
-														<th>事業所　電話/FAX</th>
-														<td>【問い合わせ】03-5155-3339<br>
-															【FAX】03-5155-3639<br>
-															【緊急時】０８０‐５４５２‐４３４３<br>
-															【事業所番号】1370405233<br>
-														</td>
-													</tr>
-                                                    <tr>
-														<th>ディサービス定員</th>
-														<td>１８名</td>
-													</tr>
-                                                    <tr>
-														<th>お泊り個室</th>
-														<td>２室
-														</td>
-													</tr>
-                                                    <tr>
-														<th>サービス提供地域</th>
-														<td>新宿区<br>※渋谷区、千代田区、港区、世田谷区、文京区などの地域はご相談ください。</td>
-													</tr>
-                                                    <tr>
-														<th>営業日</th>
-														<td>３６５日年中無休</td>
-													</tr>
-                                                    <tr>
-														<th>サービス提供時間</th>
-														<td>通常９：３０～１７：４０（１６：４０）<br>介護保険外サービス１７：４１～９：２９</td>
-													</tr>
-                                                    <tr>
-														<th>保険加入状況</th>
-														<td>東京海上日動火災保険株式会社<br>「居宅介護事業者賠償責任保険」加入</td>
-													</tr>
-                                                    <tr>
-														<th>キャンセル料</th>
-														<td>無料</td>
-													</tr>
-                                                    <tr>
-														<th>事業主体</th>
-														<td>合同会社CareOne</td>
-													</tr>
-                                                    <tr>
-														<th>所在地</th>
-														<td>〒１５０ー００１３<br>東京都渋谷区広尾３丁目－１２番－３０号</td>
-													</tr>
-												</tbody>
-											</table>
+										  <table cellspacing="0" cellpadding="0">
+										    <col width="174">
+										    <col width="572">
+										    <tr>
+										      <th width="174">事業所名</th>
+										      <td width="572">デイサービスクローバー新宿</td>
+									      </tr>
+										    <tr>
+										      <th>事業所番号</th>
+										      <td>1370405233</td>
+									      </tr>
+										    <tr>
+										      <th>所在地</th>
+										      <td>〒162-0056<br>										        東京都新宿区若松町18-3</td>
+									      </tr>
+										    <tr>
+										      <th>事業所<br>電話/FAX</th>
+										      <td>【電話】    03‐35155‐3339　<br>										        【FAX】 03‐5155‐3639<br>										        【緊急時】080-5452-4343</td>
+									      </tr>
+										    <tr>
+										      <th>ディサービス定員</th>
+										      <td>18名</td>
+									      </tr>
+										    <tr>
+										      <th>サービス提供地域</th>
+										      <td>新宿区<br>
+									        ※渋谷区、千代田区、港区、世田谷区、文京区などの地域はご相談ください。</td>
+									      </tr>
+										    <tr>
+										      <th>営業日</th>
+										      <td>365日年中無休</td>
+									      </tr>
+										    <tr>
+										      <th>サービス提供時間</th>
+										      <td>通常9：30～17：40（16：40）<br>										        介護保険外サービス17：41～9：29</td>
+									      </tr>
+										    <tr>
+										      <th>設備・サービス</th>
+										      <td>入浴可<br>										        お泊まり可<br>										        フローリング床暖房<br>										        お泊まり個室２部屋</td>
+									      </tr>
+										    <tr>
+										      <th>キャンセル料金</th>
+										      <td>無料</td>
+									      </tr>
+										    <tr>
+										      <th>事業主体</th>
+										      <td>合同会社CareOne</td>
+									      </tr>
+										    <tr>
+										      <th>所在地</th>
+										      <td>〒150-0012<br>										        東京都渋谷区広尾3-12-30</td>
+									      </tr>
+										    <tr>
+										      <th>保険加入状況</th>
+										      <td>東京海上日動火災保険株式会社<br>										        「居宅介護事業者賠償責任保険」加入</td>
+									      </tr>
+									    </table>
 										</dd>
 									</dl>
 								</li>

@@ -79,11 +79,11 @@
             <dd class="accCont">
 
               <div class="office-box">
-                <div class="mainImg"><img src="img/ph01.png" alt=""></div>
+                <div class="mainImg"><img src="img/ph01.png?2018" alt=""></div>
                 <div class="officeSlk">
                   <ul>
                     <li class="liItem">
-                      <div class=""><span class="imgWrap"><img src="img/ph01.png" alt=""></span></div>
+                      <div class=""><span class="imgWrap"><img src="img/ph01.png?2018" alt=""></span></div>
                     </li>
                     <li class="liItem">
                       <div class=""><span class="imgWrap"><img src="img/ph02.png" alt=""></span></div>
@@ -111,7 +111,7 @@
               </div>
 
               <div class="infoBox">
-                <h3>延長20時までOK！<br>「多世代交流型」放課後等デイサービス</h3>
+                <h3>延長20時までOK！<br>「多世代参加・体験型」デイサービス</h3>
                 <p class="thisLead"><strong>【私たちの想い】</strong>
                   2019年1月に目黒区にNEWオープン。1階・高齢者デイサービス、2階・放課後等デイサービスの共生型施設です。デイサービス内の活動だけでなく、お子様や地域との交流（＝多世代交流）を通して役割を持っていただいたり（＝参加）、普段なかなかできない外出やイベントも楽しんでいただけるような施設（＝体験）をコンセプトとしています。フロア中央にある給水カウンターでは、ご自分でお好きなときにお飲み物を選んでいただいたり、生活リハビリとして料理や掃除をお手伝いいただけるような自立支援を行います。
 
@@ -123,7 +123,7 @@
                   <li class="access">
                     <dl>
                       <dt><span>アクセス</span></dt>
-                      <dd><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51862.20176991845!2d139.67311817510523!3d35.66745675554113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b1c41e2e2cf%3A0x921f86e2160deec9!2z44OH44Kk44K144O844OT44K544Kv44Ot44O844OQ44O85a2m6Iq45aSn5a2m!5e0!3m2!1sja!2sjp!4v1544665324647" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></dd>
+                      <dd><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6485.908338552965!2d139.69325801506105!3d35.62885633448229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x921f86e2160deec9!2z44OH44Kk44K144O844OT44K544Kv44Ot44O844OQ44O85a2m6Iq45aSn5a2m!5e0!3m2!1sja!2sjp!4v1544777916264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></dd>
                     </dl>
 
                   </li>
@@ -131,86 +131,61 @@
                     <dl>
                       <dt><span>施設概要</span></dt>
                       <dd>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <th>所在地</th>
-                              <td>〒153-0065
-                                <br>東京都目黒区中町1-25-22竹の子坊1階</td>
-                            </tr>
-                            <tr>
-                              <th>事業所　電話/FAX</th>
-                              <td>
-                                【電話】03-6712-2277<br>
-                                【FAX】03-6712-2278
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>ディサービス定員</th>
-                              <td>10名</td>
-                            </tr>
-                            <tr>
-                              <th>サービス提供地域</th>
-                              <td>
-                                目黒区<br>
-                                ※渋谷区、千代田区、港区、世田谷区などの地域はご相談ください。</td>
-                            </tr>
-                            <tr>
-                              <th>営業日</th>
-                              <td>
-                                365日年中無休</td>
-                            </tr>
-                            <tr>
-                              <th>サービス提供時間</th>
-                              <td>
-                                通常9：30～17：40<br>
-                                介護保険外サービス17：41～20：00
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>設備・サービス</th>
-                              <td>
-                                入浴可<br>
-                                昇降式洗面台<br>
-                                フローリング床暖房<br>
-                                フリードリンクカウンター<br>
-                                20時までの延長、夕食あり
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>キャンセル料金</th>
-                              <td>
-                                無料
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>事業主体</th>
-                              <td>
-                                株式会社ＣＬＯＶＥＲ
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>所在地</th>
-                              <td>
-                                〒160-0004<br>
-                                東京都新宿区四谷4-12
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>所在地</th>
-                              <td>
-                                〒160-0004<br>
-                                東京都新宿区四谷4-12
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>保険加入状況</th>
-                              <td>
-                                東京海上日動火災保険株式会社<br>
-                                「居宅介護事業者賠償責任保険」加入
-                              </td>
-                            </tr>
-                          </tbody>
+                        <table cellspacing="0" cellpadding="0">
+                          <col width="145">
+                          <col width="553">
+                          <tr>
+                            <th width="145">事業所名</th>
+                            <td width="553">デイサービスクローバー学芸大学</td>
+                          </tr>
+                          <tr>
+                            <th>事業所番号</th>
+                            <td>1391000468</td>
+                          </tr>
+                          <tr>
+                            <th>所在地</th>
+                            <td>〒153-0065<br>東京都目黒区中町1-25-22竹の子坊1階</td>
+                          </tr>
+                          <tr>
+                            <th>事業所<br>電話/FAX</th>
+                            <td>【電話】03-6712-2277<br>【FAX】03-6712-2278</td>
+                          </tr>
+                          <tr>
+                            <th>ディサービス定員</th>
+                            <td>10名</td>
+                          </tr>
+                          <tr>
+                            <th>サービス提供地域</th>
+                            <td>目黒区<br>※渋谷区、大田区、品川区、港区、世田谷区などの地域はご相談ください。</td>
+                          </tr>
+                          <tr>
+                            <th>営業日</th>
+                            <td>365日年中無休</td>
+                          </tr>
+                          <tr>
+                            <th>サービス提供時間</th>
+                            <td>通常9：30～17：40<br>                              介護保険外サービス17：41～20：00</td>
+                          </tr>
+                          <tr>
+                            <th>設備・サービス</th>
+                            <td>入浴可<br>                              昇降式洗面台<br>                              フローリング床暖房<br>                              フリードリンクカウンター<br>                              20時までの延長、夕食あり</td>
+                          </tr>
+                          <tr>
+                            <th>キャンセル料金</th>
+                            <td>無料</td>
+                          </tr>
+                          <tr>
+                            <th>事業主体</th>
+                            <td>株式会社ＣＬＯＶＥＲ</td>
+                          </tr>
+                          <tr>
+                            <th>所在地</th>
+                            <td>〒160-0004<br>                              東京都新宿区四谷4-12</td>
+                          </tr>
+                          <tr>
+                            <th>保険加入状況</th>
+                            <td>東京海上日動火災保険株式会社<br>                              「居宅介護事業者賠償責任保険」加入</td>
+                          </tr>
                         </table>
                       </dd>
                     </dl>

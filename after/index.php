@@ -24,7 +24,7 @@
 <meta property="og:type" content="website">
 <!-- /OGs -->
 
-<link rel="stylesheet" type="text/css" href="../common/css/style.css">
+<link rel="stylesheet" type="text/css" href="../common/css/style.css?2018">
 <link rel="stylesheet" type="text/css" href="../common/css/class.css">
 <script type="text/javascript" src="../common/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="../common/js/slick.min.js"></script>
@@ -52,7 +52,7 @@
   </section>
   <div class="bgGrey1">
     <section class="content ">
-      <div class="inner lead-box"> <img src="../common/img/after/main.png?20180529" alt=""/>
+      <div class="inner lead-box"> <img src="../common/img/after/main.20181224.jpg" alt=""/>
         <h3>「楽しい」ことは自信になる</h3>
         <p>子供の可能性は無限大。勉強、運動、遊び、さまざまな分野にその子の「得意の芽」があります。<br>
 <br>
@@ -98,7 +98,7 @@
 </p></li>
 <li><p>
 <strong>お友達と楽しく活動する力</strong>
-<span><img src="../common/img/after/ph03.jpg?20180529" alt=""/></span>
+<span><img src="../common/img/after/ph3.20181222.jpg" alt=""/></span>
 
 クローバーキッズでは、集団の中で活動していく力を養います。遊び、運動、学習などを通して、お友達と仲良く、楽しく過ごす経験を積み重ねていけるサポートをします。
 </p></li>
@@ -124,8 +124,8 @@
       
      
     <section class="content officeZone">
+        <h2 class="ttl1">事業所・アクセス</h2>
           <div class="u-inner">
-            <h2>事業所・アクセス</h2>
             <section class="u-accessBox1">
               <div class="in">
                 <h3 class="ttl"><span>クローバーキッズ麻布十番</span></h3>
@@ -133,15 +133,15 @@
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.9805603848395!2d139.73301671562717!3d35.6528505802009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ba108870fb1%3A0xbb5ca7b013f0b0c3!2z44CSMTA2LTAwNDUg5p2x5Lqs6YO95riv5Yy66bq75biD5Y2B55Wq77yT5LiB55uu77yR77yR4oiS77yR77ySIOS7meWPsOWdguOCquODvOOCr-ODkuODq-OCuu-8kumajg!5e0!3m2!1sja!2sjp!4v1543567214919" style="border:0" allowfullscreen="" frameborder="0"></iframe>
                 </div>
                 <div class="address">
-                  <p>106-0045<br>東京都港区麻布十番3-11-12 仙台坂オークヒルズ２階<br>電話番号：03-3451−4141<br>営業時間：平日10：00～19：00</p>
+                  <p>106-0045<br>東京都港区麻布十番3-11-12 仙台坂オークヒルズ２階<br>電話番号：03-3451-4141<br>営業時間：平日10：00～18：00　<br>　　　　　土曜・祝日・学校休業日10：00～16：00</p>
                 </div>
                 <div class="access"><strong>◆アクセス方法</strong>
                   <p>東京メトロ南北線・都営大江戸線<br>麻布十番駅　１番出口 徒歩４分（約250m）</p>
                   <p>１番出口をでて、そのまま麻布通りを南へ　２つ目の信号「二の橋」を右折。<br>１つ目の信号「仙台坂下」の手前　右側のビルの２階です。</p>
                 </div>
                 <div class="btns">
-                  <div class="u-btn1"><a href="https://ameblo.jp/cloverkids-azabujuban/"><span>スタッフブログ</span></a></div>
-                  <div class="u-btn1"><a href="/office/azabu/"><span>詳細はこちら</span></a></div>
+                  <a class="btn clr2 withArwR" href="https://ameblo.jp/cloverkids-azabujuban/" target="_blank"><span>スタッフブログ</span></a>
+                  <a class="btn clr2 withArwR" href="/after/school/azabu/"><span>詳細はこちら</span></a>
                 </div>
               </div>
             </section>
@@ -149,16 +149,16 @@
               <div class="in">
                 <h3 class="ttl"><span><small>【2019年1月OPEN！】</small>クローバーキッズ学芸大学</span></h3>
                 <div class="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.4511953452256!2d139.69579593194302!3d35.630132752306004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b2e40143359%3A0x5ac056f76ba5046!2z44CSMTUzLTAwNjUg5p2x5Lqs6YO955uu6buS5Yy65Lit55S677yR5LiB55uu77yS77yV4oiS77yS77yS!5e0!3m2!1sja!2sjp!4v1544432652797" style="border:0" allowfullscreen="" frameborder="0"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6485.908338552965!2d139.69325801506105!3d35.62885633448229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x921f86e2160deec9!2z44OH44Kk44K144O844OT44K544Kv44Ot44O844OQ44O85a2m6Iq45aSn5a2m!5e0!3m2!1sja!2sjp!4v1544777916264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="address">
-                  <p>〒153-0065<br>東京都目黒区中町1-25-22 竹の子坊 2階<br>電話番号：03-6712-2277<br>営業時間：平日10：00〜19：00		</p>
-                  <p>東京メトロ南北線・都営大江戸線<br>麻布十番駅　１番出口 徒歩４分（約250m）</p>
+                  <p>〒153-0065<br>東京都目黒区中町1-25-22 竹の子坊 2階<br>電話番号：03-6712-2340<br>営業時間：平日10：00〜18：00（最長19:30）<br>　　　　　土曜・祝日・学校休業日10：00～16：00（延長19：30まで）		</p>
                 </div>
                 <div class="access"><strong>◆アクセス方法</strong>東急東横線「学芸大学駅」東口方面に徒歩15分</div>
+                
                 <div class="btns">
-                  <div class="u-btn1"><a href="#"><span>スタッフブログ</span></a></div>
-                  <div class="u-btn1"><a href="/office/gakudai/"><span>詳細はこちら</span></a></div>
+                  <a class="btn clr2 withArwR" href="https://ameblo.jp/cloverkids-gakudai/" target="_blank"><span>スタッフブログ</span></a>
+                  <a class="btn clr2 withArwR" href="/after/school/gakugeidaigaku/"><span>詳細はこちら</span></a>
                 </div>
               </div>
             </section>
@@ -167,27 +167,7 @@
       
     <section class="content outline-box">
       <div class="inner">
-        <h2 class="ttl1">施設概要</h2>
-       <table>
-  <tbody>
-    <tr>
-      <th>事業主体</th>
-      <td>株式会社ＣＬＯＶＥＲ</td>
-    </tr>
-    <tr>
-      <th>所在地</th>
-      <td>〒106-0045　東京都港区麻布十番3-11-12　仙台坂オークヒルズ２階</td>
-    </tr>
-    <tr>
-      <th>事業所名</th>
-      <td>アフタースクール クローバーキッズ麻布十番</td>
-    </tr>
-    <tr>
-      <th>電話/FAX</th>
-      <td>03 - 3451 - 4141</td>
-    </tr>
-  </tbody>
-</table>
+       
 <ul class="btnBox">
           <li><a href="/form/index.php" class="btn-inquiry">ご相談、無料体験はこちら</a></li>
           <li><a href="http://clover-kids.jp/index.php?FrontPage" class="btn-cloverkids" target="_blank">クローバーキッズのホームページへ</a></li>
