@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import "mq";
-@import "var";
+@import "var_recruit";
 
 
 /*--------------------------------------
@@ -22,7 +22,7 @@
     width: 100%;
     z-index: 9999;
 	.pcHd{
-    background: rgba(53,143,49,1);
+    background: $mainColor;
 		.hdIn{
 			display: flex;
 			justify-content: space-between;
@@ -77,7 +77,7 @@
 			}
 		}
 		.nav.layer1{
-			background-color: rgba(53,143,49,0.8);
+			background-color: $mainColor;
 			ul{
 				font-size: 1.6rem;
         text-align: center;

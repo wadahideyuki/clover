@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "reset";//リセット
+@import "var_recruit";
+
+
+//共通
+@import "layout_recruit";//全体的なレイアウト(ヘッダーとか)
+@import "common";//パーツ(ボタンなど)
+
+//ページ毎
+@import "career";//採用情報
+
+
+

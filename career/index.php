@@ -24,7 +24,7 @@
 <meta property="og:type" content="website">
 <!-- /OGs -->
 
-<link rel="stylesheet" type="text/css" href="../common/css/style.css">
+<link rel="stylesheet" type="text/css" href="../common/css/style_recruit.css">
 <link rel="stylesheet" type="text/css" href="../common/css/class.css">
 
 <script type="text/javascript" src="../common/js/jquery-1.10.2.min.js"></script>

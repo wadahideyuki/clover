@@ -1,90 +1,133 @@
 .content-area p {
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+}
 
 .entry-meta {
-  display: none; }
+  display: none;
+}
 
 .current-cat a {
   color: #CCC;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .cat-item-13 > a,
 .cat-item-12 > a {
-  cursor: text; }
-  .cat-item-13 > a:hover,
-  .cat-item-12 > a:hover {
-    text-decoration: none; }
+  cursor: text;
+}
+
+.cat-item-13 > a:hover,
+.cat-item-12 > a:hover {
+  text-decoration: none;
+}
 
 .wrap {
-  font-family: "Noto Sans Japanese"; }
+  font-family: "Noto Sans Japanese";
+}
 
 .job-tag {
   padding-top: 55px;
-  text-align: center; }
-  @media screen and (max-width: 767px) {
-    .job-tag {
-      padding-top: 5%; } }
-  .job-tag .partTtl {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 8px solid #358f31; }
-    .job-tag .partTtl > li {
-      background-color: #AFAFAF;
-      width: 49%;
-      padding: 0.9em 0.5em 0.8em;
-      color: #fff;
-      font-size: 2.0rem;
-      font-weight: bold;
-      border-radius: 8px 8px 0 0;
-      box-sizing: border-box;
-      cursor: pointer;
-      transition: 0.3s; }
-      @media screen and (max-width: 767px) {
-        .job-tag .partTtl > li {
-          font-size: 1.3rem; } }
-      .job-tag .partTtl > li:hover {
-        opacity: 0.7; }
-      .job-tag .partTtl > li.show {
-        background-color: #358f31; }
-        .job-tag .partTtl > li.show:hover {
-          opacity: 1; }
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .job-tag {
+    padding-top: 5%;
+  }
+}
+
+.job-tag .partTtl {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 8px solid #1849a5;
+}
+
+.job-tag .partTtl > li {
+  background-color: #AFAFAF;
+  width: 49%;
+  padding: 0.9em 0.5em 0.8em;
+  color: #fff;
+  font-size: 2.0rem;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .job-tag .partTtl > li {
+    font-size: 1.3rem;
+  }
+}
+
+.job-tag .partTtl > li:hover {
+  opacity: 0.7;
+}
+
+.job-tag .partTtl > li.show {
+  background-color: #1849a5;
+}
+
+.job-tag .partTtl > li.show:hover {
+  opacity: 1;
+}
+
+.job-tag .partTag {
+  background-color: #fff;
+  padding: 25px 10px 10px;
+}
+
+@media screen and (max-width: 767px) {
   .job-tag .partTag {
-    background-color: #fff;
-    padding: 25px 10px 10px; }
-    @media screen and (max-width: 767px) {
-      .job-tag .partTag {
-        padding: 5% 3%; } }
-    .job-tag .partTag > li {
-      display: none; }
-      .job-tag .partTag > li.show {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center; }
-        @media screen and (max-width: 767px) {
-          .job-tag .partTag > li.show {
-            display: block; } }
-      .job-tag .partTag > li a {
-        display: block;
-        width: 23%;
-        margin: 0 1% 2.4%;
-        padding: 0.6em 0.5em;
-        color: #358f31;
-        font-size: 1.6rem;
-        font-weight: bold;
-        border: 2px solid #358f31;
-        border-radius: 100px;
-        box-sizing: border-box;
-        transition: 0.3s; }
-        @media screen and (max-width: 767px) {
-          .job-tag .partTag > li a {
-            width: auto;
-            margin: 0 0 3%;
-            font-size: 1.4rem; } }
-        .job-tag .partTag > li a:hover {
-          background-color: #358f31;
-          color: #fff;
-          text-decoration: none; }
+    padding: 5% 3%;
+  }
+}
+
+.job-tag .partTag > li {
+  display: none;
+}
+
+.job-tag .partTag > li.show {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .job-tag .partTag > li.show {
+    display: block;
+  }
+}
+
+.job-tag .partTag > li a {
+  display: block;
+  width: 23%;
+  margin: 0 1% 2.4%;
+  padding: 0.6em 0.5em;
+  color: #1849a5;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 2px solid #1849a5;
+  border-radius: 100px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .job-tag .partTag > li a {
+    width: auto;
+    margin: 0 0 3%;
+    font-size: 1.4rem;
+  }
+}
+
+.job-tag .partTag > li a:hover {
+  background-color: #1849a5;
+  color: #fff;
+  text-decoration: none;
+}
 
 .list-page {
   display: flex;
@@ -93,401 +136,637 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 30px;
-  font-size: 1.6rem; }
-  @media screen and (max-width: 767px) {
-    .list-page {
-      display: block;
-      padding: 4.6875vw; } }
-  .list-page #primary {
-    width: 100%;
-    max-width: 800px; }
-    .list-page #primary .job-list-title {
-      margin-bottom: 1.0em;
-      padding-left: 0.5em;
-      font-size: 3rem;
-      text-align: left;
-      border-left: 8px solid #358f31; }
-      @media screen and (max-width: 767px) {
-        .list-page #primary .job-list-title {
-          margin-bottom: 0.8em;
-          font-size: 2.2rem;
-          border-left-width: 1.25vw; } }
-    .list-page #primary #main {
-      padding-right: 40px; }
-      @media screen and (max-width: 1024px) {
-        .list-page #primary #main {
-          padding-right: 3.90625vw; } }
-      @media screen and (max-width: 767px) {
-        .list-page #primary #main {
-          padding: 0 0 6.25vw; } }
-  .list-page #secondary {
-    flex-shrink: 0;
-    width: 200px; }
-    @media screen and (max-width: 767px) {
-      .list-page #secondary {
-        width: auto; } }
-    .list-page #secondary section h2 {
-      background-color: #358f31;
-      padding: 0.2em 0.5em 0.3em;
-      color: #fff;
-      font-size: 1.6rem;
-      font-weight: bold; }
-    .list-page #secondary section li a {
-      display: block;
-      padding: 0.2em 0.5em 0.3em; }
-    .list-page #secondary section > ul > li > a {
-      background-color: #CDCDCD;
-      color: #7B7B7B;
-      font-size: 1.6rem;
-      font-weight: bold; }
-    .list-page #secondary section ul.children > li + li,
-    .list-page #secondary section ul.wp-tag-cloud > li + li {
-      border-top: 1px dashed #707070; }
-    .list-page #secondary section ul.children > li > a,
-    .list-page #secondary section ul.wp-tag-cloud > li > a {
-      padding: 0.5em;
-      font-size: 1.4rem !important; }
-  .list-page .job-list .list-item {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    padding: 20px 20px 12px 20px; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-list .list-item {
-        flex-direction: column;
-        padding-bottom: 5px; } }
-    .list-page .job-list .list-item .job-photo {
-      width: 18%; }
-      @media screen and (max-width: 767px) {
-        .list-page .job-list .list-item .job-photo {
-          width: 100%;
-          margin-bottom: 3vw; } }
-      .list-page .job-list .list-item .job-photo img {
-        max-width: 100%; }
-    .list-page .job-list .list-item .job-table {
-      width: 55%; }
-      @media screen and (max-width: 767px) {
-        .list-page .job-list .list-item .job-table {
-          width: 100%; } }
-    .list-page .job-list .list-item ul {
-      width: 20%; }
-      @media screen and (max-width: 767px) {
-        .list-page .job-list .list-item ul {
-          margin-top: 4vw;
-          width: auto; } }
-      .list-page .job-list .list-item ul li {
-        margin-bottom: 15px; }
-  .list-page .job-list article + article {
-    margin-top: 10px; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-list article + article {
-        margin-top: 3.125vw; } }
-  .list-page .job-list article ul a {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page {
     display: block;
-    text-align: center;
-    padding: 1.3em 10px;
-    border-radius: 5px;
-    transition: 0.3s;
-    position: relative;
-    color: #FFF; }
-    .list-page .job-list article ul a.btn-detail {
-      background: #358f31; }
-    .list-page .job-list article ul a.btn-entry {
-      background: #FF8D0C; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-list article ul a {
-        padding: 4.6875vw 10.9375vw 4.6875vw 4.6875vw; } }
-    .list-page .job-list article ul a:before {
-      content: "";
-      display: block;
-      width: 0.3em;
-      height: 0.3em;
-      margin: auto;
-      border-bottom: 0.1em solid #FFF;
-      border-right: 0.1em solid #FFF;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 5px;
-      transform: translate(-0.2em, 0) rotate(-45deg); }
-      @media screen and (max-width: 767px) {
-        .list-page .job-list article ul a:before {
-          width: 0.8em;
-          height: 0.8em;
-          margin: auto;
-          border-bottom-width: 0.2em;
-          border-right-width: 0.2em;
-          right: 3.125vw; } }
-    .list-page .job-list article ul a:hover {
-      background-color: rgba(53, 143, 49, 0.2);
-      text-decoration: none; }
-  .list-page .job-list article h2 {
-    color: #358f31;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 0.5em; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-list article h2 {
-        font-size: 1.6rem; } }
-  .list-page .job-list article h3 {
-    color: #333;
-    font-size: 1.4rem;
-    font-weight: bold; }
-  .list-page .job-list article .job-table {
-    font-size: 1.4rem; }
-    .list-page .job-list article .job-table dl {
-      display: flex;
-      align-items: flex-start;
-      border-top: 1px solid #EEE;
-      padding: 0.4em 0 0 0;
-      margin-bottom: 0.4em; }
-      .list-page .job-list article .job-table dl dt {
-        white-space: nowrap; }
-  .list-page .job-detail article {
-    background-color: #fff;
-    padding: 25px 25px 45px;
-    border-radius: 5px; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-detail article {
-        padding: 3.125vw; } }
-  .list-page .job-detail .entry-header {
-    margin-bottom: 1.0em;
-    padding-bottom: 0.5em;
-    color: #358f31;
-    font-size: 2.5rem;
-    border-bottom: 3px solid #358f31; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-detail .entry-header {
-        margin-bottom: 0.8em;
-        font-size: 2.0rem; } }
-  .list-page .job-detail .jobDtlMain {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-detail .jobDtlMain {
-        display: block;
-        margin-bottom: 4.6875vw; } }
-    .list-page .job-detail .jobDtlMain .slick-dots {
-      position: relative;
-      margin: 10px 0 30px 0;
-      bottom: 0px; }
-    .list-page .job-detail .jobDtlMain .photo {
-      flex-shrink: 0;
-      width: 42.2535211268%; }
-      @media screen and (max-width: 767px) {
-        .list-page .job-detail .jobDtlMain .photo {
-          width: auto;
-          margin-bottom: 3.125vw; } }
-      .list-page .job-detail .jobDtlMain .photo img {
-        width: 100%;
-        height: auto; }
-    .list-page .job-detail .jobDtlMain .txt {
-      width: 100%;
-      padding-left: 30px;
-      font-size: 1.4rem;
-      box-sizing: border-box; }
-      @media screen and (max-width: 767px) {
-        .list-page .job-detail .jobDtlMain .txt {
-          width: auto;
-          padding-left: 0; } }
-      .list-page .job-detail .jobDtlMain .txt dl dd + dt {
-        margin-top: 15px; }
-  .list-page .job-detail h2 {
-    margin-bottom: 1.0em;
-    padding-bottom: 0.5em;
-    color: #358f31;
-    font-size: 1.8rem;
-    border-bottom: 1px solid #358f31; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-detail h2 {
-        margin-bottom: 0.8em; } }
-  .list-page .job-detail .job-table {
-    display: table;
-    border-collapse: collapse;
+    padding: 4.6875vw;
+  }
+}
+
+.list-page #primary {
+  width: 100%;
+  max-width: 800px;
+}
+
+.list-page #primary .job-list-title {
+  margin-bottom: 1.0em;
+  padding-left: 0.5em;
+  font-size: 3rem;
+  text-align: left;
+  border-left: 8px solid #1849a5;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page #primary .job-list-title {
+    margin-bottom: 0.8em;
+    font-size: 2.2rem;
+    border-left-width: 1.25vw;
+  }
+}
+
+.list-page #primary #main {
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .list-page #primary #main {
+    padding-right: 3.90625vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list-page #primary #main {
+    padding: 0 0 6.25vw;
+  }
+}
+
+.list-page #secondary {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page #secondary {
+    width: auto;
+  }
+}
+
+.list-page #secondary section h2 {
+  background-color: #1849a5;
+  padding: 0.2em 0.5em 0.3em;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.list-page #secondary section li a {
+  display: block;
+  padding: 0.2em 0.5em 0.3em;
+}
+
+.list-page #secondary section > ul > li > a {
+  background-color: #CDCDCD;
+  color: #7B7B7B;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.list-page #secondary section ul.children > li + li,
+.list-page #secondary section ul.wp-tag-cloud > li + li {
+  border-top: 1px dashed #707070;
+}
+
+.list-page #secondary section ul.children > li > a,
+.list-page #secondary section ul.wp-tag-cloud > li > a {
+  padding: 0.5em;
+  font-size: 1.4rem !important;
+}
+
+.list-page .job-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 20px 20px 12px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list .list-item {
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+}
+
+.list-page .job-list .list-item .job-photo {
+  width: 18%;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list .list-item .job-photo {
     width: 100%;
-    font-size: 1.4rem; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-detail .job-table {
-        display: block;
-        width: auto; } }
-    .list-page .job-detail .job-table dl {
-      display: table-row;
-      border-bottom: 1px dashed #ccc; }
-      @media screen and (max-width: 767px) {
-        .list-page .job-detail .job-table dl {
-          display: block;
-          padding: 1.0em 0; }
-          .list-page .job-detail .job-table dl:nth-child(1) {
-            padding-top: 0; } }
-      .list-page .job-detail .job-table dl dt {
-        display: table-cell;
-        width: 14.0845070423%;
-        padding: 1em 0; }
-        @media screen and (max-width: 767px) {
-          .list-page .job-detail .job-table dl dt {
-            display: block;
-            width: auto;
-            padding: 0;
-            font-weight: bold; } }
-      .list-page .job-detail .job-table dl dd {
-        display: table-cell;
-        padding: 1em 0 1em 1em; }
-        @media screen and (max-width: 767px) {
-          .list-page .job-detail .job-table dl dd {
-            display: block;
-            padding: 0.3em 0 0; } }
-      .list-page .job-detail .job-table dl:nth-child(1) dt,
-      .list-page .job-detail .job-table dl:nth-child(1) dd {
-        padding-top: 0; }
+    margin-bottom: 3vw;
+  }
+}
+
+.list-page .job-list .list-item .job-photo img {
+  max-width: 100%;
+}
+
+.list-page .job-list .list-item .job-table {
+  width: 55%;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list .list-item .job-table {
+    width: 100%;
+  }
+}
+
+.list-page .job-list .list-item ul {
+  width: 20%;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list .list-item ul {
+    margin-top: 4vw;
+    width: auto;
+  }
+}
+
+.list-page .job-list .list-item ul li {
+  margin-bottom: 15px;
+}
+
+.list-page .job-list article + article {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list article + article {
+    margin-top: 3.125vw;
+  }
+}
+
+.list-page .job-list article ul a {
+  display: block;
+  text-align: center;
+  padding: 1.3em 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  position: relative;
+  color: #FFF;
+}
+
+.list-page .job-list article ul a.btn-detail {
+  background: #1849a5;
+}
+
+.list-page .job-list article ul a.btn-entry {
+  background: #FF8D0C;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list article ul a {
+    padding: 4.6875vw 10.9375vw 4.6875vw 4.6875vw;
+  }
+}
+
+.list-page .job-list article ul a:before {
+  content: "";
+  display: block;
+  width: 0.3em;
+  height: 0.3em;
+  margin: auto;
+  border-bottom: 0.1em solid #FFF;
+  border-right: 0.1em solid #FFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  transform: translate(-0.2em, 0) rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list article ul a:before {
+    width: 0.8em;
+    height: 0.8em;
+    margin: auto;
+    border-bottom-width: 0.2em;
+    border-right-width: 0.2em;
+    right: 3.125vw;
+  }
+}
+
+.list-page .job-list article ul a:hover {
+  background-color: rgba(53, 143, 49, 0.2);
+  text-decoration: none;
+}
+
+.list-page .job-list article h2 {
+  color: #1849a5;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-list article h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.list-page .job-list article h3 {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.list-page .job-list article .job-table {
+  font-size: 1.4rem;
+}
+
+.list-page .job-list article .job-table dl {
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid #EEE;
+  padding: 0.4em 0 0 0;
+  margin-bottom: 0.4em;
+}
+
+.list-page .job-list article .job-table dl dt {
+  white-space: nowrap;
+}
+
+.list-page .job-detail article {
+  background-color: #fff;
+  padding: 25px 25px 45px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail article {
+    padding: 3.125vw;
+  }
+}
+
+.list-page .job-detail .entry-header {
+  margin-bottom: 1.0em;
+  padding-bottom: 0.5em;
+  color: #1849a5;
+  font-size: 2.5rem;
+  border-bottom: 3px solid #1849a5;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .entry-header {
+    margin-bottom: 0.8em;
+    font-size: 2.0rem;
+  }
+}
+
+.list-page .job-detail .jobDtlMain {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .jobDtlMain {
+    display: block;
+    margin-bottom: 4.6875vw;
+  }
+}
+
+.list-page .job-detail .jobDtlMain .slick-dots {
+  position: relative;
+  margin: 10px 0 30px 0;
+  bottom: 0px;
+}
+
+.list-page .job-detail .jobDtlMain .photo {
+  flex-shrink: 0;
+  width: 42.25352%;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .jobDtlMain .photo {
+    width: auto;
+    margin-bottom: 3.125vw;
+  }
+}
+
+.list-page .job-detail .jobDtlMain .photo img {
+  width: 100%;
+  height: auto;
+}
+
+.list-page .job-detail .jobDtlMain .txt {
+  width: 100%;
+  padding-left: 30px;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .jobDtlMain .txt {
+    width: auto;
+    padding-left: 0;
+  }
+}
+
+.list-page .job-detail .jobDtlMain .txt dl dd + dt {
+  margin-top: 15px;
+}
+
+.list-page .job-detail h2 {
+  margin-bottom: 1.0em;
+  padding-bottom: 0.5em;
+  color: #1849a5;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #1849a5;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail h2 {
+    margin-bottom: 0.8em;
+  }
+}
+
+.list-page .job-detail .job-table {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .job-table {
+    display: block;
+    width: auto;
+  }
+}
+
+.list-page .job-detail .job-table dl {
+  display: table-row;
+  border-bottom: 1px dashed #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .job-table dl {
+    display: block;
+    padding: 1.0em 0;
+  }
+  .list-page .job-detail .job-table dl:nth-child(1) {
+    padding-top: 0;
+  }
+}
+
+.list-page .job-detail .job-table dl dt {
+  display: table-cell;
+  width: 14.08451%;
+  padding: 1em 0;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .job-table dl dt {
+    display: block;
+    width: auto;
+    padding: 0;
+    font-weight: bold;
+  }
+}
+
+.list-page .job-detail .job-table dl dd {
+  display: table-cell;
+  padding: 1em 0 1em 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .job-table dl dd {
+    display: block;
+    padding: 0.3em 0 0;
+  }
+}
+
+.list-page .job-detail .job-table dl:nth-child(1) dt,
+.list-page .job-detail .job-table dl:nth-child(1) dd {
+  padding-top: 0;
+}
+
+.list-page .job-detail .btnEntry {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.list-page .job-detail .btnEntry.topbtn {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
   .list-page .job-detail .btnEntry {
-    margin-top: 30px;
-    text-align: center; }
-    .list-page .job-detail .btnEntry.topbtn {
-      margin-top: 0px;
-      margin-bottom: 20px; }
-    @media screen and (max-width: 767px) {
-      .list-page .job-detail .btnEntry {
-        margin-top: 4.6875vw; } }
-    .list-page .job-detail .btnEntry a {
-      display: inline-block;
-      background-color: #FF8D0C;
-      width: 364px;
-      padding: 1.1em 1.2em;
-      color: #fff;
-      font-size: 2.0rem;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-      box-sizing: border-box;
-      position: relative;
-      transition: 0.3s; }
-      .list-page .job-detail .btnEntry a:hover {
-        opacity: 0.7;
-        text-decoration: none; }
-      @media screen and (max-width: 767px) {
-        .list-page .job-detail .btnEntry a {
-          display: block;
-          width: auto;
-          padding: 1.1em 1.5em;
-          font-size: 1.6rem; } }
-      .list-page .job-detail .btnEntry a:before {
-        content: "";
-        width: 0.5em;
-        height: 0.5em;
-        margin: auto;
-        border-bottom: 1px solid #fff;
-        border-right: 1px solid #fff;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 15px;
-        transform: translate(0, 0) rotate(-45deg); }
+    margin-top: 4.6875vw;
+  }
+}
+
+.list-page .job-detail .btnEntry a {
+  display: inline-block;
+  background-color: #FF8D0C;
+  width: 364px;
+  padding: 1.1em 1.2em;
+  color: #fff;
+  font-size: 2.0rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.3s;
+}
+
+.list-page .job-detail .btnEntry a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .list-page .job-detail .btnEntry a {
+    display: block;
+    width: auto;
+    padding: 1.1em 1.5em;
+    font-size: 1.6rem;
+  }
+}
+
+.list-page .job-detail .btnEntry a:before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  margin: auto;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  transform: translate(0, 0) rotate(-45deg);
+}
 
 .catForm.is_entry .entryFormTbl {
   font-family: "Noto Sans Japanese";
   background-color: #fff;
   margin-bottom: 50px;
   padding: 45px 35px;
-  border-radius: 5px; }
-  @media screen and (max-width: 767px) {
-    .catForm.is_entry .entryFormTbl {
-      padding: 5% 5%; } }
-  .catForm.is_entry .entryFormTbl .hissu {
-    display: inline-block;
-    background-color: #FF4B4B;
-    margin-right: 0.5em;
-    padding: 0.1em 0.5em;
-    color: #fff;
-    font-size: 1.2rem; }
-  .catForm.is_entry .entryFormTbl .nini {
-    display: inline-block;
-    background-color: #666;
-    margin-right: 0.5em;
-    padding: 0.1em 0.5em;
-    color: #fff;
-    font-size: 1.2rem; }
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl {
+    padding: 5% 5%;
+  }
+}
+
+.catForm.is_entry .entryFormTbl .hissu {
+  display: inline-block;
+  background-color: #FF4B4B;
+  margin-right: 0.5em;
+  padding: 0.1em 0.5em;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.catForm.is_entry .entryFormTbl .nini {
+  display: inline-block;
+  background-color: #666;
+  margin-right: 0.5em;
+  padding: 0.1em 0.5em;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.catForm.is_entry .entryFormTbl input[type="text"] {
+  width: 80%;
+  border: 1px solid #959595;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
   .catForm.is_entry .entryFormTbl input[type="text"] {
-    width: 80%;
-    border: 1px solid #959595;
-    border-radius: 5px; }
-    @media screen and (max-width: 767px) {
-      .catForm.is_entry .entryFormTbl input[type="text"] {
-        width: 100%; } }
-  .catForm.is_entry .entryFormTbl .genderRdo {
-    display: flex;
-    align-items: center; }
-    .catForm.is_entry .entryFormTbl .genderRdo li {
-      display: flex;
-      align-items: center;
-      margin-right: 1.0em; }
-      .catForm.is_entry .entryFormTbl .genderRdo li input[type="radio"] {
-        width: 20px;
-        height: 20px;
-        margin-right: 0; }
-      .catForm.is_entry .entryFormTbl .genderRdo li label {
-        padding-left: 5px; }
-  .catForm.is_entry .entryFormTbl .birth {
-    display: flex;
-    align-items: center; }
-    @media screen and (max-width: 767px) {
-      .catForm.is_entry .entryFormTbl .birth {
-        display: block; } }
-    .catForm.is_entry .entryFormTbl .birth li {
-      display: flex;
-      align-items: center;
-      margin-right: 1.0em; }
-      @media screen and (max-width: 767px) {
-        .catForm.is_entry .entryFormTbl .birth li {
-          margin-right: 0; } }
-      @media screen and (max-width: 767px) {
-        .catForm.is_entry .entryFormTbl .birth li select {
-          width: 100%; } }
-      .catForm.is_entry .entryFormTbl .birth li span {
-        flex-shrink: 0;
-        display: block;
-        width: 1em;
-        padding-left: 0.3em; }
-    .catForm.is_entry .entryFormTbl .birth ul {
-      display: flex;
-      align-items: center; }
-      @media screen and (max-width: 767px) {
-        .catForm.is_entry .entryFormTbl .birth ul {
-          justify-content: space-between;
-          margin-top: 0.5em; } }
-      @media screen and (max-width: 767px) {
-        .catForm.is_entry .entryFormTbl .birth ul li {
-          width: 48%; } }
-  .catForm.is_entry .entryFormTbl table {
     width: 100%;
-    margin-bottom: 30px;
-    font-size: 1.4rem;
-    border-bottom: 1px solid #ccc; }
-    @media screen and (max-width: 767px) {
-      .catForm.is_entry .entryFormTbl table {
-        display: block; } }
-    @media screen and (max-width: 767px) {
-      .catForm.is_entry .entryFormTbl table tbody {
-        display: block; } }
-    .catForm.is_entry .entryFormTbl table tr {
-      border-top: 1px solid #ccc; }
-      .catForm.is_entry .entryFormTbl table tr:nth-child(odd) {
-        background-color: #F3F3F3; }
-      @media screen and (max-width: 767px) {
-        .catForm.is_entry .entryFormTbl table tr {
-          display: block;
-          padding: 2.5vw 3.125vw; } }
-    .catForm.is_entry .entryFormTbl table th {
-      padding: 20px 10px 20px 20px; }
-      @media screen and (max-width: 767px) {
-        .catForm.is_entry .entryFormTbl table th {
-          display: block;
-          padding: 0 0 1.5625vw; } }
-    .catForm.is_entry .entryFormTbl table td {
-      padding: 20px 20px 20px 0; }
-      @media screen and (max-width: 767px) {
-        .catForm.is_entry .entryFormTbl table td {
-          display: block;
-          padding: 0; } }
+  }
+}
+
+.catForm.is_entry .entryFormTbl .genderRdo {
+  display: flex;
+  align-items: center;
+}
+
+.catForm.is_entry .entryFormTbl .genderRdo li {
+  display: flex;
+  align-items: center;
+  margin-right: 1.0em;
+}
+
+.catForm.is_entry .entryFormTbl .genderRdo li input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 0;
+}
+
+.catForm.is_entry .entryFormTbl .genderRdo li label {
+  padding-left: 5px;
+}
+
+.catForm.is_entry .entryFormTbl .birth {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl .birth {
+    display: block;
+  }
+}
+
+.catForm.is_entry .entryFormTbl .birth li {
+  display: flex;
+  align-items: center;
+  margin-right: 1.0em;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl .birth li {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl .birth li select {
+    width: 100%;
+  }
+}
+
+.catForm.is_entry .entryFormTbl .birth li span {
+  flex-shrink: 0;
+  display: block;
+  width: 1em;
+  padding-left: 0.3em;
+}
+
+.catForm.is_entry .entryFormTbl .birth ul {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl .birth ul {
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl .birth ul li {
+    width: 48%;
+  }
+}
+
+.catForm.is_entry .entryFormTbl table {
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl table {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl table tbody {
+    display: block;
+  }
+}
+
+.catForm.is_entry .entryFormTbl table tr {
+  border-top: 1px solid #ccc;
+}
+
+.catForm.is_entry .entryFormTbl table tr:nth-child(odd) {
+  background-color: #F3F3F3;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl table tr {
+    display: block;
+    padding: 2.5vw 3.125vw;
+  }
+}
+
+.catForm.is_entry .entryFormTbl table th {
+  padding: 20px 10px 20px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl table th {
+    display: block;
+    padding: 0 0 1.5625vw;
+  }
+}
+
+.catForm.is_entry .entryFormTbl table td {
+  padding: 20px 20px 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .catForm.is_entry .entryFormTbl table td {
+    display: block;
+    padding: 0;
+  }
+}
