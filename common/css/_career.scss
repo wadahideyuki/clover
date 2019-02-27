@@ -14,6 +14,36 @@
 }
 
 /*--------------------------------------
+ navi
+---------------------------------------*/
+.pcHd {
+  .hdIn {
+    .nav.layer1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .hd-ttl {
+        color: #fff;
+        font-size: 2.7rem;
+        padding-left: 35px;
+      }
+
+      ul {
+        & > li {
+          padding: 0 9px;
+        }
+
+        li + li {
+          border-left: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------
   採用情報
 ---------------------------------------*/
 .galleryBanner {
@@ -26,43 +56,6 @@
 
   img {
     max-width: 100%;
-  }
-}
-
-.entryBtn {
-  position: fixed;
-  right: 0px;
-  font-size: 1.8rem;
-  color: #FFF;
-  text-align: center;
-  display: block;
-  padding: 15px;
-  top: 10%;
-  background: #FF7E00;
-  border-radius: 8px 0 0 8px;
-
-  @include mq {
-    width: 100%;
-    box-sizing: border-box;
-    top: auto;
-    bottom: 0px;
-    right: auto;
-    left: 0px;
-  }
-
-  span {
-    display: inline-block;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-
-    @include mq {
-      -ms-writing-mode: inherit;
-      writing-mode: horizontal-tb;
-    }
-  }
-
-  &:hover {
-    opacity: 0.8;
   }
 }
 
@@ -361,6 +354,7 @@
   }
 
   .career-message {
+    position: relative;
     background: $mainColor;
     color: #FFF;
     line-height: 2;
@@ -1071,5 +1065,417 @@
         max-width: 200px;
       }
     }
+  }
+}
+
+.ttl2 {
+  @include mq {
+    margin: 2% 0 8%;
+  }
+
+  & > div {
+    @include mq {
+      font-size: 2.4rem;
+    }
+
+    span {
+      padding-bottom: 0;
+      border-bottom: none;
+
+      @include mq {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*--------------------------------------
+  キャストを知る
+---------------------------------------*/
+.know-cast {
+
+  background: #eee;
+
+  padding-bottom: 65px;
+
+  @include mq {
+    padding-bottom: vw(75);
+  }
+
+  /*-
+    .cast-box {
+      margin: 0 auto 55px;
+      @include mq {
+        margin: 0 auto vw(30);
+      }
+      .cast-cont {
+        width: calc(340/1100*100%);
+        margin: 0 20px;
+        @include mq {
+          width: 100%;
+        }
+
+        .image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .intro-txt {
+          margin-top: 0.5em;
+          font-size: 1.6rem;
+          @include mq {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+
+          strong {
+            font-size: 2rem;
+            padding-right: 15px;
+            @include mq {
+              display: block;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+      .cast-cont + .cast-cont {
+        @include mq {
+        border-top: 1px dotted #000;
+        padding-top: vw(30);
+        }
+      }
+    }
+-*/
+  .cast-box {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include mq {
+      margin: vw(30) 0 0;
+      padding-bottom: vw(45);
+    }
+
+    .slick-arrow {
+      width: 65px;
+      height: 65px;
+      background: rgba(0, 0, 0, 0.6);
+      @include mq {
+        width: 0;
+        height: 0;
+      }
+
+      &.prev {
+        position: absolute;
+        top: 36%;
+        left: 0;
+        z-index: 10;
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 33%;
+          left: 36%;
+          font-size: 2rem;
+          width: 20px;
+          height: 20px;
+          border-left: 5px solid #fff;
+          border-bottom: 5px solid #fff;
+          transform: rotate(45deg);
+          @include mq {
+            content: none;
+          }
+        }
+      }
+
+      &.next {
+        position: absolute;
+        top: 36%;
+        right: 0;
+        z-index: 10;
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 33%;
+          right: 36%;
+          font-size: 2rem;
+          width: 20px;
+          height: 20px;
+          border-left: 5px solid #fff;
+          border-bottom: 5px solid #fff;
+          transform: rotate(225deg);
+          @include mq {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .slick-list {
+      .slick-track {
+        display: flex;
+      }
+
+      li.slides {
+        width: 350px;
+        text-align: left;
+        margin: 0 20px;
+        background-image: url(../images/magazine/list_bg.png);
+        position: relative;
+
+        @include mq {
+          width: 90vw;
+          margin: 0 vw(30);
+        }
+
+        @include mq {
+          margin: 0 3vw;
+        }
+
+        &.slick-active {
+          opacity: 1;
+        }
+
+
+        .image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .intro-txt {
+          margin-top: 0.5em;
+          font-size: 1.6rem;
+
+          @include mq {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+
+          strong {
+            font-size: 2rem;
+            padding-right: 15px;
+
+            @include mq {
+              display: block;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      display: block;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+
+      @include mq {
+        bottom: vw(36);
+      }
+    }
+
+    .slick-dots {
+      bottom: 0;
+
+      li {
+        background-color: #ccc;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+
+        @include mq {
+          width: vw(20);
+          height: vw(20);
+
+          margin: 0 vw(11);
+        }
+
+        &.slick-active {
+          background-color: #e9536b;
+        }
+
+        button {
+          display: none;
+        }
+      }
+
+      @include mq {
+        li {
+          width: vw(22);
+          height: vw(22);
+        }
+      }
+    }
+  }
+
+  .btn_read-more {
+    color: #1849a5;
+    font-family: "游明朝体", "Yu Mincho", "YuMincho";
+    font-size: 2.7rem;
+    text-align: center;
+    margin-top: 50px;
+
+    @include mq {
+      font-size: 2rem;
+      margin-top: inherit;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 45px;
+      background: #fff;
+      border: 1px solid #1849a5;
+      border-radius: 5px;
+
+      @include mq {
+        display: block;
+        padding: vw(10) vw(45);
+      }
+    }
+  }
+
+}
+
+/*--------------------------------------
+  ページ下部リンク
+---------------------------------------*/
+
+.btmLinkZone {
+  padding: 70px 0 85px;
+  background: #eee;
+
+  @include mq {
+    padding: 3.5% 1.875%;
+  }
+
+  .in {
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include mq {
+      justify-content: space-between;
+      padding: 3.5% 1.875%;
+      display: block;
+    }
+
+
+
+    a {
+      display: block;
+      width: 48.5%;
+
+      @include mq {
+        width: 100%;
+      }
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+      }
+
+      .image {
+        width: 100%;
+
+        img {
+          width: auto;
+        }
+      }
+
+      dl {
+        align-items: center;
+        color: #000;
+        font-weight: bold;
+        background: #fff;
+
+        @include mq {
+          padding: 0;
+        }
+
+        dt {
+          font-size: 2rem;
+          padding: 15px 35px 10px;
+          color: #1849a5;
+
+          @include mq {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 1.8rem;
+            padding: vw(15) vw(35) vw(20);
+          }
+        }
+
+        dd {
+          font-size: 1.6rem;
+          display: inline-block;
+          height: 80px;
+          padding: 0 35px;
+
+          @include mq {
+            display: none;
+          }
+        }
+      }
+    }
+
+    a + a {
+      margin-left: 3%;
+
+      @include mq {
+        margin-left: 0;
+        margin-top: 4%;
+      }
+    }
+
+    a:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    a:nth-of-type(n+3) {
+      margin-top: 20px;
+
+      @include mq {
+        margin-top: 4%;
+      }
+    }
+  }
+}
+
+.entryBtn {
+  position: fixed;
+  right: 25px;
+  bottom: 5%;
+  font-size: 1.8rem;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  padding: 10px 65px;
+  background: #FF7E00;
+  border-radius: 8px;
+
+  @include mq {
+    width: 100%;
+    box-sizing: border-box;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    left: 0px;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  &:hover {
+    text-decoration: underline;
   }
 }

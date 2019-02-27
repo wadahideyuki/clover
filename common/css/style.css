@@ -4723,6 +4723,30 @@ select {
 }
 
 /*--------------------------------------
+ navi
+---------------------------------------*/
+.pcHd .hdIn .nav.layer1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pcHd .hdIn .nav.layer1 .hd-ttl {
+  color: #fff;
+  font-size: 2.7rem;
+  padding-left: 35px;
+}
+
+.pcHd .hdIn .nav.layer1 ul > li {
+  padding: 0 9px;
+}
+
+.pcHd .hdIn .nav.layer1 ul li + li {
+  border-left: 1px solid #fff;
+}
+
+/*--------------------------------------
   採用情報
 ---------------------------------------*/
 .galleryBanner {
@@ -4738,47 +4762,6 @@ select {
 
 .galleryBanner img {
   max-width: 100%;
-}
-
-.entryBtn {
-  position: fixed;
-  right: 0px;
-  font-size: 1.8rem;
-  color: #FFF;
-  text-align: center;
-  display: block;
-  padding: 15px;
-  top: 10%;
-  background: #FF7E00;
-  border-radius: 8px 0 0 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .entryBtn {
-    width: 100%;
-    box-sizing: border-box;
-    top: auto;
-    bottom: 0px;
-    right: auto;
-    left: 0px;
-  }
-}
-
-.entryBtn span {
-  display: inline-block;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-}
-
-@media screen and (max-width: 767px) {
-  .entryBtn span {
-    -ms-writing-mode: inherit;
-    writing-mode: horizontal-tb;
-  }
-}
-
-.entryBtn:hover {
-  opacity: 0.8;
 }
 
 .catCareer .page-title {
@@ -5066,6 +5049,7 @@ select {
 }
 
 .catCareer.pageTop .career-message {
+  position: relative;
   background: #1849a5;
   color: #FFF;
   line-height: 2;
@@ -5752,6 +5736,454 @@ select {
 
 .btnrecruit li a img {
   max-width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .ttl2 {
+    margin: 2% 0 8%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ttl2 > div {
+    font-size: 2.4rem;
+  }
+}
+
+.ttl2 > div span {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 767px) {
+  .ttl2 > div span {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------
+  キャストを知る
+---------------------------------------*/
+.know-cast {
+  background: #eee;
+  padding-bottom: 65px;
+  /*-
+    .cast-box {
+      margin: 0 auto 55px;
+      @include mq {
+        margin: 0 auto vw(30);
+      }
+      .cast-cont {
+        width: calc(340/1100*100%);
+        margin: 0 20px;
+        @include mq {
+          width: 100%;
+        }
+
+        .image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .intro-txt {
+          margin-top: 0.5em;
+          font-size: 1.6rem;
+          @include mq {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+
+          strong {
+            font-size: 2rem;
+            padding-right: 15px;
+            @include mq {
+              display: block;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+      .cast-cont + .cast-cont {
+        @include mq {
+        border-top: 1px dotted #000;
+        padding-top: vw(30);
+        }
+      }
+    }
+-*/
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast {
+    padding-bottom: 11.71875vw;
+  }
+}
+
+.know-cast .cast-box {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box {
+    margin: 4.6875vw 0 0;
+    padding-bottom: 7.03125vw;
+  }
+}
+
+.know-cast .cast-box .slick-arrow {
+  width: 65px;
+  height: 65px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-arrow {
+    width: 0;
+    height: 0;
+  }
+}
+
+.know-cast .cast-box .slick-arrow.prev {
+  position: absolute;
+  top: 36%;
+  left: 0;
+  z-index: 10;
+}
+
+.know-cast .cast-box .slick-arrow.prev:before {
+  position: absolute;
+  content: "";
+  top: 33%;
+  left: 36%;
+  font-size: 2rem;
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-arrow.prev:before {
+    content: none;
+  }
+}
+
+.know-cast .cast-box .slick-arrow.next {
+  position: absolute;
+  top: 36%;
+  right: 0;
+  z-index: 10;
+}
+
+.know-cast .cast-box .slick-arrow.next:before {
+  position: absolute;
+  content: "";
+  top: 33%;
+  right: 36%;
+  font-size: 2rem;
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(225deg);
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-arrow.next:before {
+    content: none;
+  }
+}
+
+.know-cast .cast-box .slick-list .slick-track {
+  display: flex;
+}
+
+.know-cast .cast-box .slick-list li.slides {
+  width: 350px;
+  text-align: left;
+  margin: 0 20px;
+  background-image: url(../images/magazine/list_bg.png);
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides {
+    width: 90vw;
+    margin: 0 4.6875vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides {
+    margin: 0 3vw;
+  }
+}
+
+.know-cast .cast-box .slick-list li.slides.slick-active {
+  opacity: 1;
+}
+
+.know-cast .cast-box .slick-list li.slides .image img {
+  width: 100%;
+}
+
+.know-cast .cast-box .slick-list li.slides .intro-txt {
+  margin-top: 0.5em;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides .intro-txt {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.know-cast .cast-box .slick-list li.slides .intro-txt strong {
+  font-size: 2rem;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides .intro-txt strong {
+    display: block;
+    font-size: 1.6rem;
+  }
+}
+
+.know-cast .cast-box .slick-dots {
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-dots {
+    bottom: 5.625vw;
+  }
+}
+
+.know-cast .cast-box .slick-dots {
+  bottom: 0;
+}
+
+.know-cast .cast-box .slick-dots li {
+  background-color: #ccc;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-dots li {
+    width: 3.125vw;
+    height: 3.125vw;
+    margin: 0 1.71875vw;
+  }
+}
+
+.know-cast .cast-box .slick-dots li.slick-active {
+  background-color: #e9536b;
+}
+
+.know-cast .cast-box .slick-dots li button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-dots li {
+    width: 3.4375vw;
+    height: 3.4375vw;
+  }
+}
+
+.know-cast .btn_read-more {
+  color: #1849a5;
+  font-family: "游明朝体", "Yu Mincho", "YuMincho";
+  font-size: 2.7rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .btn_read-more {
+    font-size: 2rem;
+    margin-top: inherit;
+  }
+}
+
+.know-cast .btn_read-more a {
+  display: inline-block;
+  padding: 10px 45px;
+  background: #fff;
+  border: 1px solid #1849a5;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .btn_read-more a {
+    display: block;
+    padding: 1.5625vw 7.03125vw;
+  }
+}
+
+/*--------------------------------------
+  ページ下部リンク
+---------------------------------------*/
+.btmLinkZone {
+  padding: 70px 0 85px;
+  background: #eee;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone {
+    padding: 3.5% 1.875%;
+  }
+}
+
+.btmLinkZone .in {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in {
+    justify-content: space-between;
+    padding: 3.5% 1.875%;
+    display: block;
+  }
+}
+
+.btmLinkZone .in a {
+  display: block;
+  width: 48.5%;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a {
+    width: 100%;
+  }
+}
+
+.btmLinkZone .in a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.btmLinkZone .in a .image {
+  width: 100%;
+}
+
+.btmLinkZone .in a .image img {
+  width: auto;
+}
+
+.btmLinkZone .in a dl {
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a dl {
+    padding: 0;
+  }
+}
+
+.btmLinkZone .in a dl dt {
+  font-size: 2rem;
+  padding: 15px 35px 10px;
+  color: #1849a5;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a dl dt {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    padding: 2.34375vw 5.46875vw 3.125vw;
+  }
+}
+
+.btmLinkZone .in a dl dd {
+  font-size: 1.6rem;
+  display: inline-block;
+  height: 80px;
+  padding: 0 35px;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a dl dd {
+    display: none;
+  }
+}
+
+.btmLinkZone .in a + a {
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a + a {
+    margin-left: 0;
+    margin-top: 4%;
+  }
+}
+
+.btmLinkZone .in a:nth-of-type(2n+1) {
+  margin-left: 0;
+}
+
+.btmLinkZone .in a:nth-of-type(n+3) {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a:nth-of-type(n+3) {
+    margin-top: 4%;
+  }
+}
+
+.entryBtn {
+  position: fixed;
+  right: 25px;
+  bottom: 5%;
+  font-size: 1.8rem;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  padding: 10px 65px;
+  background: #FF7E00;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .entryBtn {
+    width: 100%;
+    box-sizing: border-box;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    left: 0px;
+  }
+}
+
+.entryBtn span {
+  display: inline-block;
+}
+
+.entryBtn:hover {
+  text-decoration: underline;
 }
 
 /*--------------------------------------
