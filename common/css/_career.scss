@@ -101,7 +101,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 10px;
-      color: $mainColor;
+      color:#358f31;
 
       span {
         display: inline-block;
@@ -124,7 +124,7 @@
       a {
         display: inline-block;
         margin: 0 0.5em 1em;
-        color: $mainColor;
+        color: #358f31;
         font-size: 2.0rem;
         text-decoration: underline;
 
@@ -242,7 +242,7 @@
     overflow: hidden;
 
     .in {
-      background-color: $mainColor;
+      background-color: #358f31;
       padding-top: 65px;
     }
 
@@ -255,7 +255,7 @@
       font-size: 0;
       border-style: solid;
       border-width: 0 0 30vw 100vw;
-      border-color: transparent transparent transparent $mainColor;
+      border-color: transparent transparent transparent #358f31;
 
       @include mq {
         padding-top: 30vw;

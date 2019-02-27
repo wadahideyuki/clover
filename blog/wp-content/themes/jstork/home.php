@@ -469,7 +469,7 @@ wp_reset_postdata();
           foreach($users as $user):
             $uid = $user->ID;
             $userData = get_userdata($uid);
-            echo '<li><a href="'.get_bloginfo(url).'/?author='.$uid.'">'.$user->user_nicename.'</a></li>';
+            echo '<li><a href="'.get_bloginfo(url).'/?author='.$uid.'">'.$user->display_name.'</a></li>';
           endforeach;
         ?>
       </ul>

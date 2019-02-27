@@ -15,7 +15,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-
   <?php
     if(is_single()):
 		  the_title( '<h1 class="entry-title">', '</h1>' );
@@ -44,13 +43,14 @@
       <dl>
         <dt>雇用形態：</dt>
         <dd>
-          <?php 
-$ch_cat = get_category($cat);
-if ($ch_cat->parent) {
-  $parent = get_category($ch_cat->parent);
-  echo esc_attr($parent->cat_name);
-}
-?>
+         <?php 
+               $cityname = $_GET['category_name'];
+               if($cityname == 'regular'){
+                 echo "正社員";
+               }else{
+                 echo "パート・アルバイト";
+               };
+               ?>
         </dd>
       </dl>
     </div>

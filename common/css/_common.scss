@@ -5,636 +5,778 @@
 /*--------------------------------------
  要素
 ---------------------------------------*/
-img{max-width: 100%;}
+img {
+  max-width: 100%;
+}
+
 input[type="text"],
 select,
-textarea{
-	color: #333;
-	box-sizing: border-box;
+textarea {
+  color: #333;
+  box-sizing: border-box;
 }
+
 input[type="text"],
-textarea{
-	width: 100%;
-	padding: 0.5em 0.7em;
-	border: 1px solid #ccc;
+textarea {
+  width: 100%;
+  padding: 0.5em 0.7em;
+  border: 1px solid #ccc;
 }
-select{
-	padding: 0.5em 0.7em;
+
+select {
+  padding: 0.5em 0.7em;
 }
-@include mq{
-	input[type="text"],
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	textarea{
-		-webkit-appearance:none;
-		-moz-appearance:none;
-		appearance:none;
-	}
+
+@include mq {
+
+  input[type="text"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
-.entry-content a{
+
+.entry-content a {
   color: #002FE3;
   text-decoration: underline;
   word-break: break-all;
   word-wrap: break-word;
 }
+
 /*--------------------------------------
  パーツ
 ---------------------------------------*/
-			.lowLinks{
-				display: flex;
-				justify-content: center;
-				margin-bottom: 50px;
-				@include noto;
-				a{
-					background-color: #fff;
-					padding: 0.5em 1em;
-					color: $mainColor;
-					font-size: 1.7rem;
-					font-weight: bold;
-					border: 1px solid $mainColor;
-					border-radius: 50px;
-					transition: 0.3s;
-					& + a{
-						margin-left: 1em;
-					}
-					&:hover,&.cur{
-						background-color: $mainColor;
-						color: #fff;
-						text-decoration: none;
-					}
-				}
-				@include mq{
-					display: block;
-					margin-bottom:0;
-					a{
-						display: block;
-						font-size: 1.4rem;
-						border-radius: 0;
-						border-left: none;
-						border-right: none;
-						& + a{
-							margin: 0;
-							border-top: none;
-						}
-					}
-				}
-			}
+.lowLinks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  @include noto;
+
+  a {
+    background-color: #fff;
+    padding: 0.5em 1em;
+    color: $mainColor;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border: 1px solid $mainColor;
+    border-radius: 50px;
+    transition: 0.3s;
+
+    & + a {
+      margin-left: 1em;
+    }
+
+    &:hover,
+    &.cur {
+      background-color: $mainColor;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  @include mq {
+    display: block;
+    margin-bottom: 0;
+
+    a {
+      display: block;
+      font-size: 1.4rem;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+
+      & + a {
+        margin: 0;
+        border-top: none;
+      }
+    }
+  }
+}
+
 /* インナー */
-.inner{
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	&.sz2{
-		max-width: 1000px;
-	}
-	&.sz3{
-		max-width: 800px;
-	}
-	@include mq{
-		padding-left: (15/320) * $per;
-		padding-right: (15/320) * $per;
-	}
+.inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &.sz2 {
+    max-width: 1000px;
+  }
+
+  &.sz3 {
+    max-width: 800px;
+  }
+
+  @include mq {
+    padding-left: (15/320) * $per;
+    padding-right: (15/320) * $per;
+  }
 }
 
 
 /* タイトル */
-.ttl1{
-	margin-bottom: 45px;
-	font-size: 3.5rem;
-	line-height: 1;
-	text-align: center;
-	&:before{
-		content: "";
-		display: block;
-		background-color: $mainColor;
-		width: 93px;
-		height: 5px;
-		margin:0 auto 1em;
-	} 
-	em{
-		display: block;
-		margin-bottom: 15px;
-		color: #3bab3e;
-		@include noto;
-		font-size: 1.7rem;
-	}
-	@include mq{
-		margin-bottom: (40/640) * 100vw;
-		font-size: (3.5/2) * 1rem;
-		> em{
-			margin-bottom: (15/640) * 100vw;
-			font-size: (1.7/2) * 1rem;;
-		}
-	}
+.ttl1 {
+  margin-bottom: 45px;
+  font-size: 3.5rem;
+  line-height: 1;
+  text-align: center;
+
+  &:before {
+    content: "";
+    display: block;
+    background-color: $mainColor;
+    width: 93px;
+    height: 5px;
+    margin: 0 auto 1em;
+  }
+
+  em {
+    display: block;
+    margin-bottom: 15px;
+    color: #3bab3e;
+    @include noto;
+    font-size: 1.7rem;
+  }
+
+  @include mq {
+    margin-bottom: (40/640) * 100vw;
+    font-size: (3.5/2) * 1rem;
+
+    > em {
+      margin-bottom: (15/640) * 100vw;
+      font-size: (1.7/2) * 1rem;
+      ;
+    }
+  }
 }
-.ttl2{
-	margin-bottom: 30px;
-	text-align: center;
-	> div{
-		display: inline-block;
-		font-size: 5.0rem;
-		span{
-			display: block;
-			margin-bottom: (10/50) * 1em;
-			padding-bottom: (6/50) * 1em;
-			border-bottom: 1px solid #bdbdbd;
-		}
-		small{
-			display: block;
-			color: #bdbdbd;
-			font-size: (28/50) * 1em;
-		}
-	}
-	@include mq{
-		margin-bottom: 3%;
-		padding-top: 3%;
-		> div{
-			font-size: 1.6rem;
-			display: block;
-			margin-left: -2%;
-			span{
-				text-align: left;
-				border-bottom: 0px;
-			}
-			small{
-				display: none;
-			}
-		}
-	}
+
+.ttl2 {
+  margin-bottom: 30px;
+  text-align: center;
+
+  > div {
+    display: inline-block;
+    font-size: 5.0rem;
+
+    span {
+      display: block;
+      margin-bottom: (10/50) * 1em;
+      padding-bottom: (6/50) * 1em;
+      border-bottom: 1px solid #bdbdbd;
+    }
+
+    small {
+      display: block;
+      color: #bdbdbd;
+      font-size: (28/50) * 1em;
+    }
+  }
+
+  @include mq {
+    margin-bottom: 3%;
+    padding-top: 3%;
+
+    > div {
+      font-size: 1.6rem;
+      display: block;
+      margin-left: -2%;
+
+      span {
+        text-align: left;
+        border-bottom: 0px;
+      }
+
+      small {
+        display: none;
+      }
+    }
+  }
 }
 
 
 /* テキスト */
-.lead1{
-	margin-bottom: 50px;
-	@include noto;
-	font-size: 1.6rem;
+.lead1 {
+  margin-bottom: 50px;
+  @include noto;
+  font-size: 1.6rem;
 }
 
 
 /* テキスト色 */
-.txRed{
-	color: red;
+.txRed {
+  color: red;
 }
 
 
 /* 背景色 */
-.bgGrey1{
-	background-color: #f0f0f0;
+.bgGrey1 {
+  background-color: #f0f0f0;
 }
-.bgMainColor{
-	background-color: $mainColor;
+
+.bgMainColor {
+  background-color: $mainColor;
 }
 
 
 /* ボタン */
-.btn{
-	display: inline-block;
-	background-color: #FFF;
-	padding: 10px 17px;
-	border: 1px solid #CCC;
-	color: #333;
-	@include noto;
-	border-radius: 4px;
-	box-sizing: border-box;
-	@include hvr;
-	&.withIcn{//アイコン付き
-		display: flex;
-		align-items: center;
-	}
-	&.clr{//色
-		&2{
-			background-color: #499745;
-			color: #fff;
-			border: none;
-			box-shadow: none;
-		}
-		&3{
-			background-color: #aaa;
-			color: #fff;
-			border: none;
-			box-shadow: none;
-		}
-	}
-	&.sz{//サイズ
-		&2{
-			padding: 1em;
-			font-size: 2.1rem;
-		}
-		&3{
-			padding: 1em 3em;
-			font-size: 1.8rem;
-		}
-		@include mq{
-			&2{
-				font-size: 1.6rem;
-			}
-			&3{
-				font-size: 1.6rem;
-			}
-		}
-	}
-	&.withArw{//矢印付き
-		&R{//右
-			padding-right: 2em;
-			padding-left: 2em;
-			position: relative;
-			&:after{
-				content: "";
-				display: inline-block;
-				width: 0.6em;
-				height: 0.6em;
-				margin: auto;
-				border-style: solid;
-				border-width: 1px 1px 0 0;
-				border-color: #fff inherit transparent transparent;
-				box-sizing: border-box;
-				transform: rotate(45deg);
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				right: 1em;
-			}
-		}
-		@include mq{
-			&R{//右
-				display: block;
-				&:after{
-					right: 1em;
-				}
-			}
-		}
-	}
+.btn {
+  display: inline-block;
+  background-color: #FFF;
+  padding: 10px 17px;
+  border: 1px solid #CCC;
+  color: #333;
+  @include noto;
+  border-radius: 4px;
+  box-sizing: border-box;
+  @include hvr;
+
+  &.withIcn {
+    //アイコン付き
+    display: flex;
+    align-items: center;
+  }
+
+  &.clr {
+
+    //色
+    &2 {
+      background-color: #499745;
+      color: #fff;
+      border: none;
+      box-shadow: none;
+    }
+
+    &3 {
+      background-color: #aaa;
+      color: #fff;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &.sz {
+
+    //サイズ
+    &2 {
+      padding: 1em;
+      font-size: 2.1rem;
+    }
+
+    &3 {
+      padding: 1em 3em;
+      font-size: 1.8rem;
+    }
+
+    @include mq {
+      &2 {
+        font-size: 1.6rem;
+      }
+
+      &3 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &.withArw {
+
+    //矢印付き
+    &R {
+      //右
+      padding-right: 2em;
+      padding-left: 2em;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 0.6em;
+        height: 0.6em;
+        margin: auto;
+        border-style: solid;
+        border-width: 1px 1px 0 0;
+        border-color: #fff inherit transparent transparent;
+        box-sizing: border-box;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 1em;
+      }
+    }
+
+    @include mq {
+      &R {
+        //右
+        display: block;
+
+        &:after {
+          right: 1em;
+        }
+      }
+    }
+  }
 }
 
-.link-txt{
+.link-txt {
   text-decoration: underline;
   color: $mainColor;
 }
+
 /* スクロールボタン */
-.pageScrl{
-	display: flex;
-	justify-content: center;
-	.clkScrl{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: #fff;
-		color: $mainColor;
-		@include noto;
-		border: 1px solid $mainColor;
-		border-radius: 50px;
-		transition: 0.3s;
-		&:before{
-			content: "";
-			display: inline-block;
-			content: "";
-			display: inline-block;
-			width: 0.6em;
-			height: 0.6em;
-			margin:-0.2em 0.5em 0 0;
-			border-style: solid;
-			border-width: 0.2em 0.2em 0 0;
-			border-color: $mainColor $mainColor transparent transparent;
-			box-sizing: border-box;
-			transform: rotate(135deg);
-			transition: inherit;
-		}
-		&:hover{
-			background-color: $mainColor;
-			color: #fff;
-			text-decoration: none;
-			&:before{
-				border-color: #fff #fff transparent transparent;
-			}
-		}
-		@include mq{
-		}
-	}
-	&.type2{
-		text-align: center;
-		.clkScrl{
-			background-color: transparent;
-			margin: 0 0.7em;
-			text-decoration: underline;
-			border: none;
-			border-radius: 0;
-			&:before{
-				content: normal;
-			}
-			&:hover{
-				color: $mainColor;
-				text-decoration: none;
-			}
-		}
-	}
+.pageScrl {
+  display: flex;
+  justify-content: center;
+
+  .clkScrl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: $mainColor;
+    @include noto;
+    border: 1px solid $mainColor;
+    border-radius: 50px;
+    transition: 0.3s;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      content: "";
+      display: inline-block;
+      width: 0.6em;
+      height: 0.6em;
+      margin: -0.2em 0.5em 0 0;
+      border-style: solid;
+      border-width: 0.2em 0.2em 0 0;
+      border-color: $mainColor $mainColor transparent transparent;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      transition: inherit;
+    }
+
+    &:hover {
+      background-color: $mainColor;
+      color: #fff;
+      text-decoration: none;
+
+      &:before {
+        border-color: #fff #fff transparent transparent;
+      }
+    }
+
+    @include mq {}
+  }
+
+  &.type2 {
+    text-align: center;
+
+    .clkScrl {
+      background-color: transparent;
+      margin: 0 0.7em;
+      text-decoration: underline;
+      border: none;
+      border-radius: 0;
+
+      &:before {
+        content: normal;
+      }
+
+      &:hover {
+        color: $mainColor;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 
 /* アイコン */
-.icnMail{@include icn("\f0e0"); color: $mainColor}
+.icnMail {
+  @include icn("\f0e0");
+  color: $mainColor
+}
 
 
 /* 注釈 */
-.note1{
-	display: block;
-	text-indent: -1em;
-	padding-left: 1em;
+.note1 {
+  display: block;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 
 /* リスト */
-.noteList1{//一文字分
-	> li{
-		text-indent: -1em;
-		padding-left: 1em;
-	}
+.noteList1 {
+
+  //一文字分
+  > li {
+    text-indent: -1em;
+    padding-left: 1em;
+  }
 }
-.numList1{//【1】【2】【3】……
-	> li{
-		text-indent: -2.65em;
-		padding-left: 2.65em;
-	}
+
+.numList1 {
+
+  //【1】【2】【3】……
+  > li {
+    text-indent: -2.65em;
+    padding-left: 2.65em;
+  }
 }
 
 
 /* テーブル */
-.tblBox1{
-	background: #FFF;
-	margin: 0 auto 50px;
-	padding: 30px 50px;
-	box-sizing: border-box;
-	.tblCap{
-		font-size: 2.3rem;
-		border-bottom: 2px solid #499745;
-		margin: 0 0 10px;
-		padding: 0 0 10px;
-		font-weight: 600;
-	}
-	table{
-		width: 100%;
-		font-size: 1.6rem;
-		line-height: 1.8;
-		@include noto;
-	}
-	tr:last-child{
-		td,th{
-			border: none;
-		}
-	}
-	th,td{
-		padding: 8px 0;
-		border-bottom: 1px dotted #CCC;
-	}
-	&.noBd th,
-	&.noBd td{
-		border-bottom: none;
-	}
-	th{
-		width: 20%;
-	}
-	td{
-		padding-left: 10px;
-	}
-	.btnWrap{
-		padding: 20px 0;
-		text-align: center;
-		border-top: 1px dotted #CCC;
-	}
-	&.noBd .btnWrap{
-		border-top: none;
-	}
-	@include mq{
-		margin-bottom: 5%;
-		padding: 5% 5%;
-		.tblCap{
-			font-size: 1.8rem;
-			margin-bottom: 0;
-			padding-bottom: 0.5em;
-		}
-		table{
-			display: block;
-			width: auto;
-			font-size: 1.4rem;
-			line-height: 1.8;
-			@include noto;
-		}
-		tbody, tr, th, td{
-			display: block;
-		}
-		tr:last-child{
-			td,th{
-			}
-		}
-		th,td{
-		}
-		th{
-			width: auto;
-			padding: (8/320) * 100vw 0 (3/320) * 100vw;
-			font-weight: bold;
-			border-bottom: none;
-		}
-		td{
-			padding: 0 0 (8/320) * 100vw;
-			font-size: 1.2rem;
-		}
-		.btnWrap{
-			padding: (15/320) * 100vw 0 0;
-		}
-	}
+.tblBox1 {
+  background: #FFF;
+  margin: 0 auto 50px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+
+  .tblCap {
+    font-size: 2.3rem;
+    border-bottom: 2px solid #499745;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    font-weight: 600;
+  }
+
+  table {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    @include noto;
+  }
+
+  tr:last-child {
+
+    td,
+    th {
+      border: none;
+    }
+  }
+
+  th,
+  td {
+    padding: 8px 0;
+    border-bottom: 1px dotted #CCC;
+  }
+
+  &.noBd th,
+  &.noBd td {
+    border-bottom: none;
+  }
+
+  th {
+    width: 20%;
+  }
+
+  td {
+    padding-left: 10px;
+  }
+
+  .btnWrap {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px dotted #CCC;
+  }
+
+  &.noBd .btnWrap {
+    border-top: none;
+  }
+
+  @include mq {
+    margin-bottom: 5%;
+    padding: 5% 5%;
+
+    .tblCap {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      padding-bottom: 0.5em;
+    }
+
+    table {
+      display: block;
+      width: auto;
+      font-size: 1.4rem;
+      line-height: 1.8;
+      @include noto;
+    }
+
+    tbody,
+    tr,
+    th,
+    td {
+      display: block;
+    }
+
+    tr:last-child {
+
+      td,
+      th {}
+    }
+
+    th,
+    td {}
+
+    th {
+      width: auto;
+      padding: (8/320) * 100vw 0 (3/320) * 100vw;
+      font-weight: bold;
+      border-bottom: none;
+    }
+
+    td {
+      padding: 0 0 (8/320) * 100vw;
+      font-size: 1.2rem;
+    }
+
+    .btnWrap {
+      padding: (15/320) * 100vw 0 0;
+    }
+  }
 }
 
 
 /* ライン */
-.lines{//5色の戦
-	display: flex;
-	height: 5px;
-	font-size: 0;
-	hr{
-		display: block;
-		width: 20%;
-		height: 100%;
-		&:nth-child(1){background-color: #358f31;}
-		&:nth-child(2){background-color: #65bf2e;}
-		&:nth-child(3){background-color: #3bab3e;}
-		&:nth-child(4){background-color: #bfb62e;}
-		&:nth-child(5){background-color: #17ba6f;}
-	}
-	@include mq{
-		height: (5/640) * 100vw;
-	}
+.lines {
+  //5色の戦
+  display: flex;
+  height: 5px;
+  font-size: 0;
+
+  hr {
+    display: block;
+    width: 20%;
+    height: 100%;
+
+    &:nth-child(1) {
+      background-color: #358f31;
+    }
+
+    &:nth-child(2) {
+      background-color: #65bf2e;
+    }
+
+    &:nth-child(3) {
+      background-color: #3bab3e;
+    }
+
+    &:nth-child(4) {
+      background-color: #bfb62e;
+    }
+
+    &:nth-child(5) {
+      background-color: #17ba6f;
+    }
+  }
+
+  @include mq {
+    height: (5/640) * 100vw;
+  }
 }
 
 
 /* 画像 */
-.circleImg{//画像を丸にする(画像は正方形～横長にする)
-	padding-top: 100%;
-	font-size: 0;
-	border-radius: 50%;
-	overflow: hidden;
-	position: relative;
-	.imgWrap{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		img{
-			max-width: none;
-			height: 100%;
-		}
-	}
+.circleImg {
+  //画像を丸にする(画像は正方形～横長にする)
+  padding-top: 100%;
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  .imgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      max-width: none;
+      height: 100%;
+    }
+  }
 }
 
 /* リンク集 */
-.links1{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 45px 0 35px;
-	li{
-		background-color: #fff;
-		margin-bottom: 30px;
-		width: (479/1000) * $per;
-		border-radius: 5px;
-		overflow: hidden;
-		> *{
-			display: block;
-			dl{
-			}
-			dt{
-				overflow: hidden;
-				img{
-					width: 100%;
-				}
-			}
-			dd{
-				padding: 20px 30px;
-				strong{
-					display: block;
-					color: $mainColor;
-					font-size: 2.0rem;
-					line-height: (36/20);
-          @include arrow($bdc:$mainColor, $bdw:2px);
-          &:before{
-								width: 0.6em;
-								height: 0.6em;
-							}
-				}
-				p{
-					@include noto;
-					font-size: 1.6rem;
-				}
-			}
-		}
-		> a{
-			img{
-				transition: 0.3s;
-			}
-			&:hover{
-				text-decoration: none;
-				img{
-					transform: scale(1.1);
-				}
-			}
-		}
-	}
-	&.single{
-		justify-content: center;
-		li{
-			width: percentage(600/1000);
-		}
-	}
-	@include mq{
-		display: block;
-		padding: 10% 0 4%;
-		li{
-			margin-bottom: 5%;
-			width: auto !important;
-			> *{
-				dl{
-				}
-				dt{
-				}
-				dd{
-					padding: 4% 5% 6%;
-					strong{
-						font-size: 1.6rem;
-						line-height: (36/20);
-					}
-					p{
-						font-size: 1.2rem;
-					}
-				}
-			}
-			> a{
-				img{
-				}
-			}
-		}
-	}
+.links1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 45px 0 35px;
+
+  li {
+    background-color: #fff;
+    margin-bottom: 30px;
+    width: (479/1000) * $per;
+    border-radius: 5px;
+    overflow: hidden;
+
+    > * {
+      display: block;
+
+      dl {}
+
+      dt {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      dd {
+        padding: 20px 30px;
+
+        strong {
+          display: block;
+          color: $mainColor;
+          font-size: 2.0rem;
+          line-height: (36/20);
+          @include arrow($bdc: $mainColor, $bdw:2px);
+
+          &:before {
+            width: 0.6em;
+            height: 0.6em;
+          }
+        }
+
+        p {
+          @include noto;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    > a {
+      img {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &.single {
+    justify-content: center;
+
+    li {
+      width: percentage(600/1000);
+    }
+  }
+
+  @include mq {
+    display: block;
+    padding: 10% 0 4%;
+
+    li {
+      margin-bottom: 5%;
+      width: auto !important;
+
+      > * {
+        dl {}
+
+        dt {}
+
+        dd {
+          padding: 4% 5% 6%;
+
+          strong {
+            font-size: 1.6rem;
+            line-height: (36/20);
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      > a {
+        img {}
+      }
+    }
+  }
 }
 
 
 /* 箱 */
-.accBox{//アコーディオン
+.accBox {
+  //アコーディオン
 }
-.accBtn{
-	cursor: pointer;
+
+.accBtn {
+  cursor: pointer;
 }
-.accCont{
-}
+
+.accCont {}
 
 
 /* フォーム */
-.error_messe{
-	margin:5px 0;
-	color: red;
+.error_messe {
+  margin: 5px 0;
+  color: red;
 }
-.selectWrap{
-	@include mq{
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-		position: relative;
-		&:before{
-			content: "";
-			display: inline-block;
-			width: 0;
-			height: 0;
-			margin: auto;
-			border-style: solid;
-			border-width: 0.5em 0.25em 0 0.25em;
-			border-color: #666 transparent transparent;
-			box-sizing: border-box;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 5%;
-		}
-		select{
-			-webkit-appearance:none;
-			-moz-appearance:none;
-			appearance:none;
-			margin: 0;
-			border: none;
-		}
-	}
+
+.selectWrap {
+  @include mq {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin: auto;
+      border-style: solid;
+      border-width: 0.5em 0.25em 0 0.25em;
+      border-color: #666 transparent transparent;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 5%;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+      border: none;
+    }
+  }
 }
 
 
 /* 状態 */
-.dis_flex_block{//pcではflex、spではblock
-	display: flex;
-	@include mq{
-		display: block;
-	}
+.dis_flex_block {
+  //pcではflex、spではblock
+  display: flex;
+
+  @include mq {
+    display: block;
+  }
 }
 
 
@@ -642,207 +784,250 @@ select{
  プラグイン
 ---------------------------------------*/
 /* Slick */
-.slick-slider{margin-bottom: 0;}
-.slick-dots li{
-	background-color: #8c8c8c;
-	width: 15px;
-	height: 15px;
-	margin: 0 7.5px;
-	border-radius: 50%;
-	&.slick-active{
-		background-color: #4b972b;
-	}
-	@include mq{
-		width: (15/640) * 100vw;
-		height: (15/640) * 100vw;
-		margin: 0 (7.5/640) * 100vw;
-	}
+.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots li {
+  background-color: #8c8c8c;
+  width: 15px;
+  height: 15px;
+  margin: 0 7.5px;
+  border-radius: 50%;
+
+  &.slick-active {
+    background-color: #4b972b;
+  }
+
+  @include mq {
+    width: (15/640) * 100vw;
+    height: (15/640) * 100vw;
+    margin: 0 (7.5/640) * 100vw;
+  }
 }
 
 
-.modalBox{
-    display: none;
-    position: fixed;
-    left: 0px;
-    top: 0px;
+.modalBox {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+
+  .modalInner {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 20%;
+    text-align: center;
+
+    @include mq {
+      width: 90%;
+    }
+
+    p {
+      text-align: left;
+      padding: 20px 0;
+      font-size: 1.5rem;
+      @include noto;
+    }
+  }
+
+  .btnClose {
+    display: inline-block;
+    font-size: 1.5rem;
+    background: #333;
+    padding: 5px;
+    color: #FFF;
+
+  }
+}
+
+.payZone {
+  //利用料金
+  padding: 70px 0 120px;
+
+  .thisLead {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+
+    dt {
+      margin-bottom: 0.5em;
+      color: $mainColor;
+      font-size: 2.0rem;
+      font-weight: bold;
+    }
+
+    dd {
+      @include noto;
+      font-size: 1.6rem;
+      line-height: (26/16);
+    }
+  }
+
+  h4 {
+    margin: (77/(23 * 1.4)) * 1em 0 (20/23) * 1em;
+    padding-bottom: (15/(23 * 1.4)) * 1em;
+    color: #000;
+    font-size: 2.3rem;
+    border-bottom: 2px solid #499745;
+  }
+
+  h5 {
+    margin: 2em 0 1em;
+    padding-left: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background-color: #499745;
+      width: 4px;
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: 0;
+    }
+  }
+
+  table {
     width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.9);
-    .modalInner{
-        width: 600px;
-        position: absolute;
-        left: 50%;
-        margin-left: -300px;
-        top: 20%;
-        text-align: center;
-        @include mq{
-            width: 90%;
-        }
-        p{
-            text-align: left;
-            padding: 20px 0;
-            font-size: 1.5rem;
-            @include noto;
-        }
+    @include noto;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+  }
+
+  th,
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  th {
+    background-color: #499745;
+    width: 150px;
+    color: #fff;
+  }
+
+  td {
+    background-color: #fff;
+  }
+
+  thead {
+    td {
+      background-color: #e5e5e7;
     }
-    
-    .btnClose{
-        display: inline-block;
-        font-size: 1.5rem;
-        background: #333;
-        padding: 5px;
-        color: #FFF;
-        
+  }
+
+  tbody {}
+
+  small {
+    margin-top: 10px;
+    @include noto;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    > li {
+      width: (380/800) * $per;
+
+      th {
+        width: 150px;
+      }
     }
+  }
 }
 
-	.payZone{//利用料金
-		padding: 70px 0 120px;
-		.thisLead{
-			background-color: #fff;
-			padding: 30px 20px;
-			border-radius: 5px;
-			dt{
-				margin-bottom: 0.5em;
-				color: $mainColor;
-				font-size: 2.0rem;
-				font-weight: bold;
-			}
-			dd{
-				@include noto;
-				font-size: 1.6rem;
-				line-height: (26/16);
-			}
-		}
-		h4{
-			margin: (77/(23 * 1.4)) * 1em 0 (20/23) * 1em;
-			padding-bottom: (15/(23 * 1.4)) * 1em;
-			color: #000;
-			font-size: 2.3rem;
-			border-bottom: 2px solid #499745;
-		}
-		h5{
-			margin:2em 0 1em;
-			padding-left: 15px;
-			font-size: 1.6rem;
-			font-weight: bold;
-			position: relative;
-			&:before{
-				content: "";
-				display: inline-block;
-				background-color: #499745;
-				width: 4px;
-				position: absolute;
-				top: 5px;
-				bottom: 5px;
-				left: 0;
-			}
-		}
-		table{
-			width: 100%;
-			@include noto;
-			font-size: 1.6rem;
-			border: 1px solid #ccc;
-		}
-		th,
-		td{
-			padding: 8px 10px;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
-		}
-		th{
-			background-color: #499745;
-			width: 150px;
-			color: #fff;
-		}
-		td{
-			background-color: #fff;
-		}
-		thead{
-			td{
-				background-color: #e5e5e7;
-			}
-		}
-		tbody{
-		}
-		small{
-			margin-top: 10px;
-			@include noto;
-			font-size: 1.2rem;
-		}
-		ul{
-			display: flex;
-			justify-content: space-between;
-			> li{
-				width: (380/800) * $per;
-				th{
-					width: 150px;
-				}
-			}
-		}
-	}
-	@include mq{	.payZone{//利用料金
-			padding: 10% 0 10%;
-			.thisLead{
-				padding: 5%;
-				dt{
-					margin-bottom: 0.5em;
-					font-size: 1.6rem;
-				}
-				dd{
-					font-size: 1.4rem;
-				}
-			}
-			h4{
-				font-size: 1.7rem;
-			}
-			h5{
-				margin-bottom: 0.5em;
-				padding-left: 0.8em;
-				font-size: 1.4rem;
-				&:before{
-					width: 0.3em;
-					top: 0.2em;
-					bottom: 0.2em;
-				}
-			}
-			table{
-				font-size: 1.0rem;
-			}
-			th,
-			td{
-				padding: 1% 2%;
-			}
-			th{
-				width: auto;
-			}
-			td{
-			}
-			thead{
-				td{
-				}
-			}
-			tbody{
-			}
-			small{
-				margin-top: 2%;
-				font-size: 1.0rem;
-			}
-			ul{
-				display: block;
-				> li{
-					width: auto;
-					& + li{
-						h5{
-							margin-top: 2em !important;
-						}
-					}
-					th{
-						width: 45%;
-					}
-				}
-			}
-			h4 + ul li:first-child th{
-				width: auto;
-			}
-		}}
+@include mq {
+  .payZone {
+    //利用料金
+    padding: 10% 0 10%;
+
+    .thisLead {
+      padding: 5%;
+
+      dt {
+        margin-bottom: 0.5em;
+        font-size: 1.6rem;
+      }
+
+      dd {
+        font-size: 1.4rem;
+      }
+    }
+
+    h4 {
+      font-size: 1.7rem;
+    }
+
+    h5 {
+      margin-bottom: 0.5em;
+      padding-left: 0.8em;
+      font-size: 1.4rem;
+
+      &:before {
+        width: 0.3em;
+        top: 0.2em;
+        bottom: 0.2em;
+      }
+    }
+
+    table {
+      font-size: 1.0rem;
+    }
+
+    th,
+    td {
+      padding: 1% 2%;
+    }
+
+    th {
+      width: auto;
+    }
+
+    td {}
+
+    thead {
+      td {}
+    }
+
+    tbody {}
+
+    small {
+      margin-top: 2%;
+      font-size: 1.0rem;
+    }
+
+    ul {
+      display: block;
+
+      > li {
+        width: auto;
+
+        & + li {
+          h5 {
+            margin-top: 2em !important;
+          }
+        }
+
+        th {
+          width: 45%;
+        }
+      }
+    }
+
+    h4 + ul li:first-child th {
+      width: auto;
+    }
+  }
+}

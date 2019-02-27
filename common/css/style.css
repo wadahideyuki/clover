@@ -1100,6 +1100,7 @@ a:hover {
   .header .spHd .hdIn .nav.layer1 {
     position: relative;
     z-index: 1;
+    justify-content: center;
   }
   .header .spHd .hdIn .nav.layer1 > ul {
     display: none;
@@ -1166,7 +1167,7 @@ a:hover {
     text-shadow: 0 0 3px #358f31, 0 0 3px #358f31, 0 0 3px #358f31, 0 0 5px #358f31, 0 0 5px #358f31;
   }
   .header .spHd .hdIn .nav.layer1 > ul > li .nav.layer2 > a + a {
-    border-top: 1px dotted  #fff;
+    border-top: 1px dotted #fff;
   }
 }
 
@@ -1289,27 +1290,32 @@ footer .part2 .logo a:hover {
 footer .part2 .layer1 {
   display: flex;
   border-right: 1px dotted #929292;
+  justify-content: center;
 }
 
-footer .part2 .layer1 > li, footer .part2 .layer1 > div {
+footer .part2 .layer1 > li,
+footer .part2 .layer1 > div {
   width: 14%;
   padding: 0 1%;
   text-align: left;
   border-left: 1px dotted #929292;
 }
 
-footer .part2 .layer1 > li h3, footer .part2 .layer1 > div h3 {
+footer .part2 .layer1 > li h3,
+footer .part2 .layer1 > div h3 {
   margin-bottom: 10px;
   color: #358f31;
   font-size: 1.6rem;
   font-weight: bold;
 }
 
-footer .part2 .layer1 > li .layer2 > li, footer .part2 .layer1 > div .layer2 > li {
+footer .part2 .layer1 > li .layer2 > li,
+footer .part2 .layer1 > div .layer2 > li {
   font-size: 1.2rem;
 }
 
-footer .part2 .layer1 > li .layer2 > li + li, footer .part2 .layer1 > div .layer2 > li + li {
+footer .part2 .layer1 > li .layer2 > li + li,
+footer .part2 .layer1 > div .layer2 > li + li {
   margin-top: 5px;
 }
 
@@ -1390,14 +1396,17 @@ footer .part2 #copyRight {
   footer .part2 .layer1 {
     display: block;
     border-right: none;
+    justify-content: center;
   }
-  footer .part2 .layer1 > li, footer .part2 .layer1 > div {
+  footer .part2 .layer1 > li,
+  footer .part2 .layer1 > div {
     width: auto;
     padding: 3vw 0;
     border-bottom: 1px solid #529f4f;
     border-left: none;
   }
-  footer .part2 .layer1 > li h3, footer .part2 .layer1 > div h3 {
+  footer .part2 .layer1 > li h3,
+  footer .part2 .layer1 > div h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1405,13 +1414,16 @@ footer .part2 #copyRight {
     font-size: 1.2rem;
     font-weight: normal;
   }
-  footer .part2 .layer1 > li h3.blog, footer .part2 .layer1 > div h3.blog {
+  footer .part2 .layer1 > li h3.blog,
+  footer .part2 .layer1 > div h3.blog {
     color: #529f4f;
   }
-  footer .part2 .layer1 > li h3.blog:after, footer .part2 .layer1 > div h3.blog:after {
+  footer .part2 .layer1 > li h3.blog:after,
+  footer .part2 .layer1 > div h3.blog:after {
     transform: rotate(-45deg);
   }
-  footer .part2 .layer1 > li h3:after, footer .part2 .layer1 > div h3:after {
+  footer .part2 .layer1 > li h3:after,
+  footer .part2 .layer1 > div h3:after {
     content: "";
     display: inline-block;
     width: 0.8em;
@@ -1423,18 +1435,22 @@ footer .part2 #copyRight {
     box-sizing: border-box;
     transform: rotate(45deg);
   }
-  footer .part2 .layer1 > li h3.show:after, footer .part2 .layer1 > div h3.show:after {
+  footer .part2 .layer1 > li h3.show:after,
+  footer .part2 .layer1 > div h3.show:after {
     margin: 0 0.2em -0.5em 0;
     transform: rotate(-135deg);
   }
-  footer .part2 .layer1 > li .layer2, footer .part2 .layer1 > div .layer2 {
+  footer .part2 .layer1 > li .layer2,
+  footer .part2 .layer1 > div .layer2 {
     display: none;
     margin-top: 1vw;
   }
-  footer .part2 .layer1 > li .layer2 > li, footer .part2 .layer1 > div .layer2 > li {
+  footer .part2 .layer1 > li .layer2 > li,
+  footer .part2 .layer1 > div .layer2 > li {
     font-size: 1.0rem;
   }
-  footer .part2 .layer1 > li .layer2 > li + li, footer .part2 .layer1 > div .layer2 > li + li {
+  footer .part2 .layer1 > li .layer2 > li + li,
+  footer .part2 .layer1 > div .layer2 > li + li {
     margin-top: 0;
   }
   footer .part2 #copyRight {
@@ -1962,11 +1978,13 @@ select {
   font-family: "Noto Sans Japanese";
 }
 
-.tblBox1 tr:last-child td, .tblBox1 tr:last-child th {
+.tblBox1 tr:last-child td,
+.tblBox1 tr:last-child th {
   border: none;
 }
 
-.tblBox1 th, .tblBox1 td {
+.tblBox1 th,
+.tblBox1 td {
   padding: 8px 0;
   border-bottom: 1px dotted #CCC;
 }
@@ -2011,7 +2029,10 @@ select {
     line-height: 1.8;
     font-family: "Noto Sans Japanese";
   }
-  .tblBox1 tbody, .tblBox1 tr, .tblBox1 th, .tblBox1 td {
+  .tblBox1 tbody,
+  .tblBox1 tr,
+  .tblBox1 th,
+  .tblBox1 td {
     display: block;
   }
   .tblBox1 th {
@@ -4715,1477 +4736,6 @@ select {
   }
 }
 
-.pdfIcon a {
-  color: #0064FF;
-  text-decoration: underline;
-  background: url(../img/icon-link-pdf.svg) no-repeat left center;
-  padding-left: 25px;
-}
-
-/*--------------------------------------
- navi
----------------------------------------*/
-.pcHd .hdIn .nav.layer1 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.pcHd .hdIn .nav.layer1 .hd-ttl {
-  color: #fff;
-  font-size: 2.7rem;
-  padding-left: 35px;
-}
-
-.pcHd .hdIn .nav.layer1 ul > li {
-  padding: 0 9px;
-}
-
-.pcHd .hdIn .nav.layer1 ul li + li {
-  border-left: 1px solid #fff;
-}
-
-/*--------------------------------------
-  採用情報
----------------------------------------*/
-.galleryBanner {
-  text-align: center;
-  padding: 50px 10px;
-}
-
-@media screen and (max-width: 767px) {
-  .galleryBanner {
-    padding: 3%;
-  }
-}
-
-.galleryBanner img {
-  max-width: 100%;
-}
-
-.catCareer .page-title {
-  text-align: center;
-  padding: 40px 0 0 0;
-  font-size: 3rem;
-}
-
-.catCareer .tag-title {
-  text-align: center;
-  padding: 40px 0 0 0;
-  font-size: 3rem;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .tag-title {
-    font-size: 1.8rem;
-    padding: 5%;
-  }
-}
-
-.catCareer img {
-  height: auto;
-}
-
-.catCareer .staffTags {
-  background-color: #fff;
-  padding: 20px 30px 30px;
-  text-align: center;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.11);
-  margin-bottom: 40px;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .staffTags {
-    margin-bottom: 5%;
-  }
-}
-
-.catCareer .staffTags li {
-  display: inline-block;
-}
-
-.catCareer .staffTags dt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  color: #1849a5;
-}
-
-.catCareer .staffTags dt span {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 17.0rem;
-  line-height: 1;
-  opacity: 0.6;
-}
-
-.catCareer .staffTags dt h3 {
-  font-size: 4.0rem;
-  line-height: 1.175;
-  border-bottom: 1px solid #bfd7bf;
-}
-
-.catCareer .staffTags dd {
-  padding: 0 50px;
-}
-
-.catCareer .staffTags dd a {
-  display: inline-block;
-  margin: 0 0.5em 1em;
-  color: #1849a5;
-  font-size: 2.0rem;
-  text-decoration: underline;
-}
-
-.catCareer .staffTags dd a:hover {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .staffTags {
-    padding: 3.125vw;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.11);
-  }
-  .catCareer .staffTags dt {
-    margin-bottom: 3%;
-  }
-  .catCareer .staffTags dt span {
-    margin-right: 3%;
-    font-size: 6.0rem;
-  }
-  .catCareer .staffTags dt h3 {
-    font-size: 1.8rem;
-  }
-  .catCareer .staffTags dd {
-    padding: 0;
-  }
-  .catCareer .staffTags dd a {
-    font-size: 1.4rem;
-  }
-}
-
-.catCareer .cast-list {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 0 0 40px 0;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .cast-list {
-    justify-content: space-between;
-  }
-}
-
-.catCareer .cast-list li {
-  margin: 0 1% 30px 1%;
-  width: 23%;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .cast-list li {
-    width: 48%;
-  }
-}
-
-.catCareer .cast-list li .entry-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .cast-list li .entry-title {
-    font-size: 1.6rem;
-  }
-}
-
-.catCareer .cast-list li .pos {
-  font-size: 1.4rem;
-}
-
-.catCareer .cast-list li .photoBox {
-  display: flex;
-  justify-content: center;
-  width: 230px;
-  height: 230px;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .cast-list li .photoBox {
-    width: 40vw;
-    height: 40vw;
-  }
-}
-
-.catCareer .cast-list li .photoBox img {
-  height: 230px;
-  width: auto;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .cast-list li .photoBox img {
-    height: 40vw;
-  }
-}
-
-.catCareer .cast-list li img {
-  max-width: inherit;
-}
-
-.catCareer .cast-list li p {
-  font-family: "Noto Sans Japanese";
-  padding-top: 5px;
-  font-size: 1.6rem;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer .cast-list li p {
-    font-size: 1.2rem;
-  }
-}
-
-/* トップ */
-.catCareer.pageTop .main {
-  margin-bottom: -30vw;
-  position: relative;
-  overflow: hidden;
-}
-
-.catCareer.pageTop .main .in {
-  background-color: #1849a5;
-  padding-top: 65px;
-}
-
-.catCareer.pageTop .main:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  margin: auto;
-  font-size: 0;
-  border-style: solid;
-  border-width: 0 0 30vw 100vw;
-  border-color: transparent transparent transparent #1849a5;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .main:after {
-    padding-top: 30vw;
-    border: 0px;
-  }
-}
-
-.catCareer.pageTop .main .inner {
-  max-width: 1252px;
-  position: relative;
-}
-
-.catCareer.pageTop .main .inner .bg {
-  background: url(../img/career/main.jpg) center top no-repeat;
-  background-size: 100% auto;
-  padding-top: 54.55272%;
-  position: relative;
-}
-
-.catCareer.pageTop .main .inner h2 {
-  display: table;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  font-size: 7.2rem;
-  line-height: 1.31944;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.catCareer.pageTop .main .inner h2 > div {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.catCareer.pageTop .main .inner h2 > div > span {
-  display: inline-block;
-  height: 8.5em;
-  padding-top: 1em;
-  -webkit-writing-mode: vertical-rl;
-  -moz-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  -ms-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  text-align: left;
-}
-
-.catCareer.pageTop .content {
-  padding-top: 50px;
-  position: relative;
-}
-
-.catCareer.pageTop .content .links1 {
-  padding-top: 65px;
-}
-
-@media screen and (max-width: 1282px) {
-  .catCareer.pageTop .main .inner h2 {
-    font-size: 5.61622vw;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .main .in {
-    padding-top: 0;
-  }
-  .catCareer.pageTop .content {
-    padding-top: 5%;
-  }
-  .catCareer.pageTop .content .links1 {
-    padding-top: 10%;
-  }
-}
-
-.catCareer.pageTop .career-message {
-  position: relative;
-  background: #1849a5;
-  color: #FFF;
-  line-height: 2;
-  padding-bottom: 70px;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .career-message {
-    padding-bottom: 30px;
-  }
-  .catCareer.pageTop .career-message br {
-    display: none;
-  }
-}
-
-.catCareer.pageTop .career-message h2 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .career-message h2 {
-    font-size: 2.5rem;
-  }
-}
-
-.catCareer.pageTop .career-message p {
-  padding: 20px 0 0 0;
-  line-height: 2;
-  font-size: 1.8rem;
-  text-align: center;
-  font-family: "Noto Sans Japanese";
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .career-message p {
-    padding: 0px;
-    text-align: left;
-    font-size: 1.4rem;
-  }
-}
-
-.catCareer.pageTop .jinzai-inner {
-  padding: 80px 0 0 0;
-  margin-bottom: 80px;
-  border-top: 1px dotted #1849a5;
-  line-height: 2;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai-inner {
-    padding: 5% 0;
-    margin-bottom: 0px;
-  }
-}
-
-.catCareer.pageTop .jinzai {
-  padding: 70px 0;
-  text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai {
-    padding: 10% 0;
-  }
-}
-
-.catCareer.pageTop .jinzai h3 {
-  font-size: 3rem;
-  padding-bottom: 20px;
-  color: #1849a5;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai h3 {
-    font-size: 1.6rem;
-    padding-bottom: 3%;
-  }
-}
-
-.catCareer.pageTop .jinzai p {
-  font-size: 1.8rem;
-  font-family: "Noto Sans Japanese";
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai p {
-    font-size: 1.2rem;
-  }
-  .catCareer.pageTop .jinzai p br {
-    display: none;
-  }
-}
-
-.catCareer.pageTop .jinzai .jinzai4 {
-  line-height: 2;
-  display: flex;
-  padding: 40px 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai .jinzai4 {
-    padding: 5% 0;
-  }
-}
-
-.catCareer.pageTop .jinzai .jinzai4 li {
-  padding: 20px;
-  box-sizing: border-box;
-  border: 5px solid #EEE;
-  width: 23%;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai .jinzai4 li {
-    width: 100%;
-    padding: 3% 0;
-    margin-bottom: 5%;
-  }
-}
-
-.catCareer.pageTop .jinzai .jinzai4 li:first-child {
-  color: #1849a5;
-  border: 5px solid #1849a5;
-}
-
-.catCareer.pageTop .jinzai .jinzai4 li strong {
-  display: block;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai .jinzai4 li strong {
-    font-size: 2rem;
-  }
-}
-
-.catCareer.pageTop .jinzai .jinzai-power {
-  padding: 40px 0;
-  text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai .jinzai-power {
-    padding: 5% 0;
-  }
-}
-
-.catCareer.pageTop .jinzai .jinzai-power li {
-  padding: 20px 0;
-  display: inline-block;
-  font-size: 2rem;
-  box-sizing: border-box;
-  background: #1849a5;
-  color: #FFF;
-  margin: 1%;
-  width: 47%;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageTop .jinzai .jinzai-power li {
-    width: 100%;
-    padding: 3% 0;
-    font-size: 1.5rem;
-  }
-}
-
-/* 人材育成への想い */
-.catCareer.pageOmoi .omoiBlock {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 50px 0 100px 0;
-  text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageOmoi .omoiBlock {
-    padding: 25px 0 50px 0;
-  }
-  .catCareer.pageOmoi .omoiBlock .ttl1 {
-    line-height: 1.6;
-  }
-}
-
-.catCareer.pageOmoi .omoiBlock p {
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageOmoi .omoiBlock p {
-    font-size: 1.5rem;
-  }
-}
-
-.catCareer.pageOmoi .omoiBlock p.omoiCatch {
-  font-size: 5rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 50px 10px 80px 10px;
-  color: #358f31;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageOmoi .omoiBlock p.omoiCatch {
-    font-size: 2rem;
-    padding: 25px 0 50px 0;
-  }
-}
-
-.catCareer.pageOmoi .omoiBlock p.taR {
-  padding-top: 50px;
-}
-
-/* 募集要項 */
-.catCareer.pageRecruit .numList1 li {
-  border-bottom: 1px dotted #CCC;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-.catCareer.pageRecruit .numList1 li:last-of-type {
-  border-bottom: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.catCareer.pageRecruit .tblBox1 td,
-.catCareer.pageRecruit .tblBox1 th {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  border-bottom: 1px solid #CCC;
-}
-
-.catCareer.pageRecruit .tblBox1 td a,
-.catCareer.pageRecruit .tblBox1 th a {
-  text-decoration: underline !important;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageRecruit .tblBox1 td,
-  .catCareer.pageRecruit .tblBox1 th {
-    font-size: 1.2rem;
-  }
-}
-
-.catCareer.pageRecruit .mainImg img {
-  width: 100%;
-}
-
-.catCareer.pageRecruit .statueZone {
-  padding-top: 55px;
-}
-
-.catCareer.pageRecruit .statueZone ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  color: #fff;
-}
-
-.catCareer.pageRecruit .statueZone ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1849a5;
-  width: 31.4%;
-  height: 108px;
-  margin-bottom: 24px;
-  font-size: 2.0rem;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.catCareer.pageRecruit .statueZone dl {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #727272;
-  margin-top: 10px;
-  padding: 15px 30px;
-  color: #fff;
-}
-
-.catCareer.pageRecruit .statueZone dt {
-  padding: 5px 35px 5px 0;
-  font-size: 2.2rem;
-  text-align: center;
-  line-height: 1.45455;
-  border-right: 1px solid #fff;
-}
-
-.catCareer.pageRecruit .statueZone dd {
-  padding-left: 35px;
-  font-size: 1.8rem;
-  line-height: 1.77778;
-}
-
-.catCareer.pageRecruit .statueZone dd span {
-  margin-right: 1.5em;
-}
-
-.catCareer.pageRecruit .bosyuZone {
-  padding: 140px 0 70px;
-}
-
-.catCareer.pageRecruit .bosyuZone .pageScrl {
-  margin-bottom: 40px;
-}
-
-.catCareer.pageRecruit .bosyuZone .pageScrl a {
-  font-size: 1.6rem;
-}
-
-.catCareer.pageRecruit .bosyuZone .tblBox1 .btnWrap a {
-  width: 364px;
-}
-
-@media screen and (max-width: 767px) {
-  .catCareer.pageRecruit .statueZone {
-    padding-top: 5%;
-  }
-  .catCareer.pageRecruit .statueZone ul {
-    display: block;
-  }
-  .catCareer.pageRecruit .statueZone ul li {
-    width: auto;
-    height: auto;
-    margin-bottom: 3%;
-    padding: 3%;
-    font-size: 1.4rem;
-  }
-  .catCareer.pageRecruit .statueZone dl {
-    display: block;
-    margin-top: 5%;
-    padding: 3%;
-  }
-  .catCareer.pageRecruit .statueZone dt {
-    padding: 0 0 3% 0;
-    font-size: 1.8rem;
-    border-bottom: 1px solid #fff;
-    border-right: none;
-  }
-  .catCareer.pageRecruit .statueZone dd {
-    padding: 3% 0 0 0;
-    font-size: 1.4rem;
-  }
-  .catCareer.pageRecruit .statueZone dd span {
-    margin-right: 0;
-  }
-  .catCareer.pageRecruit .bosyuZone {
-    padding: 10% 0 1%;
-  }
-  .catCareer.pageRecruit .bosyuZone .pageScrl {
-    margin-bottom: 5%;
-  }
-  .catCareer.pageRecruit .bosyuZone .pageScrl a {
-    font-size: 1.4rem;
-  }
-  .catCareer.pageRecruit .bosyuZone .tblBox1 .btnWrap a {
-    width: auto;
-  }
-}
-
-/* 社員エピソード集 */
-.cast-detail .content2 {
-  padding: 40px 0;
-}
-
-.cast-detail .content {
-  padding: 60px 0 30px;
-}
-
-.cast-detail .content .profBox {
-  background-color: #fff;
-  margin-bottom: 70px;
-}
-
-.cast-detail .content .profBox .img {
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 767px) {
-  .cast-detail .content .profBox .img {
-    height: auto;
-  }
-}
-
-.cast-detail .content .profBox .img img {
-  width: 100%;
-}
-
-.cast-detail .content .profBox .img .name {
-  display: block;
-  align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .cast-detail .content .profBox .img .name {
-    text-align: center;
-  }
-}
-
-.cast-detail .content .profBox .img .name dl {
-  background-color: rgba(53, 143, 49, 0.9);
-  padding: 2em 3em;
-  color: #fff;
-  font-size: 1.0rem;
-  line-height: 1;
-}
-
-.cast-detail .content .profBox .img .name dt {
-  margin-top: .9em;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-.cast-detail .content .profBox .img .name dd {
-  font-size: 6.1rem;
-  display: inline-block;
-  vertical-align: bottom;
-  margin-right: 5px;
-}
-
-.cast-detail .content .profBox .txt {
-  display: flex;
-}
-
-.cast-detail .content .profBox .txt dt {
-  color: #FFF;
-  padding: 20px 30px;
-  box-sizing: border-box;
-  background: #42933f;
-  font-size: 3.8rem;
-  width: 30%;
-}
-
-.cast-detail .content .profBox .txt dt h1 {
-  font-size: 5rem;
-}
-
-@media screen and (max-width: 767px) {
-  .cast-detail .content .profBox .txt dt h1 {
-    font-size: 3rem;
-  }
-}
-
-.cast-detail .content .profBox .txt dt p {
-  font-size: 1.6rem;
-  padding-top: 0.5em;
-}
-
-@media screen and (max-width: 767px) {
-  .cast-detail .content .profBox .txt dt {
-    width: auto;
-  }
-}
-
-.cast-detail .content .profBox .txt dd {
-  padding: 20px 0px 20px 30px;
-  box-sizing: border-box;
-  font-family: "Noto Sans Japanese";
-  font-size: 1.5rem;
-  line-height: 1.6;
-  width: 65%;
-}
-
-@media screen and (max-width: 767px) {
-  .cast-detail .content .profBox .txt dd {
-    width: auto;
-  }
-}
-
-.cast-detail .content .episodeBox {
-  padding: 0 12.5%;
-}
-
-.cast-detail .content .episodeBox h3 {
-  font-size: 4.2rem;
-  line-height: 1.42857;
-}
-
-.cast-detail .content .episodeBox p {
-  margin-bottom: 30px;
-  font-family: "Noto Sans Japanese";
-  font-size: 1.6rem;
-  line-height: 1.75;
-}
-
-.cast-detail .content .episodeBox .img {
-  margin-bottom: 30px;
-}
-
-.cast-detail .content .episodeBox .img img {
-  width: 100%;
-}
-
-.cast-detail .content2 {
-  padding: 80px 0 90px;
-}
-
-@media screen and (max-width: 1030px) {
-  .cast-detail .content {
-    padding: 5% 0 3%;
-  }
-  .cast-detail .content .profBox {
-    margin-bottom: 7%;
-  }
-  .cast-detail .content .profBox .img .name dl {
-    padding: 2em 3em;
-    font-size: 1.0vw;
-  }
-  .cast-detail .content .profBox .img .name dt {
-    font-size: 1.5534vw;
-  }
-  .cast-detail .content .profBox .img .name dd {
-    font-size: 5.92233vw;
-  }
-  .cast-detail .content .profBox .txt {
-    padding: 2em 3em;
-    font-size: 1.0vw;
-  }
-  .cast-detail .content .profBox .txt dt {
-    font-size: 3.68932vw;
-  }
-  .cast-detail .content .profBox .txt dd {
-    padding-left: 2.66667em;
-  }
-  .cast-detail .content2 {
-    padding: 5% 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cast-detail .content .profBox {
-    margin-bottom: 15%;
-  }
-  .cast-detail .content .profBox .img .name {
-    display: block;
-    position: static;
-  }
-  .cast-detail .content .profBox .img .name dl {
-    padding: 5% 4%;
-  }
-  .cast-detail .content .profBox .img .name dt {
-    margin-bottom: .5em;
-    font-size: 1.4rem;
-  }
-  .cast-detail .content .profBox .img .name dd {
-    font-size: 3.6rem;
-  }
-}
-
-@media screen and (max-width: 767px) and (max-width: 767px) {
-  .cast-detail .content .profBox .img .name dd {
-    font-size: 2.4rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cast-detail .content .profBox .txt {
-    display: block;
-    padding: 0;
-  }
-  .cast-detail .content .profBox .txt dt {
-    margin-bottom: 0;
-    padding: 5vw;
-    font-size: 2.4rem;
-    text-align: center;
-    border-bottom: 1px solid #42933f;
-  }
-  .cast-detail .content .profBox .txt dd {
-    padding: 5vw;
-  }
-  .cast-detail .content .episodeBox {
-    padding: 0;
-  }
-  .cast-detail .content .episodeBox h3 {
-    font-size: 2rem;
-  }
-  .cast-detail .content .episodeBox p {
-    margin-bottom: 5%;
-    font-size: 1.4rem;
-  }
-  .cast-detail .content .episodeBox .img {
-    margin-bottom: 5%;
-  }
-  .cast-detail .content2 {
-    padding: 5% 0;
-  }
-}
-
-.welfare-list {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 1100px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  padding: 30px 0;
-}
-
-@media screen and (max-width: 767px) {
-  .welfare-list {
-    display: block;
-  }
-}
-
-.welfare-list li {
-  width: 48%;
-  margin: 1%;
-  background: #FFF;
-  padding: 35px;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 767px) {
-  .welfare-list li {
-    width: auto;
-    padding: 4%;
-    margin: 0 3% 3% 3%;
-  }
-}
-
-.welfare-list li img {
-  height: auto;
-}
-
-.welfare-list li h3 {
-  font-size: 2.4rem;
-  color: #1849a5;
-  font-weight: bold;
-  padding: 0.3em 0 0.8em 0;
-}
-
-@media screen and (max-width: 767px) {
-  .welfare-list li h3 {
-    font-size: 5vw;
-  }
-}
-
-.welfare-list li p {
-  font-size: 1.8rem;
-  line-height: 1.6;
-  font-family: "Noto Sans Japanese";
-}
-
-@media screen and (max-width: 767px) {
-  .welfare-list li p {
-    font-size: 4vw;
-  }
-}
-
-.btnrecruit {
-  text-align: center;
-}
-
-.btnrecruit p {
-  text-align: center;
-  padding: 20px;
-  font-size: 1.6rem;
-}
-
-.btnrecruit li {
-  display: inline-block;
-  margin: 5px 10px;
-}
-
-.btnrecruit li a {
-  border-radius: 10px;
-  display: block;
-  padding: 10px 30px;
-  border: 1px solid #CCC;
-  text-align: center;
-}
-
-.btnrecruit li a:hover {
-  opacity: 0.7;
-}
-
-.btnrecruit li a img {
-  max-width: 200px;
-}
-
-@media screen and (max-width: 767px) {
-  .ttl2 {
-    margin: 2% 0 8%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .ttl2 > div {
-    font-size: 2.4rem;
-  }
-}
-
-.ttl2 > div span {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-@media screen and (max-width: 767px) {
-  .ttl2 > div span {
-    text-align: center;
-  }
-}
-
-/*--------------------------------------
-  キャストを知る
----------------------------------------*/
-.know-cast {
-  background: #eee;
-  padding-bottom: 65px;
-  /*-
-    .cast-box {
-      margin: 0 auto 55px;
-      @include mq {
-        margin: 0 auto vw(30);
-      }
-      .cast-cont {
-        width: calc(340/1100*100%);
-        margin: 0 20px;
-        @include mq {
-          width: 100%;
-        }
-
-        .image {
-          img {
-            width: 100%;
-          }
-        }
-
-        .intro-txt {
-          margin-top: 0.5em;
-          font-size: 1.6rem;
-          @include mq {
-            text-align: center;
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-          }
-
-          strong {
-            font-size: 2rem;
-            padding-right: 15px;
-            @include mq {
-              display: block;
-              font-size: 1.6rem;
-            }
-          }
-        }
-      }
-      .cast-cont + .cast-cont {
-        @include mq {
-        border-top: 1px dotted #000;
-        padding-top: vw(30);
-        }
-      }
-    }
--*/
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast {
-    padding-bottom: 11.71875vw;
-  }
-}
-
-.know-cast .cast-box {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box {
-    margin: 4.6875vw 0 0;
-    padding-bottom: 7.03125vw;
-  }
-}
-
-.know-cast .cast-box .slick-arrow {
-  width: 65px;
-  height: 65px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-arrow {
-    width: 0;
-    height: 0;
-  }
-}
-
-.know-cast .cast-box .slick-arrow.prev {
-  position: absolute;
-  top: 36%;
-  left: 0;
-  z-index: 10;
-}
-
-.know-cast .cast-box .slick-arrow.prev:before {
-  position: absolute;
-  content: "";
-  top: 33%;
-  left: 36%;
-  font-size: 2rem;
-  width: 20px;
-  height: 20px;
-  border-left: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-  transform: rotate(45deg);
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-arrow.prev:before {
-    content: none;
-  }
-}
-
-.know-cast .cast-box .slick-arrow.next {
-  position: absolute;
-  top: 36%;
-  right: 0;
-  z-index: 10;
-}
-
-.know-cast .cast-box .slick-arrow.next:before {
-  position: absolute;
-  content: "";
-  top: 33%;
-  right: 36%;
-  font-size: 2rem;
-  width: 20px;
-  height: 20px;
-  border-left: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-  transform: rotate(225deg);
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-arrow.next:before {
-    content: none;
-  }
-}
-
-.know-cast .cast-box .slick-list .slick-track {
-  display: flex;
-}
-
-.know-cast .cast-box .slick-list li.slides {
-  width: 350px;
-  text-align: left;
-  margin: 0 20px;
-  background-image: url(../images/magazine/list_bg.png);
-  position: relative;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-list li.slides {
-    width: 90vw;
-    margin: 0 4.6875vw;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-list li.slides {
-    margin: 0 3vw;
-  }
-}
-
-.know-cast .cast-box .slick-list li.slides.slick-active {
-  opacity: 1;
-}
-
-.know-cast .cast-box .slick-list li.slides .image img {
-  width: 100%;
-}
-
-.know-cast .cast-box .slick-list li.slides .intro-txt {
-  margin-top: 0.5em;
-  font-size: 1.6rem;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-list li.slides .intro-txt {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.know-cast .cast-box .slick-list li.slides .intro-txt strong {
-  font-size: 2rem;
-  padding-right: 15px;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-list li.slides .intro-txt strong {
-    display: block;
-    font-size: 1.6rem;
-  }
-}
-
-.know-cast .cast-box .slick-dots {
-  display: block;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-dots {
-    bottom: 5.625vw;
-  }
-}
-
-.know-cast .cast-box .slick-dots {
-  bottom: 0;
-}
-
-.know-cast .cast-box .slick-dots li {
-  background-color: #ccc;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-dots li {
-    width: 3.125vw;
-    height: 3.125vw;
-    margin: 0 1.71875vw;
-  }
-}
-
-.know-cast .cast-box .slick-dots li.slick-active {
-  background-color: #e9536b;
-}
-
-.know-cast .cast-box .slick-dots li button {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .cast-box .slick-dots li {
-    width: 3.4375vw;
-    height: 3.4375vw;
-  }
-}
-
-.know-cast .btn_read-more {
-  color: #1849a5;
-  font-family: "游明朝体", "Yu Mincho", "YuMincho";
-  font-size: 2.7rem;
-  text-align: center;
-  margin-top: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .btn_read-more {
-    font-size: 2rem;
-    margin-top: inherit;
-  }
-}
-
-.know-cast .btn_read-more a {
-  display: inline-block;
-  padding: 10px 45px;
-  background: #fff;
-  border: 1px solid #1849a5;
-  border-radius: 5px;
-}
-
-@media screen and (max-width: 767px) {
-  .know-cast .btn_read-more a {
-    display: block;
-    padding: 1.5625vw 7.03125vw;
-  }
-}
-
-/*--------------------------------------
-  ページ下部リンク
----------------------------------------*/
-.btmLinkZone {
-  padding: 70px 0 85px;
-  background: #eee;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone {
-    padding: 3.5% 1.875%;
-  }
-}
-
-.btmLinkZone .in {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone .in {
-    justify-content: space-between;
-    padding: 3.5% 1.875%;
-    display: block;
-  }
-}
-
-.btmLinkZone .in a {
-  display: block;
-  width: 48.5%;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone .in a {
-    width: 100%;
-  }
-}
-
-.btmLinkZone .in a:hover {
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.btmLinkZone .in a .image {
-  width: 100%;
-}
-
-.btmLinkZone .in a .image img {
-  width: auto;
-}
-
-.btmLinkZone .in a dl {
-  align-items: center;
-  color: #000;
-  font-weight: bold;
-  background: #fff;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone .in a dl {
-    padding: 0;
-  }
-}
-
-.btmLinkZone .in a dl dt {
-  font-size: 2rem;
-  padding: 15px 35px 10px;
-  color: #1849a5;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone .in a dl dt {
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 1.8rem;
-    padding: 2.34375vw 5.46875vw 3.125vw;
-  }
-}
-
-.btmLinkZone .in a dl dd {
-  font-size: 1.6rem;
-  display: inline-block;
-  height: 80px;
-  padding: 0 35px;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone .in a dl dd {
-    display: none;
-  }
-}
-
-.btmLinkZone .in a + a {
-  margin-left: 3%;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone .in a + a {
-    margin-left: 0;
-    margin-top: 4%;
-  }
-}
-
-.btmLinkZone .in a:nth-of-type(2n+1) {
-  margin-left: 0;
-}
-
-.btmLinkZone .in a:nth-of-type(n+3) {
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .btmLinkZone .in a:nth-of-type(n+3) {
-    margin-top: 4%;
-  }
-}
-
-.entryBtn {
-  position: fixed;
-  right: 25px;
-  bottom: 5%;
-  font-size: 1.8rem;
-  color: #FFF;
-  text-align: center;
-  display: block;
-  padding: 10px 65px;
-  background: #FF7E00;
-  border-radius: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .entryBtn {
-    width: 100%;
-    box-sizing: border-box;
-    top: auto;
-    bottom: 0px;
-    right: auto;
-    left: 0px;
-  }
-}
-
-.entryBtn span {
-  display: inline-block;
-}
-
-.entryBtn:hover {
-  text-decoration: underline;
-}
-
 /*--------------------------------------
   経営理念
 ---------------------------------------*/
@@ -7025,4 +5575,1421 @@ select {
 
 .introduce-box dl + dl {
   margin-top: 3.5rem;
+}
+
+/*--------------------------------------
+  採用情報
+---------------------------------------*/
+.galleryBanner {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .galleryBanner {
+    padding: 3%;
+  }
+}
+
+.galleryBanner img {
+  max-width: 100%;
+}
+
+.catCareer .page-title {
+  text-align: center;
+  padding: 40px 0 0 0;
+  font-size: 3rem;
+}
+
+.catCareer .tag-title {
+  text-align: center;
+  padding: 40px 0 0 0;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .tag-title {
+    font-size: 1.8rem;
+    padding: 5%;
+  }
+}
+
+.catCareer img {
+  height: auto;
+}
+
+.catCareer .staffTags {
+  background-color: #fff;
+  padding: 20px 30px 30px;
+  text-align: center;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.11);
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .staffTags {
+    margin-bottom: 5%;
+  }
+}
+
+.catCareer .staffTags li {
+  display: inline-block;
+}
+
+.catCareer .staffTags dt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #358f31;
+}
+
+.catCareer .staffTags dt span {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 17.0rem;
+  line-height: 1;
+  opacity: 0.6;
+}
+
+.catCareer .staffTags dt h3 {
+  font-size: 4.0rem;
+  line-height: 1.175;
+  border-bottom: 1px solid #bfd7bf;
+}
+
+.catCareer .staffTags dd {
+  padding: 0 50px;
+}
+
+.catCareer .staffTags dd a {
+  display: inline-block;
+  margin: 0 0.5em 1em;
+  color: #358f31;
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.catCareer .staffTags dd a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .staffTags {
+    padding: 3.125vw;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.11);
+  }
+  .catCareer .staffTags dt {
+    margin-bottom: 3%;
+  }
+  .catCareer .staffTags dt span {
+    margin-right: 3%;
+    font-size: 6.0rem;
+  }
+  .catCareer .staffTags dt h3 {
+    font-size: 1.8rem;
+  }
+  .catCareer .staffTags dd {
+    padding: 0;
+  }
+  .catCareer .staffTags dd a {
+    font-size: 1.4rem;
+  }
+}
+
+.catCareer .cast-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 0 40px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .cast-list {
+    justify-content: space-between;
+  }
+}
+
+.catCareer .cast-list li {
+  margin: 0 1% 30px 1%;
+  width: 23%;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .cast-list li {
+    width: 48%;
+  }
+}
+
+.catCareer .cast-list li .entry-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .cast-list li .entry-title {
+    font-size: 1.6rem;
+  }
+}
+
+.catCareer .cast-list li .pos {
+  font-size: 1.4rem;
+}
+
+.catCareer .cast-list li .photoBox {
+  display: flex;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .cast-list li .photoBox {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+.catCareer .cast-list li .photoBox img {
+  height: 230px;
+  width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .cast-list li .photoBox img {
+    height: 40vw;
+  }
+}
+
+.catCareer .cast-list li img {
+  max-width: inherit;
+}
+
+.catCareer .cast-list li p {
+  font-family: "Noto Sans Japanese";
+  padding-top: 5px;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer .cast-list li p {
+    font-size: 1.2rem;
+  }
+}
+
+/* トップ */
+.catCareer.pageTop .main {
+  margin-bottom: -30vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.catCareer.pageTop .main .in {
+  background-color: #358f31;
+  padding-top: 65px;
+}
+
+.catCareer.pageTop .main:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin: auto;
+  font-size: 0;
+  border-style: solid;
+  border-width: 0 0 30vw 100vw;
+  border-color: transparent transparent transparent #358f31;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .main:after {
+    padding-top: 30vw;
+    border: 0px;
+  }
+}
+
+.catCareer.pageTop .main .inner {
+  max-width: 1252px;
+  position: relative;
+}
+
+.catCareer.pageTop .main .inner .bg {
+  background: url(../img/career/main.jpg) center top no-repeat;
+  background-size: 100% auto;
+  padding-top: 54.55272%;
+  position: relative;
+}
+
+.catCareer.pageTop .main .inner h2 {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 7.2rem;
+  line-height: 1.31944;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catCareer.pageTop .main .inner h2 > div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.catCareer.pageTop .main .inner h2 > div > span {
+  display: inline-block;
+  height: 8.5em;
+  padding-top: 1em;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  text-align: left;
+}
+
+.catCareer.pageTop .content {
+  padding-top: 50px;
+  position: relative;
+}
+
+.catCareer.pageTop .content .links1 {
+  padding-top: 65px;
+}
+
+@media screen and (max-width: 1282px) {
+  .catCareer.pageTop .main .inner h2 {
+    font-size: 5.61622vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .main .in {
+    padding-top: 0;
+  }
+  .catCareer.pageTop .content {
+    padding-top: 5%;
+  }
+  .catCareer.pageTop .content .links1 {
+    padding-top: 10%;
+  }
+}
+
+.catCareer.pageTop .career-message {
+  position: relative;
+  background: #358f31;
+  color: #FFF;
+  line-height: 2;
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .career-message {
+    padding-bottom: 30px;
+  }
+  .catCareer.pageTop .career-message br {
+    display: none;
+  }
+}
+
+.catCareer.pageTop .career-message h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .career-message h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.catCareer.pageTop .career-message p {
+  padding: 20px 0 0 0;
+  line-height: 2;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: "Noto Sans Japanese";
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .career-message p {
+    padding: 0px;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+}
+
+.catCareer.pageTop .jinzai-inner {
+  padding: 80px 0 0 0;
+  margin-bottom: 80px;
+  border-top: 1px dotted #358f31;
+  line-height: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai-inner {
+    padding: 5% 0;
+    margin-bottom: 0px;
+  }
+}
+
+.catCareer.pageTop .jinzai {
+  padding: 70px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai {
+    padding: 10% 0;
+  }
+}
+
+.catCareer.pageTop .jinzai h3 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #358f31;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai h3 {
+    font-size: 1.6rem;
+    padding-bottom: 3%;
+  }
+}
+
+.catCareer.pageTop .jinzai p {
+  font-size: 1.8rem;
+  font-family: "Noto Sans Japanese";
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai p {
+    font-size: 1.2rem;
+  }
+  .catCareer.pageTop .jinzai p br {
+    display: none;
+  }
+}
+
+.catCareer.pageTop .jinzai .jinzai4 {
+  line-height: 2;
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai .jinzai4 {
+    padding: 5% 0;
+  }
+}
+
+.catCareer.pageTop .jinzai .jinzai4 li {
+  padding: 20px;
+  box-sizing: border-box;
+  border: 5px solid #EEE;
+  width: 23%;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai .jinzai4 li {
+    width: 100%;
+    padding: 3% 0;
+    margin-bottom: 5%;
+  }
+}
+
+.catCareer.pageTop .jinzai .jinzai4 li:first-child {
+  color: #358f31;
+  border: 5px solid #358f31;
+}
+
+.catCareer.pageTop .jinzai .jinzai4 li strong {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai .jinzai4 li strong {
+    font-size: 2rem;
+  }
+}
+
+.catCareer.pageTop .jinzai .jinzai-power {
+  padding: 40px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai .jinzai-power {
+    padding: 5% 0;
+  }
+}
+
+.catCareer.pageTop .jinzai .jinzai-power li {
+  padding: 20px 0;
+  display: inline-block;
+  font-size: 2rem;
+  box-sizing: border-box;
+  background: #358f31;
+  color: #FFF;
+  margin: 1%;
+  width: 47%;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageTop .jinzai .jinzai-power li {
+    width: 100%;
+    padding: 3% 0;
+    font-size: 1.5rem;
+  }
+}
+
+/* 人材育成への想い */
+.catCareer.pageOmoi .omoiBlock {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageOmoi .omoiBlock {
+    padding: 25px 0 50px 0;
+  }
+  .catCareer.pageOmoi .omoiBlock .ttl1 {
+    line-height: 1.6;
+  }
+}
+
+.catCareer.pageOmoi .omoiBlock p {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageOmoi .omoiBlock p {
+    font-size: 1.5rem;
+  }
+}
+
+.catCareer.pageOmoi .omoiBlock p.omoiCatch {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 10px 80px 10px;
+  color: #358f31;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageOmoi .omoiBlock p.omoiCatch {
+    font-size: 2rem;
+    padding: 25px 0 50px 0;
+  }
+}
+
+.catCareer.pageOmoi .omoiBlock p.taR {
+  padding-top: 50px;
+}
+
+/* 募集要項 */
+.catCareer.pageRecruit .numList1 li {
+  border-bottom: 1px dotted #CCC;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.catCareer.pageRecruit .numList1 li:last-of-type {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.catCareer.pageRecruit .tblBox1 td,
+.catCareer.pageRecruit .tblBox1 th {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  border-bottom: 1px solid #CCC;
+}
+
+.catCareer.pageRecruit .tblBox1 td a,
+.catCareer.pageRecruit .tblBox1 th a {
+  text-decoration: underline !important;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageRecruit .tblBox1 td,
+  .catCareer.pageRecruit .tblBox1 th {
+    font-size: 1.2rem;
+  }
+}
+
+.catCareer.pageRecruit .mainImg img {
+  width: 100%;
+}
+
+.catCareer.pageRecruit .statueZone {
+  padding-top: 55px;
+}
+
+.catCareer.pageRecruit .statueZone ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.catCareer.pageRecruit .statueZone ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #358f31;
+  width: 31.4%;
+  height: 108px;
+  margin-bottom: 24px;
+  font-size: 2.0rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.catCareer.pageRecruit .statueZone dl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #727272;
+  margin-top: 10px;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+.catCareer.pageRecruit .statueZone dt {
+  padding: 5px 35px 5px 0;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 1.45455;
+  border-right: 1px solid #fff;
+}
+
+.catCareer.pageRecruit .statueZone dd {
+  padding-left: 35px;
+  font-size: 1.8rem;
+  line-height: 1.77778;
+}
+
+.catCareer.pageRecruit .statueZone dd span {
+  margin-right: 1.5em;
+}
+
+.catCareer.pageRecruit .bosyuZone {
+  padding: 140px 0 70px;
+}
+
+.catCareer.pageRecruit .bosyuZone .pageScrl {
+  margin-bottom: 40px;
+}
+
+.catCareer.pageRecruit .bosyuZone .pageScrl a {
+  font-size: 1.6rem;
+}
+
+.catCareer.pageRecruit .bosyuZone .tblBox1 .btnWrap a {
+  width: 364px;
+}
+
+@media screen and (max-width: 767px) {
+  .catCareer.pageRecruit .statueZone {
+    padding-top: 5%;
+  }
+  .catCareer.pageRecruit .statueZone ul {
+    display: block;
+  }
+  .catCareer.pageRecruit .statueZone ul li {
+    width: auto;
+    height: auto;
+    margin-bottom: 3%;
+    padding: 3%;
+    font-size: 1.4rem;
+  }
+  .catCareer.pageRecruit .statueZone dl {
+    display: block;
+    margin-top: 5%;
+    padding: 3%;
+  }
+  .catCareer.pageRecruit .statueZone dt {
+    padding: 0 0 3% 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #fff;
+    border-right: none;
+  }
+  .catCareer.pageRecruit .statueZone dd {
+    padding: 3% 0 0 0;
+    font-size: 1.4rem;
+  }
+  .catCareer.pageRecruit .statueZone dd span {
+    margin-right: 0;
+  }
+  .catCareer.pageRecruit .bosyuZone {
+    padding: 10% 0 1%;
+  }
+  .catCareer.pageRecruit .bosyuZone .pageScrl {
+    margin-bottom: 5%;
+  }
+  .catCareer.pageRecruit .bosyuZone .pageScrl a {
+    font-size: 1.4rem;
+  }
+  .catCareer.pageRecruit .bosyuZone .tblBox1 .btnWrap a {
+    width: auto;
+  }
+}
+
+/* 社員エピソード集 */
+.cast-detail .content2 {
+  padding: 40px 0;
+}
+
+.cast-detail .content {
+  padding: 60px 0 30px;
+}
+
+.cast-detail .content .profBox {
+  background-color: #fff;
+  margin-bottom: 70px;
+}
+
+.cast-detail .content .profBox .img {
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .cast-detail .content .profBox .img {
+    height: auto;
+  }
+}
+
+.cast-detail .content .profBox .img img {
+  width: 100%;
+}
+
+.cast-detail .content .profBox .img .name {
+  display: block;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .cast-detail .content .profBox .img .name {
+    text-align: center;
+  }
+}
+
+.cast-detail .content .profBox .img .name dl {
+  background-color: rgba(53, 143, 49, 0.9);
+  padding: 2em 3em;
+  color: #fff;
+  font-size: 1.0rem;
+  line-height: 1;
+}
+
+.cast-detail .content .profBox .img .name dt {
+  margin-top: .9em;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.cast-detail .content .profBox .img .name dd {
+  font-size: 6.1rem;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.cast-detail .content .profBox .txt {
+  display: flex;
+}
+
+.cast-detail .content .profBox .txt dt {
+  color: #FFF;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background: #42933f;
+  font-size: 3.8rem;
+  width: 30%;
+}
+
+.cast-detail .content .profBox .txt dt h1 {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .cast-detail .content .profBox .txt dt h1 {
+    font-size: 3rem;
+  }
+}
+
+.cast-detail .content .profBox .txt dt p {
+  font-size: 1.6rem;
+  padding-top: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .cast-detail .content .profBox .txt dt {
+    width: auto;
+  }
+}
+
+.cast-detail .content .profBox .txt dd {
+  padding: 20px 0px 20px 30px;
+  box-sizing: border-box;
+  font-family: "Noto Sans Japanese";
+  font-size: 1.5rem;
+  line-height: 1.6;
+  width: 65%;
+}
+
+@media screen and (max-width: 767px) {
+  .cast-detail .content .profBox .txt dd {
+    width: auto;
+  }
+}
+
+.cast-detail .content .episodeBox {
+  padding: 0 12.5%;
+}
+
+.cast-detail .content .episodeBox h3 {
+  font-size: 4.2rem;
+  line-height: 1.42857;
+}
+
+.cast-detail .content .episodeBox p {
+  margin-bottom: 30px;
+  font-family: "Noto Sans Japanese";
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.cast-detail .content .episodeBox .img {
+  margin-bottom: 30px;
+}
+
+.cast-detail .content .episodeBox .img img {
+  width: 100%;
+}
+
+.cast-detail .content2 {
+  padding: 80px 0 90px;
+}
+
+@media screen and (max-width: 1030px) {
+  .cast-detail .content {
+    padding: 5% 0 3%;
+  }
+  .cast-detail .content .profBox {
+    margin-bottom: 7%;
+  }
+  .cast-detail .content .profBox .img .name dl {
+    padding: 2em 3em;
+    font-size: 1.0vw;
+  }
+  .cast-detail .content .profBox .img .name dt {
+    font-size: 1.5534vw;
+  }
+  .cast-detail .content .profBox .img .name dd {
+    font-size: 5.92233vw;
+  }
+  .cast-detail .content .profBox .txt {
+    padding: 2em 3em;
+    font-size: 1.0vw;
+  }
+  .cast-detail .content .profBox .txt dt {
+    font-size: 3.68932vw;
+  }
+  .cast-detail .content .profBox .txt dd {
+    padding-left: 2.66667em;
+  }
+  .cast-detail .content2 {
+    padding: 5% 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cast-detail .content .profBox {
+    margin-bottom: 15%;
+  }
+  .cast-detail .content .profBox .img .name {
+    display: block;
+    position: static;
+  }
+  .cast-detail .content .profBox .img .name dl {
+    padding: 5% 4%;
+  }
+  .cast-detail .content .profBox .img .name dt {
+    margin-bottom: .5em;
+    font-size: 1.4rem;
+  }
+  .cast-detail .content .profBox .img .name dd {
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .cast-detail .content .profBox .img .name dd {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cast-detail .content .profBox .txt {
+    display: block;
+    padding: 0;
+  }
+  .cast-detail .content .profBox .txt dt {
+    margin-bottom: 0;
+    padding: 5vw;
+    font-size: 2.4rem;
+    text-align: center;
+    border-bottom: 1px solid #42933f;
+  }
+  .cast-detail .content .profBox .txt dd {
+    padding: 5vw;
+  }
+  .cast-detail .content .episodeBox {
+    padding: 0;
+  }
+  .cast-detail .content .episodeBox h3 {
+    font-size: 2rem;
+  }
+  .cast-detail .content .episodeBox p {
+    margin-bottom: 5%;
+    font-size: 1.4rem;
+  }
+  .cast-detail .content .episodeBox .img {
+    margin-bottom: 5%;
+  }
+  .cast-detail .content2 {
+    padding: 5% 0;
+  }
+}
+
+.welfare-list {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .welfare-list {
+    display: block;
+  }
+}
+
+.welfare-list li {
+  width: 48%;
+  margin: 1%;
+  background: #FFF;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .welfare-list li {
+    width: auto;
+    padding: 4%;
+    margin: 0 3% 3% 3%;
+  }
+}
+
+.welfare-list li img {
+  height: auto;
+}
+
+.welfare-list li h3 {
+  font-size: 2.4rem;
+  color: #358f31;
+  font-weight: bold;
+  padding: 0.3em 0 0.8em 0;
+}
+
+@media screen and (max-width: 767px) {
+  .welfare-list li h3 {
+    font-size: 5vw;
+  }
+}
+
+.welfare-list li p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: "Noto Sans Japanese";
+}
+
+@media screen and (max-width: 767px) {
+  .welfare-list li p {
+    font-size: 4vw;
+  }
+}
+
+.btnrecruit {
+  text-align: center;
+}
+
+.btnrecruit p {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+.btnrecruit li {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.btnrecruit li a {
+  border-radius: 10px;
+  display: block;
+  padding: 10px 30px;
+  border: 1px solid #CCC;
+  text-align: center;
+}
+
+.btnrecruit li a:hover {
+  opacity: 0.7;
+}
+
+.btnrecruit li a img {
+  max-width: 200px;
+}
+
+/*--------------------------------------
+  キャストを知る
+---------------------------------------*/
+.know-cast {
+  background: #eee;
+  padding-bottom: 65px;
+  /*-
+    .cast-box {
+      margin: 0 auto 55px;
+      @include mq {
+        margin: 0 auto vw(30);
+      }
+      .cast-cont {
+        width: calc(340/1100*100%);
+        margin: 0 20px;
+        @include mq {
+          width: 100%;
+        }
+
+        .image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .intro-txt {
+          margin-top: 0.5em;
+          font-size: 1.6rem;
+          @include mq {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+
+          strong {
+            font-size: 2rem;
+            padding-right: 15px;
+            @include mq {
+              display: block;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+      .cast-cont + .cast-cont {
+        @include mq {
+        border-top: 1px dotted #000;
+        padding-top: vw(30);
+        }
+      }
+    }
+-*/
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast {
+    padding-bottom: 11.71875vw;
+  }
+}
+
+.know-cast .cast-box {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box {
+    margin: 4.6875vw 0 0;
+    padding-bottom: 7.03125vw;
+  }
+}
+
+.know-cast .cast-box .slick-arrow {
+  width: 65px;
+  height: 65px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-arrow {
+    width: 0;
+    height: 0;
+  }
+}
+
+.know-cast .cast-box .slick-arrow.prev {
+  position: absolute;
+  top: 36%;
+  left: 0;
+  z-index: 10;
+}
+
+.know-cast .cast-box .slick-arrow.prev:before {
+  position: absolute;
+  content: "";
+  top: 33%;
+  left: 36%;
+  font-size: 2rem;
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-arrow.prev:before {
+    content: none;
+  }
+}
+
+.know-cast .cast-box .slick-arrow.next {
+  position: absolute;
+  top: 36%;
+  right: 0;
+  z-index: 10;
+}
+
+.know-cast .cast-box .slick-arrow.next:before {
+  position: absolute;
+  content: "";
+  top: 33%;
+  right: 36%;
+  font-size: 2rem;
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(225deg);
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-arrow.next:before {
+    content: none;
+  }
+}
+
+.know-cast .cast-box .slick-list .slick-track {
+  display: flex;
+}
+
+.know-cast .cast-box .slick-list li.slides {
+  width: 350px;
+  text-align: left;
+  margin: 0 20px;
+  background-image: url(../images/magazine/list_bg.png);
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides {
+    width: 90vw;
+    margin: 0 4.6875vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides {
+    margin: 0 3vw;
+  }
+}
+
+.know-cast .cast-box .slick-list li.slides.slick-active {
+  opacity: 1;
+}
+
+.know-cast .cast-box .slick-list li.slides .image img {
+  width: 100%;
+}
+
+.know-cast .cast-box .slick-list li.slides .intro-txt {
+  margin-top: 0.5em;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides .intro-txt {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.know-cast .cast-box .slick-list li.slides .intro-txt strong {
+  font-size: 2rem;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-list li.slides .intro-txt strong {
+    display: block;
+    font-size: 1.6rem;
+  }
+}
+
+.know-cast .cast-box .slick-dots {
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-dots {
+    bottom: 5.625vw;
+  }
+}
+
+.know-cast .cast-box .slick-dots {
+  bottom: 0;
+}
+
+.know-cast .cast-box .slick-dots li {
+  background-color: #ccc;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-dots li {
+    width: 3.125vw;
+    height: 3.125vw;
+    margin: 0 1.71875vw;
+  }
+}
+
+.know-cast .cast-box .slick-dots li.slick-active {
+  background-color: #e9536b;
+}
+
+.know-cast .cast-box .slick-dots li button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .cast-box .slick-dots li {
+    width: 3.4375vw;
+    height: 3.4375vw;
+  }
+}
+
+.know-cast .btn_read-more {
+  color: #1849a5;
+  font-family: "游明朝体", "Yu Mincho", "YuMincho";
+  font-size: 2.7rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .btn_read-more {
+    font-size: 2rem;
+    margin-top: inherit;
+  }
+}
+
+.know-cast .btn_read-more a {
+  display: inline-block;
+  padding: 10px 45px;
+  background: #fff;
+  border: 1px solid #1849a5;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .know-cast .btn_read-more a {
+    display: block;
+    padding: 1.5625vw 7.03125vw;
+  }
+}
+
+/*--------------------------------------
+  ページ下部リンク
+---------------------------------------*/
+.btmLinkZone {
+  padding: 70px 0 85px;
+  background: #eee;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone {
+    padding: 3.5% 1.875%;
+  }
+}
+
+.btmLinkZone .in {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in {
+    justify-content: space-between;
+    padding: 3.5% 1.875%;
+    display: block;
+  }
+}
+
+.btmLinkZone .in a {
+  display: block;
+  width: 48.5%;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a {
+    width: 100%;
+  }
+}
+
+.btmLinkZone .in a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.btmLinkZone .in a .image {
+  width: 100%;
+}
+
+.btmLinkZone .in a .image img {
+  width: auto;
+}
+
+.btmLinkZone .in a dl {
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a dl {
+    padding: 0;
+  }
+}
+
+.btmLinkZone .in a dl dt {
+  font-size: 2rem;
+  padding: 15px 35px 10px;
+  color: #1849a5;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a dl dt {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    padding: 2.34375vw 5.46875vw 3.125vw;
+  }
+}
+
+.btmLinkZone .in a dl dd {
+  font-size: 1.6rem;
+  display: inline-block;
+  height: 80px;
+  padding: 0 35px;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a dl dd {
+    display: none;
+  }
+}
+
+.btmLinkZone .in a + a {
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a + a {
+    margin-left: 0;
+    margin-top: 4%;
+  }
+}
+
+.btmLinkZone .in a:nth-of-type(2n+1) {
+  margin-left: 0;
+}
+
+.btmLinkZone .in a:nth-of-type(n+3) {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .btmLinkZone .in a:nth-of-type(n+3) {
+    margin-top: 4%;
+  }
+}
+
+.entryBtn {
+  position: fixed;
+  right: 25px;
+  bottom: 5%;
+  font-size: 1.8rem;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  padding: 10px 65px;
+  background: #FF7E00;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .entryBtn {
+    width: 100%;
+    box-sizing: border-box;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    left: 0px;
+  }
+}
+
+.entryBtn span {
+  display: inline-block;
+}
+
+.entryBtn:hover {
+  text-decoration: underline;
 }

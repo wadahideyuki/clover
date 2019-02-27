@@ -33,7 +33,7 @@
     foreach($users as $user):
       $uid = $user->ID;
       $userData = get_userdata($uid);
-      echo '<a href="'.get_bloginfo(url).'/?author='.$uid.'">'.$user->user_nicename.'</a>';
+      echo '<a href="'.get_bloginfo(url).'/?author='.$uid.'">'.$user->display_name.'</a>';
     endforeach;
     ?>
   </div>

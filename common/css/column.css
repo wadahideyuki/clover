@@ -431,11 +431,13 @@ select {
   font-family: "Noto Sans Japanese";
 }
 
-.tblBox1 tr:last-child td, .tblBox1 tr:last-child th {
+.tblBox1 tr:last-child td,
+.tblBox1 tr:last-child th {
   border: none;
 }
 
-.tblBox1 th, .tblBox1 td {
+.tblBox1 th,
+.tblBox1 td {
   padding: 8px 0;
   border-bottom: 1px dotted #CCC;
 }
@@ -480,7 +482,10 @@ select {
     line-height: 1.8;
     font-family: "Noto Sans Japanese";
   }
-  .tblBox1 tbody, .tblBox1 tr, .tblBox1 th, .tblBox1 td {
+  .tblBox1 tbody,
+  .tblBox1 tr,
+  .tblBox1 th,
+  .tblBox1 td {
     display: block;
   }
   .tblBox1 th {

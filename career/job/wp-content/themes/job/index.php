@@ -9,102 +9,110 @@
  * @since Twenty Sixteen 1.0
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50023646-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-50023646-1');
 </script>
-<meta charset="UTF-8">
-<title>募集要項｜株式会社CLOVER</title>
- <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
-<meta name="description" content="先輩インタビュー 介護と子どもたちの療育事業を行う株式会社CLOVER（クローバーグループ）のキャストをご紹介しています。「何をするかよりも、誰とするか」。現場で働く先輩たちの生の声を発信しています。未経験からスタートしたキャスト、ママとして働くキャストなど、多彩なキャストが活躍中です。" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- OGs -->
-<meta property="og:title" content="キャスト紹介 | CLOVER" />
-<meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />
-<meta property="og:description" content="株式会社CLOVER（クローバーグループ）は、東京都心・千葉県でお泊りデイサービスや、子どもの療育を行う放課後等デイサービスを運営。「Happinessを提供する」を経営理念に、「休日に自宅やカフェでくつろいでいる」ような新しいケア・サービスを目指します。" />
-<meta property="og:type" content="website">
-<!-- /OGs -->
+  <meta charset="UTF-8">
+  <title>職種・勤務地検索｜株式会社CLOVER</title>
+  <meta name="keywords" content="デイサービス,お泊り,介護,居宅,通所,渋谷,新宿,港,千代田,送迎,老人ホーム,ショートステイ" />
+  <meta name="description" content="先輩インタビュー 介護と子どもたちの療育事業を行う株式会社CLOVER（クローバーグループ）のキャストをご紹介しています。「何をするかよりも、誰とするか」。現場で働く先輩たちの生の声を発信しています。未経験からスタートしたキャスト、ママとして働くキャストなど、多彩なキャストが活躍中です。" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- OGs -->
+  <meta property="og:title" content="キャスト紹介 | CLOVER" />
+  <meta property="og:site_name" content="株式会社CLOVER｜都心の365日デイサービス&放課後等デイ" />
+  <meta property="og:description" content="株式会社CLOVER（クローバーグループ）は、東京都心・千葉県でお泊りデイサービスや、子どもの療育を行う放課後等デイサービスを運営。「Happinessを提供する」を経営理念に、「休日に自宅やカフェでくつろいでいる」ような新しいケア・サービスを目指します。" />
+  <meta property="og:type" content="website">
+  <!-- /OGs -->
 
-<link rel="stylesheet" type="text/css" href="/common/css/style.css">
-<link rel="stylesheet" type="text/css" href="/common/css/class.css">
-<link rel="stylesheet" type="text/css" href="/common/css/job.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/style_recruit.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/class.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/job.css">
 
-<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/common/js/slick.min.js"></script>
+  <script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/common/js/slick.min.js"></script>
 
-<script>
-$(function(){
-  $(".job-tag .partTtl li").click(function(){
-    if($(this).hasClass("show")){
-      return false; 
-    }else{
-      var thisName = $(this).attr("class");
-      $(".job-tag .partTtl li").removeClass("show");
-      $(this).addClass("show");
-      $(".job-tag .partTag li").removeClass("show");
-      $(".job-tag .partTag li." + thisName).addClass("show");
-      return false;
-    }
-  });
-});
-</script>
+  <script>
+    $(function() {
+      $(".job-tag .partTtl li").click(function() {
+        if ($(this).hasClass("show")) {
+          return false;
+        } else {
+          var thisName = $(this).attr("class");
+          $(".job-tag .partTtl li").removeClass("show");
+          $(this).addClass("show");
+          $(".job-tag .partTag li").removeClass("show");
+          $(".job-tag .partTag li." + thisName).addClass("show");
+          return false;
+        }
+      });
+    });
+
+  </script>
 
   <!--ヘッダー-->
   <?php
 include('../../common/inc/script.inc');
 ?>
-<!--/ヘッダー-->
+  <!--/ヘッダー-->
 </head>
 
 
 <body <?php body_class(); ?>>
-<div class="wrapper catCareer pageRecruit">
+  <div class="wrapper catCareer pageRecruit">
 
-<!--ヘッダー-->
-  <?php
+    <!--ヘッダー-->
+    <?php
 include('../../common/inc/header.inc');
 ?>
-<!--/ヘッダー-->
+    <!--/ヘッダー-->
 
 
-<section id="pankz">
-	<p><a href="/">クローバー（ホーム）</a>&gt; <a href="/career/index.php">採用情報</a>&gt; <span>募集要項</span></p>
-</section>
+    <section id="pankz">
+      <p><a href="/">クローバー（ホーム）</a>&gt; <a href="/career/index.php">採用情報</a>&gt; <span>募集要項</span></p>
+    </section>
 
 
-<section class="">
-	<div class="inner">
-		<h1 class="ttl2">
-			<div>
-				<span>募集要項</span>
-				<small>Recruit</small>
-			</div>
-		</h1>
-    </div>
-  <div class="lowLinks">
-		<a href="/career/index.php">採用情報TOP</a>
-		<a href="/career/job/index.php" class="cur">募集要項</a>
-		<a href="/career/welfare/index.php">福利厚生</a>
-	</div>
-  </section>
+    <section class="">
+      <div class="inner">
+        <h1 class="ttl2">
+          <div>
+            <span>職種・勤務地検索</span>
+            <small>Recruit</small>
+          </div>
+        </h1>
+      </div>
+      <div class="lowLinks">
+        <a href="/career/index.php">採用情報TOP</a>
+        <a href="/career/job/index.php" class="cur">職種・勤務地検索</a>
+        <a href="/career/welfare/index.php">福利厚生</a>
+      </div>
+    </section>
 
+    <ul>
+      <li><a href="#type">職種から探す</a></li>
+      <li><a href="#area">勤務地から探す</a></li>
 
-<div class="bgGrey1 PB30">
+    </ul>
 
-<section class="job-tag">
-	<div class="inner sz2">
-		<h2 class="ttl1">募集職種一覧</h2>
-  <?php
+    <div class="bgGrey1 PB30">
+
+      <section class="job-tag">
+        <div class="inner sz2">
+          <h2 class="ttl1" id="type">職種から探す</h2>
+          <?php
 
 	//一番親階層のカテゴリをすべて取得
 	$categories = get_categories('parent=0');
@@ -171,32 +179,64 @@ include('../../common/inc/header.inc');
 	}
   echo '</ul>';
 ?>
-</div>
-</section>
+        </div>
 
 
-<section class="statueZone">
-	<div class="inner sz2">
-		<h2 class="ttl1">求める人物像</h2>
-		<ul>
-			<li>素直で前向きな人</li>
-			<li>気配り、目配りが出来る人</li>
-			<li>仲間を大切にする人</li>
-			<li>負けず嫌いな人</li>
-			<li>行動力のある人</li>
-			<li>思いやりのある人</li>
-			<li>人の気持ちのわかる<br class="pc">やさしい人</li>
-			<li>ちょっと癒し系な人</li>
-			<li>楽しい人、面白い人</li>
-		</ul>
-		<dl>
-			<dt>こんな方は<br>お断りします</dt>
-			<dd><span>自己中心的で相手の事を考えられない人、</span><span>プラスアルファの仕事をしない人、</span><br class="pc">
-				<span>不平、不満、愚痴が多く言い訳をしてやらない人、</span><span>チームの和を乱す人</span></dd>
-		</dl>
-	</div>
-</section>
+        <div class="inner sz2">
+          <h2 class="ttl1" id="area">勤務地から探す</h2>
+          <ul class="partTtl">
+            <li class="part">パート・アルバイト</li>
+            <li class="show regular">正社員</li>
+          </ul>
+          <ul class="partTag">
+            <li class="part">
+              <a href="/career/job/area_search/?category_name=part&value=渋谷区">渋谷区</a>
+              <a href="/career/job/area_search/?category_name=part&value=新宿区">新宿区</a>
+              <a href="/career/job/area_search/?category_name=part&value=世田谷区">世田谷区</a>
+              <a href="/career/job/area_search/?category_name=part&value=目黒区">目黒区</a>
+              <a href="/career/job/area_search/?category_name=part&value=港区">港区</a>
+              <a href="/career/job/area_search/?category_name=part&value=市川市">市川市</a>
 
-</div>
+            </li>
+            <li class="show regular">
+              <a href="/career/job/area_search/?category_name=regular&value=渋谷区">渋谷区</a>
+              <a href="/career/job/area_search/?category_name=regular&value=新宿区">新宿区</a>
+              <a href="/career/job/area_search/?category_name=regular&value=世田谷区">世田谷区</a>
+              <a href="/career/job/area_search/?category_name=regular&value=目黒区">目黒区</a>
+              <a href="/career/job/area_search/?category_name=regular&value=港区">港区</a>
+              <a href="/career/job/area_search/?category_name=regular&value=市川市">市川市</a>
 
-<?php get_footer();
+            </li>
+          </ul>
+
+
+
+        </div>
+      </section>
+
+
+      <section class="statueZone">
+        <div class="inner sz2">
+          <h2 class="ttl1">求める人物像</h2>
+          <ul>
+            <li>素直で前向きな人</li>
+            <li>気配り、目配りが出来る人</li>
+            <li>仲間を大切にする人</li>
+            <li>負けず嫌いな人</li>
+            <li>行動力のある人</li>
+            <li>思いやりのある人</li>
+            <li>人の気持ちのわかる<br class="pc">やさしい人</li>
+            <li>ちょっと癒し系な人</li>
+            <li>楽しい人、面白い人</li>
+          </ul>
+          <dl>
+            <dt>こんな方は<br>お断りします</dt>
+            <dd><span>自己中心的で相手の事を考えられない人、</span><span>プラスアルファの仕事をしない人、</span><br class="pc">
+              <span>不平、不満、愚痴が多く言い訳をしてやらない人、</span><span>チームの和を乱す人</span></dd>
+          </dl>
+        </div>
+      </section>
+
+    </div>
+
+    <?php get_footer();
